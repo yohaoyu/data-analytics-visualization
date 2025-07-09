@@ -1,56 +1,56 @@
 {"0": {
-    "doc": "Real Estate Data Analytics and Visualization",
+    "doc": "Data Analytics and Visualization",
     "title": "Schedules",
     "content": "Go to the recent section. This schedule is subject to change and please check back regularly for updates. All readings can be directly accessed via the links below, although some may require a UW NetID login. <!-- ",
     "url": "/data-analytics-visualization/#schedules",
     
     "relUrl": "/#schedules"
   },"1": {
-    "doc": "Real Estate Data Analytics and Visualization",
+    "doc": "Data Analytics and Visualization",
     "title": "Module 1 - Introduction & Descriptive Statistics",
     "content": "--> Module 1 - Introduction, Descriptive Statistics, and Visualization . Sep 25 Class Overview and Math Review Slides HWHomework 0 Release OptionalMath Review Note. Harvard Statistics. Joe Blitzstein. OptionalComputers and Decision Making. Journal of the American Planning Association. Richard Langendorf. 1985. Sep 30 Data, Statistics and Research Design Slides LABBasic of Excel or R HWHomework 1 Release OptionalChapter 1, OpenIntro Statistics. David Diez et al. 2024 Oct 02 Descriptive Statistics Slides Quantitative Data in Urban Planning Slides LABDownload Data &amp; Descriptive Statistics HW 0 DUE OptionalChapter 2, OpenIntro Statistics. David Diez et al. 2024 OptionalVisual and Statistical Thinking: Displays of Evidence for Making Decisions. Edward Tufte. 1997. Oct 07 Data Visualization Slides LABVisualization using Tableau HWHomework 2 Release HW 1 DUE OptionalDesign and Redesign in Data Visualization. Martin Wattenberg and Fernanda Viégas. 2015. OptionalExploratory Data Analysis. United States Environmental Protection Agency. OptionalData Viz Project by ferdio. <!-- ",
     "url": "/data-analytics-visualization/#module-1-introduction-descriptive-statistics",
     
     "relUrl": "/#module-1-introduction-descriptive-statistics"
   },"2": {
-    "doc": "Real Estate Data Analytics and Visualization",
+    "doc": "Data Analytics and Visualization",
     "title": "Module 2 - Sampling, Probability, and Distributions",
     "content": "--> Module 2 - Sampling, Probability, and Distributions . Oct 09 Probability Slides IN-CLASS QUIZ OptionalChapter 3, OpenIntro Statistics. David Diez et al. 2024 OptionalBayes Theorem, the Geometry of Changing Beliefs. 3Blue1Brown. 2019 OptionalSeeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin. Oct 14 Random Variables Slides LabDistribution Simulations HWHomework 3 Release HW 2 DUE OptionalChapter 4, OpenIntro Statistics. David Diez et al. 2024 OptionalBut What is the Central Limit Theorem? 3Blue1Brown. 2023 Oct 16 Sampling and Distributions Slides IN-CLASS QUIZ OptionalChapter 4, OpenIntro Statistics. David Diez et al. 2024 <!-- ",
     "url": "/data-analytics-visualization/#module-2-sampling-probability-and-distributions",
     
     "relUrl": "/#module-2-sampling-probability-and-distributions"
   },"3": {
-    "doc": "Real Estate Data Analytics and Visualization",
+    "doc": "Data Analytics and Visualization",
     "title": "Module 3 - Estimation and Hypothesis Testing",
     "content": "--> Module 3 - Estimation and Hypothesis Testing . Oct 21 Estimation Slides HWHomework 4 Release HW 3 DUE OptionalChapter 5.1, OpenIntro Statistics. David Diez et al. 2024 Oct 23 Instructor leave due to ACSP 2025 IN-CLASS QUIZ LabLab Oct 28 Confience Intervals Slides DEBATE Session 1 HWHomework 5 Release HW 4 DUE OptionalChapter 5.2, OpenIntro Statistics. David Diez et al. 2024 Oct 30 Hypothesis Testing Slides LabLab OptionalChapter 5.3, OpenIntro Statistics. David Diez et al. 2024 Nov 04 Inference Slides DEBATE Session 2 HWHomework 6 Release HW 5 DUE OptionalChapter 6-7, OpenIntro Statistics. David Diez et al. 2024 <!-- ",
     "url": "/data-analytics-visualization/#module-3-estimation-and-hypothesis-testing",
     
     "relUrl": "/#module-3-estimation-and-hypothesis-testing"
   },"4": {
-    "doc": "Real Estate Data Analytics and Visualization",
+    "doc": "Data Analytics and Visualization",
     "title": "Module 4 - Regression",
     "content": "--> Module 4 - Regression . Nov 06 Correlation and Linear Regression Slides IN-CLASS QUIZ OptionalChapter 8.1-8.2, OpenIntro Statistics / Chapter 8-10, Statistics Fouth Edition Nov 11 No Class due to Veterans HWHomework 7 Release HW 6 DUE Nov 13 Linear Regression Slides DEBATE Session 3 OptionalChapter 8.3-8.4, OpenIntro Statistics / Chapter 10-12, Statistics Fouth Edition Nov 18 Mutliple and Logisic Regression Slides LabLab HWHomework 8 Release HW 7 DUE OptionalChapter 9, OpenIntro Statistics Nov 20 Data Science Pipeline / Workflow Slides LabLab DEBATE Session 4 <!-- ",
     "url": "/data-analytics-visualization/#module-4-regression",
     
     "relUrl": "/#module-4-regression"
   },"5": {
-    "doc": "Real Estate Data Analytics and Visualization",
+    "doc": "Data Analytics and Visualization",
     "title": "Module 5 - Advanced Topics",
     "content": "--> Module 5 - Advanced Topics (Not in the final exam) . Nov 25 Introduction to Advanced Regression Slides Introduction to Causal Inference Slides IN-CLASS QUIZ Nov 27 No Class due to Thanksgiving Dec 02 Introduction to Machine Learning and Artificial Intelligence Slides DEBATE Session 5 HW 8 DUE Required(Skim) AI in Planning: Opportunities and Challenges and How to Prepare. American Planning Association. 2022. OptionalAI for Social Good. Nature Communications. Nenad Tomašev et al. 2020. OptionalA Golden Decade of Deep Learning: Computing Systems &amp; Applications. Jeffrey Dean (UW Alumni, Google). 2022. OptionalStatistical Modeling: The Two Cultures. Leo Breiman. 2001. OptionalWhat is a Neural Network. 3Blue1Brown. 2017. OptionalAtlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence. Kate Crawford. 2022. Dec 04 Data and Research Ethics Slides Review of Key Topics Notes; Final Exam Example RequiredWhen Planners Lie with Numbers. Journal of the American Planning Association. Martin Wachs. 1989. <!-- ",
     "url": "/data-analytics-visualization/#module-5-advanced-topics",
     
     "relUrl": "/#module-5-advanced-topics"
   },"6": {
-    "doc": "Real Estate Data Analytics and Visualization",
+    "doc": "Data Analytics and Visualization",
     "title": "Module 5 - Advanced Topics",
     "content": "--> Dec 11 Final Exam Solutions (Available after the Exam) Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/#module-5-advanced-topics",
     
     "relUrl": "/#module-5-advanced-topics"
   },"7": {
-    "doc": "Real Estate Data Analytics and Visualization",
-    "title": "Real Estate Data Analytics and Visualization",
-    "content": ". Real Estate Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . Haoyu Yue . yohaoyu@washington.edu . Office Hours 4:00 PM - 5:00 PM on Fridays via Zoom or Schedule an appointment . The primary objective of this course is to familiarize planning students with methods and techniques they are likely to encounter and use in planning departments and organizations. Planners must be quite versatile, in that they must be knowledgeable of a variety of analytical methods, including statistical analysis and techniques, demographic techniques; economic analysis, project planning techniques, geographical and spatial analysis techniques and analysis, and various forms of transportation analysis. ",
+    "doc": "Data Analytics and Visualization",
+    "title": "Data Analytics and Visualization",
+    "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . Haoyu Yue . yohaoyu@washington.edu . Office Hours 4:00 PM - 5:00 PM on Fridays via Zoom or Schedule an appointment . The primary objective of this course is to familiarize planning students with methods and techniques they are likely to encounter and use in planning departments and organizations. Planners must be quite versatile, in that they must be knowledgeable of a variety of analytical methods, including statistical analysis and techniques, demographic techniques; economic analysis, project planning techniques, geographical and spatial analysis techniques and analysis, and various forms of transportation analysis. Go to the recent section. Visualize This: The Flowing Data Guide to Design, Visualization, and Statistics. Nathan Yau. 2024. Data Visualization: A Practical Introduction. Kieran Healy. 2019. ",
     "url": "/data-analytics-visualization/",
     
     "relUrl": "/"
@@ -64,7 +64,7 @@
   },"9": {
     "doc": "Debate Sessions",
     "title": "Debate Sessions",
-    "content": ". Real Estate Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
+    "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/debate/",
     
     "relUrl": "/debate/"
@@ -78,7 +78,7 @@
   },"11": {
     "doc": "Announcements",
     "title": "Announcements",
-    "content": ". Real Estate Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
+    "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/lectures/",
     
     "relUrl": "/lectures/"
@@ -92,7 +92,7 @@
   },"13": {
     "doc": "Resources",
     "title": "Resources",
-    "content": ". Real Estate Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
+    "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/resources/",
     
     "relUrl": "/resources/"
@@ -141,7 +141,7 @@
   },"20": {
     "doc": "Schedule",
     "title": "Schedule",
-    "content": ". Real Estate Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
+    "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
@@ -260,7 +260,7 @@
   },"37": {
     "doc": "Syllabus",
     "title": "Syllabus",
-    "content": ". | Overview | Learning Objectives | Pre-requisites | Textbooks, Readings and Class Materials . | Required | Optional | . | Computing | Generative AI Policy | Course Requirements . | In-class Quizzes (15%) | Assignments (40%) | Critical Thinking Activity (15%) | Final Exam (30%) | Extra Credits (5%) | . | Communication and Community Forum | Course Evaluation | Statistics and Data Science @ UW | Campus Safety | Religious Accommodation Policy | Academic Integrity | Disability Resources for Students (DRS) | Use of AI | . Real Estate Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
+    "content": ". | Overview | Learning Objectives | Pre-requisites | Textbooks, Readings and Class Materials . | Required | Optional | . | Computing | Generative AI Policy | Course Requirements . | In-class Quizzes (15%) | Assignments (40%) | Critical Thinking Activity (15%) | Final Exam (30%) | Extra Credits (5%) | . | Communication and Community Forum | Course Evaluation | Statistics and Data Science @ UW | Campus Safety | Religious Accommodation Policy | Academic Integrity | Disability Resources for Students (DRS) | Use of AI | . Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/syllabus/",
     
     "relUrl": "/syllabus/"

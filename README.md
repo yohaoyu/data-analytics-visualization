@@ -1,6 +1,6 @@
 ---
 layout: minimal
-title: Real Estate Data Analytics and Visualization
+title: Data Analytics and Visualization
 nav_exclude: True
 permalink: /:path/
 seo:
@@ -38,8 +38,13 @@ organizations. Planners must be quite versatile, in that they must be knowledgea
 variety of analytical methods, including statistical analysis and techniques, demographic
 techniques; economic analysis, project planning techniques, geographical and spatial
 analysis techniques and analysis, and various forms of transportation analysis.
+<a href="#recent">Go to the **recent section**.</a>
+Visualize This: The Flowing Data Guide to Design, Visualization, and Statistics. Nathan Yau. 2024. 
+Data Visualization: A Practical Introduction. Kieran Healy. 2019.
+
+
 ## Schedules
-<a href="#recent">Go to the **recent section**.</a> This schedule is subject to change and please check back regularly for updates. All readings can be directly accessed via the links below, although some may require a UW NetID login.
+<a href="#recent">Go to the **recent section**.</a> This schedule is subject to change and please check back regularly for updates. All readings can be directly accessed via the links below, although some may require a UW NetID login. 
 
 {% for module in site.modules %}
 {{ module }}
