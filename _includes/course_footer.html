@@ -1,0 +1,25 @@
+
+
+<br>
+<a href="#top">Back to Top</a>
+<br>
+*Built on [Just the Class](https://kevinl.info/just-the-class/) developed by [Kevin Lin](https://kevinl.info) at Allen School*
+
+<!--Table of Contents Button-->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById('toc-toggle');
+    const tocBox = document.getElementById('markdown-toc');
+
+    toggleBtn.addEventListener('click', function () {
+      if (tocBox.style.display === 'block') {
+        tocBox.style.display = 'none';
+      } else {
+        tocBox.style.display = 'block';
+      }
+    });
+    tocBox.addEventListener('mouseleave', function () {
+      tocBox.style.display = 'none';
+    });
+  });
+</script>

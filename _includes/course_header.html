@@ -1,0 +1,86 @@
+<!-- _includes/course_header.html -->
+<a id="top"></a>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://kit.fontawesome.com/2995c029d1.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const dtList = Array.from(document.querySelectorAll("dt"));
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+    function parseDate(str) {
+      const match = str.match(/(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s+(\d{1,2})/i);
+      if (!match) return null;
+      const month = match[1].slice(0,3);
+      const day = match[2];
+      const year = now.getFullYear();
+      return new Date(`${month} ${day}, ${year}`);
+    }
+    let minDiff = Infinity, nextElem = null;
+    dtList.forEach(dt => {
+      const text = dt.textContent.trim();
+      const d = parseDate(text);
+      if (d) {
+        const diff = d - today;
+        if (diff >= 0 && diff < minDiff) {
+          minDiff = diff;
+          nextElem = dt;
+        }
+      }
+    });
+    if (nextElem) nextElem.classList.add("current");
+        nextElem.id = "recent";
+  });
+  </script>
+   <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Quantitative Methods in Urban Design and Planning",
+    "description": "Course Website for URBAN 520 Quantitative Methods in Urban Design and Planning at University of Washington.",
+    "url": "https://www.yuehaoyu.com/quantitative-methods/",
+    "provider": {
+      "@type": "Organization",
+      "name": "University of Washington",
+      "url": "https://www.washington.edu"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/OutOfStock",
+      "url": "https://www.yuehaoyu.com/quantitative-methods/"
+    },
+    "hasCourseInstance": [{
+      "@type": "CourseInstance",
+      "courseMode": "InPerson",
+      "startDate": "2025-09-25",
+      "endDate": "2025-12-10",
+      "location": {
+        "@type": "Place",
+        "name": "Gould Hall"
+      }
+    }]
+  }
+  </script>
+</head>
+
+![cover_image]({{ site.baseurl }}/assets/images/cover_image.png)
+### Real Estate Data Analytics and Visualization 
+{:.no_toc .fs-7 .fw-650 .lh-tight}
+
+RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 <br>
+Monday & Wednesday, 2:30 - 3:50pm, [Mechanical Engineering Building 245](https://www.washington.edu/classroom/MEB+245)
+
+<div class="link-row">
+  <a href="{{ site.baseurl }}/">HOME</a>
+  <a href="{{ site.baseurl }}/syllabus">SYLLABUS</a>
+  <a href="#">CANVAS</a>
+  <a href="#">ED DISCUSSION</a> 
+</div>
+
+
+---
+
+
+
+
