@@ -79,7 +79,7 @@ pander(summary(model_1))
 ##  Prob &gt; Chi2   =    1.404725e-10
 </code></pre></div></div><p>As p-value is close to 0.0000, the variance is not constant. Hence the assumption of Homoskedesticity is false.</p><ul><li>Tests for Multicollinearity</ul><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>olsrr::ols_vif_tol(model_1)
 </code></pre></div></div><p>VIF for all variables &lt; 6. Hence, not much correlation among independent variables.</p><ul><li>Test for Linearity</ul><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>car::crPlots(model_1)
-</code></pre></div></div><p><img src="Final_Q19_files/figure-markdown_strict/unnamed-chunk-17-1.png" alt="phoot" /></p><ul><li>Model Specification Error</ul><p>Ho: Model has no Omitted variables</p><p>Ideally if p&gt;0.05 then no specification error</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmtest::resettest(model_1, power = 2:3, type = "regressor")
+</code></pre></div></div><p><img src="/data-analytics-visualization/Final_Q19_files/figure-markdown_strict/unnamed-chunk-17-1.png" alt="phoot" /></p><ul><li>Model Specification Error</ul><p>Ho: Model has no Omitted variables</p><p>Ideally if p&gt;0.05 then no specification error</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lmtest::resettest(model_1, power = 2:3, type = "regressor")
 
 ## 
 ##  RESET test
