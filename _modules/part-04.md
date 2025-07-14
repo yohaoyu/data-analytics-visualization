@@ -18,7 +18,7 @@ Nov 17
 : Bivariate and Multiple Regression
   : [Slides](#)
 : **LAB 8-A**{: .label .label-green }[Coding](#)
-: **HW 7 DUE**{: .label .label-red }
+: **LAB 7 DUE**{: .label .label-red }
 
 Nov 19
 : CI and Uncertainty
