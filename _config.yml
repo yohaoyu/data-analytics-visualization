@@ -37,7 +37,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   toc_levels: 1..6
-
+favicon_ico: "/assets/images/icon.png"
 
 # Collections for website data
 collections:
