@@ -178,12 +178,13 @@ summary {
 
 
 dd:has(.citation) {
-  line-height: 1.15 !important;
+  line-height: 1.1 !important;
 }
 dd:has(.readings) {
-  line-height: 1.15 !important;
+  line-height: 1.1 !important;
 }
 
+// Current
 .current {
   position: relative;
   background: none;

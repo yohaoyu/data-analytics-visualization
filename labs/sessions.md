@@ -11,11 +11,10 @@ description: Lab 1
 {% include course_header.html %}
 ## Lab Sessions
 
-### Lab 1 - Basic
-
+#### Lab 1 - Basic
 Setup, R Basic, Markdown, Download via API
 
-### Lab 2 - Data Manipulation
+#### Lab 2 - Data Manipulation
 
 
 ### Lab 3 - Data Manipulation

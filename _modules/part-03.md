@@ -30,15 +30,15 @@ Oct 27
   : [Slides](#)
 : **LAB 5-A**{: .label .label-green }[Visualization using Programming Languages](#)
 : **LAB 4 DUE**{: .label .label-red }
+: **Optional**{: .readings .readings-optional }[Chapter 3-5, Data Visualization. Kieran Healy. 2019.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Data-Visualization-A-Practical-Introduction.pdf){: .citation }
+
 
 Oct 29
 : Visualization using Programming Languages
   : [Slides](#)
 : **LAB 5-B**{: .label .label-green }[Coding](#)
+: **Optional**{: .readings .readings-optional }[Chapter 3-5, Data Visualization. Kieran Healy. 2019.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Data-Visualization-A-Practical-Introduction.pdf){: .citation }
 
-Oct 31
-: **Optional**{: .label .label-purple } **Adobe Suites**
-: Online Session at 1:00 - 2:00 pm via [Zoom]()
 
 Nov 03
 : Interaction and Dashboard
@@ -50,6 +50,7 @@ Nov 05
 : Interaction and Dashboard
   : [Slides](#)
 : **LAB 6-B**{: .label .label-green }[Coding](#)
+: **Project Proposal Due**{: .label .label-red }
 
 
 

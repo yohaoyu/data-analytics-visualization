@@ -8,7 +8,7 @@
   },"1": {
     "doc": "Data Analytics and Visualization",
     "title": "Module 1 - Introduction & Descriptive Statistics",
-    "content": "--> Module 1 - Introduction to Data Science . Sep 24 Overview, Values of Data Science, Statistics Review I Slides LAB 1-AR and Python Setup OptionalVisual and Statistical Thinking: Displays of Evidence for Making Decisions. Edward Tufte. 1997. OptionalSeeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin. Sep 26 Optional Intro to Git and GitHub Online Session at 1:00 - 2:00 pm via Zoom Sep 29 Data Type and Sources Slides LAB 1-BBasic of Python/R and Markdown Oct 01 Data Science Pipeline and Tools Slides LAB 1-CDownload and Play with Data <!-- ",
+    "content": "--> Module 1 - Introduction to Data Science . Sep 24 Overview, Values of Data Science, Statistics Review I Slides LAB 1-AR and Python Setup OptionalVisual and Statistical Thinking: Displays of Evidence for Making Decisions. Edward Tufte. 1997. OptionalChapter 1-3, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin. OptionalStatistical Modeling: The Two Cultures. Leo Breiman. 2001. ResourcePreface &amp; Chapter 1, Data Visualization. Kieran Healy. 2019. Sep 26 Optional Intro to Git and GitHub Online Session at 1:00 - 2:00 pm via Zoom Sep 29 Data Type and Sources Slides LAB 1-BBasic of R and Markdown OptionalChapter 2, Data Visualization. Kieran Healy. 2019. OptionalIntroduction &amp; Chapter 2, R for Data Science. Hadley Wickham et al. 2023. Oct 01 Data Science Pipeline and Tools Slides LAB 1-CDownload and Play with Data OptionalChapter 2, Data Visualization. Kieran Healy. 2019. <!-- ",
     "url": "/data-analytics-visualization/#module-1-introduction-descriptive-statistics",
     
     "relUrl": "/#module-1-introduction-descriptive-statistics"
@@ -22,277 +22,256 @@
   },"3": {
     "doc": "Data Analytics and Visualization",
     "title": "Module 3 - Data Visualization",
-    "content": "--> Module 3 - Data Visualization . Oct 15 Visual Design for Data Slides LAB 3-BCoding, mainly office hour OptionalData Viz Project by ferdio. OptionalDesign and Redesign in Data Visualization. Martin Wattenberg and Fernanda Viégas. 2015. Oct 20 Exploratory Data Analysis (EDA) Slides LAB 4-ATableau LAB 3 DUE OptionalExploratory Data Analysis. United States Environmental Protection Agency. Oct 22 Tableau (Online Session) Slides Instructor leave due to ACSP 2025 LAB 4-BTableau Oct 27 Perception, Color, Fonts Slides LAB 5-AVisualization using Programming Languages LAB 4 DUE Oct 29 Visualization using Programming Languages Slides LAB 5-BCoding Oct 31 Optional Adobe Suites Online Session at 1:00 - 2:00 pm via Zoom Nov 03 Interaction and Dashboard Slides LAB 6-ACoding LAB 5 DUE Nov 05 Interaction and Dashboard Slides LAB 6-BCoding <!-- ",
+    "content": "--> Module 3 - Data Visualization . Oct 15 Visual Design for Data Slides LAB 3-BCoding, mainly office hour OptionalData Viz Project by ferdio. OptionalDesign and Redesign in Data Visualization. Martin Wattenberg and Fernanda Viégas. 2015. Oct 20 Exploratory Data Analysis (EDA) Slides LAB 4-ATableau LAB 3 DUE OptionalExploratory Data Analysis. United States Environmental Protection Agency. Oct 22 Tableau (Online Session) Slides Instructor leave due to ACSP 2025 LAB 4-BTableau Oct 27 Perception, Color, Fonts Slides LAB 5-AVisualization using Programming Languages LAB 4 DUE OptionalChapter 3-5, Data Visualization. Kieran Healy. 2019. Oct 29 Visualization using Programming Languages Slides LAB 5-BCoding OptionalChapter 3-5, Data Visualization. Kieran Healy. 2019. Nov 03 Interaction and Dashboard Slides LAB 6-ACoding LAB 5 DUE Nov 05 Interaction and Dashboard Slides LAB 6-BCoding Project Proposal Due <!-- ",
     "url": "/data-analytics-visualization/#module-3-data-visualization",
     
     "relUrl": "/#module-3-data-visualization"
   },"4": {
     "doc": "Data Analytics and Visualization",
     "title": "Module 4 - Regression",
-    "content": "--> Module 4 - Data Modelling . Nov 10 Correlation and Statistics Review II Slides LAB 7-ACoding LAB 6 DUE Nov 12 Linear Regression Slides LAB 7-BCoding Nov 17 Bivariate and Multiple Regression Slides LAB 8-ACoding LAB 7 DUE Nov 19 CI and Uncertainty Slides LAB 8-BCoding <!-- ",
+    "content": "--> Module 4 - Data Modelling . Nov 10 Correlation and Statistics Review II Slides LAB 7-ACoding LAB 6 DUE OptionalChapter 4-6, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin. OptionalChapter 6, Data Visualization. Kieran Healy. 2019. Nov 12 Linear Regression Slides LAB 7-BCoding OptionalChapter 6, Data Visualization. Kieran Healy. 2019. Nov 17 Bivariate and Multiple Regression Slides LAB 8-ACoding LAB 7 DUE OptionalChapter 6, Data Visualization. Kieran Healy. 2019. Nov 19 CI and Uncertainty Slides LAB 8-BCoding OptionalChapter 6, Data Visualization. Kieran Healy. 2019. <!-- ",
     "url": "/data-analytics-visualization/#module-4-regression",
     
     "relUrl": "/#module-4-regression"
   },"5": {
     "doc": "Data Analytics and Visualization",
     "title": "Module 5 - Advanced Topics and Final Project",
-    "content": "--> Module 5 - Advanced Topics and Final Projects . Nov 24 Storying Telling, Web Publishing, Text Analysis, etc. Slides LAB 8 DUE Nov 26 Introduction to Machine Learning (Cluster, Decision Trees) Slides Dec 01 Introduction to Artificial Intelligence and Data Ethnics Slides OptionalAI for Social Good. Nature Communications. Nenad Tomašev et al. 2020. OptionalA Golden Decade of Deep Learning: Computing Systems &amp; Applications. Jeffrey Dean (UW Alumni, Google). 2022. OptionalStatistical Modeling: The Two Cultures. Leo Breiman. 2001. OptionalWhat is a Neural Network. 3Blue1Brown. 2017. OptionalAtlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence. Kate Crawford. 2022. OptionalA Brief Overview of AI governance for Responsible Machine Learning Systems. Navdeep Gill et al. 2022 Dec 03 Final Project Presentation Final Project Instruction Dec 12 Final Project Submission Final Project Instruction Final Project DUE <!-- ",
+    "content": "--> Module 5 - Advanced Topics and Final Projects . Nov 24 Storying Telling, Web Publishing, Text Analysis, etc. Slides LAB 8 DUE Nov 26 Introduction to Machine Learning (Cluster, Decision Trees) Slides Dec 01 Introduction to Artificial Intelligence and Data Ethnics Slides RequiredA Brief Overview of AI governance for Responsible Machine Learning Systems. Navdeep Gill et al. 2022. OptionalAI for Social Good. Nature Communications. Nenad Tomašev et al. 2020. OptionalA Golden Decade of Deep Learning: Computing Systems &amp; Applications. Jeffrey Dean (UW Alumni, Google). 2022. OptionalWhat is a Neural Network. 3Blue1Brown. 2017. OptionalAtlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence. Kate Crawford. 2022. Dec 03 Final Project Presentation Final Project Instruction Dec 12 Final Project Submission Final Project Instruction Final Project DUE Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/#module-5-advanced-topics-and-final-project",
     
     "relUrl": "/#module-5-advanced-topics-and-final-project"
   },"6": {
-    "doc": "Data Analytics and Visualization",
-    "title": "Module 5 - Advanced Topics",
-    "content": "--> Dec 12 Final Week Final Project Instruction Final Project DUE Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
-    "url": "/data-analytics-visualization/#module-5-advanced-topics",
-    
-    "relUrl": "/#module-5-advanced-topics"
-  },"7": {
     "doc": "Data Analytics and Visualization",
     "title": "Data Analytics and Visualization",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS LABS PROJECTS RESOURCES CANVAS ED DISCUSSION . Haoyu Yue . yohaoyu@washington.edu . Office Hours 4:00 PM - 5:00 PM on Fridays via Zoom or Schedule an appointment . The primary objective of this course is to familiarize planning students with methods and techniques they are likely to encounter and use in planning departments and organizations. Planners must be quite versatile, in that they must be knowledgeable of a variety of analytical methods, including statistical analysis and techniques, demographic techniques; economic analysis, project planning techniques, geographical and spatial analysis techniques and analysis, and various forms of transportation analysis. Visualize This: The Flowing Data Guide to Design, Visualization, and Statistics. Nathan Yau. 2024. Data Visualization: A Practical Introduction. Kieran Healy. 2019. ",
     "url": "/data-analytics-visualization/",
     
     "relUrl": "/"
-  },"8": {
-    "doc": "Debate Sessions",
-    "title": "Debate Sessions",
-    "content": "Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
-    "url": "/data-analytics-visualization/debate/#debate-sessions",
-    
-    "relUrl": "/debate/#debate-sessions"
-  },"9": {
-    "doc": "Debate Sessions",
-    "title": "Debate Sessions",
-    "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS LABS PROJECTS RESOURCES CANVAS ED DISCUSSION . ",
-    "url": "/data-analytics-visualization/debate/",
-    
-    "relUrl": "/debate/"
-  },"10": {
+  },"7": {
     "doc": "Announcements",
     "title": "Lecture Sections",
     "content": "Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/lectures/#lecture-sections",
     
     "relUrl": "/lectures/#lecture-sections"
-  },"11": {
+  },"8": {
     "doc": "Announcements",
     "title": "Announcements",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS LABS PROJECTS RESOURCES CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/lectures/",
     
     "relUrl": "/lectures/"
-  },"12": {
+  },"9": {
     "doc": "Resources",
     "title": "Resources",
     "content": " ",
     "url": "/data-analytics-visualization/resources/#resources",
     
     "relUrl": "/resources/#resources"
-  },"13": {
+  },"10": {
     "doc": "Resources",
     "title": "Tools and Softwares",
     "content": ". | Tidyverse (R) | Pandas (Python) . | Tableau for Students – a free Tableau license for students | Tableau Public – a free version of Tableau which publishes to the web . | D3 (JavaScript) - A JavaScript library for data-driven DOM manipulation, interaction and animation. Includes utilities for visualization techniques and SVG generation. | Altair (Python) - Jupyter-friendly Python API for Vega-Lite | Seaborn (Python) - Python library with nice defaults, built on top of matplotlib | Vega-Lite (JavaScript) - A high-level visualization grammar that compiles concise specifications to full Vega specifications. | GGplot2 (R) - a graphics language for R | Shiny (R) . | Leaflet - a popular open-source mapping library . | Adobe Color | Viz Palette . | Visual Studio Code | Windows Terminal | . ",
     "url": "/data-analytics-visualization/resources/#tools-and-softwares",
     
     "relUrl": "/resources/#tools-and-softwares"
-  },"14": {
+  },"11": {
     "doc": "Resources",
     "title": "Datasets",
     "content": "Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/resources/#datasets",
     
     "relUrl": "/resources/#datasets"
-  },"15": {
+  },"12": {
     "doc": "Resources",
     "title": "Resources",
     "content": ". | Tools and Softwares | Datasets | . Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS LABS PROJECTS RESOURCES CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/resources/",
     
     "relUrl": "/resources/"
-  },"16": {
+  },"13": {
     "doc": "Schedule",
     "title": "Weekly Calendar",
     "content": ". | 12:00 PM | 12:30 PM | 1:00 PM | 1:30 PM | 2:00 PM | 2:30 PM | 3:00 PM | 3:30 PM | 4:00 PM | 4:30 PM | 5:00 PM | 5:30 PM | 6:00 PM | . | ",
     "url": "/data-analytics-visualization/schedule/#weekly-calendar",
     
     "relUrl": "/schedule/#weekly-calendar"
-  },"17": {
+  },"14": {
     "doc": "Schedule",
     "title": "Monday",
     "content": ". | Haoyu's Office Hour 4:30 PM - 6:00 PM Gould Hall 012C . | . | ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"18": {
+  },"15": {
     "doc": "Schedule",
     "title": "Tuesday",
     "content": ". | Lecture 1:30 PM - 4:20 PM Gould Hall 114 . | . | ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"19": {
+  },"16": {
     "doc": "Schedule",
     "title": "Wednesday",
     "content": "| ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"20": {
+  },"17": {
     "doc": "Schedule",
     "title": "Thursday",
     "content": ". | Lecture 1:30 PM - 4:20 PM Gould Hall 114 . | . | ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"21": {
+  },"18": {
     "doc": "Schedule",
     "title": "Friday",
     "content": ". | TA's Office Hour 3:30 PM - 5:00 PM Gould Hall 114 . | . | . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"22": {
+  },"19": {
     "doc": "Schedule",
     "title": "Schedule",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS LABS PROJECTS RESOURCES CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"23": {
+  },"20": {
     "doc": "Lab",
     "title": "Lab Sessions",
     "content": "Lab 1 - Basic . Setup, R Basic, Markdown, Download via API . Lab 2 - Data Manipulation . Lab 3 - Data Manipulation . Lab 4 - Tableau . Lab 5 - Visualization using R . Lab 6 - Interactive and Dashboard . Lab 7 - Linear Regression . Lab 8 - Model Visualization . ",
     "url": "/data-analytics-visualization/labs/sessions/#lab-sessions",
     
     "relUrl": "/labs/sessions/#lab-sessions"
-  },"24": {
+  },"21": {
     "doc": "Lab",
     "title": "Optional Lab Sessions",
     "content": "Lab X1 - Introduction to Git and GitHub . Lab X2 - Webscraping . Lab X3 - Adobe Suites . Lab X4 - Web Publishing . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/labs/sessions/#optional-lab-sessions",
     
     "relUrl": "/labs/sessions/#optional-lab-sessions"
-  },"25": {
+  },"22": {
     "doc": "Lab",
     "title": "Lab",
     "content": ". | Lab Sessions . | Lab 1 - Basic | Lab 2 - Data Manipulation | Lab 3 - Data Manipulation | Lab 4 - Tableau | Lab 5 - Visualization using R | Lab 6 - Interactive and Dashboard | Lab 7 - Linear Regression | Lab 8 - Model Visualization | . | Optional Lab Sessions . | Lab X1 - Introduction to Git and GitHub | Lab X2 - Webscraping | Lab X3 - Adobe Suites | Lab X4 - Web Publishing | . | . Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS LABS PROJECTS RESOURCES CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/labs/sessions/",
     
     "relUrl": "/labs/sessions/"
-  },"26": {
+  },"23": {
     "doc": "Syllabus",
     "title": "Syllabus",
     "content": " ",
     "url": "/data-analytics-visualization/syllabus/#syllabus",
     
     "relUrl": "/syllabus/#syllabus"
-  },"27": {
+  },"24": {
     "doc": "Syllabus",
     "title": "Overview",
     "content": "Real estate decision making requires the assessment of interdisciplinary datasets, which include socioeconomic, financial, and environmental data. This course aims to provide you an opportunity to improve your coding ability and demonstrate that using R is more replicable and efficient than Excel. We will work in groups to solve tricky data wrangling &amp; visualization problems. Of course, we will encounter a lot of new commands and new ways of thinking about how data is organized. However, we will most importantly learn how to create a visualization that will best inform our audience and honestly describe the underlying data. ",
     "url": "/data-analytics-visualization/syllabus/#overview",
     
     "relUrl": "/syllabus/#overview"
-  },"28": {
+  },"25": {
     "doc": "Syllabus",
     "title": "Learning Objectives",
     "content": "After successfully completing this course you should be able to: . | Create, debug, debug again, then submit scripts to perform data analysis in R using RStudio | Import data in variety formats; including interacting with APIs to access public databases | Be more aware of the real estate data landscape in the US, Washington, and the Puget Sound region | Wrangle data using the tidyverse package; manipulate, combine, and collapse datasets | Map data and understand the challenges when working with spatial data | Understand the basic taxonomy of a time series and basic forecasting techniques | Interpret data visualizations, document, and present your data analysis using R Markdown | . Overall students are expected to gain proficiency in identifying the appropriate visual method based on the dataset they have and the message they would like to convey. ",
     "url": "/data-analytics-visualization/syllabus/#learning-objectives",
     
     "relUrl": "/syllabus/#learning-objectives"
-  },"29": {
+  },"26": {
     "doc": "Syllabus",
     "title": "Pre-requisites",
     "content": ". | Basic knowledge of statistics is required (e.g., R E 506, URBAN 520, STAT 221). | Basic knowledge of R, Python, or other programming languages (e.g., CS&amp;SS 508, CSE 160) is recommended but not required. | . ",
     "url": "/data-analytics-visualization/syllabus/#pre-requisites",
     
     "relUrl": "/syllabus/#pre-requisites"
-  },"30": {
+  },"27": {
     "doc": "Syllabus",
     "title": "Readings and Class Materials",
     "content": ". | Class slides for every lecture will be posted on the course website before the lectures. | Required readings are identified for each class and should be completed as preparation before coming to class. | Optional readings are useful for the class topics and I encourage you read them bfore the class. | . ",
     "url": "/data-analytics-visualization/syllabus/#readings-and-class-materials",
     
     "relUrl": "/syllabus/#readings-and-class-materials"
-  },"31": {
+  },"28": {
     "doc": "Syllabus",
     "title": "Computing",
     "content": "No previous programming experience is required, but appreciated. All required analytics applications will be in Microsoft Excel. R or Python is encouraged but not required; students who use R or Python to complete at least six assignments will be awarded extra credit. We will have an installation session during the first and second computing workshops. Bring your computer (Windows, MacBook, or Linux is acceptable) to the assigned lab session in the calendar. If you have any trouble with having a computer, you may check the computing resources from the college, Student Technology Loan Program, or UW libraries computer service. Students are also welcome to conduct any needed computer-based work in the Digital Commons in the basement of Gould Hall or other computer labs on campus. ",
     "url": "/data-analytics-visualization/syllabus/#computing",
     
     "relUrl": "/syllabus/#computing"
-  },"32": {
+  },"29": {
     "doc": "Syllabus",
     "title": "Course Requirements",
     "content": "| Labs | 60% | . | Participation | 30% | . | Final Projects | 10% | . It is highly recommended that students attend the course regularly, as the sessions will be offered synchronously and will not be recorded. We will use class time to do necessary activities. Class attendance and participation are integral parts of this course; much of the key material will be introduced and discussed in lectures. Good note-taking skills are essential, since the instructor often discusses material and provides examples that may not be directly quoted on the slides. Students are expected to keep track of the schedule and assignment due dates. According to the estimates for UW courses, it should take about 9 hours of work to complete a three-credit class each week. If you spend more than 5 hours beyond the classroom, please let us know, and we will adjust the study plans for you. The total scores will be curved and transformed into the UW numerical grading system for graduate courses, ranging from 4.0 to 1.7 in 0.1 increments as the final grade. Late days: You will have 6 penalty-free late days in total (max 3 late days per assignment). Any delayed submission after the first 3 days will be penalized 10% per day for that specific assignment (but will not count towards your used late days). Labs (60%) . There will be a total of 8 labs. HW 0 is intended for reviewing mathematical concepts and will not be added to the total grade; 5% each for the other 8 assignments. Each assignment will take approximately one week, and the expected finish time is around 2-3 hours. Each student is expected to submit their own assignments, but study groups are allowed. But you’re expected to acknowledge the names of collaborators along with a short description of the types of collaborations being done at the beginning of each assignment submission. You may use generative AI tools such as Co-Pilot and ChatGPT, but please check the AI policy section. Details for each homework will be released after the previous homework is due. All homework will be due at 11:59 pm Pacific Time and should be submitted on Canvas. You can typeset or scan your assignment, but you should upload a PDF rather than submitting as images. Final Projects (30%) . There will be a ﬁnal exam in the final week (based on UW’s arrangement). The exam will cover all the content in modules 1-4, including topics like descriptive statistics, probability distributions, hypothesis testing, and regression. The exam is closed-book; however, each student is permitted to bring a letter-size double-sided cheat sheet. Calculators will be provided if computation is needed, but you are allowed to bring your own calculators. Participation (10%) . ",
     "url": "/data-analytics-visualization/syllabus/#course-requirements",
     
     "relUrl": "/syllabus/#course-requirements"
-  },"33": {
+  },"30": {
     "doc": "Syllabus",
     "title": "Communication and Community Forum",
     "content": "You can reach us via Ed Discussion, email, and in person during class and office hours. Please use the Ed Discussion as the first place to ask general questions. If you have a question about the course material or assignment, other students may have the same question. If you email me with a question like this, I will ask you to post it on the discussion board. I will review the discussion board at least once a day (weekdays). I also encourage students to answer each other’s questions on the discussion board. For emails, we try to reply to emails within 24 hours, 48 hours over a weekend, and the workday following a holiday unless otherwise noted. Simple questions will be answered by Ed Discussion or email, but students may be asked to schedule a meeting for more complex discussions. ",
     "url": "/data-analytics-visualization/syllabus/#communication-and-community-forum",
     
     "relUrl": "/syllabus/#communication-and-community-forum"
-  },"34": {
+  },"31": {
     "doc": "Syllabus",
     "title": "Course Evaluation",
     "content": "Formal course evaluation occurs at the end of the quarter, university-widely. If you are experiencing a problem with the class, please let me know as soon as possible, as I might be able to correct for changes if needed within the course of the class. ",
     "url": "/data-analytics-visualization/syllabus/#course-evaluation",
     
     "relUrl": "/syllabus/#course-evaluation"
-  },"35": {
+  },"32": {
     "doc": "Syllabus",
     "title": "Statistics and Data Science @ UW",
     "content": "The University of Washington is the leading institution in statistics and data science in the Pacific Northwest, in the United States, and in the world. We are lucky to be here and have the chance to enjoy the invaluable resources from the university and the Seattle region. Here are some resources if you hope to learn more about statistics and data science at UW. Be free to reach out to me if you have further thoughts or any questions. | Coursework . | CSE 583 Software Development for Data Scientists | CSSS 508 Introduction to R for Social Scientists | CSE 512 Data Visualization | CSSS 569 Visualizing Data and Models | STAT 509 Introduction to Mathematical Statistics | . | Institutes and Centers . | eScience Institute (Data Science) | Center for Studies in Demography and Ecology | Center for Statistics and the Social Sciences | . | . ",
     "url": "/data-analytics-visualization/syllabus/#statistics-and-data-science--uw",
     
     "relUrl": "/syllabus/#statistics-and-data-science--uw"
-  },"36": {
+  },"33": {
     "doc": "Syllabus",
     "title": "Academic Integrity",
     "content": "The University of Washington expects students to know their responsibilities and maintain the highest academic conduct standards (WAC 478-121). Students are held responsible for any violation of the University of Washington Student Code, irrespective of whether the violation was intentional or not. Students suspected of cheating or otherwise violating the misconduct code will be referred to the College disciplinary process. Behaving with integrity is part of our responsibility to our shared learning community. If you’re uncertain about whether something is academic misconduct, ask me. I am willing to discuss questions you might have. Acts of academic misconduct may include, but are not limited to: . | Cheating (working collaboratively on quizzes and exams, sharing answers, etc.). | Plagiarism (using another person’s words or ideas without proper citation). | Unauthorized collaboration (working with others on assignments without acknowledgment). | Concerns about these or other behaviors prohibited by the Student Conduct Code will be referred for investigation and adjudication. | . ",
     "url": "/data-analytics-visualization/syllabus/#academic-integrity",
     
     "relUrl": "/syllabus/#academic-integrity"
-  },"37": {
+  },"34": {
     "doc": "Syllabus",
     "title": "Use of AI",
     "content": "In this course, students are permitted to use AI-based tools (such as ChatGPT) on some assignments. The instructions for each assignment will include information about whether and how you may use AI-based tools to complete the assignment. All sources, including AI tools, must be properly cited. Detailed citation guidelines can be found at the UW Law Library, MIT Libraries, and the UMD Libraries. Using AI in ways inconsistent with the parameters above will be considered academic misconduct and subject to investigation. Please note that AI results can be biased and inaccurate. It is your responsibility to ensure that the information you use from AI is accurate. Additionally, pay attention to the privacy of your data. Many AI tools will incorporate and use any content you share, so be careful not to unintentionally share copyrighted materials, original work, or personal information. Learning how to thoughtfully and strategically use AI-based tools may help you develop your skills, refine your work, and prepare you for your future career. If you have any questions about citations or about what constitutes academic integrity in this course or at the University of Washington, please feel free to contact me to discuss your concerns. According to the academic integrity requirements, we prohibit the use of AI-based tools to complete assignments and exams, as well as conducting discussions and reflections in any section during class. However, we encourage students to use generative AI tools, such as ChatGPT, to assist with coding, debugging, and understanding class content. You may use generative AI tools such as ChatGPT, as you would use a human collaborator. This means that you may NOT directly ask generative AI tools for answers or copy solutions. You’re required to acknowledge generative AI tools as collaborators and include a paragraph describing how you used the tool. The use of generative AI tools to substantially complete an assignment or exam (e.g., by directly copying) is prohibited and will result in honor code violations. We will be checking students’ assignments to enforce this policy. ",
     "url": "/data-analytics-visualization/syllabus/#use-of-ai",
     
     "relUrl": "/syllabus/#use-of-ai"
-  },"38": {
+  },"35": {
     "doc": "Syllabus",
     "title": "Disability Resources for Students (DRS)",
     "content": "Your experience in this class is important to me. It is the policy and practice of the University of Washington to create inclusive and accessible learning environments consistent with federal and state law. If you have already established accommodations with Disability Resources for Students (DRS), please activate your accommodations via myDRS so we can further discuss. If you have not yet established services through DRS but have a temporary health condition or permanent disability that requires accommodations (conditions include but are not limited to mental health, attention-related, learning, vision, hearing, physical, or health impacts), contact DRS directly to set up an Access Plan. DRS facilitates the interactive process that establishes reasonable accommodations. ",
     "url": "/data-analytics-visualization/syllabus/#disability-resources-for-students-drs",
     
     "relUrl": "/syllabus/#disability-resources-for-students-drs"
-  },"39": {
+  },"36": {
     "doc": "Syllabus",
     "title": "Campus Safety",
     "content": "Call SafeCampus at 206-685-7233 to anonymously discuss safety and well-being concerns for yourself or others. SafeCampus’s team of caring professionals will provide individualized support, while discussing short- and long-term solutions and connecting you with additional resources when requested. ",
     "url": "/data-analytics-visualization/syllabus/#campus-safety",
     
     "relUrl": "/syllabus/#campus-safety"
-  },"40": {
+  },"37": {
     "doc": "Syllabus",
     "title": "Religious Accommodation Policy",
     "content": "Washington state law requires that UW develop a policy for the accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at Religious Accommodations Policy. Accommodations must be requested within the first two weeks of this course using the Religious Accommodations Request form. Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/syllabus/#religious-accommodation-policy",
     
     "relUrl": "/syllabus/#religious-accommodation-policy"
-  },"41": {
+  },"38": {
     "doc": "Syllabus",
     "title": "Syllabus",
     "content": ". | Overview | Learning Objectives | Pre-requisites | Readings and Class Materials | Computing | Course Requirements . | Labs (60%) | Final Projects (30%) | Participation (10%) | . | Communication and Community Forum | Course Evaluation | Statistics and Data Science @ UW | Academic Integrity | Use of AI | Disability Resources for Students (DRS) | Campus Safety | Religious Accommodation Policy | . Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 . HOME SYLLABUS LABS PROJECTS RESOURCES CANVAS ED DISCUSSION . ",
     "url": "/data-analytics-visualization/syllabus/",
     
     "relUrl": "/syllabus/"
-  },"42": {
+  },"39": {
     "doc": "Toolbox",
     "title": "Toolbox",
     "content": "Youtube . ",
