@@ -1,0 +1,195 @@
+---
+title: "Final_Q16"
+author: "Haoyu Yue"
+output:
+  cleanrmd::html_document_clean:
+    theme: almond
+    css: custom.css         # 方式1：直接传给 html_document 的 css 参数
+---
+
+```{r,warning=FALSE,message=FALSE}
+library(haven)
+library(tidyverse)
+library(pander)
+library(dplyr)
+rm(list=ls())
+```
+
+
+**Use 'Q19.sav' dataset in R. For every step, explain the output and summarize inferences based on the results obtained.**
+
+```{r}
+data <- read_sav("Q19.sav")
+```
+
+**(1) Many people have suggested that Americans have less than 10 hrs per day to relax. Using the dataset provided test this statement using appropriate statistical test.**
+
+## H0: Americans have more than 10 hrs per day to relax.
+
+### Ha: Americans have less than 10 hrs per day to relax.
+
+```{r}
+data_1 <- data %>% 
+  select("d20_hrsrelax") %>% 
+  na.omit()
+t.test(data_1$d20_hrsrelax, alternative="less", mu=10)
+```
+
+### Based on the p-value (<0.05) we can reject the null hypothesis that the true mean is more than 10 hours. So we can conclude that Americans have less than 10 hrs per day to relax.
+
+
+**(2) Also, test if there is a difference in number of hours per day to relax among men and women.**
+
+H0: There is no difference in number of hours per day to relax among men and women.
+
+Ha: There is a difference in number of hours per day to relax among men and women.
+
+
+Based on the p value (<0.05) we can reject the null hypothesis. So we can conclude that there is a difference in number of hours per day to relax among men and women.
+
+**(3) Assume you are interested in understanding the relationship between hours per day they have to relax (dependent variable), age, gender (male/female), years of education (highest year of school completed), social class, and marital status (Married vs Not Married*). Run appropriate statistical tests and prepare a summary report that includes:**
+
+* Research question 
+* Description of the variables
+* Appropriate statistical tests
+* Appropriate diagnostic tests
+* Summary of your findings
+
+**Research question**
+
+What is the relationship among all these variables? How these independent variables impact the dependent variable? 
+
+**Description of the variables**
+
+```{r}
+unique(data$d10_marital)
+```
+
+```{r}
+data_3 <- data %>% 
+  na.omit() %>% 
+  mutate(marriage = case_when(d10_marital == 1 ~ "1", d10_marital == 4 ~ "1", TRUE ~ "0" )) %>% 
+  select(-d10_marital)
+names(data_3)
+pander(psych::describe(data_3))
+```
+
+
+* Variable "d20_hrsrelax*" means the hours of relaxation. It's a interval-ratio variable. Min = 0, Max = 24, Means = 3.6, SD = 2.588, Range = 24.
+
+* Variable "d5_sex" means response's gender. It's a nominal variable. Value 1 is male and 2 is female. 
+
+* Variable "d1_age" means response's age. It's a interval-ratio variable. Min = 18, Max = 79, Means = 44.1, SD = 13.43, Range = 61.
+
+* Variable "d4_educ" means response's years of education. It's a interval-ratio variable. Min = 0, Max = 20, Means = 14.05, SD = 2.93, Range = 20.
+
+* Variable "d11_class" means response's subjective class identification. It's a ordinal variable. The range is 3 and the SD is 0.63. Max = 4, Min = 1.
+
+* Variable "marriage" means response's marriage status. It's a nominal variable. 0 means not married and 1 means married.
+
+**Statistical tests**
+
+```{r}
+pander(Hmisc::rcorr(as.matrix(data_3), type = "pearson"),split.tables=Inf)
+```
+
+Hours per day they have to relax = a + b1(sex) + b2(age) + b3(educ) + b4(class) + b5(marriage)
+
+```{r}
+model_1 <- lm(d20_hrsrelax ~ as.factor(d5_sex) + d1_age + d4_educ + d11_class + as.factor(marriage), data=data_3)
+pander(summary(model_1))
+```
+
+```{r}
+pander(lm.beta::lm.beta(model_1))
+```
+
+
+**Diagnostic tests**
+
+* Check for Influential Data
+
+```{r}
+olsrr::ols_plot_cooksd_bar(model_1)
+```
+
+The values above the threshold line will affect the liner regression model.
+
+* Test for normality of residuals
+
+```{r}
+olsrr::ols_test_normality(model_1)
+```
+
+Ho: The distribution is normal
+
+All p-values are equal to 0.0000. Hence we can reject the null hypothesis that the residuals are normally distributes. So the distribution is not normal.
+
+* Test for Homoscedasticity
+
+```{r}
+olsrr::ols_test_breusch_pagan(model_1)
+```
+
+As p-value is close to 0.0000, the variance is not constant. Hence the assumption of Homoskedesticity is false.
+
+* Tests for Multicollinearity
+
+```{r}
+olsrr::ols_vif_tol(model_1)
+```
+
+VIF for all variables < 6. Hence, not much correlation among independent variables.
+
+* Test for Linearity
+
+```{r,warning=FALSE,message=FALSE}
+car::crPlots(model_1)
+```
+
+* Model Specification Error
+
+Ho: Model has no Omitted variables
+
+Ideally if p>0.05 then no specification error
+
+```{r}
+lmtest::resettest(model_1, power = 2:3, type = "regressor")
+```
+
+p-value is more than 0.05 and we can not reject the null hyphothsis. Hence, the model does not have omitted variables.
+
+* Issues of Independence
+
+```{r}
+lmtest::dwtest(model_1)
+```
+
+p-value > 0.05. Hence, we cannot reject the null hypothesis. This means that there is no evidence of autocorrelation.
+
+**Summarize findings**
+
+```{r}
+unique(data_3$d5_sex)
+```
+
+
+Predicting hours per day they have to relax using percent of age, gender, years of education, social class, marital status leads to a reduction in errors by 2%.
+
+Controlling for other variables in the model:
+
+As age increases by 1, the hours per day they have to relax will increase by 0.02.
+
+As years of education increases by 1, the hours per day they have to relax will decrease by 0.036.
+
+As social class increases by 1, the hours per day they have to relax will decrease by 0.078.
+
+Hours per day they have to relax for females is 0.499 lower than that of males.
+
+Hours per day they have to relax for married persons is 0.492 lower than that of unmarried persons.
+
+Coefficients of gender, age, marriage status are statistically significant with p-value < 0.05, Hence we can say with high confidence that there is a relationship between hours per day they have to relax and gender, age, marriage status. And all coefficients are not equal to 0.
+
+Coefficient of social class and years of education are not statistically significant with p-value > 0.05. Hence we cannot say with high confidence that there is a relationship between hours per day they have to relax and social class, years of education.
+
+As we can see that there are many influential data and many assumptions are false. Meanwhile, from the regression, we can know that the R square is 0.02, extremely small, so maybe we need to do more next for improving the model. 

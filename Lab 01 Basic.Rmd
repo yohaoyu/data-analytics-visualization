@@ -1,0 +1,235 @@
+---
+title: "Lab 01 Basic of R, RStudio, and GitHub"
+subtitle: "RE 519 Data Analytics and Visualization | Autumn 2025"
+author: "" #remember to add to your name when you submit the lab
+date: "`r Sys.Date()`"
+output:
+  cleanrmd::html_document_clean:
+    theme: almond
+    css: custom.css
+    mathjax: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    md_extensions: +tex_math_dollars+tex_math_single_backslash   
+    df_print: paged    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![](https://www.yuehaoyu.com/data-analytics-visualization/assets/images/cover_image.png)
+[Course Website](https://www.yuehaoyu.com/data-analytics-visualization/) | [Resources](https://www.yuehaoyu.com/data-analytics-visualization/resources/) | 
+[Ed Discussion](https://www.yuehaoyu.com/data-analytics-visualization/ed/)
+
+<!-- start of the main lab content -->
+
+**Welcome to start the journey in data science!** Through this quarter, we will 
+learn how to conduct data analysis and visualization using [R](http://www.r-project.org),
+[RStudio](https://posit.co/products/open-source/rstudio), and [Tableau](https://www.tableau.com). 
+There are tons of resources, both online or within University of Washington, for you to start learning data science, check [resource page](https://www.yuehaoyu.com/data-analytics-visualization/resources/).
+
+We will have **8** labs in total (2~3 classes for each lab) and you only need to submit
+**once** after each lab. The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. 
+
+Please check [grading policy of this class](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#course-requirements) in advance, including grade curving, late date policy, etc. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission.
+More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
+
+
+## Lab 01-A: Setup
+
+> Recommended Reading: [Appendix B, Modern Data Science with R, 3rd edition](https://mdsr-book.github.io/mdsr3e/B-appR.html)
+
+
+### Why R and RStudio?
+
+R is a programming language built for statistical computing. But, if one already knows Stata or similar software, why use R? 
+
+- R is *free*, so you don't need a terminal server.
+- R has a *very* large community.
+- R can handle virtually any data format.
+- R makes replication easy.
+- R is a *language* so it can do *everything*.
+- R skills transfer to other languages like [Python](https://www.python.org) and [Julia](https://julialang.org).
+
+R Studio is a "front-end" or integrated development environment (IDE) for R that can make your life *easier*. We'll show RStudio can...
+
+- Organize your code, output, and plots
+- Auto-complete code and highlight syntax
+- Help view data and objects
+- Enable easy integration of R code into documents with *R Markdown*
+- Manage [`git`](https://git-scm.com) repositories
+- Run interactive tutorials
+
+### Selling you on R Markdown
+
+The ability to create R Markdown files is a powerful advantage of R:
+
+- Document analyses by combining text, code, and output
+  - No copying and pasting into Word
+  - Easy for collaborators to understand
+  - Show as little or as much code as you want
+- Produce many different document types as output
+  - PDF documents
+  - HTML webpages and reports
+  - Word and PowerPoint documents 
+  - Presentations 
+-  Works with [$\LaTeX$](https://www.latex-project.org) and HTML for math and more formatting control
+
+### R and RStudio Installation
+
+Try to complete the setup before the first class. The goal of this assignment is simply to make sure that you have R up and running and can open the source document of this page, a `rmd` (R Markdown) file. 
+
+If R & RStudio aren't running and installing properly you may need to update your operating system. Don't worry too much if you can't get them installed and running, I just want everyone to make an attempt which should save you time later on.
+
+1. Download and install R, see here: [https://cran.r-project.org/](https://cran.r-project.org/)
+2. Download and install RStudio Desktop, see here: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+3. [Windows video guide](https://www.youtube.com/watch?v=TsnGd6p9oTk) and [Mac video guide](https://www.youtube.com/watch?v=8NvvydRwxEI).
+
+The latest version of R is **4.5.1 (Great Square Root).** You can check by typing `R.version` into your RStudio Console or run it in one chunk. 
+
+### Getting Started
+
+Open up RStudio now and try to download the source file, a `rmd` (R Markdown) file [here](https://www.yuehaoyu.com/data-analytics-visualization/labs/lab-01.rmd) and open it on your local machine.
+
+Use `install.packages("[package name]")` to install any required packages, or R Studio may automatically recognize that there are some packages you need to install and will install them for you.
+
+Then, let's get oriented with the interface:
+
+- *Top Left*: Code **editor** pane, data viewer (browse with tabs)
+- *Bottom Left*: **Console** for running code (`>` prompt)
+- *Top Right*: List of objects in **environment**, code **history** tab.
+- *Bottom Right*: Tabs for browsing files, viewing plots, managing packages, and viewing help files.
+
+You can change the layout and theme in *Preferences > Pane Layout/Appearance*.
+
+---
+
+## Lab 01-B: Basic of R/RStudio and Markdown
+
+> Recommended Reading: [Appendix B, Modern Data Science with R, 3rd edition](https://mdsr-book.github.io/mdsr3e/B-appR.html)
+
+### R Markdown
+
+Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. In the lab, we will review some basic Markdown syntax: [Markdown Live Preview](https://markdownlivepreview.com).
+
+You can put some math $y= \left(\frac{2}{3} \right)^2$ right up in there using [$\LaTeX$](https://www.latex-project.org). *Note:* $\LaTeX$ is not required in this class.  
+If you are curious about how mathematicians compile their books, you may refer to the [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) from [Overleaf](https://www.overleaf.com/). Overleaf is the most popular collaborative cloud-based $\LaTeX$ editor and UW students can get [Overleaf Premium account for free](https://it.uw.edu/uware/overleaf/).
+
+$$\frac{1}{n} \sum_{i=1}^{n} x_i = \bar{x}_n$$
+
+#### R Markdown Documents
+
+This document is a R Markdown file, you can create a new one by:
+
+1. Choose *File > New File > R Markdown...*
+2. Make sure *HTML Output* is selected and click OK (select PDF if you'd like PDF as outputs)
+3. Save the file somewhere, call it `any_name.Rmd`
+4. Click the *Knit HTML* button
+5. Watch the progress in the R Markdown pane, then gaze upon your result!
+
+You may also open up the HTML file in your computer's browser if you so desire, using the *Open in Browser* button at the top of the preview window.
+
+#### R Markdown Headers
+
+The header of an .Rmd file is a [YAML](http://yaml.org/) code block, and everything else is part of the main document. To mess with global formatting, [you can modify the header](http://rmarkdown.rstudio.com/html_document_format.html).
+
+```{}
+---
+title: "Untitled"
+author: "Name of a person"
+date: "March 28, 2025"
+output:
+  html_document:
+    toc: true # including a table of contents
+    theme: readable # using a theme called readable
+---
+```
+
+#### R Markdown Tinkering
+R Markdown docs can be modified in many ways. Visit these links for more information.
+
+* [Ways to modify the overall document appearance](http://rmarkdown.rstudio.com/html_document_format.html)
+* [Ways to format parts of your document](http://rmarkdown.rstudio.com/authoring_basics.html)
+* [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+
+<!-- TODO: Using Markdown for your Resume / CV-->
+
+#### 📚️ TODO:Using Markdown for your Resume / CV
+
+*Create a brief Resume / CV using R Markdown with your name as level 4 headings, headings for (at least) education or employment. Each of the sections should include a bullet list of jobs/degrees. Highlight the year in bold. Try and incorporate as many R Markdown features as possible. You can work on this document.*
+
+### R Code in RStudio
+
+Inside RMarkdown, lines of R code are called **chunks**. Code is sandwiched between sets of three backticks and `{r}`. This chunk of code...
+
+    ```{r}`r ''`
+    mean(c(1,2,3,4,5,6))
+    ```
+
+Produces this output in your document:
+```{r}
+mean(c(1,2,3,4,5,6)) # calculate the mean value of a list of numbers
+```
+
+
+
+
+
+
+
+```{r}
+# Show the current working directory
+getwd()
+
+# Open the help page for getwd()
+?getwd
+```
+
+
+### Editing and Running Code
+
+There are several ways to run R code in RStudio:
+
+* In R Markdown documents, click within a code chunk and click the green arrow to run the chunk. The button beside that runs *all prior chunks*.
+
+--
+
+The console will show the lines you ran followed by any printed output.
+
+
+
+
+
+
+
+
+```{r eval=FALSE}
+install.packages("ggplot2") # This line will not be knitted since `eval=FALSE`
+```
+
+
+
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Lab 01-C
+
+
+
+## Acknowledgement
+
+The materials are developed based materails from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr.Charles Lanfear at University of Cambridge](https://clanfear.github.io).

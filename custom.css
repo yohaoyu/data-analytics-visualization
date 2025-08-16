@@ -1,0 +1,55 @@
+/* 全局字体换成 Optima */
+html, body,
+.book, .book .book-body, #content {
+  font-family:  -apple-system, system-ui,'Segoe UI', Arial, sans-serif !important;
+  font-size: 90%
+}
+
+/* 缩小代码区字体 */
+code, pre, kbd, samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !important;
+  font-size: 90% !important;
+}
+
+/* 缩小表格字体 */
+table {
+  font-size: 90% !important;
+}
+
+table th, table td {
+  font-size: 90% !important;
+}
+
+td, th {
+  padding: 0.5rem 0.5rem;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #32006e !important;
+  font-weight: 600;
+}
+a {
+  color: #32006e !important;
+}
+
+/* 调整 inline code 的基线对齐 */
+p code, li code {
+  font-size: 1em;         /* 字体略小，和正文比例一致 */
+  vertical-align: middle;    /* 中线对齐 */
+  padding: 0 0.2em;          /* 上下 padding 去掉，保留左右间距 */
+  line-height: 1.4;          /* 保证与正文行高一致 */
+}
+
+pre > code {
+  box-sizing: border-box;
+  display: block;
+  line-height: 1.2rem !important;
+  padding: 0.5rem !important;
+  min-width: 100%;
+  width: min-content;
+}
+
+pre {
+  margin: 0.5rem 0 !important;
+}
