@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = TRUE)
 **Welcome to start the journey in data science!** Through this quarter, we will 
 learn how to conduct data analysis and visualization using [R](http://www.r-project.org),
 [RStudio](https://posit.co/products/open-source/rstudio), and [Tableau](https://www.tableau.com). 
-There are tons of resources, both online or within University of Washington, for you to start learning data science, check [resource page](https://www.yuehaoyu.com/data-analytics-visualization/resources/).
+There are tons of resources, both online and within University of Washington, for you to start learning data science, check [resource page](https://www.yuehaoyu.com/data-analytics-visualization/resources/).
 
 We will have **8** labs in total (2~3 classes for each lab) and you only need to submit
 **once** after each lab. The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. 
@@ -114,7 +114,6 @@ Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word docu
 You can put some math $y= \left(\frac{2}{3} \right)^2$ right up in there using [$\LaTeX$](https://www.latex-project.org). 
 $$\frac{1}{n} \sum_{i=1}^{n} x_i = \bar{x}_n$$
 *Note:* $\LaTeX$ is not required in this class. If you are curious about how mathematicians compile their books, you may refer to the [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) from [Overleaf](https://www.overleaf.com/). Overleaf is the most popular collaborative cloud-based $\LaTeX$ editor and UW students can get [Overleaf Premium account for free](https://it.uw.edu/uware/overleaf/).
-
 
 #### R Markdown Documents
 
@@ -205,6 +204,17 @@ Sometimes we want to insert a value directly into our text. We do that using cod
 2^3        # exponentiation → 8
 10 %% 3    # modulo (remainder) → 1
 sqrt(400)  # square root of 400 → 20
+
+x <- c(2, 4, 6, 8, 10) # Create those numbers to calculate
+
+mean(x)      # average → 6
+var(x)       # variance
+sd(x)        # standard deviation
+sum(x)       # sum of all elements
+min(x)       # smallest value
+max(x)       # largest value
+range(x)     # min and max together
+length(x)    # number of elements
 ```
 
 ```{r results='hide'}
@@ -363,7 +373,7 @@ Most data sets you will work with will be read into R and stored as a **datafram
 
 *Then, finish the sentence using inline R code:*
 
-Today is `today's date`, it has been `number of year` years since {what did happened on the big day}. 
+Today is `today's date`, it has been `number of year` years since {what did happen on the big day, such as my birthday}. 
 
 ---
 
@@ -372,47 +382,128 @@ Today is `today's date`, it has been `number of year` years since {what did happ
 ### Working Directory
 
 ```{r}
-# Show the current working directory
+# show the current working directory
 getwd()
-
-# Open the help page for getwd()
-?getwd
+# TODO: modify the folder stored this `.Rmd` as the working directory
+setwd("/Users/yohaoyu/Repo/data-analytics-visualization") 
 ```
 
+- `.Rmd` files use their current directory as a working directory.
+- For larger projects, instead of setting a working directory, it is usually better to use [RStudio projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) to manage working directories.
+- Windows users: If you copy a path from Explorer, make sure to change back slashes (`\`) to forward slashes (`/`) for the file paths
+
+### Access Census Data
+
+In this lab, we will explore datasets from [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs.html) via [DATA.CENSUS.GOV](https://data.census.gov) and R package [`tidycensus`](https://walker-data.com/tidycensus/). 
+
+We will use 2023 ACS 5-year estimate for B25075 Value, which means the estimated selling prices for occupied housing units, as an example. Some intro to this data from Census Reporter: <https://censusreporter.org/tables/B25075/>.
+
+To use `tidycensus`, we need load the package and have a Census API key. A key can be obtained from <http://api.census.gov/data/key_signup.html>.
+
+```{r message=FALSE}
+# remove the following '#' to install the `tidycensus` and `tidyverse` package; `tidyverse` will be most common-used package for use in the future
+# install.packages("tidycensus")
+# install.packages("tidyverse")
+
+# This loads packages into the current session; however, it is best practice to load all packages at the start of an R Markdown document
+library(tidycensus) 
+library(tidyverse)
+```
+
+```{r}
+census_api_key("96f943fd5b38142362574386830d3c855e82dd28")
+```
+
+```{r}
+king_value <- get_acs(geography = "tract", # extract all tract-level data
+            table = "B25075", 
+            state = "53", # 53 means Washington State, you can use 'WA'
+            county = "033", # 033 means King County, you can use 'king'
+            year = 2023)
+```
+
+We can save this `king_value` tibble (just like a table) on our local machine as a `.csv` file. `.csv` is one of the most common-used file types in the world of data science. But, [what is a CSV file?](https://www.adobe.com/acrobat/resources/document-files/what-is-a-csv-file.html)
+
+```{r}
+# The CSV file will be saved in your current working directory
+# Here, we use the function `write_csv` from package `readr`, which is built within `tidyverse`
+write_csv(king_value, "king_value.csv") 
+```
+
+Once you've set the working directory—or you're in an RStudio project—you can refer to folders and files within the working directory using relative paths, like we've done in previous codes - saving the file in the current working directory. Then, we can also import this `.csv` again using `read_csv()`:
+
+```{r}
+another_king_value <- read_csv("king_value.csv")
+```
 
 ### Dataframes
 
+Most data sets you will work with will be read into R and stored as a **dataframe**, just like the `king_value` data. So this course will mainly focus on manipulating and visualizing these objects. 
 
-
-```{r eval=FALSE}
-install.packages("ggplot2") # This line will not be knitted since `eval=FALSE`
+```{r}
+# check whether an object is a dataframe
+is.data.frame(king_value)
 ```
 
+You can check the dataframe by clicking the object name in the *Environment Panel* (right top) or using `view()` function.
 
+```{r}
+# check the dataframe
+view(king_value)
 
+# check the first three rows, default as five rows
+head(king_value, 3)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+# check the column names
+colnames(king_value)
 
-```{r cars}
-summary(cars)
+# number of rows and columns
+dim(king_value)
+
+# select GEOID column and elements with index 1 to 10
+king_value$GEOID[1:10]
+
+# calculate the average estimate
+# na.rm = TRUE helps to ignore missing values
+mean(king_value$estimate, na.rm = TRUE)
 ```
 
+When you click the **Knit** button (top of this panel) a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
 
-You can also embed plots, for example:
+### Very Simple Git and GitHub
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+- Every change you make is saved in history, so you can always go back.
+- If something breaks, you can roll back to a working version.
+- Multiple people can work on the same project without overwriting each other.
+- Your code and documents are safe, even if your computer crashes.
+- Most of the data science ecosystem (R packages, Python libraries, statistical models, tutorials) lives on GitHub.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+There are two main ways to use GitHub:
+
+1. Terminal (Command Line) – more powerful and professional, gives you full control.
+2. [GitHub Desktop](https://github.com/apps/desktop) – easier for beginners, has a user-friendly interface.
+
+We will using GitHub Desktop:
+
+1. Download and install [GitHub Desktop](https://github.com/apps/desktop).
+2. [Sign up a free GitHub account](https://github.com/signup).
+3. Sign in with your GitHub account on GitHub Desktop.
+4. Create a [new public repository](https://github.com/new).
+5. Click “Clone a repository” to copy from GitHub to your computer.
+6. Add this `.Rmd` and `html` to your local repository.
+7. Commit changes with a short message (e.g., “Lab 1 for RE 519”).
+8. Click “Push origin” to upload your changes back to GitHub.
+9. You can check your changes on GitHub now. 
+
+After finish this lab, you need to upload everything to this repo and submit the link to your repo via Canvas assignment page.
+
+<!-- TODO: Explore Census Demographic Data -->
+
+### 📚 TODO: Explore Census Demographic Data
 
 
-
-
-
-### Git and GitHub
 
 
 ## Acknowledgement
 
-The materials are developed based materails from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr.Charles Lanfear at University of Cambridge](https://clanfear.github.io).
+The materials are developed based materails from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).
