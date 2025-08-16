@@ -153,9 +153,9 @@ R Markdown docs can be modified in many ways. Visit these links for more informa
 
 <!-- TODO: Using Markdown for your Resume / CV-->
 
-#### 📚️ TODO:Using Markdown for your Resume / CV
+### 📚️ TODO:Using Markdown for your Resume / CV
 
-*Create a brief Resume / CV using R Markdown with your name as level 4 headings, headings for (at least) education or employment. Each of the sections should include a bullet list of jobs/degrees. Highlight the year in bold. Try and incorporate as many R Markdown features as possible. You can work on this document.*
+*Create a brief Resume / CV using R Markdown with your name as level 4 headings, headings for (at least) education or employment. Each of the sections should include a bullet list of jobs/degrees. Highlight the year in bold. Try and incorporate as many R Markdown features as possible. You can work on this document or create a new markdown file.*
 
 ### R Code in R Markdown
 
@@ -355,7 +355,7 @@ Most data sets you will work with will be read into R and stored as a **datafram
 # TODO
 ```
 
-*Can you calculate your age by simply dividing the difference in days by `365`?*
+*Can you calculate your age by simply dividing the difference in days by `365`? Note: The calculation doesn’t account for the exact month/day alignment — it just assumes each year is a flat 365 days. You can install package `lubridate` to calculate a more precise age (optional).*
 
 ```{r}
 # TODO

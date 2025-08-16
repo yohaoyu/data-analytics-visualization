@@ -210,6 +210,8 @@ Started</a></li>
 R/RStudio and Markdown</a>
 <ul>
 <li><a href="#r-markdown" id="toc-r-markdown">R Markdown</a></li>
+<li><a href="#todousing-markdown-for-your-resume-cv" id="toc-todousing-markdown-for-your-resume-cv">📚️ TODO:Using Markdown
+for your Resume / CV</a></li>
 <li><a href="#r-code-in-r-markdown" id="toc-r-code-in-r-markdown">R Code
 in R Markdown</a></li>
 <li><a href="#math-and-logical-operation-in-r" id="toc-math-and-logical-operation-in-r">Math and Logical Operation in
@@ -398,13 +400,14 @@ format parts of your document</a></li>
 Definitive Guide</a></li>
 </ul>
 <!-- TODO: Using Markdown for your Resume / CV-->
-<h4 id="todousing-markdown-for-your-resume-cv">📚️ TODO:Using Markdown
-for your Resume / CV</h4>
+<h3 id="todousing-markdown-for-your-resume-cv">📚️ TODO:Using Markdown
+for your Resume / CV</h3>
 <p><em>Create a brief Resume / CV using R Markdown with your name as
 level 4 headings, headings for (at least) education or employment. Each
 of the sections should include a bullet list of jobs/degrees. Highlight
 the year in bold. Try and incorporate as many R Markdown features as
-possible. You can work on this document.</em></p>
+possible. You can work on this document or create a new markdown
+file.</em></p>
 <h3 id="r-code-in-r-markdown">R Code in R Markdown</h3>
 <p>Inside RMarkdown, lines of R code are called <strong>chunks</strong>.
 Code is sandwiched between sets of three backticks and <code>{r}</code>.
@@ -622,7 +625,10 @@ we need to use a function called <code>Sys.Date()</code> to always get
 subtract your birthday. What’s happened?</em></p>
 <div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
 <p><em>Can you calculate your age by simply dividing the difference in
-days by <code>365</code>?</em></p>
+days by <code>365</code>? Note: The calculation doesn’t account for the
+exact month/day alignment — it just assumes each year is a flat 365
+days. You can install package <code>lubridate</code> to calculate a more
+precise age (optional).</em></p>
 <div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
 <p><em>Then, finish the sentence using inline R code:</em></p>
 <p>Today is <code>today&#39;s date</code>, it has been
