@@ -2,7 +2,7 @@
 title: I - Introduction & Descriptive Statistics
 ---
 
-<h3 style="text-align: center; font-weight: bold;">I - Introduction to Data Science</h3>
+<h3 style="font-weight: bold;">I - Introduction to Data Science</h3>
 
 
 Sep 24

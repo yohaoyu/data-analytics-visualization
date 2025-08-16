@@ -2499,7 +2499,7 @@ summary { width: 100%; }
 
 .link-row { font-weight: 400; display: flex; justify-content: flex-start; text-align: left; gap: 1em; width: 100%; }
 
-.link-row a { display: inline-block; border-radius: 0.5em; text-decoration: underline; font-weight: 400; background: none; border: none; box-shadow: none; transition: color 0.2s; }
+.link-row a { display: inline-block; border-radius: 0.5em; text-decoration: underline; text-decoration-color: #eeebee; font-weight: 400; background: none; border: none; box-shadow: none; transition: color 0.2s; }
 
 .link-row a:hover { color: #000000; background: none; }
 

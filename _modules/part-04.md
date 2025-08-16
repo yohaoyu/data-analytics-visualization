@@ -1,7 +1,7 @@
 ---
 title: Module 4 - Regression
 ---
-<h3 style="text-align: center; font-weight: bold;">IV - Data Modelling</h3> 
+<h3 style="text-align: left; font-weight: bold;">IV - Data Modelling</h3> 
 
 Nov 10
 : Correlation and Statistics Review II

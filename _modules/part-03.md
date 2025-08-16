@@ -2,7 +2,7 @@
 title: Module 3 - Data Visualization
 ---
 
-<h3 style="text-align: center; font-weight: bold;">III - Data Visualization</h3> 
+<h3 style="text-align: left; font-weight: bold;">III - Data Visualization</h3> 
 
 
 Oct 15

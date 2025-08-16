@@ -365,6 +365,8 @@ Most data sets you will work with will be read into R and stored as a **datafram
 
 Today is `today's date`, it has been `number of year` years since {what did happened on the big day}. 
 
+---
+
 ## Lab 01-C: Dataframes, Exporting, and GitHub
 
 ### Working Directory

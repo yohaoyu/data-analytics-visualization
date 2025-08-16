@@ -138,7 +138,6 @@ font-size: 93.75%;
 line-height: 1.6;
 }
 h1 {
-line-height: 1.2; 
 }
 
 code, pre, kbd, samp {
@@ -160,8 +159,20 @@ h1, h2, h3, h4, h5, h6 {
 color: #32006e !important;
 font-weight: 600;
 }
+h1 {
+font-weight: 900 !important; 
+margin-bottom: 0 !important;
+}
+h2 {
+margin-top: 0.5rem !important;
+}
 a {
 color: #32006e !important;
+text-decoration: underline !important; 
+text-decoration-color: #eeebee !important; 
+}
+a:hover {
+text-decoration-color: rgb(212, 192, 236) !important; 
 }
 
 p code, li code {
@@ -634,6 +645,7 @@ precise age (optional).</em></p>
 <p>Today is <code>today&#39;s date</code>, it has been
 <code>number of year</code> years since {what did happened on the big
 day}.</p>
+<hr />
 <h2 id="lab-01-c-dataframes-exporting-and-github">Lab 01-C: Dataframes,
 Exporting, and GitHub</h2>
 <h3 id="working-directory">Working Directory</h3>

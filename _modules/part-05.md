@@ -1,7 +1,7 @@
 ---
 title: Module 5 - Advanced Topics and Final Project
 ---
-<h3 style="text-align: center; font-weight: bold;">V - Advanced Topics and Final Projects</h3> 
+<h3 style="text-align: left; font-weight: bold;">V - Advanced Topics and Final Projects</h3> 
 
 
 Nov 24
