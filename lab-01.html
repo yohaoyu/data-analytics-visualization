@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content />
-  <meta name="dcterms.date" content="2025-08-15" />
+  <meta name="dcterms.date" content="2025-08-16" />
   <title>Lab 01 Basic of R, RStudio, and GitHub</title>
 
 <style type="text/css" charset="utf-8">
@@ -189,7 +189,7 @@ margin: 0.5rem 0 !important;
 GitHub</h1>
 <h2 id="subtitle" class="toc-ignore">RE 519 Data Analytics and
 Visualization | Autumn 2025</h2>
-<p id="date">2025-08-15</p>
+<p id="date">2025-08-16</p>
 
 </header>
 
@@ -288,7 +288,7 @@ Root).</strong> You can check by typing <code>R.version</code> into your
 RStudio Console or run it in one chunk.</p>
 <h3 id="getting-started">Getting Started</h3>
 <p>Open up RStudio now and try to download the source file, a
-<code>rmd</code> (R Markdown) file <a href="https://www.yuehaoyu.com/data-analytics-visualization/labs/lab-01.rmd">here</a>
+<code>rmd</code> (R Markdown) file <a href="https://www.yuehaoyu.com/data-analytics-visualization/labs/lab-01.Rmd">here</a>
 and open it on your local machine.</p>
 <p>Use <code>install.packages(&quot;[package name]&quot;)</code> to install any
 required packages, or R Studio may automatically recognize that there
@@ -318,15 +318,13 @@ Data Science with R, 3rd edition</a></p>
 MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>. In the lab, we will review
 some basic Markdown syntax: <a href="https://markdownlivepreview.com">Markdown Live Preview</a>.</p>
 <p>You can put some math <span class="math inline">\(y=
-\left(\frac{2}{3} \right)^2\)</span> right up in there using <a href="https://www.latex-project.org"><span class="math inline">\(\LaTeX\)</span></a>. <em>Note:</em> <span class="math inline">\(\LaTeX\)</span> is not required in this
-class.<br />
-If you are curious about how mathematicians compile their books, you may
+\left(\frac{2}{3} \right)^2\)</span> right up in there using <a href="https://www.latex-project.org"><span class="math inline">\(\LaTeX\)</span></a>. <span class="math display">\[\frac{1}{n} \sum_{i=1}^{n} x_i =
+\bar{x}_n\]</span> <em>Note:</em> <span class="math inline">\(\LaTeX\)</span> is not required in this class. If
+you are curious about how mathematicians compile their books, you may
 refer to the <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">Learn
 LaTeX in 30 minutes</a> from <a href="https://www.overleaf.com/">Overleaf</a>. Overleaf is the most
 popular collaborative cloud-based <span class="math inline">\(\LaTeX\)</span> editor and UW students can get <a href="https://it.uw.edu/uware/overleaf/">Overleaf Premium account for
 free</a>.</p>
-<p><span class="math display">\[\frac{1}{n} \sum_{i=1}^{n} x_i =
-\bar{x}_n\]</span></p>
 <h4 id="r-markdown-documents">R Markdown Documents</h4>
 <p>This document is a R Markdown file, you can create a new one by:</p>
 <ol type="1">
@@ -374,7 +372,7 @@ level 4 headings, headings for (at least) education or employment. Each
 of the sections should include a bullet list of jobs/degrees. Highlight
 the year in bold. Try and incorporate as many R Markdown features as
 possible. You can work on this document.</em></p>
-<h3 id="r-code-in-rstudio">R Code in RStudio</h3>
+<h3 id="r-code-in-r-markdown">R Code in R Markdown</h3>
 <p>Inside RMarkdown, lines of R code are called <strong>chunks</strong>.
 Code is sandwiched between sets of three backticks and <code>{r}</code>.
 This chunk of code…</p>
@@ -384,27 +382,233 @@ mean(c(1,2,3,4,5,6))
 <p>Produces this output in your document:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>)) <span class="co"># calculate the mean value of a list of numbers</span></span></code></pre></div>
 <pre><code>## [1] 3.5</code></pre>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the current working directory</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
-<pre><code>## [1] &quot;/Users/yohaoyu/Repo/data-analytics-visualization&quot;</code></pre>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open the help page for getwd()</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>?getwd</span></code></pre></div>
-<h3 id="editing-and-running-code">Editing and Running Code</h3>
-<p>There are several ways to run R code in RStudio:</p>
+<h4 id="chunk-options">Chunk Options</h4>
+<p>Chunks have options that control what happens with their code, such
+as:</p>
 <ul>
-<li>In R Markdown documents, click within a code chunk and click the
-green arrow to run the chunk. The button beside that runs <em>all prior
-chunks</em>.</li>
+<li><code>echo=FALSE</code>: Keeps R code from being shown in the
+document</li>
+<li><code>eval=FALSE</code>: Shows R code in the document without
+running it</li>
+<li><code>include=FALSE</code>: Hides all output but still runs code
+(good for <code>setup</code> chunks where you load packages!)</li>
+<li><code>results=&#39;hide&#39;</code>: Hides R’s (non-plot) output from the
+document</li>
+<li><code>cache=TRUE</code>: Saves results of running that chunk so if
+it takes a while, you won’t have to re-run it each time you re-knit the
+document</li>
+<li><code>fig.height=5, fig.width=5</code>: modify the dimensions of any
+plots that are generated in the chunk (units are in inches)</li>
 </ul>
-<p>–</p>
-<p>The console will show the lines you ran followed by any printed
-output.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;ggplot2&quot;</span>) <span class="co"># This line will not be knitted since `eval=FALSE`</span></span></code></pre></div>
+<p>Some of these can be modified using the gear-shaped <em>Modify Chunk
+Options</em> button in each chunk. <a href="https://yihui.name/knitr/options/">There are a <em>lot</em> of
+other options, however</a>.</p>
+<h4 id="editing-and-running-code">Editing and Running Code</h4>
+<p>In R Markdown documents, click within a code chunk and click the
+green arrow to run the chunk. The button beside that runs <em>all prior
+chunks</em>. The console will show the lines you ran followed by any
+printed output. There are more options on the top right of this window
+(green arrow with <code>Run</code>).</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>pi <span class="co"># output the value of pi</span></span></code></pre></div>
+<pre><code>## [1] 3.141593</code></pre>
+<p>Sometimes we want to insert a value directly into our text. We do
+that using code in single backticks starting off with <code>r</code>.
+For example, the value of <code>pi</code> rounded to the nearest three
+decimals is 3.142.</p>
+<h3 id="math-and-logical-operation-in-r">Math and Logical Operation in
+R</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Math operations</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span>      <span class="co"># addition → 5</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="sc">-</span> <span class="dv">2</span>      <span class="co"># subtraction → 3</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> <span class="sc">*</span> <span class="dv">6</span>      <span class="co"># multiplication → 24</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="sc">/</span> <span class="dv">4</span>     <span class="co"># division → 2.5</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">^</span><span class="dv">3</span>        <span class="co"># exponentiation → 8</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="sc">%%</span> <span class="dv">3</span>    <span class="co"># modulo (remainder) → 1</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">400</span>)  <span class="co"># square root of 400 → 20</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Logical operations</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">==</span> <span class="dv">3</span>     <span class="co"># equal → TRUE</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">!=</span> <span class="dv">4</span>     <span class="co"># not equal → TRUE</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="sc">&gt;</span> <span class="dv">2</span>      <span class="co"># greater than → TRUE</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;</span> <span class="dv">1</span>      <span class="co"># less than → FALSE</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="sc">&gt;=</span> <span class="dv">5</span>     <span class="co"># greater or equal → TRUE</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;=</span> <span class="dv">3</span>     <span class="co"># less or equal → TRUE</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">&amp;</span> <span class="cn">FALSE</span>   <span class="co"># AND → FALSE</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">|</span> <span class="cn">FALSE</span>   <span class="co"># OR → TRUE</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span><span class="cn">TRUE</span>          <span class="co"># NOT → FALSE</span></span></code></pre></div>
+<h4 id="functions-and-help">Functions and Help</h4>
+<p><code>sqrt()</code> is an example of a <strong>function</strong> in
+R. If we didn’t have a good guess as to what <code>sqrt()</code> will
+do, we can type <code>?sqrt</code> in the console and look at the
+<strong>Help</strong> panel on the right.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>?sqrt <span class="co"># what is sqrt()? </span></span></code></pre></div>
+<p><strong>Arguments</strong> are the <em>inputs</em> to a function. In
+this case, the only argument to <code>sqrt()</code> is <code>x</code>
+which can be a number or a vector of numbers. <em>Help</em> files
+provide documentation on how to use functions and what functions
+produce.</p>
+<h4 id="common-data-types-in-r">Common Data Types in R</h4>
+<p>R has several <em>basic data types</em> that are used to build larger
+data structures.</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 31%" />
+<col style="width: 44%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data Type</th>
+<th>Example</th>
+<th>Description</th>
+<th>Check with</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Numeric</strong></td>
+<td><code>x &lt;- 3.142</code></td>
+<td>Decimal numbers (floating point)</td>
+<td><code>is.numeric(x)</code></td>
+</tr>
+<tr class="even">
+<td><strong>Integer</strong></td>
+<td><code>y &lt;- 5L</code></td>
+<td>Whole numbers (the <code>L</code> forces integer type)</td>
+<td><code>is.integer(y)</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Character</strong></td>
+<td><code>z &lt;- &quot;Hello&quot;</code></td>
+<td>Text or string values</td>
+<td><code>is.character(z)</code></td>
+</tr>
+<tr class="even">
+<td><strong>Logical</strong></td>
+<td><code>flag &lt;- TRUE</code></td>
+<td>Boolean values: <code>TRUE</code> or <code>FALSE</code></td>
+<td><code>is.logical(flag)</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Factor</strong></td>
+<td><code>f &lt;- factor(c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;))</code></td>
+<td>Categorical values with fixed levels</td>
+<td><code>is.factor(f)</code></td>
+</tr>
+</tbody>
+</table>
+<p>You can also check type with <code>class()</code> or
+<code>is.*()</code> functions.</p>
+<h3 id="data-structures-in-r">Data Structures in R</h3>
+<h4 id="objects">Objects</h4>
+<p>R stores everything as an <strong>object</strong>, including data,
+functions, models, and output. Creating an object can be done using the
+assignment operator: <code>&lt;-</code>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>new_object_preferred <span class="ot">&lt;-</span> <span class="dv">144</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>new_object_not_preferred <span class="ot">=</span> <span class="dv">144</span> <span class="co"># using `=` is OK in R but not recommended; `=` is mainly for function arguments</span></span></code></pre></div>
+<p>The <em>Environment Pane</em> (right top) shows all active objects
+once you created in your current R session. Each assignment
+(<code>&lt;-</code>) updates this list. Then. you can display or ‘use’
+an object simply by using its name.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>new_object_preferred</span></code></pre></div>
+<pre><code>## [1] 144</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(new_object_preferred)</span></code></pre></div>
+<pre><code>## [1] 12</code></pre>
+<p>Object names can contain <code>_</code> (preferred) and
+<code>.</code> in them but CANNOT begin with numbers. Try to be
+consistent and clear in naming objects. Clear naming will help you save
+lots of time in the future!</p>
+<h4 id="vectors">Vectors</h4>
+<p>Vector is a sequence of elements of the same type.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)       <span class="co"># numeric vector; `c()` means combine</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Alice&quot;</span>, <span class="st">&quot;Bob&quot;</span>)     <span class="co"># character vector</span></span></code></pre></div>
+<p>After creating them, we often want to inspect what they contain and
+their structure.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(numbers)           <span class="co"># show the values</span></span></code></pre></div>
+<pre><code>## [1] 1 2 3 4</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(numbers)          <span class="co"># check the number of elements</span></span></code></pre></div>
+<pre><code>## [1] 4</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(numbers)           <span class="co"># check the type</span></span></code></pre></div>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="sc">&gt;</span> <span class="dv">2</span>              <span class="co"># check whether each element is larger than 2</span></span></code></pre></div>
+<pre><code>## [1] FALSE FALSE  TRUE  TRUE</code></pre>
+<p>We may also want to select some elements in one vector.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>numbers[<span class="dv">1</span>]            <span class="co"># show the first element</span></span></code></pre></div>
+<pre><code>## [1] 1</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>numbers[<span class="sc">-</span><span class="dv">1</span>]           <span class="co"># show the vector without the first element</span></span></code></pre></div>
+<pre><code>## [1] 2 3 4</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>numbers[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]          <span class="co"># show the elements with index 1 to 3</span></span></code></pre></div>
+<pre><code>## [1] 1 2 3</code></pre>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>numbers[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)]       <span class="co"># show the elements with index 1 and 3</span></span></code></pre></div>
+<pre><code>## [1] 1 3</code></pre>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>numbers[<span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>)]       <span class="co"># show the elements with `TRUE`</span></span></code></pre></div>
+<pre><code>## [1] 1 2 4</code></pre>
+<h4 id="martix">Martix</h4>
+<p>A 2D collection of elements of the same type (optional for this
+class).</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(mat)             <span class="co"># dimensions (# of rows, # of columns)</span></span></code></pre></div>
+<pre><code>## [1] 2 3</code></pre>
+<h4 id="lists">Lists</h4>
+<p>A collection of objects (can be of different types). List members can
+be named, referenced using the <code>[[</code> operator or using the
+names. <em>Note</em>: <code>list[ ]</code> will keep the result as a
+list (still wrapped).</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>my_list <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">name =</span> <span class="st">&quot;Alice&quot;</span>, <span class="at">age =</span> <span class="dv">25</span>, <span class="at">scores =</span> <span class="fu">c</span>(<span class="dv">90</span>, <span class="dv">85</span>, <span class="dv">88</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>my_list<span class="sc">$</span>age     <span class="co"># get element by name (&quot;age&quot; = 25)</span></span></code></pre></div>
+<pre><code>## [1] 25</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>my_list[[<span class="dv">2</span>]]    <span class="co"># get element by position (2nd element = 25)</span></span></code></pre></div>
+<pre><code>## [1] 25</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>my_list[<span class="dv">2</span>]      <span class="co"># still a list with &quot;age = 25&quot;</span></span></code></pre></div>
+<pre><code>## $age
+## [1] 25</code></pre>
+<h4 id="dataframes">Dataframes</h4>
+<p>Most data sets you will work with will be read into R and stored as a
+<strong>dataframe</strong>, so this course will mainly focus on
+manipulating and visualizing these objects. We will leave dataframes to
+next lab session.</p>
+<!-- TODO: R Basic Review Tasks-->
+<h3 id="todo-r-basic-review-tasks">📚 TODO: R Basic Review Tasks</h3>
+<p><em>What’s your birthday (or any special day for you)? Please print
+it out using the format <code>YYYY-MM-DD</code> without showing the R
+code in the output HTML document. What’s the data type of your
+<code>YYYY-MM-DD</code> object?</em></p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
+<p><em>In R, a date can be defined as a class called <code>date</code>
+using the function <code>as.Data()</code>. Loop up the documentation of
+this function and tell me what’s the simplest argument this function
+needs. Then, assign your birthday to an object.</em></p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
+<p><em>Let’s find the date for today! Sorry for the stupid request, but
+we need to use a function called <code>Sys.Date()</code> to always get
+“today”. Check the documentation, what argument does we need?</em></p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
+<p><em>Create a vector with those two dates.</em></p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
+<p><em>Let’s use indexing <code>[]</code> to select today’s date, then
+subtract your birthday. What’s happened?</em></p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
+<p><em>Can you calculate your age by simply dividing the difference in
+days by <code>365</code>?</em></p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
+<p><em>Then, finish the sentence using inline R code:</em></p>
+<p>Today is <code>today&#39;s date</code>, it has been
+<code>number of year</code> years since {what did happened on the big
+day}.</p>
+<h2 id="lab-01-c-dataframes-exporting-and-github">Lab 01-C: Dataframes,
+Exporting, and GitHub</h2>
+<h3 id="working-directory">Working Directory</h3>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the current working directory</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;/Users/yohaoyu/Repo/data-analytics-visualization&quot;</code></pre>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open the help page for getwd()</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>?getwd</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;ggplot2&quot;</span>) <span class="co"># This line will not be knitted since `eval=FALSE`</span></span></code></pre></div>
 <p>When you click the <strong>Knit</strong> button a document will be
 generated that includes both content as well as the output of any
 embedded R code chunks within the document. You can embed an R code
 chunk like this:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></pre></div>
 <pre><code>##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
 ##  1st Qu.:12.0   1st Qu.: 26.00  
@@ -419,6 +623,7 @@ chunk like this:</p>
 code chunk to prevent printing of the R code that generated the
 plot.</p>
 <h2 id="lab-01-c">Lab 01-C</h2>
+<h3 id="git-and-github">Git and GitHub</h3>
 <h2 id="acknowledgement">Acknowledgement</h2>
 <p>The materials are developed based materails from <a href="https://fsun.ucsd.edu">Dr. Feiyang Sun at UC San Diego</a>, Siman
 Ning and Christian Phillips at UW, <a href="https://clanfear.github.io">Dr.Charles Lanfear at University of

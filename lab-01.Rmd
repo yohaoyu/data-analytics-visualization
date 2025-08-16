@@ -88,7 +88,7 @@ The latest version of R is **4.5.1 (Great Square Root).** You can check by typin
 
 ### Getting Started
 
-Open up RStudio now and try to download the source file, a `rmd` (R Markdown) file [here](https://www.yuehaoyu.com/data-analytics-visualization/labs/lab-01.rmd) and open it on your local machine.
+Open up RStudio now and try to download the source file, a `rmd` (R Markdown) file [here](https://www.yuehaoyu.com/data-analytics-visualization/labs/lab-01.Rmd) and open it on your local machine.
 
 Use `install.packages("[package name]")` to install any required packages, or R Studio may automatically recognize that there are some packages you need to install and will install them for you.
 
@@ -111,10 +111,10 @@ You can change the layout and theme in *Preferences > Pane Layout/Appearance*.
 
 Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. In the lab, we will review some basic Markdown syntax: [Markdown Live Preview](https://markdownlivepreview.com).
 
-You can put some math $y= \left(\frac{2}{3} \right)^2$ right up in there using [$\LaTeX$](https://www.latex-project.org). *Note:* $\LaTeX$ is not required in this class.  
-If you are curious about how mathematicians compile their books, you may refer to the [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) from [Overleaf](https://www.overleaf.com/). Overleaf is the most popular collaborative cloud-based $\LaTeX$ editor and UW students can get [Overleaf Premium account for free](https://it.uw.edu/uware/overleaf/).
-
+You can put some math $y= \left(\frac{2}{3} \right)^2$ right up in there using [$\LaTeX$](https://www.latex-project.org). 
 $$\frac{1}{n} \sum_{i=1}^{n} x_i = \bar{x}_n$$
+*Note:* $\LaTeX$ is not required in this class. If you are curious about how mathematicians compile their books, you may refer to the [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) from [Overleaf](https://www.overleaf.com/). Overleaf is the most popular collaborative cloud-based $\LaTeX$ editor and UW students can get [Overleaf Premium account for free](https://it.uw.edu/uware/overleaf/).
+
 
 #### R Markdown Documents
 
@@ -151,14 +151,13 @@ R Markdown docs can be modified in many ways. Visit these links for more informa
 * [Ways to format parts of your document](http://rmarkdown.rstudio.com/authoring_basics.html)
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 
-
 <!-- TODO: Using Markdown for your Resume / CV-->
 
 #### 📚️ TODO:Using Markdown for your Resume / CV
 
 *Create a brief Resume / CV using R Markdown with your name as level 4 headings, headings for (at least) education or employment. Each of the sections should include a bullet list of jobs/degrees. Highlight the year in bold. Try and incorporate as many R Markdown features as possible. You can work on this document.*
 
-### R Code in RStudio
+### R Code in R Markdown
 
 Inside RMarkdown, lines of R code are called **chunks**. Code is sandwiched between sets of three backticks and `{r}`. This chunk of code...
 
@@ -171,11 +170,204 @@ Produces this output in your document:
 mean(c(1,2,3,4,5,6)) # calculate the mean value of a list of numbers
 ```
 
+#### Chunk Options
+
+Chunks have options that control what happens with their code, such as:
+
+* `echo=FALSE`: Keeps R code from being shown in the document
+* `eval=FALSE`: Shows R code in the document without running it
+* `include=FALSE`: Hides all output but still runs code (good for `setup` chunks where you load packages!)
+* `results='hide'`: Hides R's (non-plot) output from the document
+* `cache=TRUE`: Saves results of running that chunk so if it takes a while, you won't have to re-run it each time you re-knit the document
+* `fig.height=5, fig.width=5`: modify the dimensions of any plots that are generated in the chunk (units are in inches)
+
+Some of these can be modified using the gear-shaped *Modify Chunk Options* button in each chunk. [There are a *lot* of other options, however](https://yihui.name/knitr/options/).
 
 
+#### Editing and Running Code
 
+In R Markdown documents, click within a code chunk and click the green arrow to run the chunk. The button beside that runs *all prior chunks*. The console will show the lines you ran followed by any printed output. There are more options on the top right of this window (green arrow with `Run`). 
 
+```{r}
+pi # output the value of pi
+```
 
+Sometimes we want to insert a value directly into our text. We do that using code in single backticks starting off with `r`. For example, the value of `pi` rounded to the nearest three decimals is `r round(pi, 3)`.
+
+### Math and Logical Operation in R
+
+```{r results='hide'}
+# Math operations
+2 + 3      # addition → 5
+5 - 2      # subtraction → 3
+4 * 6      # multiplication → 24
+10 / 4     # division → 2.5
+2^3        # exponentiation → 8
+10 %% 3    # modulo (remainder) → 1
+sqrt(400)  # square root of 400 → 20
+```
+
+```{r results='hide'}
+# Logical operations
+3 == 3     # equal → TRUE
+3 != 4     # not equal → TRUE
+5 > 2      # greater than → TRUE
+2 < 1      # less than → FALSE
+5 >= 5     # greater or equal → TRUE
+2 <= 3     # less or equal → TRUE
+TRUE & FALSE   # AND → FALSE
+TRUE | FALSE   # OR → TRUE
+!TRUE          # NOT → FALSE
+```
+
+#### Functions and Help
+
+`sqrt()` is an example of a **function** in R. If we didn't have a good guess as to what `sqrt()` will do, we can type `?sqrt` in the console and look at the **Help** panel on the right.
+
+```{r eval=FALSE}
+?sqrt # what is sqrt()? 
+```
+
+**Arguments** are the *inputs* to a function. In this case, the only argument to `sqrt()`
+is `x` which can be a number or a vector of numbers. *Help* files provide documentation on how to use functions and what functions produce.
+
+#### Common Data Types in R
+
+R has several *basic data types* that are used to build larger data structures.  
+
+| Data Type   | Example                        | Description                                  | Check with |
+|-------------|--------------------------------|----------------------------------------------|------------|
+| **Numeric** | `x <- 3.142`                   | Decimal numbers (floating point)             | `is.numeric(x)` |
+| **Integer** | `y <- 5L`                      | Whole numbers (the `L` forces integer type)  | `is.integer(y)` |
+| **Character** | `z <- "Hello"`               | Text or string values                        | `is.character(z)` |
+| **Logical** | `flag <- TRUE`                 | Boolean values: `TRUE` or `FALSE`            | `is.logical(flag)` |
+| **Factor**  | `f <- factor(c("A", "B", "C"))`| Categorical values with fixed levels         | `is.factor(f)` |
+
+You can also check type with `class()` or `is.*()` functions.
+
+### Data Structures in R
+
+#### Objects
+
+R stores everything as an **object**, including data, functions, models, and output. Creating an object can be done using the assignment operator: `<-`: 
+
+```{r}
+new_object_preferred <- 144
+new_object_not_preferred = 144 # using `=` is OK in R but not recommended; `=` is mainly for function arguments
+```
+
+The *Environment Pane* (right top) shows all active objects once you created in your current R session. Each assignment (`<-`) updates this list. Then. you can display or 'use' an object simply by using its name.
+
+```{r}
+new_object_preferred
+sqrt(new_object_preferred)
+```
+
+Object names can contain `_` (preferred) and `.` in them but CANNOT begin with numbers. Try
+to be consistent and clear in naming objects. Clear naming will help you save lots of time in the future!
+
+#### Vectors
+
+Vector is a sequence of elements of the same type.
+
+```{r}
+numbers <- c(1, 2, 3, 4)       # numeric vector; `c()` means combine
+names <- c("Alice", "Bob")     # character vector
+```
+
+After creating them, we often want to inspect what they contain and their structure.
+
+```{r}
+print(numbers)           # show the values
+length(numbers)          # check the number of elements
+class(numbers)           # check the type
+numbers > 2              # check whether each element is larger than 2
+```
+
+We may also want to select some elements in one vector. 
+
+```{r}
+numbers[1]            # show the first element
+numbers[-1]           # show the vector without the first element
+numbers[1:3]          # show the elements with index 1 to 3
+numbers[c(1,3)]       # show the elements with index 1 and 3
+numbers[c(TRUE, TRUE, FALSE)]       # show the elements with `TRUE`
+```
+
+#### Martix
+
+A 2D collection of elements of the same type (optional for this class).
+
+```{r}
+mat <- matrix(1:6, nrow = 2, ncol = 3)
+dim(mat)             # dimensions (# of rows, # of columns)
+```
+
+#### Lists
+
+A collection of objects (can be of different types). List members can be named, referenced using the `[[` operator or using the names. *Note*: `list[ ]` will keep the result as a list (still wrapped).
+
+```{r}
+my_list <- list(name = "Alice", age = 25, scores = c(90, 85, 88))
+```
+
+```{r}
+my_list$age     # get element by name ("age" = 25)
+my_list[[2]]    # get element by position (2nd element = 25)
+my_list[2]      # still a list with "age = 25"
+```
+
+#### Dataframes
+
+Most data sets you will work with will be read into R and stored as a **dataframe**, so this course will mainly focus on manipulating and visualizing these objects. We will leave dataframes to next lab session.
+
+<!-- TODO: R Basic Review Tasks-->
+
+### 📚 TODO: R Basic Review Tasks
+
+*What's your birthday (or any special day for you)? Please print it out using the format `YYYY-MM-DD` without showing the R code in the output HTML document. What's the data type of your `YYYY-MM-DD` object?*
+
+```{r}
+# TODO
+```
+
+*In R, a date can be defined as a class called `date` using the function `as.Data()`. Loop up the documentation of this function and tell me what's the simplest argument this function needs. Then, assign your birthday to an object.*
+
+```{r}
+# TODO
+```
+
+*Let's find the date for today! Sorry for the stupid request, but we need to use a function called `Sys.Date()` to always get "today". Check the documentation, what argument does we need?* 
+
+```{r}
+# TODO
+```
+
+*Create a vector with those two dates.*
+
+```{r}
+# TODO
+```
+
+*Let's use indexing `[]` to select today's date, then subtract your birthday. What's happened?*
+
+```{r}
+# TODO
+```
+
+*Can you calculate your age by simply dividing the difference in days by `365`?*
+
+```{r}
+# TODO
+```
+
+*Then, finish the sentence using inline R code:*
+
+Today is `today's date`, it has been `number of year` years since {what did happened on the big day}. 
+
+## Lab 01-C: Dataframes, Exporting, and GitHub
+
+### Working Directory
 
 ```{r}
 # Show the current working directory
@@ -184,22 +376,6 @@ getwd()
 # Open the help page for getwd()
 ?getwd
 ```
-
-
-### Editing and Running Code
-
-There are several ways to run R code in RStudio:
-
-* In R Markdown documents, click within a code chunk and click the green arrow to run the chunk. The button beside that runs *all prior chunks*.
-
---
-
-The console will show the lines you ran followed by any printed output.
-
-
-
-
-
 
 
 
@@ -228,6 +404,10 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 ## Lab 01-C
 
+
+
+
+### Git and GitHub
 
 
 ## Acknowledgement
