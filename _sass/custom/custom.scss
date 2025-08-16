@@ -9,16 +9,19 @@
 
 // Overrides
 body {
-  font-size: 14.5px; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.4;
-  font-weight: 300;
-  letter-spacing: -.01rem;
-  font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica;
-  /* font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-size: 15px; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.75;
+  font-weight: 200 !important;
+  letter-spacing: .0rem;
+  font-family:  "Avenir",-apple-system, system-ui,'Segoe UI', Arial, sans-serif !important;
+
+  /* font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   color: #222; }
 
 .main-content{
-  line-height: 1.4 !important;
+  font-weight: 200 !important;
+  line-height: 1.6 !important;
 }
 
 
@@ -27,9 +30,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0rem;
     margin-bottom: 0.5rem;
     font-weight: 400; }
-  h1 { font-size: 2.0rem; line-height: 1.2;  letter-spacing: -.01rem;font-weight: 400}
+  h1 { font-size: 2.0rem; line-height: 1.2;  letter-spacing: -.01rem;font-weight: 500!important}
   h2 { font-size: 1.6rem !important; line-height: 1.2; margin-top: 1em!important;letter-spacing: -.01rem; font-weight: 400 } 
-  h3 { font-size: 1.1rem !important; line-height: 1.2;  letter-spacing: -.01rem; font-weight: 400}
+  h3 { font-size: 1.1rem !important; line-height: 1.2;  letter-spacing: -.01rem; font-weight: 600}
   h4 { font-size: 0.9rem !important;line-height: 1.2; letter-spacing: -.01rem; font-weight: 400}
   h5 { font-size: 2.0rem; line-height: 1.2;  letter-spacing: -.01rem; font-weight: 400}
   h6 { font-size: 1.8rem; line-height: 1.6;  letter-spacing: 0; font-weight: 400}
@@ -37,6 +40,15 @@ h1, h2, h3, h4, h5, h6 {
 .main-content .module > dl:last-child,
 .module > dl:last-child {
   margin-bottom: 3px !important;   
+}
+
+.main-content dt {
+    font-weight: 400 !important;
+    text-align: start;
+}
+
+.main-content dd {
+    font-weight: 200 !important;
 }
 
 h3.no_toc {
@@ -105,7 +117,7 @@ summary {
 
 // menu bar
 .link-row {
-  font-weight: bold;
+  font-weight: 400;
   display: flex;
   justify-content: flex-start; 
   text-align: left;            
@@ -118,7 +130,7 @@ summary {
   //padding: 0.5em 1.1em;
   border-radius: 0.5em;
   text-decoration: underline; 
-  font-weight: bold;
+  font-weight: 400;
   background: none;
   border: none;
   box-shadow: none;
@@ -140,9 +152,9 @@ summary {
 // reading and ciations
 .readings {
   display: inline-block;
-  font-size: 0.7em;
+  font-size: 0.72em;
   border-radius: 0.3em;
-  padding: 0.0em 0.4em 0.0em 0em;
+  padding: 0.0em 0.5em 0.0em 0em;
   font-weight: 700;
   background: #565656;   
   color: #2166b1;
@@ -152,21 +164,23 @@ summary {
   letter-spacing: -0.01em;
 }
 .readings-required {
+  font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica;
   background: #ffffff;
   color: #444444;
   border: 0px dashed #ffffff;
 }
 .readings-optional {
+  font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica;
   background: #ffffff;
   color: #616161;
   border: 0px dashed #ffffff;
 }
 .citation {
   display: inline-block;
-  font-size: 0.85em;
+  font-size: 0.8em;
   border-radius: 0.3em;
   padding: 0.0em 0.0em;
-  font-weight: 400;
+  font-weight: 200;
   background: #ffffff;    
   color: #565656;
   margin-right: 0.4em;

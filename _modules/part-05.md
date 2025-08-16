@@ -1,13 +1,13 @@
 ---
 title: Module 5 - Advanced Topics and Final Project
 ---
-<h3 style="text-align: center; font-weight: bold;">Module 5 - Advanced Topics and Final Projects</h3> 
+<h3 style="text-align: center; font-weight: bold;">V - Advanced Topics and Final Projects</h3> 
 
 
 Nov 24
 : Storying Telling, Web Publishing, Text Analysis, etc.
   : [Slides](#)
-: **LAB 8 DUE**{: .label .label-red }
+: **LAB 8 DUE**{: .label .label-purple }
 
 Nov 26
 : Introduction to Machine Learning (Cluster, Decision Trees)
@@ -30,4 +30,4 @@ Dec 03
 Dec 12
 : Final Project Submission
     : [Final Project Instruction](#)
-: **Final Project DUE**{: .label .label-red }
+: **Final Project DUE**{: .label .label-purple }

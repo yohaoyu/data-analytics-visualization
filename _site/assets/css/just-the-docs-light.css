@@ -2323,17 +2323,18 @@ div.opaque { background-color: #fff; }
 .staffer .staffer-meta dt, .staffer .staffer-meta dd, .staffer .staffer-meta dd + dt { margin-top: 0; }
 @media (min-width: 31.25rem) { .staffer .staffer-meta { display: grid; grid-template-columns: auto 1fr; } }
 
-body { font-size: 14.5px; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.4; font-weight: 300; letter-spacing: -.01rem; font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica; /* font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/ color: #222; }
+body { font-size: 15px; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.75; font-weight: 200 !important; letter-spacing: .0rem; font-family: "Avenir",-apple-system, system-ui,'Segoe UI', Arial, sans-serif !important; /* font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica;
+font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/ color: #222; }
 
-.main-content { line-height: 1.4 !important; }
+.main-content { font-weight: 200 !important; line-height: 1.6 !important; }
 
 .main-content, h1, h2, h3, h4, h5, h6 { margin-top: 0rem; margin-bottom: 0.5rem; font-weight: 400; }
 
-h1 { font-size: 2.0rem; line-height: 1.2; letter-spacing: -.01rem; font-weight: 400; }
+h1 { font-size: 2.0rem; line-height: 1.2; letter-spacing: -.01rem; font-weight: 500 !important; }
 
 h2 { font-size: 1.6rem !important; line-height: 1.2; margin-top: 1em !important; letter-spacing: -.01rem; font-weight: 400; }
 
-h3 { font-size: 1.1rem !important; line-height: 1.2; letter-spacing: -.01rem; font-weight: 400; }
+h3 { font-size: 1.1rem !important; line-height: 1.2; letter-spacing: -.01rem; font-weight: 600; }
 
 h4 { font-size: 0.9rem !important; line-height: 1.2; letter-spacing: -.01rem; font-weight: 400; }
 
@@ -2342,6 +2343,10 @@ h5 { font-size: 2.0rem; line-height: 1.2; letter-spacing: -.01rem; font-weight: 
 h6 { font-size: 1.8rem; line-height: 1.6; letter-spacing: 0; font-weight: 400; }
 
 .main-content .module > dl:last-child, .module > dl:last-child { margin-bottom: 3px !important; }
+
+.main-content dt { font-weight: 400 !important; text-align: start; }
+
+.main-content dd { font-weight: 200 !important; }
 
 h3.no_toc { margin-top: 0rem !important; }
 
@@ -2364,20 +2369,20 @@ summary { width: 100%; }
 .main-content dd { font-weight: normal; }
 .main-content dd + dt { margin-top: 0em; }
 
-.link-row { font-weight: bold; display: flex; justify-content: flex-start; text-align: left; gap: 1em; width: 100%; }
+.link-row { font-weight: 400; display: flex; justify-content: flex-start; text-align: left; gap: 1em; width: 100%; }
 
-.link-row a { display: inline-block; border-radius: 0.5em; text-decoration: underline; font-weight: bold; background: none; border: none; box-shadow: none; transition: color 0.2s; }
+.link-row a { display: inline-block; border-radius: 0.5em; text-decoration: underline; font-weight: 400; background: none; border: none; box-shadow: none; transition: color 0.2s; }
 
 .link-row a:hover { color: #000000; background: none; }
 
 @media (max-width: 600px) { .link-row { flex-direction: column; align-items: stretch; gap: 0.5em; } }
-.readings { display: inline-block; font-size: 0.7em; border-radius: 0.3em; padding: 0.0em 0.4em 0.0em 0em; font-weight: 700; background: #565656; color: #2166b1; margin-right: 0.3em; text-transform: uppercase; vertical-align: middle; letter-spacing: -0.01em; }
+.readings { display: inline-block; font-size: 0.72em; border-radius: 0.3em; padding: 0.0em 0.5em 0.0em 0em; font-weight: 700; background: #565656; color: #2166b1; margin-right: 0.3em; text-transform: uppercase; vertical-align: middle; letter-spacing: -0.01em; }
 
-.readings-required { background: #ffffff; color: #444444; border: 0px dashed #ffffff; }
+.readings-required { font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica; background: #ffffff; color: #444444; border: 0px dashed #ffffff; }
 
-.readings-optional { background: #ffffff; color: #616161; border: 0px dashed #ffffff; }
+.readings-optional { font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica; background: #ffffff; color: #616161; border: 0px dashed #ffffff; }
 
-.citation { display: inline-block; font-size: 0.85em; border-radius: 0.3em; padding: 0.0em 0.0em; font-weight: 400; background: #ffffff; color: #565656; margin-right: 0.4em; vertical-align: middle; letter-spacing: -0.02em; word-spacing: -0.05em; position: relative; }
+.citation { display: inline-block; font-size: 0.8em; border-radius: 0.3em; padding: 0.0em 0.0em; font-weight: 200; background: #ffffff; color: #565656; margin-right: 0.4em; vertical-align: middle; letter-spacing: -0.02em; word-spacing: -0.05em; position: relative; }
 
 dd:has(.citation) { line-height: 1.1 !important; }
 
