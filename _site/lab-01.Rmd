@@ -138,6 +138,8 @@ R Markdown docs can be modified in many ways. Visit these links for more informa
 
 ### 📚️ TODO:Using Markdown for your Resume / CV
 
+**3 points**
+
 *Create a brief Resume / CV using R Markdown with your name as level 4 headings, headings for (at least) education or employment. Each of the sections should include a bullet list of jobs/degrees. Highlight the year in bold. Try and incorporate as many R Markdown features as possible. You can work on this document or create a new markdown file.*
 
 ### R Code in R Markdown
@@ -232,9 +234,9 @@ R has several *basic data types* that are used to build larger data structures.
 | Data Type   | Example                        | Description                                  | Check with |
 |-------------|--------------------------------|----------------------------------------------|------------|
 | **Numeric** | `x <- 3.142`                   | Decimal numbers (floating point)             | `is.numeric(x)` |
-| **Integer** | `y <- 5L`                      | Whole numbers (the `L` forces integer type)  | `is.integer(y)` |
+| **Integer** | `y <- 5L`                      | Whole numbers (the **L** forces integer type)  | `is.integer(y)` |
 | **Character** | `z <- "Hello"`               | Text or string values                        | `is.character(z)` |
-| **Logical** | `flag <- TRUE`                 | Boolean values: `TRUE` or `FALSE`            | `is.logical(flag)` |
+| **Logical** | `flag <- TRUE`                 | Boolean values: **TRUE** or **FALSE**            | `is.logical(flag)` |
 | **Factor**  | `f <- factor(c("A", "B", "C"))`| Categorical values with fixed levels         | `is.factor(f)` |
 
 You can also check type with `class()` or `is.*()` functions.
@@ -318,6 +320,8 @@ Most data sets you will work with will be read into R and stored as a **datafram
 <!-- TODO: R Basic Review Tasks-->
 
 ### 📚 TODO: R Basic Review Tasks
+
+**5 points**
 
 *What's your birthday (or any special day for you)? Please print it out using the format `YYYY-MM-DD` without showing the R code in the output HTML document. What's the data type of your `YYYY-MM-DD` object?*
 
@@ -479,12 +483,21 @@ We will using GitHub Desktop:
 8. Click “Push origin” to upload your changes back to GitHub.
 9. You can check your changes on GitHub now. 
 
-After finish this lab, you need to upload everything to this repo and submit the link to your repo via Canvas assignment page.
-
 <!-- TODO: Explore Census Demographic Data -->
 
 ### 📚 TODO: Explore Census Demographic Data
 
+**7 points**
+
+*Let's do the similar step for other variables, select 1~2 interesting datasets from ACS, download them via API or via DATA.CENSUS.GOV. You may look up variables you're interested in from [this Census Reporter site](https://censusreporter.org/topics/table-codes/) or [ACS Technical Documentation](https://www.census.gov/programs-surveys/acs/technical-documentation.html/).*
+
+*Using a dataframe to store the data and calculate basic summary statistics such as mean, median, min/max, 25th/75th percentiles for your data; and briefly introduce why you're interested in this data and what did you find through the simple exploration.*
+
+*After finish this lab, you need to upload everything to the repo you created and submit your repo link via Canvas assignment page.*
+
+```{r}
+# TODO
+```
 
 
 
