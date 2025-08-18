@@ -490,7 +490,6 @@ When you click the **Knit** button (top of this panel) a document will be genera
 # TODO
 ```
 
-
 ## Acknowledgement
 
 The materials are developed based materails from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).

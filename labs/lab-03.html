@@ -114,12 +114,13 @@ Visualization | Autumn 2025</h2>
 
 </header>
 <ul>
-<li><a href="#lab-03-a-working-with-mutliple-dataframes" id="toc-lab-03-a-working-with-mutliple-dataframes">Lab 03-A: Working
-with Mutliple Dataframes</a></li>
-<li><a href="#lab-03-b-a-little-programming-visualization-and-github" id="toc-lab-03-b-a-little-programming-visualization-and-github">Lab
-03-B: A Little Programming, Visualization and GitHub</a>
+<li><a href="#lab-03-a-tidy-data" id="toc-lab-03-a-tidy-data">Lab 03-A:
+Tidy Data</a></li>
+<li><a href="#lab-03-b-table-a-little-programming-visualization-and-github" id="toc-lab-03-b-table-a-little-programming-visualization-and-github">Lab
+03-B: Table, A Little Programming, Visualization and GitHub</a>
 <ul>
 <li><a href="#very-simple-git-and-github" id="toc-very-simple-git-and-github">Very Simple Git and GitHub</a></li>
+<li><a href="#todo" id="toc-todo">📚 TODO:</a></li>
 </ul></li>
 <li><a href="#acknowledgement" id="toc-acknowledgement">Acknowledgement</a></li>
 </ul>
@@ -133,14 +134,13 @@ generative AI tool (ChatGPT, Copilot, etc.) is prohibited</strong>. We
 will run AI detection on each submission. More information about <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity">Academic
 Integrity</a> and <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai">the
 Use of AI</a>.</p>
-<h2 id="lab-03-a-working-with-mutliple-dataframes">Lab 03-A: Working
-with Mutliple Dataframes</h2>
+<h2 id="lab-03-a-tidy-data">Lab 03-A: Tidy Data</h2>
 <blockquote>
 <p>Recommended Reading: <a href="https://mdsr-book.github.io/mdsr3e/B-appR.html">Appendix B, Modern
 Data Science with R, 3rd edition</a></p>
 </blockquote>
-<h2 id="lab-03-b-a-little-programming-visualization-and-github">Lab
-03-B: A Little Programming, Visualization and GitHub</h2>
+<h2 id="lab-03-b-table-a-little-programming-visualization-and-github">Lab
+03-B: Table, A Little Programming, Visualization and GitHub</h2>
 <h3 id="very-simple-git-and-github">Very Simple Git and GitHub</h3>
 <ul>
 <li>Every change you make is saved in history, so you can always go
@@ -176,6 +176,44 @@ repository.</li>
 <li>Click “Push origin” to upload your changes back to GitHub.</li>
 <li>You can check your changes on GitHub now.</li>
 </ol>
+<h3 id="todo">📚 TODO:</h3>
+<p>Using the National Mortgage Database data create a very pretty table
+of descriptive statistics using any table package. I suggest either
+looking at the <strong>Outstanding Residential Mortgage
+Statistics</strong> for <strong>States</strong> or <strong>Residential
+Mortgage Performance Statistics</strong> for
+<strong>States.</strong></p>
+<p><a href="https://www.fhfa.gov/data/national-mortgage-database-aggregate-statistics">https://www.fhfa.gov/data/national-mortgage-database-aggregate-statisticsLinks
+to an external site.</a></p>
+<p>In your table, show basic summary statistics such as mean, median,
+min/max, 25th/75th percentiles, for both Washington and the rest of the
+US.</p>
+<p>Additionally, create 3-4 ggplots that would make sense to view side
+by side in a grid and try to make the plots in the grid connect together
+(ex. similar legend, color scheme, title) as well as tell an interesting
+story. You may want to connect state-level statistics from ACS with the
+NMDB data (make sure you are comparing data from the same year).</p>
+<p>Be sure to review the technical documentation to understand what the
+statistics represent. You will likely need to filter or pivot_wider()
+the data since it is in a long format.</p>
+<p>Add one paragraph explaining your table and charts.</p>
+<p>-—-</p>
+<p>Helpful resources:</p>
+<p><a href="https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r">https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-rLinks
+to an external site.</a></p>
+<p><a href="https://epirhandbook.com/new_pages/tables_descriptive.html">https://epirhandbook.com/new_pages/tables_descriptive.htmlLinks
+to an external site.</a></p>
+<p><a href="https://r-graph-gallery.com/table.html">https://r-graph-gallery.com/table.htmlLinks
+to an external site.</a></p>
+<p>Multiple plots next to each other:</p>
+<p><a href="https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html">https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.htmlLinks
+to an external site.</a></p>
+<p><a href="https://rfortherestofus.com/2021/11/multicolumn">https://rfortherestofus.com/2021/11/multicolumnLinks
+to an external site.</a></p>
+<p>Facets (Creating multiple plots split by one categorical
+variable):</p>
+<p><a href="https://bookdown.org/yih_huynh/Guide-to-R-Book/facet-wrapping.html">https://bookdown.org/yih_huynh/Guide-to-R-Book/facet-wrapping.htmlLinks
+to an external site.</a></p>
 <h2 id="acknowledgement">Acknowledgement</h2>
 <p>The materials are developed based materails from <a href="https://fsun.ucsd.edu">Dr. Feiyang Sun at UC San Diego</a>, Siman
 Ning and Christian Phillips at UW, <a href="https://clanfear.github.io">Dr. Charles Lanfear at University of

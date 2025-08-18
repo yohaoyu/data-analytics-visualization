@@ -9,14 +9,14 @@ knitr::opts_chunk$set(echo = TRUE)
 The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
 
-## Lab 03-A: Working with Mutliple Dataframes
+## Lab 03-A: Tidy Data
 
 > Recommended Reading: [Appendix B, Modern Data Science with R, 3rd edition](https://mdsr-book.github.io/mdsr3e/B-appR.html)
 
 
 
 
-## Lab 03-B: A Little Programming, Visualization and GitHub
+## Lab 03-B: Table, A Little Programming, Visualization and GitHub
 
 
 ### Very Simple Git and GitHub
@@ -43,6 +43,40 @@ We will using GitHub Desktop:
 7. Commit changes with a short message (e.g., “Lab 1 for RE 519”).
 8. Click “Push origin” to upload your changes back to GitHub.
 9. You can check your changes on GitHub now. 
+
+### 📚 TODO: 
+
+Using the National Mortgage Database data create a very pretty table of descriptive statistics using any table package. I suggest either looking at the **Outstanding Residential Mortgage Statistics** for **States** or **Residential Mortgage Performance Statistics** for **States.**
+
+[https://www.fhfa.gov/data/national-mortgage-database-aggregate-statisticsLinks to an external site.](https://www.fhfa.gov/data/national-mortgage-database-aggregate-statistics)
+
+In your table, show basic summary statistics such as mean, median, min/max, 25th/75th percentiles, for both Washington and the rest of the US. 
+
+Additionally, create 3-4 ggplots that would make sense to view side by side in a grid and try to make the plots in the grid connect together (ex. similar legend, color scheme, title) as well as tell an interesting story. You may want to connect state-level statistics from ACS with the NMDB data (make sure you are comparing data from the same year). 
+
+Be sure to review the technical documentation to understand what the statistics represent. You will likely need to filter or pivot_wider() the data since it is in a long format. 
+
+Add one paragraph explaining your table and charts.
+
+\-----
+
+Helpful resources:
+
+[https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-rLinks to an external site.](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r)
+
+[https://epirhandbook.com/new_pages/tables_descriptive.htmlLinks to an external site.](https://epirhandbook.com/new_pages/tables_descriptive.html)
+
+[https://r-graph-gallery.com/table.htmlLinks to an external site.](https://r-graph-gallery.com/table.html)
+
+Multiple plots next to each other:
+
+[https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.htmlLinks to an external site.](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html)
+
+[https://rfortherestofus.com/2021/11/multicolumnLinks to an external site.](https://rfortherestofus.com/2021/11/multicolumn)
+
+Facets (Creating multiple plots split by one categorical variable):
+
+[https://bookdown.org/yih_huynh/Guide-to-R-Book/facet-wrapping.htmlLinks to an external site.](https://bookdown.org/yih_huynh/Guide-to-R-Book/facet-wrapping.html)
 
 
 ## Acknowledgement
