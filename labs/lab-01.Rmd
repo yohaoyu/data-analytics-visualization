@@ -154,7 +154,7 @@ R Markdown docs can be modified in many ways. Visit these links for more informa
 
 ### 📚️ TODO:Using Markdown for your Resume / CV
 
-**3 points**
+**4 points**
 
 *Create a brief Resume / CV using R Markdown with your name as level 4 headings, headings for (at least) education or employment. Each of the sections should include a bullet list of jobs/degrees. Highlight the year in bold. Try and incorporate as many R Markdown features as possible. You can work on this document or create a new markdown file.*
 

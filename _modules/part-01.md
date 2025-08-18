@@ -15,23 +15,23 @@ Sep 24
 
 
 Sep 29
-: **Data and Data Science in Real Estate**  
+: **Data in Real Estate**  
   : [Slides](#)
-: **LAB 1-B**{: .label .label-green }Basic of R/RStudio and Markdown 
+: **LAB 1-B**{: .label .label-green } Basic of R/RStudio and Markdown 
 : **Optional**{: .readings .readings-optional }[Chapter 1-3, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin.](https://seeing-theory.brown.edu){: .citation} 
 
 
 Oct 01
 : **Data Science Workflows and Components**
   : [Slides](#)
-: **LAB 1-C**{: .label .label-green }Dataframes and Accessing Census Data
+: **LAB 1-C**{: .label .label-green } Dataframes and Accessing Census Data
 
 Oct 06
-: **Data Manipulation 1**
+: **Data Preparation and Quality**
   : [Slides](#)
 : **LAB 2-A**{: .label .label-green } Modifying Dataframes
   : [Page]({{ site.baseurl }}/labs/lab-02) / [Rmd]({{ site.baseurl }}/labs/lab-02.Rmd)
-: **LAB 1 DUE**{: .label .label-purple }
+: **LAB 1 DUE 11:59 PM**{: .label .label-purple }
 
 Oct 08
 : **Data Manipulation 2**
@@ -41,8 +41,8 @@ Oct 08
 Oct 13
 : **Data Manipulation 3**
   : [Slides](#)
-: **LAB 3-A**{: .label .label-green } Tidy Data and Git
-: **LAB 2 DUE**{: .label .label-purple }
+: **LAB 3-A**{: .label .label-green } Tidy
+: **LAB 2 DUE 11:59 PM**{: .label .label-purple }
 
 
 

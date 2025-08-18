@@ -9,7 +9,7 @@ Nov 24
 : <!-- Readings --> **Optional**{: .readings .readings-optional }[Statistical Modeling: The Two Cultures. Leo Breiman. 2001.](https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full){: .citation }<br>
 **Optional**{: .readings .readings-optional }[A Golden Decade of Deep Learning: Computing Systems & Applications. Jeffrey Dean (UW Alumni, Google). 2022.](https://direct.mit.edu/daed/article/151/2/58/110623/A-Golden-Decade-of-Deep-Learning-Computing-Systems){: .citation }<br>
 **Optional**{: .readings .readings-optional }[What is a Neural Network. 3Blue1Brown. 2017.](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi){: .citation }
-: **LAB 8 DUE**{: .label .label-purple }
+: **LAB 8 DUE 11:59 PM**{: .label .label-purple }
 
 Nov 26
 : **Project Review + Coding Clinic (Online Session)**
@@ -23,9 +23,9 @@ Dec 01
 
 Dec 03
 : **Project Presentation**
-    : [Final Project Instruction](#)
+    : [Project Presentation Instruction](#)
 
 Dec 12
 : **Final Project Submission**
-    : [Final Project Instruction](#)
-: **Final Project DUE**{: .label .label-purple }
+    : [Project Submission Instruction](#)
+: **Final Project DUE 11:59 PM**{: .label .label-purple }

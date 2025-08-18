@@ -2344,7 +2344,7 @@ h6 { font-size: 1.8rem; line-height: 1.6; letter-spacing: 0; font-weight: 400; }
 
 .main-content .module > dl:last-child, .module > dl:last-child { margin-bottom: 15px !important; }
 
-.main-content dt { font-size: 1rem; font-weight: 500 !important; text-align: start; }
+.main-content dt { font-size: 15px; font-weight: 400 !important; text-align: start; }
 
 .main-content dd { font-weight: 400 !important; }
 
