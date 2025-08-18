@@ -33,7 +33,10 @@ We will have **8** labs in total (2~3 classes for each lab) and you only need to
 Please check [grading policy of this class](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#course-requirements) in advance, including grade curving, late date policy, etc. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission.
 More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
-> Recommended Reading: [Appendix B, Modern Data Science with R, 3rd edition](https://mdsr-book.github.io/mdsr3e/B-appR.html)
+> **Recommended Readings**:  
+> [Appendix B, Modern Data Science with R, 3rd edition. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e/B-appR.html)  
+> [Chapter 2, Data Visualization. Kieran Healy. 2019.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Data-Visualization-A-Practical-Introduction.pdf)
+
 
 
 ## Lab 01-A: Setup

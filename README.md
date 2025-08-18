@@ -43,7 +43,7 @@ analysis techniques and analysis, and various forms of transportation analysis.
 Visualize This: The Flowing Data Guide to Design, Visualization, and Statistics. Nathan Yau. 2024. <br>
 Data Visualization: A Practical Introduction. Kieran Healy. 2019.
 ## Schedules
-<a href="#recent"><i class="fa-solid fa-square-arrow-up-right" style="color: #000000;"></i> **Go to the recent section**.</a> This schedule is subject to change and please check back regularly for updates. All readings and materials can be directly accessed via the links below, although some may require a UW NetID login. 
+<a href="#recent"><i class="fa-solid fa-square-arrow-up-right" style="color: #000000;"></i> **Go to the recent section**.</a> This schedule is subject to change and please check back regularly for updates. All readings and materials can be directly accessed via the links below, although some may require a UW NetID login. Some readings and links about R/coding are on each lab session page.
 
 {% for module in site.modules %}
 {{ module }}

@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-content .module > dl:last-child,
 .module > dl:last-child {
-  margin-bottom: 10px !important;   
+  margin-bottom: 15px !important;   
 }
 
 .main-content dt {
@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500 !important;
     text-align: start;
 }
+
 
 .main-content dd {
     font-weight: 400 !important;
@@ -154,7 +155,7 @@ summary {
 // reading and ciations
 .readings {
   display: inline-block;
-  font-size: 0.72em;
+  font-size: 0.65em;
   border-radius: 0.3em;
   padding: 0.0em 0.5em 0.0em 0em;
   font-weight: 700;
@@ -174,12 +175,12 @@ summary {
 .readings-optional {
   font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica;
   background: #ffffff;
-  color: #616161;
+  color: #444444;
   border: 0px dashed #ffffff;
 }
 .citation {
-  display: inline-block;
-  font-size: 0.8em;
+  display: inline;
+  font-size: 0.75em;
   border-radius: 0.3em;
   padding: 0.0em 0.0em;
   font-weight: 200;
@@ -187,11 +188,14 @@ summary {
   color: #565656;
   margin-right: 0.4em;
   vertical-align: middle;
-  letter-spacing: -0.02em;
-  word-spacing: -0.05em;
+  letter-spacing: -0.015em;
+  word-spacing: -0.03em;
   position: relative;
+  line-height: 1.15 !important;
 }
 
+/* 去掉 <dd> 里 p 的段落外边距，让多条 <p> 看起来像紧凑列表 */
+dl dd > p { margin: 0.25rem 0; }
 
 dd:has(.citation) {
   line-height: 1.1 !important;

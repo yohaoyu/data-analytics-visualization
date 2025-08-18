@@ -240,7 +240,6 @@ Directory</a></li>
 <li><a href="#access-census-data" id="toc-access-census-data">Access
 Census Data</a></li>
 <li><a href="#dataframes-1" id="toc-dataframes-1">Dataframes</a></li>
-<li><a href="#very-simple-git-and-github" id="toc-very-simple-git-and-github">Very Simple Git and GitHub</a></li>
 <li><a href="#todo-explore-census-demographic-data" id="toc-todo-explore-census-demographic-data">📚 TODO: Explore Census
 Demographic Data</a></li>
 </ul></li>
@@ -267,11 +266,14 @@ policy, etc. <strong>For Lab 1–3, the use of any generative AI tool
 detection on each submission. More information about <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity">Academic
 Integrity</a> and <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai">the
 Use of AI</a>.</p>
-<h2 id="lab-01-a-setup">Lab 01-A: Setup</h2>
 <blockquote>
-<p>Recommended Reading: <a href="https://mdsr-book.github.io/mdsr3e/B-appR.html">Appendix B, Modern
-Data Science with R, 3rd edition</a></p>
+<p><strong>Recommended Readings</strong>:<br />
+<a href="https://mdsr-book.github.io/mdsr3e/B-appR.html">Appendix B,
+Modern Data Science with R, 3rd edition. Baumer et al. 2024.</a><br />
+<a href="https://staff.washington.edu/yohaoyu/data-analytics-visualization/Data-Visualization-A-Practical-Introduction.pdf">Chapter
+2, Data Visualization. Kieran Healy. 2019.</a></p>
 </blockquote>
+<h2 id="lab-01-a-setup">Lab 01-A: Setup</h2>
 <h3 id="why-r-and-rstudio">Why R and RStudio?</h3>
 <p>R is a programming language built for statistical computing. But, if
 one already knows Stata or similar software, why use R?</p>
@@ -358,10 +360,6 @@ Layout/Appearance</em>.</p>
 <hr />
 <h2 id="lab-01-b-basic-of-rrstudio-and-markdown">Lab 01-B: Basic of
 R/RStudio and Markdown</h2>
-<blockquote>
-<p>Recommended Reading: <a href="https://mdsr-book.github.io/mdsr3e/B-appR.html">Appendix B, Modern
-Data Science with R, 3rd edition</a></p>
-</blockquote>
 <h3 id="r-markdown">R Markdown</h3>
 <p>Markdown is a simple formatting syntax for authoring HTML, PDF, and
 MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>. In the lab, we will review
@@ -667,7 +665,7 @@ Dataframes and Accessing Census Data</h2>
 <h3 id="working-directory">Working Directory</h3>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># show the current working directory</span></span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
-<pre><code>## [1] &quot;/Users/yohaoyu/Repo/data-analytics-visualization&quot;</code></pre>
+<pre><code>## [1] &quot;/Users/yohaoyu/Repo/data-analytics-visualization/labs&quot;</code></pre>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: modify the folder stored this `.Rmd` as the working directory</span></span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">&quot;/Users/yohaoyu/Repo/data-analytics-visualization&quot;</span>) </span></code></pre></div>
 <ul>
@@ -764,41 +762,6 @@ function.</p>
 <p>When you click the <strong>Knit</strong> button (top of this panel) a
 document will be generated that includes both content as well as the
 output of any embedded R code chunks within the document.</p>
-<h3 id="very-simple-git-and-github">Very Simple Git and GitHub</h3>
-<ul>
-<li>Every change you make is saved in history, so you can always go
-back.</li>
-<li>If something breaks, you can roll back to a working version.</li>
-<li>Multiple people can work on the same project without overwriting
-each other.</li>
-<li>Your code and documents are safe, even if your computer
-crashes.</li>
-<li>Most of the data science ecosystem (R packages, Python libraries,
-statistical models, tutorials) lives on GitHub.</li>
-</ul>
-<p>There are two main ways to use GitHub:</p>
-<ol type="1">
-<li>Terminal (Command Line) – more powerful and professional, gives you
-full control.</li>
-<li><a href="https://github.com/apps/desktop">GitHub Desktop</a> –
-easier for beginners, has a user-friendly interface.</li>
-</ol>
-<p>We will using GitHub Desktop:</p>
-<ol type="1">
-<li>Download and install <a href="https://github.com/apps/desktop">GitHub Desktop</a>.</li>
-<li><a href="https://github.com/signup">Sign up a free GitHub
-account</a>.</li>
-<li>Sign in with your GitHub account on GitHub Desktop.</li>
-<li>Create a <a href="https://github.com/new">new public
-repository</a>.</li>
-<li>Click “Clone a repository” to copy from GitHub to your
-computer.</li>
-<li>Add this <code>.Rmd</code> and <code>html</code> to your local
-repository.</li>
-<li>Commit changes with a short message (e.g., “Lab 1 for RE 519”).</li>
-<li>Click “Push origin” to upload your changes back to GitHub.</li>
-<li>You can check your changes on GitHub now.</li>
-</ol>
 <!-- TODO: Explore Census Demographic Data -->
 <h3 id="todo-explore-census-demographic-data">📚 TODO: Explore Census
 Demographic Data</h3>

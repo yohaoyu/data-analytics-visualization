@@ -2342,7 +2342,7 @@ h5 { font-size: 2.0rem; line-height: 1.2; letter-spacing: -.01rem; font-weight: 
 
 h6 { font-size: 1.8rem; line-height: 1.6; letter-spacing: 0; font-weight: 400; }
 
-.main-content .module > dl:last-child, .module > dl:last-child { margin-bottom: 10px !important; }
+.main-content .module > dl:last-child, .module > dl:last-child { margin-bottom: 15px !important; }
 
 .main-content dt { font-size: 1rem; font-weight: 500 !important; text-align: start; }
 
@@ -2376,13 +2376,16 @@ summary { width: 100%; }
 .link-row a:hover { color: #000000; background: none; }
 
 @media (max-width: 600px) { .link-row { flex-direction: column; align-items: stretch; gap: 0.5em; } }
-.readings { display: inline-block; font-size: 0.72em; border-radius: 0.3em; padding: 0.0em 0.5em 0.0em 0em; font-weight: 700; background: #565656; color: #2166b1; margin-right: 0.3em; text-transform: uppercase; vertical-align: middle; letter-spacing: -0.01em; }
+.readings { display: inline-block; font-size: 0.65em; border-radius: 0.3em; padding: 0.0em 0.5em 0.0em 0em; font-weight: 700; background: #565656; color: #2166b1; margin-right: 0.3em; text-transform: uppercase; vertical-align: middle; letter-spacing: -0.01em; }
 
 .readings-required { font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica; background: #ffffff; color: #444444; border: 0px dashed #ffffff; }
 
-.readings-optional { font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica; background: #ffffff; color: #616161; border: 0px dashed #ffffff; }
+.readings-optional { font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica; background: #ffffff; color: #444444; border: 0px dashed #ffffff; }
 
-.citation { display: inline-block; font-size: 0.8em; border-radius: 0.3em; padding: 0.0em 0.0em; font-weight: 200; background: #ffffff; color: #565656; margin-right: 0.4em; vertical-align: middle; letter-spacing: -0.02em; word-spacing: -0.05em; position: relative; }
+.citation { display: inline; font-size: 0.75em; border-radius: 0.3em; padding: 0.0em 0.0em; font-weight: 200; background: #ffffff; color: #565656; margin-right: 0.4em; vertical-align: middle; letter-spacing: -0.015em; word-spacing: -0.03em; position: relative; line-height: 1.15 !important; }
+
+/* 去掉 <dd> 里 p 的段落外边距，让多条 <p> 看起来像紧凑列表 */
+dl dd > p { margin: 0.25rem 0; }
 
 dd:has(.citation) { line-height: 1.1 !important; }
 
