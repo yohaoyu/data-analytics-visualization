@@ -56,9 +56,9 @@ Bring your computer (Windows, MacBook, or Linux is acceptable) to the assigned l
 
 ## Course Requirements
 
-| **Labs**                       |   60%   |
-| **Participation**              |   30%   |
-| **Final Projects**             |   10%   |
+| **Labs**                       |   64 %   |
+| **Participation**              |   9 %   |
+| **Final Projects**             |   27 %   |
 
 It is highly recommended that students attend the course regularly, as the sessions will be offered synchronously and will not be recorded. We will use class time to do necessary activities. Class attendance and participation are integral parts of this course; much of the key material will be introduced and discussed in lectures. Good note-taking skills are essential, since the instructor often discusses material and provides examples that may not be directly quoted on the slides. Students are expected to keep track of the schedule and assignment due dates.
 
@@ -69,17 +69,17 @@ The total scores will be curved and transformed into the UW numerical grading sy
 Late days: You will have 6 penalty-free late days in total (max 3 late days per assignment). Any delayed submission after the first 3 days will be penalized 10% per day for that specific assignment (but will not count towards your used late days).
 
 
-### Labs (60%)
+### Labs (64%)
 
-There will be a total of 8 labs. HW 0 is intended for reviewing mathematical concepts and will not be added to the total grade; 5% each for the other 8 assignments. Each assignment will take approximately one week, and the expected finish time is around 2-3 hours. Each student is expected to submit their own assignments, but study groups are allowed. But you're expected to acknowledge the names of collaborators along with a short description of the types of collaborations being done at the beginning of each assignment submission. You may use generative AI tools such as Co-Pilot and ChatGPT, but please check the AI policy section. 
+There will be a total of 8 labs and 8% each for each lab. Each lab will take approximately one week, and the expected finish time is around 1~2 hours after class. You only need to submit once after each lab. Each student is expected to submit their own lab, but study groups are allowed. But you're expected to acknowledge the names of collaborators along with a short description of the types of collaborations being done at the beginning of each lab submission. You may use generative AI tools such as Co-Pilot and ChatGPT, but please check the AI policy section. 
 
-Details for each homework will be released after the previous homework is due. All homework will be due at 11:59 pm Pacific Time and should be submitted on Canvas. You can typeset or scan your assignment, but you should upload a PDF rather than submitting as images.
+All labs will be due at 11:59 pm Pacific Time and should be submitted on Canvas. The submission should include Rmd, html, and any other files required to rerun the codes.
 
-### Final Projects (30%)
+### Final Projects (27%)
 
 There will be a ﬁnal exam in the final week (based on UW’s arrangement). The exam will cover all the content in modules 1-4, including topics like descriptive statistics, probability distributions, hypothesis testing, and regression. The exam is closed-book; however, each student is permitted to bring a letter-size double-sided cheat sheet. Calculators will be provided if computation is needed, but you are allowed to bring your own calculators. 
 
-### Participation (10%)
+### Participation (9%)
 
 
 ## Communication and Community Forum

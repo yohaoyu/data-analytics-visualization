@@ -1,0 +1,89 @@
+---
+title: "Lab 02 Data Wrangling for Dataframes"
+subtitle: "RE 519 Data Analytics and Visualization | Autumn 2025"
+author: "" #remember to add to your name when you submit the lab
+date: ""
+output:
+  cleanrmd::html_document_clean:
+    theme: almond
+    toc: true 
+    toc_depth: 3
+    css: custom.css
+    mathjax: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    md_extensions: +tex_math_dollars+tex_math_single_backslash   
+    df_print: paged    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+<!-- start of the main lab content --> 
+
+```{r}
+
+```
+
+
+This 
+The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
+
+> Recommended Reading: [Chapter 4-5, Modern Data Science with R, 3rd edition](https://mdsr-book.github.io/mdsr3e/)
+
+
+
+`filter` - Multiple Conditions
+`%in%`
+`distinct()`
+set.seed(413)
+sample_n() or sample_frac()
+arrange()
+select() select(-)
+rename()
+mutate()
+conditional/case_when()
+loops
+recode()
+summarize()
+group_by()
+join
+
+## Lab 02-A: Modifying Dataframes
+
+```{r}
+library('tidyverse')
+```
+
+### Pipe - A Unique Feature of R
+
+One of the most distinctive features of R (especially through the tidyverse) is the pipe operator `%>%` or `|>`.
+
+- chain commands together in a clear, left-to-right order.
+- Instead of nesting multiple functions, you can read code step by step.
+- closer to natural language and easier to follow in data analysis workflows.
+
+| System        | Windows/Linux    | Mac             |
+|---------------|------------------|-----------------|
+| Pipe Shortcut | Ctrl + Shift + M | Cmd + Shift + M |
+
+```{r}
+# example without pipe
+mean(log(sqrt(c(1, 4, 9, 16))))
+# example with pipe
+c(1, 4, 9, 16) %>%
+  sqrt() %>%
+  log() %>%
+  mean()
+```
+
+
+
+## Lab 02-B: Summarizing and Joining Dataframes
+
+
+
+## Acknowledgement
+
+The materials are developed based materails from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).

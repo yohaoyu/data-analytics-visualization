@@ -29,26 +29,27 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0rem;
     margin-bottom: 0.5rem;
-    font-weight: 400; }
+    font-weight: 400 ; }
   h1 { font-size: 2.0rem; line-height: 1.2;  letter-spacing: -.01rem;font-weight: 500!important}
   h2 { font-size: 1.6rem !important; line-height: 1.2; margin-top: 1em!important;letter-spacing: -.01rem; font-weight: 400 } 
-  h3 { font-size: 1.1rem !important; line-height: 1.2;  letter-spacing: -.01rem; font-weight: 600}
+  h3 { font-size: 1.2rem !important; line-height: 1.2;  letter-spacing: -.01rem; font-weight: 600}
   h4 { font-size: 0.9rem !important;line-height: 1.2; letter-spacing: -.01rem; font-weight: 400}
   h5 { font-size: 2.0rem; line-height: 1.2;  letter-spacing: -.01rem; font-weight: 400}
   h6 { font-size: 1.8rem; line-height: 1.6;  letter-spacing: 0; font-weight: 400}
 
 .main-content .module > dl:last-child,
 .module > dl:last-child {
-  margin-bottom: 3px !important;   
+  margin-bottom: 10px !important;   
 }
 
 .main-content dt {
-    font-weight: 400 !important;
+    font-size: 1rem;
+    font-weight: 500 !important;
     text-align: start;
 }
 
 .main-content dd {
-    font-weight: 200 !important;
+    font-weight: 400 !important;
 }
 
 h3.no_toc {
@@ -117,7 +118,7 @@ summary {
 
 // menu bar
 .link-row {
-  font-weight: 400;
+  font-weight: 500 !important;
   display: flex;
   justify-content: flex-start; 
   text-align: left;            
@@ -131,7 +132,7 @@ summary {
   border-radius: 0.5em;
   text-decoration: underline; 
   text-decoration-color: #eeebee;
-  font-weight: 400;
+  font-weight: 500;
   background: none;
   border: none;
   box-shadow: none;

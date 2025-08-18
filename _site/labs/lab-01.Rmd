@@ -1,26 +1,10 @@
----
-title: "Lab 01 Basic of R, RStudio, and GitHub"
-subtitle: "RE 519 Data Analytics and Visualization | Autumn 2025"
-author: "" #remember to add to your name when you submit the lab
-date: ""
-output:
-  cleanrmd::html_document_clean:
-    theme: almond
-    toc: true 
-    toc_depth: 3
-    css: custom.css
-    mathjax: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-    md_extensions: +tex_math_dollars+tex_math_single_backslash   
-    df_print: paged    
----
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ---
 
-<!-- start of the main lab content -->
+<!-- start of the main lab content --> 
 
 **Welcome to start the journey in data science!** Through this quarter, we will 
 learn how to conduct data analysis and visualization using [R](http://www.r-project.org),
@@ -33,11 +17,10 @@ We will have **8** labs in total (2~3 classes for each lab) and you only need to
 Please check [grading policy of this class](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#course-requirements) in advance, including grade curving, late date policy, etc. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission.
 More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
-
-## Lab 01-A: Setup
-
 > Recommended Reading: [Appendix B, Modern Data Science with R, 3rd edition](https://mdsr-book.github.io/mdsr3e/B-appR.html)
 
+
+## Lab 01-A: Setup
 
 ### Why R and RStudio?
 
@@ -104,8 +87,6 @@ You can change the layout and theme in *Preferences > Pane Layout/Appearance*.
 ---
 
 ## Lab 01-B: Basic of R/RStudio and Markdown
-
-> Recommended Reading: [Appendix B, Modern Data Science with R, 3rd edition](https://mdsr-book.github.io/mdsr3e/B-appR.html)
 
 ### R Markdown
 
@@ -381,7 +362,7 @@ Today is `today's date`, it has been `number of year` years since {what did happ
 
 ---
 
-## Lab 01-C: Dataframes, Exporting, and GitHub
+## Lab 01-C: Dataframes and Accessing Census Data
 
 ### Working Directory
 
@@ -474,31 +455,6 @@ mean(king_value$estimate, na.rm = TRUE)
 
 When you click the **Knit** button (top of this panel) a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
 
-### Very Simple Git and GitHub
-
-- Every change you make is saved in history, so you can always go back.
-- If something breaks, you can roll back to a working version.
-- Multiple people can work on the same project without overwriting each other.
-- Your code and documents are safe, even if your computer crashes.
-- Most of the data science ecosystem (R packages, Python libraries, statistical models, tutorials) lives on GitHub.
-
-There are two main ways to use GitHub:
-
-1. Terminal (Command Line) – more powerful and professional, gives you full control.
-2. [GitHub Desktop](https://github.com/apps/desktop) – easier for beginners, has a user-friendly interface.
-
-We will using GitHub Desktop:
-
-1. Download and install [GitHub Desktop](https://github.com/apps/desktop).
-2. [Sign up a free GitHub account](https://github.com/signup).
-3. Sign in with your GitHub account on GitHub Desktop.
-4. Create a [new public repository](https://github.com/new).
-5. Click “Clone a repository” to copy from GitHub to your computer.
-6. Add this `.Rmd` and `html` to your local repository.
-7. Commit changes with a short message (e.g., “Lab 1 for RE 519”).
-8. Click “Push origin” to upload your changes back to GitHub.
-9. You can check your changes on GitHub now. 
-
 <!-- TODO: Explore Census Demographic Data -->
 
 ### 📚 TODO: Explore Census Demographic Data
@@ -509,12 +465,11 @@ We will using GitHub Desktop:
 
 *Using a dataframe to store the data and calculate basic summary statistics such as mean, median, min/max, 25th/75th percentiles for your data; and briefly introduce why you're interested in this data and what did you find through the simple exploration.*
 
-*After finish this lab, you need to upload everything to the repo you created and submit your repo link via Canvas assignment page.*
+*After finish this lab, you need to submit everything via Canvas assignment page.*
 
 ```{r}
 # TODO
 ```
-
 
 
 ## Acknowledgement
