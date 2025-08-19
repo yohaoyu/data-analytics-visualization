@@ -108,7 +108,6 @@ The University of Washington is the leading institution in statistics and data s
   - [Center for Statistics and the Social Sciences](https://csss.uw.edu)
 
 
-
 ## Academic Integrity 
 The University of Washington expects students to know their responsibilities and maintain the highest academic conduct standards (WAC 478-121). Students are held responsible for any violation of the University of Washington Student Code, irrespective of whether the violation was intentional or not. Students suspected of cheating or otherwise violating the misconduct code will be referred to the College disciplinary process. Behaving with integrity is part of our responsibility to our shared learning community. If you’re uncertain about whether something is academic misconduct, ask me. I am willing to discuss questions you might have. Acts of academic misconduct may include, but are not limited to:
 
