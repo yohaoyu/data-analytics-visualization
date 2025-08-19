@@ -26,14 +26,14 @@ Oct 01
 : **LAB 1-C**{: .label .label-green } Dataframes and Accessing Census Data
 
 Oct 06
-: **Understand Market through Data**
+: **Understand the Market through Data: Macro-level**
   : [Slides](#)
 : **LAB 2-A**{: .label .label-green } Modifying Dataframes
   : [Page]({{ site.baseurl }}/labs/lab-02) / [Rmd]({{ site.baseurl }}/labs/lab-02.Rmd)
 : **LAB 1 DUE 11:59 PM**{: .label .label-purple }
 
 Oct 08
-: **Location**
+: **Prediction and Appraisal: Micro-level**
   : [Slides](#)
 : **LAB 2-B**{: .label .label-green } Summarizing and Joining Dataframes
 
