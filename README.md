@@ -32,12 +32,9 @@ Newest announcements below and check [all announcements](announcements.md).
 {% endfor %}-->
 
 
-The primary objective of this course is to familiarize planning students with methods and
-techniques they are likely to encounter and use in planning departments and
-organizations. Planners must be quite versatile, in that they must be knowledgeable of a
-variety of analytical methods, including statistical analysis and techniques, demographic
-techniques; economic analysis, project planning techniques, geographical and spatial
-analysis techniques and analysis, and various forms of transportation analysis.
+Real estate decision making requires the assessment of interdisciplinary datasets, which include socioeconomic, financial, and environmental data. This course aims to provide you an opportunity to improve your coding ability and demonstrate that using R is more replicable and efficient than Excel.
+
+We will work in groups to solve tricky data wrangling & visualization problems. Of course, we will encounter a lot of new commands and new ways of thinking about how data is organized. However, we will most importantly learn how to create a visualization that will best inform our audience and honestly describe the underlying data.
 
 
 Visualize This: The Flowing Data Guide to Design, Visualization, and Statistics. Nathan Yau. 2024. <br>
