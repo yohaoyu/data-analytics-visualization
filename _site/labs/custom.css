@@ -61,6 +61,13 @@ p code, li code {
   line-height: 1.4;          /* 保证与正文行高一致 */
 }
 
+code {
+  font-size: 0.85em !important;         /* 字体略小，和正文比例一致 */
+  vertical-align: middle;    /* 中线对齐 */
+  padding: 0em 0em 0 0em;          /* 上下 padding 去掉，保留左右间距 */
+  line-height: 1.2;          /* 保证与正文行高一致 */
+}
+
 pre > code {
   box-sizing: border-box;
   display: block;
@@ -74,3 +81,9 @@ pre {
   margin: 0.5rem 0 !important;
 }
 
+figure {
+  max-width: 60% !important;
+  background: none !important;
+  border: none !important;
+  padding: 15px 0 !important;
+}

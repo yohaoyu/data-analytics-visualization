@@ -6,17 +6,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!-- start of the main lab content --> 
 
+In lab 3, we are going to explore tidy data, some programming knowledge in R, and GitHub. The primary dataset we are using is [Zillow Home Value Index (ZHVI)](https://www.zillow.com/research/data/), a measure of the typical home value and market changes across a given region and housing type. More information about what ZHVI is and how it’s calculated is available on [this overview page](https://www.zillow.com/research/methodology-neural-zhvi-32128/). 
+
 The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
+> Recommended Reading: [Chapter 6-7, Modern Data Science with R, 3rd edition. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e)
 
-## Lab 03-A: Tidy Data
-
-> Recommended Reading: [Appendix B, Modern Data Science with R, 3rd edition](https://mdsr-book.github.io/mdsr3e/B-appR.html)
-
+## Lab 03-A: Tidy Data and Tables
 
 
 
-## Lab 03-B: Table, A Little Programming, Visualization and GitHub
+
+
+## Lab 03-B: A Little Programming and GitHub
+
+### Functions
+
+
+### Iterations
 
 
 ### Very Simple Git and GitHub
@@ -44,7 +51,34 @@ We will using GitHub Desktop:
 8. Click “Push origin” to upload your changes back to GitHub.
 9. You can check your changes on GitHub now. 
 
+### 📚 TODO: Critique of Data Visualizations
+
+**5 points**
+
+As we learn more about data visualization, we have begun to discuss some general principles. For this section, please find an example of a visualization or infographic that impresses you- either in a good or bad way. Please attach the example image, give the link/source, and:
+
+1. describe what the visualization is trying to communicate
+2. discuss what it does and does not do well using the principles we talked about in class
+3. comment on two visualizations posted by classmates (optional)
+
+A few probing questions to think about:
+
+- Is the data visualization static, motion or interactive?
+- Is it narrative or exploratory?
+- What kind of purpose do you think it serves? How would you order its objectives (appeal, comprehension and retention)?
+- Does it contain the basic elements of a graph (e.g. title, axis label, encoding)? Is anything missing or not clear to audience?
+- What kind of encoding does it use (e.g. position, length, slope, angle, area, color hue, etc)? How effective in terms of precision of such encoding elements? 
+- What kind of organization principles do you observe (e.g.hierarchy, unity, balance, grouping and spacing)? Is principle lacking in the graph?
+- Do you think your psychological needs have all been met by this source (e.g. autonomy, relatedness and competence)?
+
+
+
 ### 📚 TODO: 
+
+
+
+
+
 
 Using the National Mortgage Database data create a very pretty table of descriptive statistics using any table package. I suggest either looking at the **Outstanding Residential Mortgage Statistics** for **States** or **Residential Mortgage Performance Statistics** for **States.**
 
@@ -81,4 +115,4 @@ Facets (Creating multiple plots split by one categorical variable):
 
 ## Acknowledgement
 
-The materials are developed based materails from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).
+The materials are developed based materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).

@@ -88,6 +88,12 @@ vertical-align: middle;
 padding: 0 0.2em; 
 line-height: 1.4; 
 }
+code {
+font-size: 0.85em !important; 
+vertical-align: middle; 
+padding: 0em 0em 0 0em; 
+line-height: 1.2; 
+}
 pre > code {
 box-sizing: border-box;
 display: block;
@@ -99,7 +105,12 @@ width: min-content;
 pre {
 margin: 0.5rem 0 !important;
 }
-</style>
+figure {
+max-width: 60% !important;
+background: none !important;
+border: none !important;
+padding: 15px 0 !important;
+}</style>
 
 </head>
 <body>
@@ -114,12 +125,16 @@ Visualization | Autumn 2025</h2>
 
 </header>
 <ul>
-<li><a href="#lab-03-a-tidy-data" id="toc-lab-03-a-tidy-data">Lab 03-A:
-Tidy Data</a></li>
-<li><a href="#lab-03-b-table-a-little-programming-visualization-and-github" id="toc-lab-03-b-table-a-little-programming-visualization-and-github">Lab
-03-B: Table, A Little Programming, Visualization and GitHub</a>
+<li><a href="#lab-03-a-tidy-data-and-tables" id="toc-lab-03-a-tidy-data-and-tables">Lab 03-A: Tidy Data and
+Tables</a></li>
+<li><a href="#lab-03-b-a-little-programming-and-github" id="toc-lab-03-b-a-little-programming-and-github">Lab 03-B: A Little
+Programming and GitHub</a>
 <ul>
+<li><a href="#functions" id="toc-functions">Functions</a></li>
+<li><a href="#iterations" id="toc-iterations">Iterations</a></li>
 <li><a href="#very-simple-git-and-github" id="toc-very-simple-git-and-github">Very Simple Git and GitHub</a></li>
+<li><a href="#todo-critique-of-data-visualizations" id="toc-todo-critique-of-data-visualizations">📚 TODO: Critique of Data
+Visualizations</a></li>
 <li><a href="#todo" id="toc-todo">📚 TODO:</a></li>
 </ul></li>
 <li><a href="#acknowledgement" id="toc-acknowledgement">Acknowledgement</a></li>
@@ -127,6 +142,12 @@ Tidy Data</a></li>
 
 <hr />
 <!-- start of the main lab content -->
+<p>In lab 3, we are going to explore tidy data, some programming
+knowledge in R, and GitHub. The primary dataset we are using is <a href="https://www.zillow.com/research/data/">Zillow Home Value Index
+(ZHVI)</a>, a measure of the typical home value and market changes
+across a given region and housing type. More information about what ZHVI
+is and how it’s calculated is available on <a href="https://www.zillow.com/research/methodology-neural-zhvi-32128/">this
+overview page</a>.</p>
 <p>The due day for each lab can be found on the <a href="https://www.yuehaoyu.com/data-analytics-visualization/">course
 wesbite</a>. The submission should include Rmd, html, and any other
 files required to rerun the codes. <strong>For Lab 1–3, the use of any
@@ -134,13 +155,16 @@ generative AI tool (ChatGPT, Copilot, etc.) is prohibited</strong>. We
 will run AI detection on each submission. More information about <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity">Academic
 Integrity</a> and <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai">the
 Use of AI</a>.</p>
-<h2 id="lab-03-a-tidy-data">Lab 03-A: Tidy Data</h2>
 <blockquote>
-<p>Recommended Reading: <a href="https://mdsr-book.github.io/mdsr3e/B-appR.html">Appendix B, Modern
-Data Science with R, 3rd edition</a></p>
+<p>Recommended Reading: <a href="https://mdsr-book.github.io/mdsr3e">Chapter 6-7, Modern Data
+Science with R, 3rd edition. Baumer et al. 2024.</a></p>
 </blockquote>
-<h2 id="lab-03-b-table-a-little-programming-visualization-and-github">Lab
-03-B: Table, A Little Programming, Visualization and GitHub</h2>
+<h2 id="lab-03-a-tidy-data-and-tables">Lab 03-A: Tidy Data and
+Tables</h2>
+<h2 id="lab-03-b-a-little-programming-and-github">Lab 03-B: A Little
+Programming and GitHub</h2>
+<h3 id="functions">Functions</h3>
+<h3 id="iterations">Iterations</h3>
 <h3 id="very-simple-git-and-github">Very Simple Git and GitHub</h3>
 <ul>
 <li>Every change you make is saved in history, so you can always go
@@ -176,6 +200,36 @@ repository.</li>
 <li>Click “Push origin” to upload your changes back to GitHub.</li>
 <li>You can check your changes on GitHub now.</li>
 </ol>
+<h3 id="todo-critique-of-data-visualizations">📚 TODO: Critique of Data
+Visualizations</h3>
+<p><strong>5 points</strong></p>
+<p>As we learn more about data visualization, we have begun to discuss
+some general principles. For this section, please find an example of a
+visualization or infographic that impresses you- either in a good or bad
+way. Please attach the example image, give the link/source, and:</p>
+<ol type="1">
+<li>describe what the visualization is trying to communicate</li>
+<li>discuss what it does and does not do well using the principles we
+talked about in class</li>
+<li>comment on two visualizations posted by classmates (optional)</li>
+</ol>
+<p>A few probing questions to think about:</p>
+<ul>
+<li>Is the data visualization static, motion or interactive?</li>
+<li>Is it narrative or exploratory?</li>
+<li>What kind of purpose do you think it serves? How would you order its
+objectives (appeal, comprehension and retention)?</li>
+<li>Does it contain the basic elements of a graph (e.g. title, axis
+label, encoding)? Is anything missing or not clear to audience?</li>
+<li>What kind of encoding does it use (e.g. position, length, slope,
+angle, area, color hue, etc)? How effective in terms of precision of
+such encoding elements?</li>
+<li>What kind of organization principles do you observe (e.g.hierarchy,
+unity, balance, grouping and spacing)? Is principle lacking in the
+graph?</li>
+<li>Do you think your psychological needs have all been met by this
+source (e.g. autonomy, relatedness and competence)?</li>
+</ul>
 <h3 id="todo">📚 TODO:</h3>
 <p>Using the National Mortgage Database data create a very pretty table
 of descriptive statistics using any table package. I suggest either
@@ -215,7 +269,7 @@ variable):</p>
 <p><a href="https://bookdown.org/yih_huynh/Guide-to-R-Book/facet-wrapping.html">https://bookdown.org/yih_huynh/Guide-to-R-Book/facet-wrapping.htmlLinks
 to an external site.</a></p>
 <h2 id="acknowledgement">Acknowledgement</h2>
-<p>The materials are developed based materails from <a href="https://fsun.ucsd.edu">Dr. Feiyang Sun at UC San Diego</a>, Siman
+<p>The materials are developed based materials from <a href="https://fsun.ucsd.edu">Dr. Feiyang Sun at UC San Diego</a>, Siman
 Ning and Christian Phillips at UW, <a href="https://clanfear.github.io">Dr. Charles Lanfear at University of
 Cambridge</a>.</p>
 

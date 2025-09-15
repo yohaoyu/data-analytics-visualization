@@ -2506,7 +2506,7 @@ summary { width: 100%; }
 @media (max-width: 600px) { .link-row { flex-direction: column; align-items: stretch; gap: 0.5em; } }
 .readings { display: inline-block; font-size: 0.65em; border-radius: 0.3em; padding: 0.0em 0.5em 0.0em 0em; font-weight: 700; background: #565656; color: #2166b1; margin-right: 0.3em; text-transform: uppercase; vertical-align: middle; letter-spacing: -0.01em; }
 
-.readings-required { font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica; background: #ffffff; color: #444444; border: 0px dashed #ffffff; }
+.readings-required { font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica; background: #ffffff; color: #000000; border: 0px dashed #ffffff; }
 
 .readings-optional { font-family: Optima, Palatino, "Microsoft Yahei","Raleway", sans-serif,"HelveticaNeue", "Helvetica Neue", Helvetica; background: #ffffff; color: #444444; border: 0px dashed #ffffff; }
 

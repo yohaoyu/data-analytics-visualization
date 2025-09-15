@@ -34,10 +34,10 @@ Please check [grading policy of this class](https://www.yuehaoyu.com/data-analyt
 More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
 > **Recommended Readings**:  
-> [Appendix B, Modern Data Science with R, 3rd edition. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e/B-appR.html)  
+> [Appendix B and Appendix D, Modern Data Science with R, 3rd edition. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e/)  
 > [Chapter 2, Data Visualization. Kieran Healy. 2019.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Data-Visualization-A-Practical-Introduction.pdf)
 
-
+---
 
 ## Lab 01-A: Setup
 
@@ -492,4 +492,4 @@ When you click the **Knit** button (top of this panel) a document will be genera
 
 ## Acknowledgement
 
-The materials are developed based materails from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).
+The materials are developed based materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).
