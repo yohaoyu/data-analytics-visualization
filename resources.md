@@ -24,21 +24,19 @@ description: Resources.
 
 ## Tools and Softwares
 
-- Tidyverse (R)
-- Pandas (Python)
-- Tableau for Students – a free Tableau license for students
-- Tableau Public – a free version of Tableau which publishes to the web
-- D3 (JavaScript) - A JavaScript library for data-driven DOM manipulation, interaction and animation. Includes utilities for visualization techniques and SVG generation.
-- Altair (Python) - Jupyter-friendly Python API for Vega-Lite
-- Seaborn (Python) - Python library with nice defaults, built on top of matplotlib
-- Vega-Lite (JavaScript) - A high-level visualization grammar that compiles concise specifications to full Vega specifications.
-- GGplot2 (R) - a graphics language for R
-- Shiny (R)
-- Leaflet - a popular open-source mapping library
-- [Adobe Color](http://color.adobe.com/)
-- [Viz Palette](https://projects.susielu.com/viz-palette)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/)
+- [Tidyverse (R)](https://www.tidyverse.org) - a collection of R packages designed for data science
+- [ggplot2 (R)](https://ggplot2.tidyverse.org) - a graphics language for R
+- [Shiny (R)](https://shiny.posit.co) - R package to create interactive web applications 
+- [Pandas (Python)](https://pandas.pydata.org) - a package data for manipulation and analysis in Python
+- [Matplotlib (Python)](https://matplotlib.org) - free library for visualizations in Python
+- [Vega-Altair (Python)](https://altair-viz.github.io) - Jupyter-friendly Python API for Vega-Lite
+- [Seaborn (Python)](https://seaborn.pydata.org) - a package for statistical data visualization, built on top of matplotlib
+- [Tableau for Students](https://www.tableau.com/academic/students) – a free Tableau license for students
+- [Tableau Public](https://public.tableau.com/app/discover) – a free platform to explore, create, share data visualizations, and connect with data analysts worldwide.
+- [Adobe Color](http://color.adobe.com/) - free color palette generator
+- [Viz Palette](https://projects.susielu.com/viz-palette) - picking colors for data visualizations
+- [Visual Studio Code](https://code.visualstudio.com/) - a popular integrated development environment (IDE) and code editor
+- [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/) - command-line shells for Windows
 
 ## Datasets
 
