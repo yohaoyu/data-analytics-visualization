@@ -1,6 +1,6 @@
 ---
 layout: minimal
-title: Resources
+title: Real Estate Analysis in the Information Age
 description: Resources.
 ---
 
@@ -9,34 +9,51 @@ description: Resources.
 {:toc}
 
 {% include course_header.html %}
-# Resources
+# Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling
 {:.no_toc}
+**By Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018)**
 
-## Tools and Softwares
+> **Course Use Only**! This book is provided exclusively for students enrolled in RE 519 at the University of Washington. 
+It is intended for educational use only and may not be copied, shared, or distributed outside of this course.
+All rights remain with the original copyright holder. Students are expected to respect copyright law and use this material solely for their personal study in this class.
 
-- Tidyverse (R)
-- Pandas (Python)
+**Accessing those materials requires a UW NetID login**
 
-- Tableau for Students – a free Tableau license for students
-- Tableau Public – a free version of Tableau which publishes to the web
+[Acknowledgement and Introductions](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/front.pdf)
 
-- D3 (JavaScript) - A JavaScript library for data-driven DOM manipulation, interaction and animation. Includes utilities for visualization techniques and SVG generation.
-- Altair (Python) - Jupyter-friendly Python API for Vega-Lite
-- Seaborn (Python) - Python library with nice defaults, built on top of matplotlib
-- Vega-Lite (JavaScript) - A high-level visualization grammar that compiles concise specifications to full Vega specifications.
-- GGplot2 (R) - a graphics language for R
-- Shiny (R)
+### Part 1: Data
+[Chapter 1:  Traditional Real Estate Data](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-1.pdf)
+
+[Chapter 2:  Big Data](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-2.pdf)
+
+### Part 2: Tools and Processes
+
+[Chapter 3:  Software Tools for Real Estate Analysis](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-3.pdf)
+
+[Chapter 4:  The Analytical Workflow](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-4.pdf)
+
+[Chapter 5:  Gathering Real Estate Data](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-5.pdf)
+
+[Chapter 6:  Data Management](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-6.pdf)
+
+[Chapter 7:  Data Preparation](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-7.pdf)
+
+### Part 3: Modeling and Analysis
+
+[Chapter 8:  Exploratory Data Analysis](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-8.pdf)
+
+Chapter 9:  Data Cleaning: Techniques to Deal with Outliers, Errors, and Missing Data
+
+[Chapter 10: Modeling Real Estate Prices](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-10.pdf)
+
+Chapter 11:  Analysis of Unstructured Text
+
+[Chapter 12:  Real Estate Analysis Case Study](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-12.pdf)
 
 
-- Leaflet - a popular open-source mapping library
+### Part 4: Legal and Future
+[Chapter 13:  The Legalities of Big Data](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-13.pdf)
 
-- [Adobe Color](http://color.adobe.com/)
-- [Viz Palette](https://projects.susielu.com/viz-palette)
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/)
-
-## Datasets
-
+[Chapter 14:  The Future of Big Data](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-14.pdf)
 
 {% include course_footer.html %}

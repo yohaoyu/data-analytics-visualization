@@ -279,3 +279,7 @@ dd:has(.readings) {
   font-size: 1.25rem;
 }
 
+.tags {
+  color: #6c757d; /* Bootstrap灰色，你也可以改成 #888 或 lightgray */
+  font-size: 0.9em; /* 可选：让标签文字稍微小一点 */
+}

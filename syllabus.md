@@ -29,8 +29,10 @@ After successfully completing this course you should be able to:
 3. Be more aware of the real estate data landscape in the US, Washington, and the Puget Sound region
 4. Wrangle data using the tidyverse package; manipulate, combine, and collapse datasets
 5. Map data and understand the challenges when working with spatial data
-6. Understand the basic taxonomy of a data analysis methods and conduct basic analysis
-7. Interpret data visualizations, document, and present your data analysis using R Markdown
+6. Interpret data visualizations, document, and present your data analysis using R Markdown
+7. Understand the basic taxonomy of a data analysis methods and conduct regression and basic machine learning models
+8. Know essential concepts in deep learning and artificial intelligence
+9. Understand ethical challenges in applying AI and data science to real world contexts
 
 Overall students are expected to gain proficiency in identifying the appropriate analysis and visual method based on the dataset they have and the message they would like to convey.
 
@@ -47,7 +49,7 @@ Overall students are expected to gain proficiency in identifying the appropriate
 
 ### Reference Text
 
-- [Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling](https://www.routledge.com/Real-Estate-Analysis-in-the-Information-Age-Techniques-for-Big-Data-and-Statistical-Modeling/Winson-Geideman-Krause-Lipscomb-Evangelopoulos/p/book/9781138232907?srsltid=AfmBOor7yjeQHFhrGqbRvW-frAUNrij_m5rXOp7tsw0RjysXxIcAi8nb) - by Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018).
+- [Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling]({{ site.baseurl }}/re-in-information-age) - by Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018).
 - [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](https://www.wiley.com/en-us/Visualize+This%3A+The+FlowingData+Guide+to+Design%2C+Visualization%2C+and+Statistics%2C+2nd+Edition-p-9781394214860) - by Nathan Yau (2024)
 - [Data Visualization: A Practical Introduction](https://press.princeton.edu/books/hardcover/9780691181615/data-visualization?srsltid=AfmBOoogKnXuOrY1HeepuYDVq4UVDMgUn_wpWWyQpNY18sIJFCrxYY9p) - by Kieran Healy (2019)
 - [Modern Data Science with R](https://mdsr-book.github.io/mdsr3e/) - by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton (2024)
@@ -93,10 +95,10 @@ There will be several surveys and in-class quizzes, which will on be graded on c
 There will be two ways to receive extra credits:
 
 - **Dataset sharing (2%)**
-  - From week 2 to 6, share high-quality online datasets directly related to real estate and housing on [Ed Discussion](https://edstem.org). 
+  - From week 2 to 6, share high-quality datasets directly related to real estate and housing on [Ed Discussion](https://edstem.org). 
   - The dataset cannot be repeated with the previous datasets shared by other students. 
-  - 10 unique datasets to receive 2%, 5 unique datasets to receive 1%.
-  - Any unique dataset will be listed on <a href="{{ site.baseurl }}/resources">Resources</a> page for others to refer. 
+  - 5 unique datasets to receive 2%, 3 unique datasets to receive 1%.
+  - Any unique dataset will be listed on <a href="{{ site.baseurl }}/resources/#datasets">Resources</a> page for others to refer. 
 - **Course evaluation (1%)**
   - We will leave some time in the last class to participate in the anonymous course evaluation. 
 

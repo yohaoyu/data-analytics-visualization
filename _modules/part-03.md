@@ -14,7 +14,7 @@ Nov 12
 : **Logistic and Multiple Linear Regression**
 : **LAB 7-B**{: .label .label-green }[Coding](#)
 : **Project Proposal Due 11:59 PM**{: .label .label-purple }
-    : [Project Proposal Instruction]()
+    : [Project Proposal Instruction]({{ site.baseurl }}/projects/#project-proposal)
 
 Nov 17
 : **Spatiotemporal Data Analysis**

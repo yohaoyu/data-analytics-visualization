@@ -39,6 +39,10 @@ Oct 08
 : **LAB 2-B**{: .label .label-green } Summarizing and Joining Dataframes
 : **Required**{: .readings .readings-required }[Finding Common Ground: Best Practices for State Policies Supporting Transit-Oriented Development. Mason A. Virant, et al. 2024.](https://wcrer.be.uw.edu/2024/03/22/tod-report-finding-common-ground/){: .citation} <br>
 **Optional**{: .readings .readings-optional }[Urban Big Data: City Management and Real Estate Markets. Richard Barkham, et al. 2022.](){: .citation} 
+: **Project Formation Due**{: .label .label-purple }
+  : [Project Formation Instruction]({{ site.baseurl }}/projects/#team-formation)
+
+
 
 
 
