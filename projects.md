@@ -34,7 +34,13 @@ Each student is expected to contribute approximately 20 hours of high-quality wo
 
 ### Team Formation
 
-Form a team (up to three members) and register via Canvas by the deadline.
+Form a team (up to three members) and register via Canvas by the deadline (Oct 8, 2025). 
+
+How to create a group on Canvas?
+
+1. In Course Navigation, click the `People` link.
+2. Click the `Add Group` button.
+3. `Name` your group then `Invite Students` as your group members. 
 
 ### Project Proposal
 

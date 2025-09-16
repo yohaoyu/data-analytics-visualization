@@ -1,40 +1,32 @@
----
-layout: minimal
-title: Syllabus
-description: Syllabus.
----
+# Data Analytics and Visualization
 
-<button id="toc-toggle"><i class="fa-solid fa-bars"></i></button>
-1. TOC
-{:toc}
+RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025
+Monday & Wednesday, 2:30 - 3:50 pm, [Mechanical Engineering Building 245](https://www.washington.edu/classroom/MEB+245)
 
-{% include course_header.html %}
-# Syllabus
-{:.no_toc}
-
-
-
+| Home | [Syllabus](http://127.0.0.1:4000/data-analytics-visualization/syllabus) | [Projects](http://127.0.0.1:4000/data-analytics-visualization/projects) | [Resources](http://127.0.0.1:4000/data-analytics-visualization/resources) | Canvas | [Ed Discussion](http://127.0.0.1:4000/data-analytics-visualization/syllabus/#) |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ | ------------------------------------------------------------ |
 
 ## Overview
-Real estate decision making requires the assessment of interdisciplinary datasets, which include socioeconomic, financial, and environmental data. Determining evolving patterns, analyzing and visualizing them is critical in holistically assessing an area and a real estate decision to be made. This course aims to provide you an opportunity to improve your coding ability and demonstrate that using [R](https://www.r-project.org) is more replicable and efficient than Excel.
 
-We will work in groups to solve tricky data analytics & visualization problems. Of course, we will encounter a lot of new commands and new ways of thinking about how data is organized. However, we will most importantly learn how to understand the process of data analysis and how to best inform our audience and honestly describe the underlying data. The course is developed based on materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu/), Siman Ning and Christian Phillips. 
+Real estate decision-making requires the assessment of interdisciplinary datasets, which include socioeconomic, financial, and environmental data. Determining evolving patterns, analyzing and visualizing them is critical in holistically assessing an area and a real estate decision to be made. This course aims to provide you with an opportunity to improve your coding ability and demonstrate that using [R](https://www.r-project.org) is more replicable and efficient than Excel.
+
+We will work in groups to solve tricky data analytics & visualization problems. Of course, we will encounter a lot of new commands and new ways of thinking about how data is organized. However, we will most importantly learn how to understand the process of data analysis and how to best inform our audience and honestly describe the underlying data. The course is developed based on materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu/), Siman Ning, and Christian Phillips. 
 
 
 ## Learning Objectives 
-After successfully completing this course you should be able to:
+After successfully completing this course, you should be able to:
 
 1. Create, debug, debug again, then submit scripts to perform data analysis in R using RStudio
-2. Import data in variety formats; including interacting with APIs to access public databases
+2. Import data in variety of formats; including interacting with APIs to access public databases
 3. Be more aware of the real estate data landscape in the US, Washington, and the Puget Sound region
 4. Wrangle data using the tidyverse package; manipulate, combine, and collapse datasets
 5. Map data and understand the challenges when working with spatial data
 6. Interpret data visualizations, document, and present your data analysis using R Markdown
-7. Understand the basic taxonomy of a data analysis methods and conduct regression and basic machine learning models
+7. Understand the basic taxonomy of data analysis methods and conduct regression and basic machine learning models
 8. Know essential concepts in deep learning and artificial intelligence
-9. Understand ethical challenges in applying AI and data science to real world contexts
+9. Understand ethical challenges in applying AI and data science to real-world contexts
 
-Overall students are expected to gain proficiency in identifying the appropriate analysis and visual method based on the dataset they have and the message they would like to convey.
+Overall, students are expected to gain proficiency in identifying the appropriate analysis and visual method based on the dataset they have and the message they would like to convey.
 
 
 ## Pre-requisites
@@ -80,15 +72,15 @@ Late days: You will have 6 penalty-free late days in total (max 3 late days per 
 
 There will be a total of 8 labs and 8% each for each lab. Each lab will take approximately one week, and the expected finish time is around 1~2 hours after class. You only need to submit once after each lab via [Canvas](http://canvas.uw.edu). Each student is expected to submit their own lab, but study groups are allowed. But you're expected to acknowledge the names of collaborators along with a short description of the types of collaborations being done at the beginning of each lab submission. You may use generative AI tools such as Co-Pilot and ChatGPT, but please check the AI policy section. 
 
-All labs will be due at 11:59 pm Pacific Time and should be submitted on Canvas. The submission should include Rmd, html, and any other files required to rerun the codes.
+All labs will be due at 11:59 pm Pacific Time and should be submitted on Canvas. The submission should include Rmd, HTML, and any other files required to rerun the code.
 
 ### Data Analytics and Visualization Projects  (30%)
 
-See the details in <a href="{{ site.baseurl }}/projects">Data Analytics and Visualization Projects</a> page. 
+See the details in the <a href="{{ site.baseurl }}/projects">Data Analytics and Visualization Projects</a> page. 
 
 ### Participation (6%)
 
-There will be several surveys and in-class quizzes, which will on be graded on completion. It is highly recommended that students attend the course regularly, as the sessions will be offered synchronously and will not be recorded. We will use class time to do necessary activities. Class attendance and participation are integral parts of this course; much of the key material will be introduced and discussed in lectures. 
+There will be several surveys and in-class quizzes, which will on be graded on completion. It is highly recommended that students attend the course regularly, as the sessions will be offered synchronously and will not be recorded. We will use class time to do the necessary activities. Class attendance and participation are integral parts of this course; much of the key material will be introduced and discussed in lectures. 
 
 ### Extra Credits (up to 3%)
 
@@ -98,20 +90,16 @@ There will be two ways to receive extra credits:
   - From week 2 to 6, share high-quality datasets directly related to real estate and housing on [Ed Discussion](https://edstem.org). 
   - The dataset cannot be repeated with the previous datasets shared by other students. 
   - 5 unique datasets to receive 2%, 3 unique datasets to receive 1%.
-  - Any unique dataset will be listed on <a href="{{ site.baseurl }}/resources/#datasets">Resources</a> page for others to refer. 
+  - Any unique dataset will be listed on the <a href="{{ site.baseurl }}/resources/#datasets">Resources</a> page for others to refer. 
 - **Course evaluation (1%)**
   - We will leave some time in the last class to participate in the anonymous course evaluation. 
 
-
-
 ## Communication and Community Forum
-You can reach us via [Ed Discussion](https://edstem.org), email, and in person during class and office hours. Please use the [Ed Discussion](https://edstem.org) as the first place to ask general questions. If you have a question about the course material or assignment, other students may have the same question. If you email me with a question like this, I will ask you to post it on the discussion board. I will review the discussion board at least once a day (weekdays). I also encourage students to answer each other’s questions on the discussion board. For emails, we try to reply to emails within 24 hours, 48 hours over a weekend, and the workday following a holiday unless otherwise noted. Simple questions will be answered by [Ed Discussion](https://edstem.org) or email, but students may be asked to schedule a meeting for more complex discussions.
-
- 
+You can reach us via [Ed Discussion](https://edstem.org), email, and in person during class and office hours. Please use the [Ed Discussion](https://edstem.org) as the first place to ask general questions. If you have a question about the course material or assignment, other students may have the same question. If you email me with a question like this, I will ask you to post it on the discussion board. I will review the discussion board at least once a day (weekdays). I also encourage students to answer each other’s questions on the discussion board. For emails, we try to reply to emails within 24 hours, 48 hours over a weekend, and the workday following a holiday unless otherwise noted. Simple questions will be answered by [Ed Discussion](https://edstem.org) or email, but students may be asked to schedule a meeting for more complex discussions. 
 
 ## Course Evaluation 
 
-Formal course evaluation occurs at the end of the quarter, university-widely. If you are experiencing a problem with the class, please let me know as soon as possible, as I might be able to correct for changes if needed within the course of the class.
+Formal course evaluation occurs at the end of the quarter, university-widely. If you are experiencing a problem with the class, please let me know as soon as possible, as I might be able to make changes if needed within the course of the class.
 
 
 ## Statistics and Data Science @ UW
@@ -163,5 +151,3 @@ Call SafeCampus at 206-685-7233 to anonymously discuss safety and well-being con
 
 ## Religious Accommodation Policy
 Washington state law requires that UW develop a policy for the accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at [Religious Accommodations Policy](https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the [Religious Accommodations Request form](https://registrar.washington.edu/students/religious-accommodations-request/).
-
-{% include course_footer.html %}

@@ -20,7 +20,19 @@ description: Resources.
 - [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](https://www.wiley.com/en-us/Visualize+This%3A+The+FlowingData+Guide+to+Design%2C+Visualization%2C+and+Statistics%2C+2nd+Edition-p-9781394214860) - by Nathan Yau (2024)
 - [Data Visualization: A Practical Introduction](https://press.princeton.edu/books/hardcover/9780691181615/data-visualization?srsltid=AfmBOoogKnXuOrY1HeepuYDVq4UVDMgUn_wpWWyQpNY18sIJFCrxYY9p) - by Kieran Healy (2019)
 - [Modern Data Science with R](https://mdsr-book.github.io/mdsr3e/) - by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton (2024)
+- [Posit Cheatsheets for R](https://posit.co/resources/cheatsheets/)
+    - [RStudio IDE]({{ site.baseurl }}/assets/pdfs/rstudio-ide.pdf)
+    - [rmarkdown]({{ site.baseurl }}/assets/pdfs/rmarkdown.pdf)
+    - [Data import with the tidyverse]({{ site.baseurl }}/assets/pdfs/data-import.pdf)
+    - [Data transformation with dplyr]({{ site.baseurl }}/assets/pdfs/data-transformation.pdf)
+    - [Data tidying with tidyr]({{ site.baseurl }}/assets/pdfs/tidyr.pdf)
+    - [Data visualization with ggplot2]({{ site.baseurl }}/assets/pdfs/data-visualization.pdf)
+    - [Shiny]({{ site.baseurl }}/assets/pdfs/shiny.pdf)
 
+
+
+    
+    
 
 ## Tools and Softwares
 
@@ -36,11 +48,11 @@ description: Resources.
 - [Adobe Color](http://color.adobe.com/) - free color palette generator
 - [Viz Palette](https://projects.susielu.com/viz-palette) - picking colors for data visualizations
 - [Visual Studio Code](https://code.visualstudio.com/) - a popular integrated development environment (IDE) and code editor
+- [Anaconda](https://www.anaconda.com) - platform for data science, simplifying the development and deployment of projects
 - [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/) - command-line shells for Windows
+- [GitHub](https://github.com) - a developer platform to create, store, manage, and share code
 
 ## Datasets
-
-
 
 <div id="tag-filters">
   {% assign all_tags = "" | split: "" %}
@@ -58,8 +70,10 @@ description: Resources.
         {% assign count = count | plus: 1 %}
       {% endif %}
     {% endfor %}
-    <label>
-      <input type="checkbox" value="{{ tag }}"> {{ tag }} ({{ count }})
+    <label style="display:inline-flex; align-items:center; white-space:nowrap; margin-right:6px;">
+    <input type="checkbox" value="{{ tag }}">
+    <span style="margin-left:4px;">{{ tag }}</span>
+    <span style="color:#888; font-size:0.75em; margin-left:2px;">({{ count }})</span>
     </label>
   {% endfor %}
 </div>

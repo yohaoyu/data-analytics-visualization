@@ -59,7 +59,7 @@
   desc: "Historical U.S. housing price data from the Federal Reserve Bank of Philadelphia."
   tags: ["housing", "prices", "federal", "history"]
 
-- name: "Housing Data Collection - FRB St. Louis (FRED)"
+- name: "Housing Data Collection - FRB St. Louis"
   link: "https://fred.stlouisfed.org/categories/97"
   desc: "Federal Reserve Economic Data on housing and mortgages."
   tags: ["federal", "housing", "finance"]
