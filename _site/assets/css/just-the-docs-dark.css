@@ -2449,8 +2449,8 @@ div.opaque { background-color: #27262b; }
 .schedule .schedule-event.section { background-color: #7253ed; }
 .schedule .schedule-event.office-hours { background-color: #aea07a; }
 
-.staffer { display: flex; margin: 1rem 0; }
-.staffer .staffer-image { border-radius: 50%; height: 70px; margin-right: 1rem; width: auto; }
+.staffer { display: flex; margin: 1rem 0; font-size: 0.9rem; }
+.staffer .staffer-image { border-radius: 35%; height: 73px; margin-right: 1rem; width: auto; opacity: 0.9; }
 .staffer .anchor-heading { right: auto; left: -1.5rem; }
 .staffer .staffer-name, .staffer .staffer-meta, .staffer p { margin: 0 0 0.25rem 0; }
 .staffer .staffer-pronouns { user-select: none; }

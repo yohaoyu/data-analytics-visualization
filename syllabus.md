@@ -76,14 +76,14 @@ According to the estimates for UW courses, it should take about **9** hours of w
 
 The total scores will be curved and transformed into the UW numerical grading system for graduate courses, ranging from 4.0 to 1.7 in 0.1 increments as the final grade.
 
-Late days: You will have 6 penalty-free late days in total (max 3 late days per assignment). Any delayed submission after the first 3 days will be penalized 10% per day for that specific assignment (but will not count towards your used late days). Note: Late days CANNOT be used for the project presentation and final delivery. 
+**Late days**: You will have **6** penalty-free late days in total (max 3 late days per assignment). Any delayed submission after the first 3 days will be penalized 10% per day for that specific assignment (but will not count towards your used late days). Note: Late days CANNOT be used for the project presentation and final delivery. 
 
 
 ### Labs (64%)
 
 There will be a total of 8 labs and 8% each for each lab. Each lab will take approximately one week, and the expected finish time is around 1~2 hours after class. You only need to submit once after each lab via [Canvas](http://canvas.uw.edu). Each student is expected to submit their own lab, but study groups are allowed. But you're expected to acknowledge the names of collaborators along with a short description of the types of collaborations being done at the beginning of each lab submission. You may use generative AI tools such as Co-Pilot and ChatGPT, but please check the AI policy section. 
 
-All labs will be due at 11:59 pm Pacific Time and should be submitted on Canvas. The submission should include Rmd, HTML, and any other files required to rerun the code.
+All labs will be due at 11:59 pm Pacific Time and should be submitted on Canvas or GitHub. The submission should include Rmd, HTML, and any other files required to rerun the code.
 
 ### Data Analytics and Visualization Projects  (30%)
 

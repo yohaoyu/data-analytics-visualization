@@ -7,13 +7,14 @@ description: Resources.
 {% include course_header.html %}
 # Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling
 {:.no_toc}
-**By Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018)**
+By Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018)
 
 > **Course Use Only**! This book is provided exclusively for students enrolled in RE 519 at the University of Washington. 
 It is intended for educational use only and may not be copied, shared, or distributed outside of this course.
-All rights remain with the original copyright holder. Students are expected to respect copyright law and use this material solely for their personal study in this class.
+All rights remain with the original copyright holder. Students are expected to respect copyright law and use this material solely for their personal study in this class. **Accessing those materials requires a UW NetID login.**
 
-**Accessing those materials requires a UW NetID login**
+
+
 
 [Acknowledgement and Introductions](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/front.pdf)
 
