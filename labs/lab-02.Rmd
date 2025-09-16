@@ -18,7 +18,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-------------------------------------------------------------------------
+---
 
 <!-- start of the main lab content -->
 
@@ -31,7 +31,9 @@ You can find the datasets and Readme file in [this repository](https://github.co
 
 The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
-> Recommended Reading: [Chapter 4-5, Modern Data Science with R, 3rd edition](https://mdsr-book.github.io/mdsr3e/)
+> Recommended Reading: [Chapter 4-5, Modern Data Science with R, 3rd edition. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e/)
+
+---
 
 ## Lab 02-A: Modifying Dataframes
 
@@ -470,7 +472,7 @@ Repeat the process with smaller sample size, such as `n = 10`, and smaller repea
 
 **4 points**
 
-So far, we've learned a lots functions, please use as many as possible to explore topics you are interested in about the King County datasets. Please use at least 5 functions below and brief discuss your results. 
+So far, we've learned a lots functions, please use as many as possible to explore topics you are interested in about the King County datasets. Please use at least 5 functions below and brief discuss your results. After finish this lab, you need to submit everything via Canvas assignment page.
 
 - `select()` – choose columns  
 - `filter()` – filter rows by conditions  

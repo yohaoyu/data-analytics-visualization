@@ -474,6 +474,9 @@ mean(king_value$estimate, na.rm = TRUE)
 
 When you click the **Knit** button (top of this panel) a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
 
+
+
+
 <!-- TODO: Explore Census Demographic Data -->
 
 ### 📚 TODO: Explore Census Demographic Data

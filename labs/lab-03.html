@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content />
-  <title>Lab 01 Basic of R, RStudio, and GitHub</title>
+  <title>Lab 03 Preparing Data for Visualization</title>
 
 <style type="text/css" charset="utf-8">
 
@@ -31,6 +31,99 @@ img { max-width: 100%; }
 
 
 
+<style type="text/css">
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: auto;
+}
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } 
+code span.al { color: #ad0000; } 
+code span.an { color: #5e5e5e; } 
+code span.at { color: #657422; } 
+code span.bn { color: #ad0000; } 
+code span.bu { } 
+code span.cf { color: #00769e; } 
+code span.ch { color: #20794d; } 
+code span.cn { color: #8f5902; } 
+code span.co { color: #5e5e5e; } 
+code span.cv { color: #5e5e5e; font-style: italic; } 
+code span.do { color: #5e5e5e; font-style: italic; } 
+code span.dt { color: #ad0000; } 
+code span.dv { color: #ad0000; } 
+code span.er { color: #ad0000; } 
+code span.ex { } 
+code span.fl { color: #ad0000; } 
+code span.fu { color: #4758ab; } 
+code span.im { } 
+code span.in { color: #5e5e5e; } 
+code span.kw { color: #00769e; } 
+code span.op { color: #5e5e5e; } 
+code span.ot { color: #00769e; } 
+code span.pp { color: #ad0000; } 
+code span.sc { color: #5e5e5e; } 
+code span.ss { color: #20794d; } 
+code span.st { color: #20794d; } 
+code span.va { color: #111111; } 
+code span.vs { color: #20794d; } 
+code span.wa { color: #5e5e5e; font-style: italic; } 
+</style>
+<script>
+// remove everything from pandoc code styles _except_ for 'code span' colors
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      if (/^code span/.test(rule.selectorText)) {
+        j++;
+        continue;
+      }
+      sheets[i].deleteRule(j);
+    }
+  }
+})();
+</script>
 
 <style>
 code, pre { overflow: auto; }
@@ -118,21 +211,23 @@ padding: 15px 0 !important;
 
 <main>
 <header>
-<h1 id="title" class="toc-ignore">Lab 01 Basic of R, RStudio, and
-GitHub</h1>
+<h1 id="title" class="toc-ignore">Lab 03 Preparing Data for
+Visualization</h1>
 <h2 id="subtitle" class="toc-ignore">RE 519 Data Analytics and
 Visualization | Autumn 2025</h2>
 
 </header>
 <ul>
-<li><a href="#lab-03-a-tidy-data-and-tables" id="toc-lab-03-a-tidy-data-and-tables">Lab 03-A: Tidy Data and
-Tables</a></li>
-<li><a href="#lab-03-b-a-little-programming-and-github" id="toc-lab-03-b-a-little-programming-and-github">Lab 03-B: A Little
-Programming and GitHub</a>
+<li><a href="#lab-03-a-tidy-data-and-github" id="toc-lab-03-a-tidy-data-and-github">Lab 03-A: Tidy Data and
+GitHub</a>
 <ul>
-<li><a href="#functions" id="toc-functions">Functions</a></li>
-<li><a href="#iterations" id="toc-iterations">Iterations</a></li>
+<li><a href="#data-preparation" id="toc-data-preparation">Data
+Preparation</a></li>
 <li><a href="#very-simple-git-and-github" id="toc-very-simple-git-and-github">Very Simple Git and GitHub</a></li>
+</ul></li>
+<li><a href="#lab-03-b-basic-exploratory-data-analysis-in-r" id="toc-lab-03-b-basic-exploratory-data-analysis-in-r">Lab 03-B: Basic
+Exploratory Data Analysis in R</a>
+<ul>
 <li><a href="#todo-critique-of-data-visualizations" id="toc-todo-critique-of-data-visualizations">📚 TODO: Critique of Data
 Visualizations</a></li>
 <li><a href="#todo" id="toc-todo">📚 TODO:</a></li>
@@ -142,8 +237,8 @@ Visualizations</a></li>
 
 <hr />
 <!-- start of the main lab content -->
-<p>In lab 3, we are going to explore tidy data, some programming
-knowledge in R, and GitHub. The primary dataset we are using is <a href="https://www.zillow.com/research/data/">Zillow Home Value Index
+<p>In lab 3, we are going to explore tidy data, start to visualize data
+using R, and look at GitHub. The primary dataset we are using is <a href="https://www.zillow.com/research/data/">Zillow Home Value Index
 (ZHVI)</a>, a measure of the typical home value and market changes
 across a given region and housing type. More information about what ZHVI
 is and how it’s calculated is available on <a href="https://www.zillow.com/research/methodology-neural-zhvi-32128/">this
@@ -156,15 +251,65 @@ will run AI detection on each submission. More information about <a href="https:
 Integrity</a> and <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai">the
 Use of AI</a>.</p>
 <blockquote>
-<p>Recommended Reading: <a href="https://mdsr-book.github.io/mdsr3e">Chapter 6-7, Modern Data
+<p>Recommended Reading: <a href="https://mdsr-book.github.io/mdsr3e">Chapter 2, 3, 6, Modern Data
 Science with R, 3rd edition. Baumer et al. 2024.</a></p>
 </blockquote>
-<h2 id="lab-03-a-tidy-data-and-tables">Lab 03-A: Tidy Data and
-Tables</h2>
-<h2 id="lab-03-b-a-little-programming-and-github">Lab 03-B: A Little
-Programming and GitHub</h2>
-<h3 id="functions">Functions</h3>
-<h3 id="iterations">Iterations</h3>
+<h2 id="lab-03-a-tidy-data-and-github">Lab 03-A: Tidy Data and
+GitHub</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;tidyverse&#39;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&#39;ggplot2&#39;) # you only need to run the installation once</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;ggplot2&#39;</span>) <span class="co"># the major package for visualization in R</span></span></code></pre></div>
+<h3 id="data-preparation">Data Preparation</h3>
+<p>Instead of using API or R data package as we did in Lab 1 and 2, we
+will use data on our local device. We have organized the <a href="https://www.zillow.com/research/data/">Zillow Home Value Index
+(ZHVI)</a> for the largest 30 <a href="https://en.wikipedia.org/wiki/Metropolitan_statistical_area">Metropolitan
+Statistical Ares (MSA)</a> and their 2024 population in csv file
+<code>zillow_hvi_msa.csv</code>. <a href="https://en.wikipedia.org/wiki/Comma-separated_values">Comma-separated
+values (CSV)</a> is a text data format that uses commas to separate
+delimiter-separated values, and newlines to separate records.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>hvi <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;zillow_hvi_msa.csv&quot;</span>)</span></code></pre></div>
+<pre><code>## Rows: 894 Columns: 312
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr   (2): RegionName, StateName
+## dbl (309): RegionID, 1/31/00, 2/29/00, 3/31/00, 4/30/00, 5/31/00, 6/30/00, 7...
+## num   (1): Popu2024
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<p><code>CSV</code> files are just plain text. They do not store
+metadata such as column types, units, or formats. So. when we use
+<code>read_csv()</code>, it automatically guesses column types by
+inspecting the data. Sometimes its guess is wrong, we need to specify
+the types using <code>spec()</code>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>hvi <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;zillow_hvi_msa.csv&quot;</span>,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">col_types =</span> <span class="fu">cols</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">RegionName =</span> <span class="fu">col_character</span>(),</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">StateName  =</span> <span class="fu">col_character</span>(),</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">RegionID   =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">Popu2024   =</span> <span class="fu">col_number</span>(),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">.default   =</span> <span class="fu">col_double</span>()   <span class="co"># for other columns</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(hvi, <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 3 × 312
+##   RegionID RegionName Popu2024 StateName `1/31/00` `2/29/00` `3/31/00` `4/30/00`
+##      &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1   394913 New York,… 19940274 NY          220835.   221773.   222720.   224640.
+## 2   753899 Los Angel… 12927614 CA          222016.   222842.   223942.   226132.
+## 3   394463 Chicago, …  9408576 IL          156058.   156202.   156478.   157162.
+## # ℹ 304 more variables: `5/31/00` &lt;dbl&gt;, `6/30/00` &lt;dbl&gt;, `7/31/00` &lt;dbl&gt;,
+## #   `8/31/00` &lt;dbl&gt;, `9/30/00` &lt;dbl&gt;, `10/31/00` &lt;dbl&gt;, `11/30/00` &lt;dbl&gt;,
+## #   `12/31/00` &lt;dbl&gt;, `1/31/01` &lt;dbl&gt;, `2/28/01` &lt;dbl&gt;, `3/31/01` &lt;dbl&gt;,
+## #   `4/30/01` &lt;dbl&gt;, `5/31/01` &lt;dbl&gt;, `6/30/01` &lt;dbl&gt;, `7/31/01` &lt;dbl&gt;,
+## #   `8/31/01` &lt;dbl&gt;, `9/30/01` &lt;dbl&gt;, `10/31/01` &lt;dbl&gt;, `11/30/01` &lt;dbl&gt;,
+## #   `12/31/01` &lt;dbl&gt;, `1/31/02` &lt;dbl&gt;, `2/28/02` &lt;dbl&gt;, `3/31/02` &lt;dbl&gt;,
+## #   `4/30/02` &lt;dbl&gt;, `5/31/02` &lt;dbl&gt;, `6/30/02` &lt;dbl&gt;, `7/31/02` &lt;dbl&gt;, …</code></pre>
+<p>We will not see the message if we specified the data types. let’s
+have a look of the first 3 rows of this data. The data is ZHVI All Home
+(SFR, Condo/Co-op) Time Series, Smoothed, Seasonally Adjusted from
+Zillow Research. The data includes ZHVI for 30 MSA from 2000 to 2025 by
+month!</p>
 <h3 id="very-simple-git-and-github">Very Simple Git and GitHub</h3>
 <ul>
 <li>Every change you make is saved in history, so you can always go
@@ -200,6 +345,8 @@ repository.</li>
 <li>Click “Push origin” to upload your changes back to GitHub.</li>
 <li>You can check your changes on GitHub now.</li>
 </ol>
+<h2 id="lab-03-b-basic-exploratory-data-analysis-in-r">Lab 03-B: Basic
+Exploratory Data Analysis in R</h2>
 <h3 id="todo-critique-of-data-visualizations">📚 TODO: Critique of Data
 Visualizations</h3>
 <p><strong>5 points</strong></p>

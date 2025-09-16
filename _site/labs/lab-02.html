@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content />
-  <title>Lab 02 Data Wrangling for Dataframes</title>
+  <title>Lab 03 Preparing Data for Visualization</title>
 
 <style type="text/css" charset="utf-8">
 
@@ -211,8 +211,8 @@ padding: 15px 0 !important;
 
 <main>
 <header>
-<h1 id="title" class="toc-ignore">Lab 02 Data Wrangling for
-Dataframes</h1>
+<h1 id="title" class="toc-ignore">Lab 03 Preparing Data for
+Visualization</h1>
 <h2 id="subtitle" class="toc-ignore">RE 519 Data Analytics and
 Visualization | Autumn 2025</h2>
 
@@ -272,8 +272,9 @@ Integrity</a> and <a href="https://www.yuehaoyu.com/data-analytics-visualization
 Use of AI</a>.</p>
 <blockquote>
 <p>Recommended Reading: <a href="https://mdsr-book.github.io/mdsr3e/">Chapter 4-5, Modern Data
-Science with R, 3rd edition</a></p>
+Science with R, 3rd edition. Baumer et al. 2024.</a></p>
 </blockquote>
+<hr />
 <h2 id="lab-02-a-modifying-dataframes">Lab 02-A: Modifying
 Dataframes</h2>
 <p>Let’s first import the datasets and necessary packages. After
@@ -362,11 +363,11 @@ picked.</p>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sample_n</span>(<span class="dv">3</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>random_sample</span></code></pre></div>
 <pre><code>## # A tibble: 3 × 48
-##   sale_id     pinx       sale_date  sale_price sale_nbr sale_warning join_status
-##   &lt;chr&gt;       &lt;chr&gt;      &lt;date&gt;          &lt;int&gt;    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;      
-## 1 2002..8833  ..8645530… 2002-03-28     210000        1 &quot;   &quot;        nochg      
-## 2 2005..27514 ..2824069… 2005-06-20     382000        1 &quot;   &quot;        rebuilt - …
-## 3 2011..19898 ..4457300… 2011-10-13     525000        3 &quot; 41 &quot;       nochg      
+##   sale_id    pinx        sale_date  sale_price sale_nbr sale_warning join_status
+##   &lt;chr&gt;      &lt;chr&gt;       &lt;date&gt;          &lt;int&gt;    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;      
+## 1 2021..2071 ..09550001… 2021-01-25    1212000        3 &quot;   &quot;        nochg      
+## 2 2014..969  ..66350000… 2014-01-16     642050        1 &quot;   &quot;        new        
+## 3 2004..6690 ..11750002… 2004-03-10     473950        2 &quot;   &quot;        nochg      
 ## # ℹ 41 more variables: join_year &lt;dbl&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
 ## #   area &lt;int&gt;, city &lt;chr&gt;, zoning &lt;chr&gt;, subdivision &lt;chr&gt;, present_use &lt;int&gt;,
 ## #   land_val &lt;int&gt;, imp_val &lt;int&gt;, year_built &lt;int&gt;, year_reno &lt;int&gt;,
@@ -944,7 +945,8 @@ you find?</p>
 <p>So far, we’ve learned a lots functions, please use as many as
 possible to explore topics you are interested in about the King County
 datasets. Please use at least 5 functions below and brief discuss your
-results.</p>
+results. After finish this lab, you need to submit everything via Canvas
+assignment page.</p>
 <ul>
 <li><code>select()</code> – choose columns<br />
 </li>

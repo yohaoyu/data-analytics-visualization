@@ -6,25 +6,44 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!-- start of the main lab content --> 
 
-In lab 3, we are going to explore tidy data, some programming knowledge in R, and GitHub. The primary dataset we are using is [Zillow Home Value Index (ZHVI)](https://www.zillow.com/research/data/), a measure of the typical home value and market changes across a given region and housing type. More information about what ZHVI is and how it’s calculated is available on [this overview page](https://www.zillow.com/research/methodology-neural-zhvi-32128/). 
+In lab 3, we are going to explore tidy data, start to visualize data using R, and look at GitHub. The primary dataset we are using is [Zillow Home Value Index (ZHVI)](https://www.zillow.com/research/data/), a measure of the typical home value and market changes across a given region and housing type. More information about what ZHVI is and how it’s calculated is available on [this overview page](https://www.zillow.com/research/methodology-neural-zhvi-32128/). 
 
 The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
-> Recommended Reading: [Chapter 6-7, Modern Data Science with R, 3rd edition. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e)
+> Recommended Reading: [Chapter 2, 3, 6, Modern Data Science with R, 3rd edition. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e)
 
-## Lab 03-A: Tidy Data and Tables
+## Lab 03-A: Tidy Data and GitHub
 
+```{r message=FALSE}
+library('tidyverse')
+#install.packages('ggplot2') # you only need to run the installation once
+library('ggplot2') # the major package for visualization in R
+```
 
+### Data Preparation 
 
+Instead of using API or R data package as we did in Lab 1 and 2, we will use data on our local device. We have organized the [Zillow Home Value Index (ZHVI)](https://www.zillow.com/research/data/) for the largest 30 [Metropolitan Statistical Ares (MSA)](https://en.wikipedia.org/wiki/Metropolitan_statistical_area) and their 2024 population in csv file `zillow_hvi_msa.csv`. [Comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) is a text data format that uses commas to separate delimiter-separated values, and newlines to separate records.
 
+```{r}
+hvi <- read_csv("zillow_hvi_msa.csv")
+```
 
-## Lab 03-B: A Little Programming and GitHub
+`CSV` files are just plain text. They do not store metadata such as column types, units, or formats. So. when we use `read_csv()`, it automatically guesses column types by inspecting the data. Sometimes its guess is wrong, we need to specify the types using `spec()`.
 
-### Functions
+```{r}
+hvi <- read_csv("zillow_hvi_msa.csv",
+  col_types = cols(
+    RegionName = col_character(),
+    StateName  = col_character(),
+    RegionID   = col_double(),
+    Popu2024   = col_number(),
+    .default   = col_double()   # for other columns
+  )
+)
+head(hvi, 3)
+```
 
-
-### Iterations
-
+We will not see the message if we specified the data types. let's have a look of the first 3 rows of this data. The data is ZHVI All Home (SFR, Condo/Co-op) Time Series, Smoothed, Seasonally Adjusted from Zillow Research. The data includes ZHVI for 30 MSA from 2000 to 2025 by month!
 
 ### Very Simple Git and GitHub
 
@@ -50,6 +69,12 @@ We will using GitHub Desktop:
 7. Commit changes with a short message (e.g., “Lab 1 for RE 519”).
 8. Click “Push origin” to upload your changes back to GitHub.
 9. You can check your changes on GitHub now. 
+
+## Lab 03-B: Basic Exploratory Data Analysis in R
+
+
+
+
 
 ### 📚 TODO: Critique of Data Visualizations
 
