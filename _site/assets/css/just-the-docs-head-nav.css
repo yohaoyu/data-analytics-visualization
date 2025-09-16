@@ -1,3 +1,3 @@
-.tags { color: #6c757d; /* Bootstrap灰色，你也可以改成 #888 或 lightgray */ font-size: 0.9em; /* 可选：让标签文字稍微小一点 */ }
+.announcement-right { flex: 1; /* 右侧占满剩余空间 */ }
 
 .site-nav ul li a { background-image: linear-gradient(-90deg, #ebedf5 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%); }

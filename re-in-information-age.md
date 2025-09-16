@@ -4,10 +4,6 @@ title: Real Estate Analysis in the Information Age
 description: Resources.
 ---
 
-<button id="toc-toggle"><i class="fa-solid fa-bars"></i></button>
-1. TOC
-{:toc}
-
 {% include course_header.html %}
 # Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling
 {:.no_toc}

@@ -7,9 +7,9 @@ description: A feed containing all of the class announcements.
 
 {% include course_header.html %}
 
-## Lecture Sections
+# Announcements
 
-{% assign announcements = site.announcements%}
+{% assign announcements = site.announcements | sort: "date" | reverse %}
 {% for announcement in announcements %}
 {{ announcement }}
 {% endfor %}

@@ -48,6 +48,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: start;
 }
 
+b, strong {
+  font-weight: 600;
+}
 
 .main-content dd {
     font-weight: 400 !important;
@@ -282,4 +285,39 @@ dd:has(.readings) {
 .tags {
   color: #6c757d; /* Bootstrap灰色，你也可以改成 #888 或 lightgray */
   font-size: 0.9em; /* 可选：让标签文字稍微小一点 */
+}
+
+.announcement-body {
+  font-size: 0.9em !important;   /* 正文小一点 */
+}
+.announcement-body ol > li::before {
+  font-size: 0.9em !important;
+}
+
+
+.announcement {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;  /* 左右内容顶端对齐 */
+}
+
+.announcement-left {
+  flex: 0 0 20%;       /* 左侧固定宽度，可调整 */
+}
+
+.announcement-left h4 {
+  margin: 0;
+}
+
+.announcement-left p {
+  margin: 0px 0;
+}
+
+.all-announcements {
+  margin-top: 1em !important;
+  font-size: 0.9em;
+}
+
+.announcement-right {
+  flex: 1;               /* 右侧占满剩余空间 */
 }
