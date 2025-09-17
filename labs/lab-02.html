@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content />
-  <title>Lab 03 Preparing Data for Visualization</title>
+  <title>Lab 02 Data Wrangling for Dataframes</title>
 
 <style type="text/css" charset="utf-8">
 
@@ -211,8 +211,8 @@ padding: 15px 0 !important;
 
 <main>
 <header>
-<h1 id="title" class="toc-ignore">Lab 03 Preparing Data for
-Visualization</h1>
+<h1 id="title" class="toc-ignore">Lab 02 Data Wrangling for
+Dataframes</h1>
 <h2 id="subtitle" class="toc-ignore">RE 519 Data Analytics and
 Visualization | Autumn 2025</h2>
 
@@ -271,8 +271,8 @@ will run AI detection on each submission. More information about <a href="https:
 Integrity</a> and <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai">the
 Use of AI</a>.</p>
 <blockquote>
-<p>Recommended Reading: <a href="https://mdsr-book.github.io/mdsr3e/">Chapter 4-5, Modern Data
-Science with R, 3rd edition. Baumer et al. 2024.</a></p>
+<p><strong>Recommended Reading</strong> <br> <a href="https://mdsr-book.github.io/mdsr3e/">Chapter 4-5, Modern Data
+Science with R. Baumer et al. 2024.</a></p>
 </blockquote>
 <hr />
 <h2 id="lab-02-a-modifying-dataframes">Lab 02-A: Modifying
@@ -363,11 +363,11 @@ picked.</p>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sample_n</span>(<span class="dv">3</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>random_sample</span></code></pre></div>
 <pre><code>## # A tibble: 3 × 48
-##   sale_id    pinx        sale_date  sale_price sale_nbr sale_warning join_status
-##   &lt;chr&gt;      &lt;chr&gt;       &lt;date&gt;          &lt;int&gt;    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;      
-## 1 2021..2071 ..09550001… 2021-01-25    1212000        3 &quot;   &quot;        nochg      
-## 2 2014..969  ..66350000… 2014-01-16     642050        1 &quot;   &quot;        new        
-## 3 2004..6690 ..11750002… 2004-03-10     473950        2 &quot;   &quot;        nochg      
+##   sale_id     pinx       sale_date  sale_price sale_nbr sale_warning join_status
+##   &lt;chr&gt;       &lt;chr&gt;      &lt;date&gt;          &lt;int&gt;    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;      
+## 1 2003..11980 ..2131701… 2003-04-17     203000        1 &quot;   &quot;        nochg      
+## 2 2022..20032 ..1921069… 2022-06-27    1200000        3 &quot;   &quot;        nochg      
+## 3 2008..537   ..6751300… 2008-01-14     345000        1 &quot; 15 26 &quot;    nochg      
 ## # ℹ 41 more variables: join_year &lt;dbl&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
 ## #   area &lt;int&gt;, city &lt;chr&gt;, zoning &lt;chr&gt;, subdivision &lt;chr&gt;, present_use &lt;int&gt;,
 ## #   land_val &lt;int&gt;, imp_val &lt;int&gt;, year_built &lt;int&gt;, year_reno &lt;int&gt;,
@@ -983,7 +983,7 @@ duplicates</li>
 <div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
 <h2 id="acknowledgement">Acknowledgement</h2>
 <p>The materials are developed based materials from <a href="https://fsun.ucsd.edu">Dr. Feiyang Sun at UC San Diego</a>, Siman
-Ning and Christian Phillips at UW, <a href="https://clanfear.github.io">Dr. Charles Lanfear at University of
+Ning and Christian Phillips at University of Washington, <a href="https://clanfear.github.io">Dr. Charles Lanfear at University of
 Cambridge</a>.</p>
 
 </main>

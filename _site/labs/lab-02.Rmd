@@ -15,7 +15,8 @@ You can find the datasets and Readme file in [this repository](https://github.co
 
 The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
-> Recommended Reading: [Chapter 4-5, Modern Data Science with R, 3rd edition. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e/)
+> **Recommended Reading** <br>
+> [Chapter 4-5, Modern Data Science with R. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e/)
 
 ---
 
@@ -478,4 +479,4 @@ So far, we've learned a lots functions, please use as many as possible to explor
 
 ## Acknowledgement
 
-The materials are developed based materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).
+The materials are developed by [Haoyu Yue](www.yuehaoyu.com) based materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at University of Washington, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).

@@ -1,6 +1,6 @@
 ---
 layout: minimal
-title: Lab
+title: Labs
 description: Lab 1
 ---
 

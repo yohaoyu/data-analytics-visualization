@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content />
-  <title>Lab 03 Preparing Data for Visualization</title>
+  <title>Lab 04 Visualization using R and ggplot2</title>
 
 <style type="text/css" charset="utf-8">
 
@@ -211,16 +211,17 @@ padding: 15px 0 !important;
 
 <main>
 <header>
-<h1 id="title" class="toc-ignore">Lab 03 Preparing Data for
-Visualization</h1>
+<h1 id="title" class="toc-ignore">Lab 04 Visualization using R and
+ggplot2</h1>
 <h2 id="subtitle" class="toc-ignore">RE 519 Data Analytics and
 Visualization | Autumn 2025</h2>
 
 </header>
 <ul>
-<li><a href="#lab-03-a-tidy-data-and-github" id="toc-lab-03-a-tidy-data-and-github">Lab 03-A: Tidy Data and
+<li><a href="#lab-04-a-tidy-data-and-github" id="toc-lab-04-a-tidy-data-and-github">Lab 04-A: Tidy Data and
 GitHub</a>
 <ul>
+<li><a href="#github-copilot-optional" id="toc-github-copilot-optional">GitHub Copilot (Optional)</a></li>
 <li><a href="#data-preparation" id="toc-data-preparation">Data
 Preparation</a></li>
 <li><a href="#data-tidying" id="toc-data-tidying">Data Tidying</a></li>
@@ -250,29 +251,44 @@ Using GitHub</a></li>
 
 <hr />
 <!-- start of the main lab content -->
-<p>In lab 3, we are going to explore tidy data, start to visualize data
-using R, and look at GitHub. The primary dataset we are using is <a href="https://www.zillow.com/research/data/">Zillow Home Value Index
-(ZHVI)</a>, a measure of the typical home value and market changes
-across a given region and housing type. More information about what ZHVI
-is and how it’s calculated is available on <a href="https://www.zillow.com/research/methodology-neural-zhvi-32128/">this
-overview page</a>.</p>
 <p>The due day for each lab can be found on the <a href="https://www.yuehaoyu.com/data-analytics-visualization/">course
 wesbite</a>. The submission should include Rmd, html, and any other
-files required to rerun the codes. <strong>For Lab 1–3, the use of any
-generative AI tool (ChatGPT, Copilot, etc.) is prohibited</strong>. We
-will run AI detection on each submission. More information about <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity">Academic
+files required to rerun the codes. From Lab 4, the use of any generative
+AI tool (ChatGPT, Copilot, etc.) is allowed. But, I still encourage you
+to write codes by yourself and use AI tools as a way to debug and
+explore new knowledge. More information about <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity">Academic
 Integrity</a> and <a href="https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai">the
 Use of AI</a>.</p>
 <blockquote>
-<p><strong>Recommended Reading</strong> <br> <a href="https://mdsr-book.github.io/mdsr3e">Chapter 2, 3, 6, Modern Data
-Science with R. Baumer et al. 2024.</a> <br> <a href="https://vita.had.co.nz/papers/tidy-data.html">Tidy Data, <em>The
-Journal of Statistical Software</em>, Hadley Wickham, 2014.</a></p>
+<p><strong>Recommended Reading</strong> <br> <a href="https://mdsr-book.github.io/mdsr3e">Chapter 2, 3, Modern Data
+Science with R. Baumer et al. 2024.</a> <br></p>
 </blockquote>
 <hr />
-<h2 id="lab-03-a-tidy-data-and-github">Lab 03-A: Tidy Data and
+<h2 id="lab-04-a-tidy-data-and-github">Lab 04-A: Tidy Data and
 GitHub</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;tidyverse&#39;</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;ggplot2&#39;</span>) <span class="co"># the major package for visualization in R</span></span></code></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;ggplot2&#39;</span>)</span></code></pre></div>
+<h3 id="github-copilot-optional">GitHub Copilot (Optional)</h3>
+<p>Please first introduce <a href="https://docs.posit.co/ide/user/ide/guide/tools/copilot.html">GitHub
+Copilot for RStudio</a>, an AI coding assistant. GitHub Copilot is
+available as an opt-in integration with RStudio. Because of the rapid
+development of AI, tools like Copilot, OpenAI’s GPT, Claude are becoming
+common in data science workflows. It has dramatically lowered the
+barrier to entry for data analysis and visualization across industries.
+As a student, we can use it freely!</p>
+<ol type="1">
+<li>Open <a href="https://github.com/education">GitHub Education</a>and
+click <code>Join GitHub Education</code>.</li>
+<li>Log in your GitHub account.</li>
+<li>Under “GitHub Education”, click
+<code>Start an application</code>.</li>
+<li>Complete the form, then click <code>Submit application</code>.</li>
+<li>Once your application is approved, you will receive an Email.</li>
+<li>Open <code>Edit - Settings</code> in RStudio, you can see
+<code>Copilot</code> on the left bar.</li>
+<li><code>Enable GitHub Copilot</code>, then <code>Sign in</code>.</li>
+<li>Authorize RStudio to access your GitHub account.</li>
+</ol>
 <h3 id="data-preparation">Data Preparation</h3>
 <p>Instead of using API or R data package as we did in Lab 1 and 2, we
 will use data on our local device. We have organized the <a href="https://www.zillow.com/research/data/">Zillow Home Value Index

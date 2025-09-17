@@ -34,7 +34,7 @@ Please check [grading policy of this class](https://www.yuehaoyu.com/data-analyt
 More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
 > **Recommended Readings**:  
-> [Appendix B and Appendix D, Modern Data Science with R, 3rd edition. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e/)  
+> [Appendix B and D, Modern Data Science with R. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e/)  
 > [Chapter 2, Data Visualization. Kieran Healy. 2019.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Data-Visualization-A-Practical-Introduction.pdf)
 
 ---
@@ -389,7 +389,7 @@ Today is `today's date`, it has been `number of year` years since {what did happ
 # show the current working directory
 getwd()
 # TODO: modify the folder stored this `.Rmd` as the working directory
-setwd("/Users/yohaoyu/Repo/data-analytics-visualization") 
+setwd("/Users/yohaoyu/Repo/data-analytics-visualization/labs") 
 ```
 
 - `.Rmd` files use their current directory as a working directory.
@@ -495,4 +495,4 @@ When you click the **Knit** button (top of this panel) a document will be genera
 
 ## Acknowledgement
 
-The materials are developed based materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at UW, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).
+The materials are developed by [Haoyu Yue](www.yuehaoyu.com) based materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at University of Washington, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).

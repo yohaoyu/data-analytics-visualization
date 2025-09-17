@@ -31,7 +31,7 @@ Oct 01
 Oct 06
 : **Data Science for Real Estate at Macro- and Micro-level**
 : **LAB 2-A**{: .label .label-green } Modifying Dataframes
-  : [Page]({{ site.baseurl }}/labs/lab-02) / [Rmd]({{ site.baseurl }}/labs/lab-02.Rmd)
+  <!--: [Page]({{ site.baseurl }}/labs/lab-02) / [Rmd]({{ site.baseurl }}/labs/lab-02.Rmd)-->
 : **LAB 1 DUE 11:59 PM**{: .label .label-purple }
 
 Oct 08

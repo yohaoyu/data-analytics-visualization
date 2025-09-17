@@ -64,7 +64,7 @@
   },"9": {
     "doc": "Data Analytics and Visualization",
     "title": "I - Introduction & Descriptive Statistics",
-    "content": "--> I - Introduction to Data Science and R . Sep 24 Overview and the Values of Data Science Slides / Pre-class Survey LAB 1-A Setup Page / Rmd OptionalData Science and its Relationship to Big Data and Data-driven Decision Making. Foster Provost and Tom Fawcett. 2013. OptionalGetting ahead of the Market: How Big Data is Transforming Real Estate. McKinsey &amp; Company. 2018. Sep 29 Data in Real Estate LAB 1-B Basic of R/RStudio and Markdown REQUIREDChapter 1-2, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. OptionalChapter 1-3, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin. OptionalChapter 5: Market, Place, Interface, All Data Are Local: Thinking Critically in a Data-Driven Society. Yanni Alexander Loukissas. 2019. OptionalCensus Data for People and Housing. Yanni Christopher C. Brown. 2020. Oct 01 Data Science Workflows and Components LAB 1-C Dataframes and Accessing Census Data REQUIREDChapter 3-4, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. Oct 06 Data Science for Real Estate at Macro- and Micro-level LAB 2-A Modifying Dataframes Page / Rmd LAB 1 DUE 11:59 PM Oct 08 Policy and Data-Driven Decision LAB 2-B Summarizing and Joining Dataframes RequiredFinding Common Ground: Best Practices for State Policies Supporting Transit-Oriented Development. Mason A. Virant, et al. 2024. OptionalUrban Big Data: City Management and Real Estate Markets. Richard Barkham, et al. 2022. Team Formation Due Project Team Formation Instruction <!-- ",
+    "content": "--> I - Introduction to Data Science and R . Sep 24 Overview and the Values of Data Science Slides / Pre-class Survey LAB 1-A Setup Page / Rmd OptionalData Science and its Relationship to Big Data and Data-driven Decision Making. Foster Provost and Tom Fawcett. 2013. OptionalGetting ahead of the Market: How Big Data is Transforming Real Estate. McKinsey &amp; Company. 2018. Sep 29 Data in Real Estate LAB 1-B Basic of R/RStudio and Markdown REQUIREDChapter 1-2, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. OptionalChapter 1-3, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin. OptionalChapter 5: Market, Place, Interface, All Data Are Local: Thinking Critically in a Data-Driven Society. Yanni Alexander Loukissas. 2019. OptionalCensus Data for People and Housing. Yanni Christopher C. Brown. 2020. Oct 01 Data Science Workflows and Components LAB 1-C Dataframes and Accessing Census Data REQUIREDChapter 3-4, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. Oct 06 Data Science for Real Estate at Macro- and Micro-level LAB 2-A Modifying Dataframes LAB 1 DUE 11:59 PM Oct 08 Policy and Data-Driven Decision LAB 2-B Summarizing and Joining Dataframes RequiredFinding Common Ground: Best Practices for State Policies Supporting Transit-Oriented Development. Mason A. Virant, et al. 2024. OptionalUrban Big Data: City Management and Real Estate Markets. Richard Barkham, et al. 2022. Team Formation Due Project Team Formation Instruction <!-- ",
     "url": "/data-analytics-visualization/#i-introduction-descriptive-statistics",
     
     "relUrl": "/#i-introduction-descriptive-statistics"
@@ -349,22 +349,22 @@
     
     "relUrl": "/schedule/"
   },"50": {
-    "doc": "Lab",
+    "doc": "Labs",
     "title": "Lab Sessions",
     "content": "Lab 1 - Basic . Setup, R Basic, Markdown, Download via API . Lab 2 - Data Manipulation . Lab 3 - Data Manipulation . Lab 4 - Tableau . Lab 5 - Visualization using R . Lab 6 - Interactive and Dashboard . Lab 7 - Linear Regression . Lab 8 - Model Visualization . ",
     "url": "/data-analytics-visualization/labs/sessions/#lab-sessions",
     
     "relUrl": "/labs/sessions/#lab-sessions"
   },"51": {
-    "doc": "Lab",
+    "doc": "Labs",
     "title": "Optional Lab Sessions",
     "content": "Lab X1 - Introduction to Git and GitHub . Lab X2 - Webscraping . Lab X3 - Adobe Suites . Lab X4 - Web Publishing . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/labs/sessions/#optional-lab-sessions",
     
     "relUrl": "/labs/sessions/#optional-lab-sessions"
   },"52": {
-    "doc": "Lab",
-    "title": "Lab",
+    "doc": "Labs",
+    "title": "Labs",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/labs/sessions/",
     
