@@ -7,7 +7,7 @@ title: I - Introduction & Descriptive Statistics
 
 Sep 24
 : **Overview and the Values of Data Science**
-  : [Slides](#) / [Pre-class Survey](https://canvas.uw.edu/courses/1833875/quizzes/2255460)
+  : [Slides](#) / [Pre-class Survey](https://forms.gle/oRHQNRiwjcsaUbLQ7)
 : **LAB 1-A**{: .label .label-green } Setup
   : [Page]({{ site.baseurl }}/labs/lab-01) / [Rmd]({{ site.baseurl }}/labs/lab-01.Rmd)
 : **Optional**{: .readings .readings-optional }[Data Science and its Relationship to Big Data and Data-driven Decision Making. Foster Provost and Tom Fawcett. 2013.](https://www.liebertpub.com/doi/full/10.1089/big.2013.1508){: .citation} <br>
