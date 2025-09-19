@@ -29,19 +29,18 @@ Oct 01
 
 
 Oct 06
-: **Data Science for Real Estate at Macro- and Micro-level**
+: **Use Cases of Data Science in Real Estate**
 : **LAB 2-A**{: .label .label-green } Modifying Dataframes
   <!--: [Page]({{ site.baseurl }}/labs/lab-02) / [Rmd]({{ site.baseurl }}/labs/lab-02.Rmd)-->
+: **Required**{: .readings .readings-required }[Finding Common Ground: Best Practices for State Policies Supporting Transit-Oriented Development. Mason A. Virant, et al. 2024.](https://wcrer.be.uw.edu/2024/03/22/tod-report-finding-common-ground/){: .citation} <br>
+**Optional**{: .readings .readings-optional }[Urban Big Data: City Management and Real Estate Markets. Richard Barkham, et al. 2022.](){: .citation} 
 : **LAB 1 DUE 11:59 PM**{: .label .label-purple }
 
 Oct 08
-: **Policy and Data-Driven Decision**
-: **LAB 2-B**{: .label .label-green } Summarizing and Joining Dataframes
-: **Required**{: .readings .readings-required }[Finding Common Ground: Best Practices for State Policies Supporting Transit-Oriented Development. Mason A. Virant, et al. 2024.](https://wcrer.be.uw.edu/2024/03/22/tod-report-finding-common-ground/){: .citation} <br>
-**Optional**{: .readings .readings-optional }[Urban Big Data: City Management and Real Estate Markets. Richard Barkham, et al. 2022.](){: .citation} 
+: **Programming in R**
+: **LAB 2-B**{: .label .label-green } Summarizing and Joining Dataframes, GitHub
 : **Team Formation Due**{: .label .label-purple }
   : [Project Team Formation Instruction]({{ site.baseurl }}/projects/#team-formation)
-
 
 
 

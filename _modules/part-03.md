@@ -1,7 +1,7 @@
 ---
 title: Module 3 - Regression
 ---
-<h3 style="text-align: left; font-weight: bold;">III - Data Modeling </h3> 
+<h3 style="text-align: left; font-weight: bold;">III - Data Modeling (Subject to Change)</h3> 
 
 Nov 10
 : **Correlation and Linear Regression**
@@ -22,7 +22,7 @@ Nov 17
 : **LAB 7 DUE 11:59 PM**{: .label .label-purple }
 
 Nov 19
-: **Intro to Supervised and Unsupervised Learning**
+: **Introduction to Supervised and Unsupervised Learning**
 : **LAB 8-B**{: .label .label-green }
 
 Nov 24

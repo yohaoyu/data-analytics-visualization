@@ -4,10 +4,13 @@ title: Module 2 - Data Visualization
 
 <h3 style="text-align: left; font-weight: bold;">II - Data Visualization</h3> 
 
- 
+
+
+
+
 Oct 13
 : **Data Visual Design**
-: **LAB 3-A**{: .label .label-green } Tidy Data and GitHub
+: **LAB 3-A**{: .label .label-green } Tidy Data and Core Logic of ggplot2
 : **LAB 2 DUE 11:59 PM**{: .label .label-purple }
 : <!-- Readings --> **Optional**{: .readings .readings-optional }[Data Viz Project by ferdio.](https://datavizproject.com){: .citation title="A wonderful resource for you to pick good visualization design." }<br>
 **Optional**{: .readings .readings-optional }[Design and Redesign in Data Visualization. Martin Wattenberg and Fernanda Viégas. 2015.](https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9){: .citation}<br>
@@ -16,7 +19,7 @@ Oct 13
 
 Oct 15
 : **Exploratory Data Analysis (EDA)**
-: **LAB 3-B**{: .label .label-green } Basic EDA in R
+: **LAB 3-B**{: .label .label-green } Basic Exploratory Data Analysis in R
 : **Optional**{: .readings .readings-optional }[Exploratory Data Analysis. United States Environmental Protection Agency.](https://www.epa.gov/caddis/exploratory-data-analysis){: .citation}
 
 Oct 20
@@ -29,22 +32,23 @@ Oct 22
 : *Instructor leave due to [ACSP Annual Conference 2025](https://www.acsp.org/page/ConfAbout)*
 
 Oct 27
-: **Geospatial Data Science**
-: **LAB 5-A**{: .label .label-green } Geospatial Data and Visualization in R
+: **Guest Speaker: [Drew Dolan](https://www.linkedin.com/in/drew-dolan-3a20a12/)**, Principal, Fund Manager, [DXD Capital](https://dxd.capital)
 : **LAB 4 DUE 11:59 PM**{: .label .label-purple }
 
 Oct 29
-: **Interactive Visualization**
-: **LAB 5-B**{: .label .label-green } shiny: Interative Visualization using R
+: **Introduction to Tableau**
+: **LAB 5**{: .label .label-green } Tableau
 
 Nov 03
-: **Introduction to Tableau**
-: **LAB 6-A**{: .label .label-green } Tableau - I
+: **Interactive Visualization**
+: **LAB 6-A**{: .label .label-green } shiny: Interative Visualization using R
 : **LAB 5 DUE 11:59 PM**{: .label .label-purple }
 
 Nov 05
-: **Dashboard in Tableau**
-: **LAB 6-B**{: .label .label-green } Tableau - II
+: **Dashboard**
+: **LAB 6-B**{: .label .label-green } Mini Dashboard using shiny or Tableau
+
+
 
 
 

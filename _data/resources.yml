@@ -12,27 +12,32 @@
 - name: "HUD (US Housing & Urban Development) User Datasets"
   link: "https://www.huduser.gov/portal/pdrdatas_landing.html"
   desc: "Policy development and research datasets from HUD."
-  tags: ["federal", "hud", "housing"]
+  tags: ["federal", "hud", "housing", "portal"]
 
 - name: "Federal Housing Datasets"
   link: "https://www.fhfa.gov/data/datasets"
   desc: "Datasets on housing finance, home prices, and mortgages from FHFA."
-  tags: ["federal", "housing", "finance"]
+  tags: ["federal", "housing", "finance",  "portal"]
+
+- name: FHFA House Price Index
+  link: "https://www.fhfa.gov/data/hpi"
+  desc: "House Price Index (HPI) datasets from the Federal Housing Finance Agency."
+  tags: ["federal", "housing", "prices", "fhfa"]
 
 - name: "HUD (US Housing & Urban Development) Open Data / GIS"
   link: "https://hudgis-hud.opendata.arcgis.com/datasets"
   desc: "Geospatial and open data from the U.S. Department of Housing and Urban Development."
-  tags: ["federal", "hud", "gis", "housing"]
+  tags: ["federal", "hud", "gis", "housing", "portal"]
 
 - name: "Housing Data from Zillow"
   link: "https://www.zillow.com/research/data/"
   desc: "Publicly available housing data and research by Zillow."
-  tags: ["private", "housing", "prices", "zillow"]
+  tags: ["portal", "housing", "prices", "zillow", "avm"]
 
 - name: "Data Center of Redfin"
   link: "https://www.redfin.com/news/data-center/"
   desc: "Housing market data and visualizations from Redfin."
-  tags: ["private", "housing", "prices", "redfin"]
+  tags: ["private", "housing", "prices", "redfin", "portal"]
 
 - name: "Energy Star Certified Buildings and Plants"
   link: "https://www.energystar.gov/buildings/certified_buildings_and_plants"
@@ -42,12 +47,12 @@
 - name: "National Housing Preservation Database (NHPD)"
   link: "https://preservationdatabase.org/"
   desc: "Database on federally assisted rental housing."
-  tags: ["housing", "federal", "rental"]
+  tags: ["housing", "federal", "rental", "ngo"]
 
 - name: "Urban Institute Data Catalog"
   link: "https://datacatalog.urban.org/"
-  desc: "Urban Institute’s datasets on housing, policy, and demographics."
-  tags: ["research", "housing", "urban"]
+  desc: "Urban Institute's datasets on housing, policy, and demographics."
+  tags: [ "housing", "urban", "ngo"]
 
 - name: "Inside Airbnb Data"
   link: "https://insideairbnb.com"
@@ -57,62 +62,62 @@
 - name: "Historical Housing Prices Project - FRB Philadelphia"
   link: "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/historical-housing-prices"
   desc: "Historical U.S. housing price data from the Federal Reserve Bank of Philadelphia."
-  tags: ["housing", "prices", "federal", "history"]
+  tags: ["housing", "prices", "federal", "historical data"]
 
 - name: "Housing Data Collection - FRB St. Louis"
   link: "https://fred.stlouisfed.org/categories/97"
   desc: "Federal Reserve Economic Data on housing and mortgages."
-  tags: ["federal", "housing", "finance"]
+  tags: ["federal", "housing", "finance", "prices"]
 
 - name: "Washington Center for Real Estate Research"
   link: "https://wcrer.be.uw.edu/housing-market-data-toolkit/"
   desc: "Washington state housing market toolkit."
-  tags: ["washington", "local", "housing", "prices"]
+  tags: ["washington", "uw", "housing", "prices"]
 
 - name: "Washington State Geospatial Open Data Portal"
   link: "https://geo.wa.gov/search?q=cadastral"
   desc: "State-level geospatial open datasets including cadastral data."
-  tags: ["washington", "local", "gis"]
+  tags: ["washington", "gis", "portal"]
 
 - name: "Puget Sound Regional Council Data Portal"
   link: "https://psrc-psregcncl.hub.arcgis.com"
   desc: "Regional datasets on transportation, land use, and demographics."
-  tags: ["puget sound", "regional", "planning", "housing"]
+  tags: ["puget sound", "planning", "housing", "portal"]
 
 - name: "King County Assessments Data"
   link: "https://info.kingcounty.gov/assessor/DataDownload/default.aspx"
   desc: "Assessor property data for King County."
-  tags: ["king county", "local", "assessment"]
+  tags: ["king county", "assessment"]
 
 - name: "King County GIS Open Data"
   link: "https://gis-kingcounty.opendata.arcgis.com"
   desc: "Open GIS datasets for King County."
-  tags: ["king county", "local", "gis"]
+  tags: ["king county", "gis", "portal"]
 
 - name: "King County Residential Sales and Properties"
   link: "https://github.com/andykrause/kingCoData"
   desc: "Residential sales and property dataset for King County."
-  tags: ["king county", "local", "housing", "sales"]
+  tags: ["king county", "housing", "sales"]
 
 - name: "Seattle Open Data Portal"
   link: "https://data.seattle.gov"
   desc: "City of Seattle’s open data portal across domains."
-  tags: ["seattle", "local", "open data", "housing"]
+  tags: ["seattle", "housing", "portal"]
 
-- name: "Dewey Data Platform"
+- name: "Dewey Data Platform (UW login required)"
   link: "https://guides.lib.uw.edu/research/data/dewey"
   desc: "Commercial real estate datasets purchased by UW Library."
-  tags: ["commercial", "real estate", "uw", "subscription"]
+  tags: ["portal", "uw", "urban","real estate", "dewey platform"]
 
 - name: "Pre-Foreclosure History - By ATTOM (UW login required)"
   link: "https://doi.org/10.82551/5H8R-AB29"
   desc: "Detailed foreclosure history data across U.S. properties."
-  tags: ["foreclosure", "real estate", "dewey platform"]
+  tags: ["foreclosure", "real estate", "dewey platform", "attom"]
 
 - name: "Assessor History - By ATTOM (UW login required)"
   link: "https://doi.org/10.82551/2VE9-NE65"
   desc: "Property assessor history from ATTOM Data."
-  tags: ["assessment", "real estate", "dewey platform"]
+  tags: ["assessment", "real estate", "dewey platform", "attom"]
 
 - name: "United States Building Permits - By Builty (UW login required)"
   link: "https://doi.org/10.82551/88ZP-ST96"
@@ -132,9 +137,9 @@
 - name: "Automated Valuation Model (AVM) Data - By ATTOM (UW login required)"
   link: "https://doi.org/10.82551/WCT8-ET94"
   desc: "Automated property valuation models."
-  tags: ["valuation", "housing", "real estate", "dewey platform"]
+  tags: ["avm", "real estate", "dewey platform", "attom", "prices"]
 
 - name: "Community Information Layout - By ATTOM (UW login required)"
   link: "https://doi.org/10.82551/DC3T-X983"
   desc: "Neighborhood and community information data."
-  tags: ["community", "demographics", "real estate", "dewey platform"]
+  tags: ["community", "demographics", "real estate", "dewey platform", "attom"]
