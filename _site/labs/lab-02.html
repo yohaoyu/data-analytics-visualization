@@ -241,12 +241,15 @@ Data</a></li>
 <li><a href="#groupby" id="toc-groupby">Groupby</a></li>
 <li><a href="#joining-dataframes" id="toc-joining-dataframes">Joining
 Dataframes</a></li>
+<li><a href="#very-simple-git-and-github" id="toc-very-simple-git-and-github">Very Simple Git and GitHub</a></li>
 <li><a href="#todo-summarizing-and-joining-dataframes" id="toc-todo-summarizing-and-joining-dataframes">📚 TODO: Summarizing
 and Joining Dataframes</a></li>
 <li><a href="#todo-sampling-for-central-limit-theorem" id="toc-todo-sampling-for-central-limit-theorem">📚 TODO: Sampling for
 Central Limit Theorem</a></li>
 <li><a href="#todo-explore-more" id="toc-todo-explore-more">📚 TODO:
 Explore More</a></li>
+<li><a href="#todo-using-github" id="toc-todo-using-github">📚 TODO:
+Using GitHub</a></li>
 </ul></li>
 <li><a href="#acknowledgement" id="toc-acknowledgement">Acknowledgement</a></li>
 </ul>
@@ -363,11 +366,11 @@ picked.</p>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sample_n</span>(<span class="dv">3</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>random_sample</span></code></pre></div>
 <pre><code>## # A tibble: 3 × 48
-##   sale_id     pinx       sale_date  sale_price sale_nbr sale_warning join_status
-##   &lt;chr&gt;       &lt;chr&gt;      &lt;date&gt;          &lt;int&gt;    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;      
-## 1 2003..11980 ..2131701… 2003-04-17     203000        1 &quot;   &quot;        nochg      
-## 2 2022..20032 ..1921069… 2022-06-27    1200000        3 &quot;   &quot;        nochg      
-## 3 2008..537   ..6751300… 2008-01-14     345000        1 &quot; 15 26 &quot;    nochg      
+##   sale_id    pinx        sale_date  sale_price sale_nbr sale_warning join_status
+##   &lt;chr&gt;      &lt;chr&gt;       &lt;date&gt;          &lt;int&gt;    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;      
+## 1 2023..4514 ..00400006… 2023-03-20    1000000        3 &quot;   &quot;        new        
+## 2 2011..6979 ..74525000… 2011-04-26     237000        3 &quot;   &quot;        nochg      
+## 3 2000..9420 ..41285001… 2000-03-30     604176        1 &quot;   &quot;        new        
 ## # ℹ 41 more variables: join_year &lt;dbl&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
 ## #   area &lt;int&gt;, city &lt;chr&gt;, zoning &lt;chr&gt;, subdivision &lt;chr&gt;, present_use &lt;int&gt;,
 ## #   land_val &lt;int&gt;, imp_val &lt;int&gt;, year_built &lt;int&gt;, year_reno &lt;int&gt;,
@@ -581,7 +584,7 @@ creating categories based on sale price ranges.</p>
 ## # ℹ 2 more variables: price_category &lt;chr&gt;, city_group &lt;chr&gt;</code></pre>
 <!-- TODO: Modifying Dataframes-->
 <h3 id="todo-modifying-dataframes">📚 TODO: Modifying Dataframes</h3>
-<p><strong>6 points</strong></p>
+<p><strong>5 points</strong></p>
 <p>Using the dataset <code>kingco_homes</code> and the operations we
 learned, especially pipe ( %&gt;% ), to finish following tasks:</p>
 <ol type="1">
@@ -875,6 +878,41 @@ others are same. Also, we should select rows with high total values.</p>
 ## #   sqft_fbsmt.x &lt;int&gt;, grade.x &lt;int&gt;, fbsmt_grade.x &lt;int&gt;, condition.x &lt;int&gt;,
 ## #   stories.x &lt;dbl&gt;, beds.x &lt;int&gt;, bath_full.x &lt;int&gt;, bath_3qtr.x &lt;int&gt;,
 ## #   bath_half.x &lt;int&gt;, garb_sqft.x &lt;int&gt;, gara_sqft.x &lt;int&gt;, wfnt.x &lt;int&gt;, …</code></pre>
+<h3 id="very-simple-git-and-github">Very Simple Git and GitHub</h3>
+<ul>
+<li>Every change you make is saved in history, so you can always go
+back.</li>
+<li>If something breaks, you can roll back to a working version.</li>
+<li>Multiple people can work on the same project without overwriting
+each other.</li>
+<li>Your code and documents are safe, even if your computer
+crashes.</li>
+<li>Most of the data science ecosystem (R packages, Python libraries,
+statistical models, tutorials) lives on GitHub.</li>
+</ul>
+<p>There are two main ways to use GitHub:</p>
+<ol type="1">
+<li>Terminal (Command Line) – more powerful and professional, gives you
+full control.</li>
+<li><a href="https://github.com/apps/desktop">GitHub Desktop</a> –
+easier for beginners, has a user-friendly interface.</li>
+</ol>
+<p>We will using GitHub Desktop:</p>
+<ol type="1">
+<li>Download and install <a href="https://github.com/apps/desktop">GitHub Desktop</a>.</li>
+<li><a href="https://github.com/signup">Sign up a free GitHub
+account</a>.</li>
+<li>Sign in with your GitHub account on GitHub Desktop.</li>
+<li>Create a <a href="https://github.com/new">new public
+repository</a>.</li>
+<li>Click “Clone a repository” to copy from GitHub to your
+computer.</li>
+<li>Add this <code>.Rmd</code> and <code>html</code> to your local
+repository.</li>
+<li>Commit changes with a short message (e.g., “Lab 3 for RE 519”).</li>
+<li>Click “Push origin” to upload your changes back to GitHub.</li>
+<li>You can check your changes on GitHub now.</li>
+</ol>
 <h3 id="todo-summarizing-and-joining-dataframes">📚 TODO: Summarizing
 and Joining Dataframes</h3>
 <p><strong>2 points</strong></p>
@@ -945,8 +983,7 @@ you find?</p>
 <p>So far, we’ve learned a lots functions, please use as many as
 possible to explore topics you are interested in about the King County
 datasets. Please use at least 5 functions below and brief discuss your
-results. After finish this lab, you need to submit everything via Canvas
-assignment page.</p>
+results.</p>
 <ul>
 <li><code>select()</code> – choose columns<br />
 </li>
@@ -981,10 +1018,18 @@ datasets<br />
 duplicates</li>
 </ul>
 <div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span></span></code></pre></div>
+<h3 id="todo-using-github">📚 TODO: Using GitHub</h3>
+<p><strong>2 points</strong></p>
+<p>After completing this lab, commit your changes with a short message,
+and then push them to your GitHub repository. Finally, copy the
+repository link from GitHub and submit it on the Canvas assignment page.
+Make sure that your repository is publicly visible.</p>
 <h2 id="acknowledgement">Acknowledgement</h2>
-<p>The materials are developed based materials from <a href="https://fsun.ucsd.edu">Dr. Feiyang Sun at UC San Diego</a>, Siman
-Ning and Christian Phillips at University of Washington, <a href="https://clanfear.github.io">Dr. Charles Lanfear at University of
-Cambridge</a>.</p>
+<p>The materials are developed by <a href="www.yuehaoyu.com">Haoyu
+Yue</a> based materials from <a href="https://fsun.ucsd.edu">Dr. Feiyang
+Sun at UC San Diego</a>, Siman Ning and Christian Phillips at University
+of Washington, <a href="https://clanfear.github.io">Dr. Charles Lanfear
+at University of Cambridge</a>.</p>
 
 </main>
 

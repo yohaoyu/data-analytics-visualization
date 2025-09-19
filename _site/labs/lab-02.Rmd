@@ -218,7 +218,7 @@ kingco_sales_twolakes %>%
 
 ### 📚 TODO: Modifying Dataframes
 
-**6 points**
+**5 points**
 
 Using the dataset `kingco_homes` and the operations we learned, especially pipe ( %\>% ), to finish following tasks:
 
@@ -375,6 +375,32 @@ kingco_sales_w_clean_info <- left_join(kingco_sales, kingco_homes_clean, by = "p
 head(kingco_sales_w_clean_info, 3)
 ```
 
+### Very Simple Git and GitHub
+
+- Every change you make is saved in history, so you can always go back.
+- If something breaks, you can roll back to a working version.
+- Multiple people can work on the same project without overwriting each other.
+- Your code and documents are safe, even if your computer crashes.
+- Most of the data science ecosystem (R packages, Python libraries, statistical models, tutorials) lives on GitHub.
+
+There are two main ways to use GitHub:
+
+1. Terminal (Command Line) – more powerful and professional, gives you full control.
+2. [GitHub Desktop](https://github.com/apps/desktop) – easier for beginners, has a user-friendly interface.
+
+We will using GitHub Desktop:
+
+1. Download and install [GitHub Desktop](https://github.com/apps/desktop).
+2. [Sign up a free GitHub account](https://github.com/signup).
+3. Sign in with your GitHub account on GitHub Desktop.
+4. Create a [new public repository](https://github.com/new).
+5. Click “Clone a repository” to copy from GitHub to your computer.
+6. Add this `.Rmd` and `html` to your local repository.
+7. Commit changes with a short message (e.g., “Lab 3 for RE 519”).
+8. Click “Push origin” to upload your changes back to GitHub.
+9. You can check your changes on GitHub now. 
+
+
 ### 📚 TODO: Summarizing and Joining Dataframes
 
 **2 points**
@@ -390,7 +416,7 @@ For all property in Seattle, what's the average total values per sqft [(`land_va
 
 ### 📚 TODO: Sampling for Central Limit Theorem
 
-**4 points**
+**3 points**
 
 We are going to use the sale price data to understand the most important theorem in statistics, [Central Limit Theorem (CLT)](https://en.wikipedia.org/wiki/Central_limit_theorem). I **highly** recommend [this video from 3Blue1Brown](https://www.youtube.com/watch?v=zeJD6dqJ5lo&t=68s) to understand CLT. 
 
@@ -457,7 +483,7 @@ Repeat the process with smaller sample size, such as `n = 10`, and smaller repea
 
 **4 points**
 
-So far, we've learned a lots functions, please use as many as possible to explore topics you are interested in about the King County datasets. Please use at least 5 functions below and brief discuss your results. After finish this lab, you need to submit everything via Canvas assignment page.
+So far, we've learned a lots functions, please use as many as possible to explore topics you are interested in about the King County datasets. Please use at least 5 functions below and brief discuss your results. 
 
 - `select()` – choose columns  
 - `filter()` – filter rows by conditions  
@@ -476,6 +502,13 @@ So far, we've learned a lots functions, please use as many as possible to explor
 ```{r}
 # TODO
 ```
+
+
+### 📚 TODO: Using GitHub
+
+**2 points**
+
+After completing this lab, commit your changes with a short message, and then push them to your GitHub repository. Finally, copy the repository link from GitHub and submit it on the Canvas assignment page. Make sure that your repository is publicly visible. 
 
 ## Acknowledgement
 

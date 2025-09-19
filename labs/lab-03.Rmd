@@ -27,7 +27,7 @@ In lab 3, we are going to explore tidy data, start to visualize data using R, an
 The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
 > **Recommended Reading** <br>
-> [Chapter 2, 3, 6, Modern Data Science with R. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e) <br>
+> [Chapter 2, 6, Modern Data Science with R. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e) <br>
 > [Tidy Data, *The Journal of Statistical Software*, Hadley Wickham, 2014.](https://vita.had.co.nz/papers/tidy-data.html)
 
 ---
@@ -149,30 +149,7 @@ hvi_tidy_NA_remove <- hvi_tidy %>%
 dim(hvi_tidy_NA_remove)
 ```
 
-### Very Simple Git and GitHub
 
-- Every change you make is saved in history, so you can always go back.
-- If something breaks, you can roll back to a working version.
-- Multiple people can work on the same project without overwriting each other.
-- Your code and documents are safe, even if your computer crashes.
-- Most of the data science ecosystem (R packages, Python libraries, statistical models, tutorials) lives on GitHub.
-
-There are two main ways to use GitHub:
-
-1. Terminal (Command Line) – more powerful and professional, gives you full control.
-2. [GitHub Desktop](https://github.com/apps/desktop) – easier for beginners, has a user-friendly interface.
-
-We will using GitHub Desktop:
-
-1. Download and install [GitHub Desktop](https://github.com/apps/desktop).
-2. [Sign up a free GitHub account](https://github.com/signup).
-3. Sign in with your GitHub account on GitHub Desktop.
-4. Create a [new public repository](https://github.com/new).
-5. Click “Clone a repository” to copy from GitHub to your computer.
-6. Add this `.Rmd` and `html` to your local repository.
-7. Commit changes with a short message (e.g., “Lab 3 for RE 519”).
-8. Click “Push origin” to upload your changes back to GitHub.
-9. You can check your changes on GitHub now. 
 
 ### 📚 TODO: Critique of Data Visualizations
 
@@ -293,11 +270,7 @@ Facets (Creating multiple plots split by one categorical variable):
 [https://bookdown.org/yih_huynh/Guide-to-R-Book/facet-wrapping.htmlLinks to an external site.](https://bookdown.org/yih_huynh/Guide-to-R-Book/facet-wrapping.html)
 
 
-### 📚 TODO: Using GitHub
 
-**2 points**
-
-After completing this lab, commit your changes with a short message, and then push them to your GitHub repository. Finally, copy the repository link from GitHub and submit it on the Canvas assignment page. Make sure that your repository is publicly visible. 
 
 ## Acknowledgement
 
