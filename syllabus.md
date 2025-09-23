@@ -131,6 +131,7 @@ The University of Washington is the leading institution in statistics and data s
   - [eScience Institute (Data Science)](https://escience.washington.edu)
   - [Center for Studies in Demography and Ecology](https://csde.washington.edu)
   - [Center for Statistics and the Social Sciences](https://csss.uw.edu)
+  - [Center for Social Science Computation and Research](https://depts.washington.edu/csscr/)
 
 
 ## Academic Integrity 
