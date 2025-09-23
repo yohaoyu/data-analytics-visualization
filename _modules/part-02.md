@@ -43,6 +43,7 @@ Nov 03
 : **Interactive Visualization**
 : **LAB 6-A**{: .label .label-green } shiny: Interative Visualization using R
 : **LAB 5 DUE 11:59 PM**{: .label .label-purple }
+: **Extra credits - data sharing DUE 11:59 PM**{: .label .label-purple }
 
 Nov 05
 : **Dashboard**
