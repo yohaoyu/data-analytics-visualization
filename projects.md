@@ -84,7 +84,7 @@ The final project may take any format (e.g., written report, website/HTML, dashb
 2.	**Data Description**: Describe the dataset(s) you used, including source(s), temporal and spatial scope, and key variables.
 3.	**Methods**: Explain the data analysis and/or visualization techniques you applied and why they are appropriate.
 4.	**Results**: Present your main findings, including tables, charts, or maps as appropriate.
-5.	**Discussion**: Interpret your results, discuss their implications, and note any limitations.
+5.	**Discussion**: Interpret your results, briefly discuss their implications, and note any limitations.
 6.	**Conclusion**: Summarize your insights and potential next steps.
 7.	**References**: Cite all data sources, articles, and tools you relied on.
 8.	**Appendix (optional)**: Code (recommended), additional figures, or technical details.
