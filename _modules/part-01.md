@@ -7,7 +7,7 @@ title: I - Introduction & Descriptive Statistics
 
 Sep 24
 : **Overview and the Values of Data Science**
-  : [Slides](#) / [Pre-class Survey](https://forms.gle/oRHQNRiwjcsaUbLQ7)
+  : [Slides]({{ site.baseurl }}/slides/lecture-01.pdf) / [Pre-class Survey](https://forms.gle/oRHQNRiwjcsaUbLQ7)
 : **LAB 1-A**{: .label .label-green } Setup
   : [Page]({{ site.baseurl }}/labs/lab-01) <!--/ [Rmd]({{ site.baseurl }}/labs/lab-01.zip)-->
 : **Optional**{: .readings .readings-optional }[Data Science and its Relationship to Big Data and Data-driven Decision Making. Foster Provost and Tom Fawcett. 2013.](https://www.liebertpub.com/doi/full/10.1089/big.2013.1508){: .citation} <br>
@@ -32,13 +32,15 @@ Oct 06
 : **Use Cases of Data Science in Real Estate**
 : **LAB 2-A**{: .label .label-green } Modifying Dataframes
   <!--: [Page]({{ site.baseurl }}/labs/lab-02) / [Rmd]({{ site.baseurl }}/labs/lab-02.Rmd)-->
-: **Required**{: .readings .readings-required }[Finding Common Ground: Best Practices for State Policies Supporting Transit-Oriented Development. Mason A. Virant, et al. 2024.](https://wcrer.be.uw.edu/2024/03/22/tod-report-finding-common-ground/){: .citation} <br>
+: **REQUIRED**{: .readings .readings-required}[Chapter 7, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
+**Optional**{: .readings .readings-optional }[Finding Common Ground: Best Practices for State Policies Supporting Transit-Oriented Development. Mason A. Virant, et al. 2024.](https://wcrer.be.uw.edu/2024/03/22/tod-report-finding-common-ground/){: .citation} <br>
 **Optional**{: .readings .readings-optional }[Urban Big Data: City Management and Real Estate Markets. Richard Barkham, et al. 2022.](){: .citation} 
 : **LAB 1 DUE 11:59 PM**{: .label .label-purple }
 
 Oct 08
 : **Programming in R**
 : **LAB 2-B**{: .label .label-green } Summarizing and Joining Dataframes, GitHub
+: **REQUIRED**{: .readings .readings-required}[Chapter 9, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation} 
 : **Team Formation Due**{: .label .label-purple }
   : [Project Team Formation Instruction]({{ site.baseurl }}/projects/#team-formation)
 

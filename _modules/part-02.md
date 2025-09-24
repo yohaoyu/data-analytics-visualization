@@ -19,8 +19,9 @@ Oct 13
 
 Oct 15
 : **Exploratory Data Analysis (EDA)**
-: **LAB 3-B**{: .label .label-green } Basic Exploratory Data Analysis in R
-: **Optional**{: .readings .readings-optional }[Exploratory Data Analysis. United States Environmental Protection Agency.](https://www.epa.gov/caddis/exploratory-data-analysis){: .citation}
+: **LAB 3-B**{: .label .label-green } Basic Exploratory Data Analysis in R 
+: **REQUIRED**{: .readings .readings-required}[Chapter 8, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
+**Optional**{: .readings .readings-optional }[Exploratory Data Analysis. United States Environmental Protection Agency.](https://www.epa.gov/caddis/exploratory-data-analysis){: .citation}
 
 Oct 20
 : **Visualization Perception**
