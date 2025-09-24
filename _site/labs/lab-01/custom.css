@@ -1,0 +1,89 @@
+/* 全局字体换成 Optima */
+html, body,
+.book, .book .book-body, #content {
+  font-family:  "Avenir",-apple-system, system-ui,'Segoe UI', Arial, sans-serif !important;
+  font-size: 93.75%;
+  line-height: 1.6;
+}
+
+h1 {
+
+}
+/* 缩小代码区字体 */
+code, pre, kbd, samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !important;
+  font-size: 90% !important;
+}
+
+/* 缩小表格字体 */
+table {
+  font-size: 90% !important;
+}
+
+table th, table td {
+  font-size: 90% !important;
+}
+
+td, th {
+  padding: 0.5rem 0.5rem;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #32006e !important;
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 900 !important;  /* 加粗到 700 */
+  margin-bottom: 0 !important;
+}
+
+h2 {
+  margin-top: 0.5rem !important;
+}
+
+a {
+  color: #32006e !important;
+  text-decoration: underline !important;      /* 开启下划线 */
+  text-decoration-color: #eeebee !important;  /* 下划线颜色 */
+}
+
+a:hover {
+  text-decoration-color: rgb(212, 192, 236) !important; /* 鼠标悬停时改成另一种颜色 */
+}
+
+/* 调整 inline code 的基线对齐 */
+p code, li code {
+  font-size: 1em;         /* 字体略小，和正文比例一致 */
+  vertical-align: middle;    /* 中线对齐 */
+  padding: 0 0.2em;          /* 上下 padding 去掉，保留左右间距 */
+  line-height: 1.4;          /* 保证与正文行高一致 */
+}
+
+code {
+  font-size: 0.85em !important;         /* 字体略小，和正文比例一致 */
+  vertical-align: middle;    /* 中线对齐 */
+  padding: 0em 0em 0 0em;          /* 上下 padding 去掉，保留左右间距 */
+  line-height: 1.2;          /* 保证与正文行高一致 */
+}
+
+pre > code {
+  box-sizing: border-box;
+  display: block;
+  line-height: 1.2rem !important;
+  padding: 0.5rem !important;
+  min-width: 100%;
+  width: min-content;
+}
+
+pre {
+  margin: 0.5rem 0 !important;
+}
+
+figure {
+  max-width: 60% !important;
+  background: none !important;
+  border: none !important;
+  padding: 15px 0 !important;
+}

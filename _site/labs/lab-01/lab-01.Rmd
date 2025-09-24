@@ -1,3 +1,17 @@
+<!-- Notes about the HTML and CSS file
+
+I use the R package `cleanrmd` (https://github.com/gadenbuie/cleanrmd) which includes many beautiful themes to render this page. Also, I made some customization using the CSS file provided in the same folder. You may need install `cleanrmd` and have the CSS file in the same folder with `rmd` file to knit the same page. If you want to use the default style. 
+
+You can change the output below to html_document, like:
+
+title: "Lab 01 Basic of R, RStudio, and GitHub"
+subtitle: "RE 519 Data Analytics and Visualization | Autumn 2025"
+author: "" 
+date: ""
+output: html_document
+
+--> 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -457,8 +471,6 @@ mean(king_value$estimate, na.rm = TRUE)
 ```
 
 When you click the **Knit** button (top of this panel) a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
-
-
 
 
 <!-- TODO: Explore Census Demographic Data -->
