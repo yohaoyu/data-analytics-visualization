@@ -39,11 +39,11 @@ All rights remain with the original copyright holder. Students are expected to r
 
 [Chapter 8:  Exploratory Data Analysis](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-8.pdf)
 
-[Chapter 9:  Data Cleaning: Techniques to Deal with Outliers, Errors, and Missing Data (photocopy edition)]((https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-9.pdf))
+[Chapter 9:  Data Cleaning: Techniques to Deal with Outliers, Errors, and Missing Data (photocopy edition)](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-9.pdf)
 
 [Chapter 10: Modeling Real Estate Prices](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-10.pdf)
 
-[Chapter 11:  Analysis of Unstructured Text (photocopy edition)]((https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-11.pdf))
+[Chapter 11:  Analysis of Unstructured Text (photocopy edition)](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-11.pdf)
 
 [Chapter 12:  Real Estate Analysis Case Study](https://staff.washington.edu/yohaoyu/data-analytics-visualization/re-in-information-age/chapter-12.pdf)
 
