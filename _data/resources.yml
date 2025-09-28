@@ -143,3 +143,13 @@
   link: "https://doi.org/10.82551/DC3T-X983"
   desc: "Neighborhood and community information data."
   tags: ["community", "demographics", "real estate", "dewey platform", "attom"]
+
+- name: "Dubai Real Estate Dataset"
+  link: "https://dubailand.gov.ae/en/open-data/real-estate-data/#/ "
+  desc: "Neighborhood and community information data."
+  tags: ["dubai", "international", "real estate"]
+
+- name: "Dubai Pulse Open Data"
+  link: "https://www.dubaipulse.gov.ae/category/housing "
+  desc: "Neighborhood and community information data."
+  tags: ["dubai", "international", "real estate", "portal", "housing"]

@@ -212,7 +212,7 @@ dd:has(.readings) {
   position: relative;
   background: none;
   color: #000;
-  font-weight: bold !important;
+  font-weight: 900 !important;
   padding-left: 2em;   
   border: none;
   text-decoration: underline;
@@ -238,7 +238,7 @@ dd:has(.readings) {
     display: inline-block;
     position: relative;
     color: #000000;
-    font-weight: bold !important;
+    font-weight: 900 !important;
     text-decoration: underline;
   }
   .current::before {
