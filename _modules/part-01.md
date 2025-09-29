@@ -16,6 +16,7 @@ Sep 24
 
 Sep 29
 : **Data in Real Estate**  
+  : [Slides]({{ site.baseurl }}/slides/lecture-02.pdf)
 : **LAB 1-B**{: .label .label-green } Basic of R/RStudio and Markdown 
 : **REQUIRED**{: .readings .readings-required}[Chapter 1-2, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
 **Optional**{: .readings .readings-optional }[Chapter 1-3, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin.](https://seeing-theory.brown.edu){: .citation}  <br>

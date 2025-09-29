@@ -169,6 +169,13 @@ Produces this output in your document:
 mean(c(1,2,3,4,5,6)) # calculate the mean value of a list of numbers
 ```
 
+Most commonly used two shortcuts for chunks:
+
+| Action                   | Mac Shortcut              | Windows Shortcut         |
+|--------------------------|---------------------------|--------------------------|
+| Insert R code chunk      | ⌘ + Option + I            | Ctrl + Alt + I           |
+| Run current chunk        | ⌘ + Option + C            | Ctrl + Alt + C           |
+
 #### Chunk Options
 
 Chunks have options that control what happens with their code, such as:
