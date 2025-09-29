@@ -104,7 +104,7 @@ The latest version of R is **4.5.1 (Great Square Root).** You can check by typin
 
 ### Getting Started
 
-Open up RStudio now and try to download the source file, a `rmd` (R Markdown) file [here](https://www.yuehaoyu.com/data-analytics-visualization/labs/lab-01.Rmd) and open it on your local machine.
+Open up RStudio now and try to download the source file, a `rmd` (R Markdown) file [here](https://www.yuehaoyu.com/data-analytics-visualization/labs/lab-01.zip) and open it on your local machine.
 
 Use `install.packages("[package name]")` to install any required packages, or R Studio may automatically recognize that there are some packages you need to install and will install them for you.
 
