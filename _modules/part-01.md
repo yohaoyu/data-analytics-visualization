@@ -32,7 +32,7 @@ Oct 06
 : **Data Science Workflows and Components**
 : **LAB 2-A**{: .label .label-green } Modifying Dataframes
   <!--: [Page]({{ site.baseurl }}/labs/lab-02) / [Rmd]({{ site.baseurl }}/labs/lab-02.Rmd)-->
-artificial-intelligence-and-its-implications-for-real-estate){: .citation} 
+
 : **LAB 1 DUE 11:59 PM**{: .label .label-purple }
 : **REQUIRED**{: .readings .readings-required}[Chapter 3-4, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
 **Optional**{: .readings .readings-optional }[What Is Open Reproducible Science. Jenny Palomino, et al. 2020,](https://earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/get-started-open-reproducible-science/){: .citation} <br>
@@ -45,7 +45,7 @@ Oct 08
 : **REQUIRED**{: .readings .readings-required}[Chapter 7, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
 **Optional**{: .readings .readings-optional }[Finding Common Ground: Best Practices for State Policies Supporting Transit-Oriented Development. Mason A. Virant, et al. 2024.](https://wcrer.be.uw.edu/2024/03/22/tod-report-finding-common-ground/){: .citation} <br>
 **Optional**{: .readings .readings-optional }[Urban Big Data: City Management and Real Estate Markets. Richard Barkham, et al. 2022.](){: .citation} <br>
-**Optional**{: .readings .readings-optional }[Artificial Intelligence: Real Estate Revolution or Evolution? JLL Inc.](https://www.jll.com/en-us/insights/
+**Optional**{: .readings .readings-optional }[Artificial Intelligence: Real Estate Revolution or Evolution? JLL Inc.](https://www.jll.com/en-us/insights/artificial-intelligence-and-its-implications-for-real-estate){: .citation} 
 : **REQUIRED**{: .readings .readings-required}[Chapter 9, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation} <br>
 **Optional**{: .readings .readings-optional }[Tidyverse Style Guide. The Tidyverse Team.](https://style.tidyverse.org){: .citation} <br>
 **Optional**{: .readings .readings-optional }[Learn Git Branching. Learn to use Git through Terminal Rather than using GitHub Desktop.](https://learngitbranching.js.org){: .citation} 
