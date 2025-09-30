@@ -24,7 +24,7 @@ Sep 29
 **Optional**{: .readings .readings-optional }[Understanding and Using American Community Survey Data. United States Census Bureau. 2020.](https://www.census.gov/programs-surveys/acs/library/handbooks/general.html){: .citation} 
 
 Oct 01
-: **Bacis of R**
+: **R Working Session**
 : **LAB 1-C**{: .label .label-green } Dataframes and Accessing Census Data
 : **Optional**{: .readings .readings-optional }[Tidyverse Style Guide. The Tidyverse Team.](https://style.tidyverse.org){: .citation} <br>
 
