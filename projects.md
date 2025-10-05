@@ -56,7 +56,7 @@ Please write a summary of your final project on the following matters:
 4. What are the expected results of your projects by the end of this quarter?
 5. What are the potential implications of your findings for real estate practice, policy, or the broader data science community?
 
-Your project proposal should be submitted as a single PDF per group, no longer than 2 pages (ideally 1), and must list the names of all group members. The current deadline for the proposal is November 12, but I encourage you to submit it as early as possible!
+Your project proposal should be submitted as a single PDF per group, no longer than 2 pages, and must list the names of all group members. The current deadline for the proposal is November 12, but I encourage you to submit it as early as possible!
 
 ## Draft Work Presentation
 
@@ -77,7 +77,9 @@ your peers.
 
 ## Final Delivery
 
-The final project may take any format (e.g., written report, website/HTML, dashboard, or poster) as long as it clearly communicates your analysis and findings. However, no matter what format your final delivery takes, you should include the following components:
+The final project may take any format (e.g., written report, website/HTML, dashboard, or poster) as long as it clearly communicates your analysis and findings. If you choose a written report, the length should be less than five pages (single-spaced, 12-point font, 1-inch margins), excluding figures, tables, code, and references. For other formats, aim for a similar level of depth and effort.
+
+Also, no matter what format your final delivery takes, you should include the following components:
 
 1. **Basic Info**: Names, affiliation/program, and Email address of all group members.
 1.	**Research Question(s)**: Clearly state the research question(s), motivation, and or hypothesis you are addressing.

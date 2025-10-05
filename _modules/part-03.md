@@ -42,4 +42,5 @@ Dec 01
 **Optional**{: .readings .readings-optional }[AI for Social Good. Nature Communications. Nenad Tomašev et al. 2020.](https://doi.org/10.1038/s41467-020-15871-z){: .citation }<br>
 **Optional**{: .readings .readings-optional }[Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence. Kate Crawford. 2022.](https://yalebooks.yale.edu/book/9780300264630/atlas-of-ai/){: .citation } <br>
 **Optional**{: .readings .readings-optional }[A Golden Decade of Deep Learning: Computing Systems & Applications. Jeffrey Dean (UW Alumni, Google). 2022.](https://direct.mit.edu/daed/article/151/2/58/110623/A-Golden-Decade-of-Deep-Learning-Computing-Systems){: .citation }<br>
-**Optional**{: .readings .readings-optional }[What is a Neural Network. 3Blue1Brown. 2017.](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi){: .citation }
+**Optional**{: .readings .readings-optional }[Artificial Intelligence: Real Estate Revolution or Evolution? JLL Inc.](https://www.jll.com/en-us/insights/artificial-intelligence-and-its-implications-for-real-estate){: .citation} <br>
+**Optional**{: .readings .readings-optional }[What is a Neural Network. 3Blue1Brown. 2017.](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi){: .citation } 
