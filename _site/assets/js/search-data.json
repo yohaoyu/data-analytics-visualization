@@ -1,501 +1,515 @@
 {"0": {
+    "doc": 404,
+    "title": "404: Page not found",
+    "content": "Sorry, the page you’re looking for doesn’t exist. Back to Home . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
+    "url": "/data-analytics-visualization/404.html#404-page-not-found",
+    
+    "relUrl": "/404.html#404-page-not-found"
+  },"1": {
+    "doc": 404,
+    "title": 404,
+    "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
+    "url": "/data-analytics-visualization/404.html",
+    
+    "relUrl": "/404.html"
+  },"2": {
     "doc": "Lab",
     "title": "Lab 2: Critique of Data Visualizations",
     "content": "As we learn more about data visualization, we have begun to discuss some general principles. For today’s lab exercise, please find an example of a visualization or infographic that impresses you- either in a good or bad way. Please attach the example image, give the link/source, and (1) describe what the visualization is trying to communicate; (2) discuss what it does and does not do well using the principles we talked about in class; (3) comment on two visualizations posted by classmates . -– . A few probing questions to think about: . | Is the data visualization static, motion or interactive? | Is it narrative or explorative? | What kind of purpose do you think it serves? How would you order its objectives (appeal, comprehension and retention)? | Does it contain the basic elements of a graph (e.g. title, axis label, encoding)? Is anything missing or not clear to audience? | What kind of encoding does it use (e.g. position, length, slope, angle, area, color hue, etc)? How effective in terms of precision of such encoding elements? | What kind of organization principles do you observe (e.g.hierarchy, unity, balance, grouping and spacing)? Is principle lacking in the graph? | Do you think your psychological needs have all been met by this source (e.g. autonomy, relatedness and competence)? | . ",
     "url": "/data-analytics-visualization/labs/Others/#lab-2-critique-of-data-visualizations",
     
     "relUrl": "/labs/Others/#lab-2-critique-of-data-visualizations"
-  },"1": {
+  },"3": {
     "doc": "Lab",
     "title": "Lab 3.2: Sketching Dataset",
     "content": "In this exercise, you will sketch (with pen and paper!) 3 visualizations of a small dataset and provide brief reflections of your designs. Why sketch? Why not just dive right into coding or using some visualization tool? Sketching is a quick and cheap form of prototyping — a process of simulating how a finished product could look and work. Prototyping is a critical part of the design process as it allows us to test the feasibility of our ideas early on. But prototyping (and sketching, in particular) is also extremely helpful in generating ideas. Rather than grappling with the functionality of any given design tool (which can often influence your design process, even implicitly), or committing to any one specific design, sketching allows us to more rapidly explore the space of possible designs. In this assignment, you are going to gain some practice with sketching visualizations. Redfin Monthly Housing Market Data . Each week, Redfin releases a dataset about the housing market, computed daily as either a rolling 1, 4 or 12-week window. The local data is grouped by metropolitan area and by county. The dataset contains information such as median sale price, home sales, pending sales, new listings, inventory, active listings, monthly supply, days on market, price per square foot, sale to list ratio, percent of home sold above list, percent of active listing with price drops, and percent of homes go off market within two weeks. The attached dataset contains the above information aggregated for all types of homes. Dataset: Redfin_SEA_Metro_Au2024.csvDownload Redfin_SEA_Metro_Au2024.csv . Source: https://www.redfin.com/news/data-center/Links to an external site. Your Tasks . | Start by choosing a question you’d like a visualization to answer. | Design 3 different visualization paper sketches (low-fidelity prototypes) that you believe effectively tackle the question. | Write one paragraph per sketch about the rationale for your design decisions. What was your motivation behind generating this sketch? What Ire you hoping it would communicate? What worked and what didn’t? | Write one paragraph that reflects on all 3 of your sketches overall. Compare your designs with each other — what are their strengths and weaknesses? What new directions might you explore (e.g., synthesizing elements from every sketch, or describing why one of them is significantly better than the others?). | . Your sketches should be interpretable without consulting your write-ups. Do not forget to include the title, axis labels or legends as needed! . The goal of this assignment is to draft different visualization designs. Thus, I do not expect your visualizations to be “perfect,” but rather communicate three ideas that you would plausibly be excited to continue exploring in the subsequent assignment. In fact, I encourage you to use sharpies/markers/felt-tip pens so that your lines are thicker and you are less focused on being “accurate.” . Note: For this assignment, you should not analyze or visualize the data with tools such as Excel, Tableau, or R. I instead expect you to just look at the dataset and create hand-drawn sketches. Grading . This assignment is scored out of a maximum of 10 points. I will determine scores by judging the diversity of your sketches, the creativity of your ideas, and the crispness of your write ups. You can be awarded a maximum of 3 points for each sketch and its related reflection. The remaining 1 point will be awarded for communicating your overall reflection across the 3 sketches as described in the above section “Your Tasks”. Submission Details . This is an individual assignment. You may not work in groups. Submit your assignment on canvas. Compile your sketches and writeups as a single PDF or WORD file. Make sure your images are sized for a reasonable viewing experience — readers should not have to zoom or scroll in order to effectively view any sketch! . Tips and Inspiration . | Use a sharpie/marker. Thick lines free you from worrying about the fine-grained details and accuracy of your sketch, and instead focus you on sketching the big picture ideas. | Similarly, I recommend using pens over pencils — not being able to “undo” your mistakes by erasing them can be remarkably conducive to generating designs. | You are free to use different colors and any other sketching techniques you can think of (e.g., dotted patterns, cross hatching, etc.). | You may sketch on touchscreen-enabled devices (e.g., iPads). | How to Sketch, Doodle, and Draw Data Visualization Drafts by HandLinks to an external site. | Sketching with Data Opens the Mind’s EyeLinks to an external site. | . ",
     "url": "/data-analytics-visualization/labs/Others/#lab-32-sketching-dataset",
     
     "relUrl": "/labs/Others/#lab-32-sketching-dataset"
-  },"2": {
+  },"4": {
     "doc": "Lab",
     "title": "Lab 4: ggplot &amp; Redfin",
     "content": "Exercise: Try to translate your sketches into reality using ggplot. With your partner, determine which three sketches would be best to try and adapt. Create three ggplot visualizations of some aspect of the Redfin data and write one paragraph per visualization that explains the chart and any trends or outliers. In your paragraph, try to think about why you’re seeing what you’re seeing. What’s causing these trends or relationships in the data? . Redfin_SEA_Metro_Au2024.csvDownload Redfin_SEA_Metro_Au2024.csv . Redfinggplot.RmdDownload Redfinggplot.Rmd . Submit both the .Rmd and .html files. Only one submission per group should be required. This is a group assignment. Class “Wikipedia” . https://docs.google.com/document/d/1gZIjbEMfjgQUGqdMuf_kjH9Z3UZc0opeNB3SFoeif6E/edit?usp=sharingLinks to an external site. Cheat sheet you may find helpful: . https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdfLinks to an external site. ",
     "url": "/data-analytics-visualization/labs/Others/#lab-4-ggplot--redfin",
     
     "relUrl": "/labs/Others/#lab-4-ggplot--redfin"
-  },"3": {
+  },"5": {
     "doc": "Lab",
     "title": "Lab 5: Seattle permit data",
     "content": "Exercise: Using either the Seattle permit data, or other data from the Seattle Open Data portal, create 3 ggplots that show the relationship between the variables. Write one paragraph that explains each visualization. What is causing these trends/relationships in the data? . BuildingPermitSeattle.RmdDownload BuildingPermitSeattle.Rmd . Building_Permits_20240918.csvDownload Building_Permits_20240918.csv . Detached_Accessory_Dwelling_Units_(DADUs).csvDownload Detached_Accessory_Dwelling_Units_(DADUs).csv . Submit both the .Rmd &amp; .html . https://data.seattle.gov/Permitting/Building-Permits/76t5-zqzr/about_dataLinks to an external site. ",
     "url": "/data-analytics-visualization/labs/Others/#lab-5-seattle-permit-data",
     
     "relUrl": "/labs/Others/#lab-5-seattle-permit-data"
-  },"4": {
+  },"6": {
     "doc": "Lab",
     "title": "Lab 6+7: Census data I &amp; Introduction to Spatial Data",
     "content": "Part 1 . Create three visualizations of some aspect of the census data. Include median household income in at least one of the visualizations (B19013_001). Write one paragraph that explains each visualization. What is plausibly causing these trends/relationships between the variables? . CensusData-I_final-1.RmdDownload CensusData-I_final-1.Rmd . Part 2 . Spatial Data with ACS . Introduction to spatial data.RmdDownload Introduction to spatial data.Rmd . Looking through the census data, make one thematic heat map of the United States and another of just Washington. I suggest making a map at the county level, but you could experiment with a more disaggregated level at the census tract “tract” or census block group “cbg” levels. Remember that more disaggregated data may result in more NA values and requires taking from the 5-year ACS “acs5” instead of the 1-year. Write one paragraph that explains each visualization. What is plausibly causing these trends/relationships between the variables? . In total, I’m asking for 5 charts: 3 simple plots such as scatterplots, line graph, bar chart, radar chart… and 2 maps one of Washington and one of the US disaggregated to at least the County level. I am also asking for one paragraph for each chart that explains each visualization and provides a plausible explanation for why these trends/relationships exist in the data. Submit both your .Rmd and .html files. -———————- . Suggested reading: . Walker Ch 1-3Links to an external site. Some possible inspiration . https://r-graph-gallery.com/Links to an external site. Wikipedia to share helpful code and variable IDs from ACS: . https://docs.google.com/document/d/12wC-nzlQvqF-3_plPwIR7fzzvqI7NLQMt7vPEPEuFB4/edit?usp=sharingLinks to an external site. ",
     "url": "/data-analytics-visualization/labs/Others/#lab-67-census-data-i--introduction-to-spatial-data",
     
     "relUrl": "/labs/Others/#lab-67-census-data-i--introduction-to-spatial-data"
-  },"5": {
+  },"7": {
     "doc": "Lab",
     "title": "Lab 8: Census data and tidycensus II",
     "content": "Completion of this assignment will demonstrate competency in the essentials of tidycensus and ggplot. Your task is to create 4 visualizations: . Create two scatter plots of US counties. On both x-axis is percent earning above 100,000 (B19001_014 to B19001_017 and B19001_001) at the county level. | Figure 1 - percent owning home (B25003_001 &amp; B25003_002) | Figure 2 - percent African American (B02001_001 &amp; B02001_003) | . Create a county map of the US with the percent of households earning above 100,000 as the variable coloring each county. Lastly, recreate this ggplot to the best of your ability (variables: B19001_002 to B19001_017): . Note: to calculate percent change I use the natural log: log(value2/value1) in R. Please write one paragraph for each chart that explains the visualization and provides a plausible explanation for why these trends/relationships exist in the data. Submit both .Rmd &amp; .html . ",
     "url": "/data-analytics-visualization/labs/Others/#lab-8-census-data-and-tidycensus-ii",
     
     "relUrl": "/labs/Others/#lab-8-census-data-and-tidycensus-ii"
-  },"6": {
+  },"8": {
     "doc": "Lab",
     "title": "Lab 15: PDF Scraping &amp; Introduction to Time Series",
     "content": "Simple demonstration of scraping a pdf and applying text manipulation tools: . PDF.RDownload PDF.R . SeattleMarketRateHousingNeedsAndSupplyAnalysis2021.pdf . Task: . Try to scrape another table either from this pdf or another of your choice. Then create one visualization and write one paragraph that explains the visualization and the data. Upload your .Rmd and .html files. Required reading: . Read Ch 1 &amp; 2 from this textbook on forecasting. https://otexts.com/fpp2/intro.htmlLinks to an external site. Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/labs/Others/#lab-15-pdf-scraping--introduction-to-time-series",
     
     "relUrl": "/labs/Others/#lab-15-pdf-scraping--introduction-to-time-series"
-  },"7": {
+  },"9": {
     "doc": "Lab",
     "title": "Lab",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/labs/Others/",
     
     "relUrl": "/labs/Others/"
-  },"8": {
+  },"10": {
     "doc": "Data Analytics and Visualization",
     "title": "Schedules",
     "content": "Go to the recent section. This schedule is subject to change, and please check back regularly for updates. All readings and materials can be directly accessed via the links below, although some may require a UW NetID login. Some readings and links about R/coding are on each lab session page. <!-- ",
     "url": "/data-analytics-visualization/#schedules",
     
     "relUrl": "/#schedules"
-  },"9": {
+  },"11": {
     "doc": "Data Analytics and Visualization",
     "title": "I - Introduction & Descriptive Statistics",
     "content": "--> I - Introduction to Data Science and R . Sep 24 Overview and the Values of Data Science Slides / Pre-class Survey LAB 1-A Setup Page / Rmd OptionalData Science and its Relationship to Big Data and Data-driven Decision Making. Foster Provost and Tom Fawcett. 2013. OptionalGetting ahead of the Market: How Big Data is Transforming Real Estate. McKinsey &amp; Company. 2018. Sep 29 Data in Real Estate Slides LAB 1-B Basic of R/RStudio and Markdown REQUIREDChapter 1-2, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. OptionalChapter 1-3, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin. OptionalChapter 5: Market, Place, Interface, All Data Are Local: Thinking Critically in a Data-Driven Society. Yanni Alexander Loukissas. 2019. Oct 01 Diving into R LAB 1-C Dataframes and Accessing Census Data OptionalTidyverse Style Guide. The Tidyverse Team. OptionalUnderstanding and Using American Community Survey Data. United States Census Bureau. 2020. Oct 06 Data Science Workflows and Components Slides LAB 2-A Modifying Dataframes Page / Rmd LAB 1 DUE 11:59 PM REQUIREDChapter 3-4, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. OptionalWhat Is Open Reproducible Science. Jenny Palomino, et al. 2020, OptionalHow do Data Science Workers Collaborate? Roles, Workflows, and Tools. Amy X. Zhang, et al. 2020. Oct 08 Use Cases of Data Science in Real Estate LAB 2-B Summarizing and Joining Dataframes, GitHub REQUIREDChapter 7 and 9, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. OptionalFinding Common Ground: Best Practices for State Policies Supporting Transit-Oriented Development. Mason A. Virant, et al. 2024. OptionalUrban Big Data: City Management and Real Estate Markets. Richard Barkham, et al. 2022. OptionalLearn Git Branching. Learn to use Git through Terminal Rather than using GitHub Desktop. Team Formation Due Project Team Formation Instruction <!-- ",
     "url": "/data-analytics-visualization/#i-introduction-descriptive-statistics",
     
     "relUrl": "/#i-introduction-descriptive-statistics"
-  },"10": {
+  },"12": {
     "doc": "Data Analytics and Visualization",
     "title": "Module 2 - Data Visualization",
     "content": "--> II - Data Visualization . Oct 13 Data Visual Design LAB 3-A Tidy Data and Core Logic of ggplot2 LAB 2 DUE 11:59 PM OptionalData Viz Project by ferdio. OptionalDesign and Redesign in Data Visualization. Martin Wattenberg and Fernanda Viégas. 2015. OptionalVisual and Statistical Thinking: Displays of Evidence for Making Decisions. Edward Tufte. 1997. OptionalPreface &amp; Chapter 1, Data Visualization. Kieran Healy. 2019. Oct 15 Exploratory Data Analysis (EDA) LAB 3-B Basic Exploratory Data Analysis in R REQUIREDChapter 8, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. OptionalExploratory Data Analysis. United States Environmental Protection Agency. Oct 20 Visualization Perception LAB 4 Visualization using R and ggplot2 LAB 3 DUE 11:59 PM Oct 22 No Class Instructor leave due to ACSP Annual Conference 2025 Oct 27 Guest Speaker: Drew Dolan, Principal, Fund Manager, DXD Capital LAB 4 DUE 11:59 PM Oct 29 Introduction to Tableau LAB 5 Tableau Nov 03 Interactive Visualization LAB 6-A shiny: Interative Visualization using R LAB 5 DUE 11:59 PM Extra credits - data sharing DUE 11:59 PM Nov 05 Dashboard LAB 6-B Mini Dashboard using shiny or Tableau <!-- ",
     "url": "/data-analytics-visualization/#module-2-data-visualization",
     
     "relUrl": "/#module-2-data-visualization"
-  },"11": {
+  },"13": {
     "doc": "Data Analytics and Visualization",
     "title": "Module 3 - Regression",
     "content": "--> III - Data Modeling (Subject to Change) . Nov 10 Correlation and Linear Regression LAB 7-A LAB 6 DUE 11:59 PM REQUIREDChapter 10 and 12, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. OptionalChapter 4-6, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin. OptionalStatistical Modeling: The Two Cultures. Leo Breiman. 2001. Nov 12 Logistic and Multiple Linear Regression LAB 7-BCoding REQUIREDChapter 10 and 12, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. Project Proposal Due 11:59 PM Project Proposal Instruction Nov 17 Spatiotemporal Data Analysis LAB 8-A LAB 7 DUE 11:59 PM Nov 19 Introduction to Supervised and Unsupervised Learning LAB 8-B Nov 24 Guest Speaker (TBD) LAB 8 DUE 11:59 PM Nov 26 Project + Coding Clinic (Optional Online Session) Zoom Dec 01 Artificial Intelligence and Data Science Ethnics REQUIREDChapter 13-14, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018. OptionalA Brief Overview of AI governance for Responsible Machine Learning Systems. Navdeep Gill et al. 2022. OptionalAI for Social Good. Nature Communications. Nenad Tomašev et al. 2020. OptionalAtlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence. Kate Crawford. 2022. OptionalA Golden Decade of Deep Learning: Computing Systems &amp; Applications. Jeffrey Dean (UW Alumni, Google). 2022. OptionalArtificial Intelligence: Real Estate Revolution or Evolution? JLL Inc. OptionalWhat is a Neural Network. 3Blue1Brown. 2017. <!-- ",
     "url": "/data-analytics-visualization/#module-3-regression",
     
     "relUrl": "/#module-3-regression"
-  },"12": {
+  },"14": {
     "doc": "Data Analytics and Visualization",
     "title": "Module 4 - Advanced Topics and Final Project",
     "content": "--> IV - Data Analytics and Visualization Projects . Dec 03 Project Presentation Project Presentation Instruction Dec 12 Final Project Submission Project Submission Instruction Final Project DUE 11:59 PM Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/#module-4-advanced-topics-and-final-project",
     
     "relUrl": "/#module-4-advanced-topics-and-final-project"
-  },"13": {
+  },"15": {
     "doc": "Data Analytics and Visualization",
     "title": "Data Analytics and Visualization",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . Real estate decision-making requires the assessment of interdisciplinary datasets, which include socioeconomic, financial, and environmental data. Determining evolving patterns, analyzing and visualizing them, is critical in holistically assessing an area and a real estate decision to be made. This course aims to provide you with an opportunity to improve your coding ability and demonstrate that using R is more replicable and efficient than Excel. We will work in groups to solve tricky data analytics &amp; visualization problems. Of course, we will encounter a lot of new commands and new ways of thinking about how data is organized. However, we will most importantly learn how to understand the process of data analysis and how to best inform our audience and honestly describe the underlying data. The course is developed based on materials from Dr. Feiyang Sun at UC San Diego, Siman Ning, and Christian Phillips. October 01, 2025 . All announcements → . Announcements about Lab 1 + CoStar Access Dear all, I know that, for many of you, coding can feel challenging at the beginning. After all, we are communicating with computers in a new language and logic. To help you navigate the first few weeks, I have made some adjustments and would like to emphasize a few points about the labs. | Please review the example codes of lab 1 in rmd or this page and test the codes using your RStudio. You can find almost all key points for the TODO tasks. | You can work on lab-01.rmd directly for the lab or create a new .rmd file. Please submit both .rmd and .HTML files on Canvas. | If you have any clarification and coding questions, please first post them on Ed Discussion, especially on the lab 1 megathread if the question is about lab 1 and please help others if you can! | Lab 1 will be due next Monday (Oct 6) and we do have a late days policy. If you need accommodations and please contact Disability Resources for Students (DRS). | I will open more time slots for office hours and please book them online here. | I will record all future in-class lab sessions so that you can review them later if needed. | . Meanwhile, if you are interested in getting access to CoStar during this quarter, please follow the instructions to apply before next Monday (Oct 6). ",
     "url": "/data-analytics-visualization/",
     
     "relUrl": "/"
-  },"14": {
+  },"16": {
     "doc": "Announcements",
     "title": "Announcements",
     "content": "A place for all class announcements. All announcements will also be published on Ed Discussion. October 01, 2025 . Announcements about Lab 1 + CoStar Access Dear all, I know that, for many of you, coding can feel challenging at the beginning. After all, we are communicating with computers in a new language and logic. To help you navigate the first few weeks, I have made some adjustments and would like to emphasize a few points about the labs. | Please review the example codes of lab 1 in rmd or this page and test the codes using your RStudio. You can find almost all key points for the TODO tasks. | You can work on lab-01.rmd directly for the lab or create a new .rmd file. Please submit both .rmd and .HTML files on Canvas. | If you have any clarification and coding questions, please first post them on Ed Discussion, especially on the lab 1 megathread if the question is about lab 1 and please help others if you can! | Lab 1 will be due next Monday (Oct 6) and we do have a late days policy. If you need accommodations and please contact Disability Resources for Students (DRS). | I will open more time slots for office hours and please book them online here. | I will record all future in-class lab sessions so that you can review them later if needed. | . Meanwhile, if you are interested in getting access to CoStar during this quarter, please follow the instructions to apply before next Monday (Oct 6). September 22, 2025 . CSDE Event about Displacement and Data Science - Oct 3, 2025 CSDE (Center for Studies in Demography and Ecology) is hosting a panel on Housing, Urban Development, and Displacement. More information on their event page: . | Tim Thomas, Chief Research and Data Officer, King County Regional Homelessness Authority (KCRHA) . | Talk Title: The Housing Precarity Risk Model: Predicting Displacement and Eviction Risk in a Post-COVID U.S. | . | Will von Geldern, PhD Candidate, Evans School of Public Policy &amp; Governance . | Talk Title: Measuring Displacement: Using Mixed Methods to Understand Eviction Outcomes | . | . Location: Parrington Hall Room 360; To Join By Zoom: Register here . Time: 12:30-1:30 PM PT, Oct 3, 2025 . CSDE generally hosts lots of lectures, such as A Portrait of the Unhoused Population of Seattle in 2023 on October 10, 2025. See their whole autumn seminar here. September 16, 2025 . Welcome to RE 519 Data Analytics and Visualization Welcome to RE 519 Data Analytics and Visualization in Autumn 2025. We are looking forward to meeting you in person on our first day of class (Wednesday, September 24, 2025). The course website will be the main place for all course information and materials. We will use Canvas as a place for submitting assignments and for grading purposes. Ed Discussion will be used for announcements, discussion, and technical questions. Before the first class on Wednesday, September 24, 2025, please: . | Finish the pre-class survey. | Look through the readings for this class on the course website. | Look through the Lab 1 Part A and try to install R and RStudio in advance. No worries if you encounter any trouble, we will install them in the first class. | Bring your laptop, no matter whether Windows, Mac, or Linux, to each class! | . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/announcements/#announcements",
     
     "relUrl": "/announcements/#announcements"
-  },"15": {
+  },"17": {
     "doc": "Announcements",
     "title": "Announcements",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/announcements/",
     
     "relUrl": "/announcements/"
-  },"16": {
+  },"18": {
     "doc": "Lab 04",
     "title": "Lab 04 - Tableau",
     "content": " ",
     "url": "/data-analytics-visualization/labs/lab-04/#lab-04---tableau",
     
     "relUrl": "/labs/lab-04/#lab-04---tableau"
-  },"17": {
+  },"19": {
     "doc": "Lab 04",
     "title": "Part A - Descriptive Statistics and Tables",
     "content": "In class, I will provide a general orientation to Tableau. Next class I will have a guide for you to follow along to learn more technical aspects of Tableau. Homework . Create a few sheets (vizualizations) using the Nationwide Redfin data (at the state level) attached here: . state_market_tracker.tsvDownload state_market_tracker.tsv . Arrange these sheets into a dashboard. Make sure that any filters that you apply on your dashboard work on all (relevant) sheets. If you want, play around with creating multiple story points. Submission: . Submit your tableau packaged workbook ( .tbwx ).Links to an external site. This will include any excel files that you attach so that when you share the file anyone with Tableau can open it! . Helpful resources: . https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.htmLinks to an external site. https://public.tableau.com/app/learn/how-to-videosLinks to an external site. https://www.tableau.com/learn/articles/free-public-data-setsLinks to an external site. https://www.tableau.com/learn/certificationLinks to an external site. -– . We are assuming that the file you are uploading to Tableau is already in a fairly clean format. If it is not clean and nicely wrangled, you would need to use R or TableauPrep to get in the proper format . https://www.tableau.com/products/prep . ",
     "url": "/data-analytics-visualization/labs/lab-04/#part-a---descriptive-statistics-and-tables",
     
     "relUrl": "/labs/lab-04/#part-a---descriptive-statistics-and-tables"
-  },"18": {
+  },"20": {
     "doc": "Lab 04",
     "title": "Part B - Advanced Tableau",
     "content": "Tableau has a lot of menus within menus, a lot of pointing and clicking. I think it would be tedious to have us all walk through an example of constructing a Tableau dashboard together because you can get lost quite quickly. Instead, it’s more helpful if you can follow along with a guide because you can stop and go back and see exactly what buttons are being pressed in order to replicate it for yourself. I think the Tableau guide I have selected is a great beginner to intermediate example of how to create a snazzy dashboard. Your task: . It would be difficult to complete this assignment in pairs. Therefore, this is an individual assignment(see my note at the end about accessing Tableau). Follow along with this guide on youtube Links to an external site.and try to recreate the dashboard as best you can. It took me a little over an hour to replicate, stopping and replaying the video to see exactly what he was doing. He covers a lot of tools, especially a lot of formatting tools. Up until the very end where he is assembling the final dashboard, try to follow along as precisely as possible. If you make a mistake earlier it might be hard to catch and resolve later. I will open a discussion post so if anyone has any question on the walkthrough myself or another classmate can offer advice and the rest of the class can see the response to the question. In addition to following the tutorial and replicating the dashboard, I would like you to write up a paragraph explaining what this dashboard does well, and what you would do differently. You will need these two excel files: . Countries.csvDownload Countries.csv ba_reviews.csvDownload ba_reviews.csv . Some tips: . | He uses a lot of keyboard shortcuts that he doesn’t always explain. Mac and Windows keys are different. In general, you can try control, command, shift (Mac) or a combination of these keys to see what works for you. | Sometimes it can be confusing to access the formatting pane for a particular measure or attribute. Make sure you watch exactly where he is right clicking to get the formatting pane for that object to appear. Also you can hit the x in the formatting pane to close it and get back to your measures and attributes view if you’re in a sheet. | When he drags and drops the various measures into each sheet he often holds control the entire time to get the menu to pop up that allows him to select “average”, “sum” etc. Alternatively to this, you can drag it in first, then use the carrot on the pill to select how you want the data aggregated, like I demonstrated in class. | . Submission: . Save as a Tableau Packaged Workbook (.twbx). You can submit your paragraph as a word doc or write in the comments of the submission. Have a Happy Thanksgiving! As always, feel free to message me if you have any issues or concerns but if your question is Tableau-specific then maybe starting in the discussion board is the best place. -- . Everyone should be entitled to a student license with Tableau with your @uw.edu email. If you are having trouble with your Tableau license, it seems like the computers in Digital Commons in Gould have Tableau installed. You may also be able to remote access a UW server. https://be.uw.edu/spaces/computing/software-application-server/ . If you have issues accessing Tableau that persist let me know. Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/labs/lab-04/#part-b---advanced-tableau",
     
     "relUrl": "/labs/lab-04/#part-b---advanced-tableau"
-  },"19": {
+  },"21": {
     "doc": "Lab 04",
     "title": "Lab 04",
     "content": ". | Lab 04 - Tableau . | Part A - Descriptive Statistics and Tables | Part B - Advanced Tableau | . | . Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/labs/lab-04/",
     
     "relUrl": "/labs/lab-04/"
-  },"20": {
+  },"22": {
     "doc": "Lab",
     "title": "Lab 06 - Interaction and Dashboard",
     "content": " ",
     "url": "/data-analytics-visualization/labs/lab-06/#lab-06---interaction-and-dashboard",
     
     "relUrl": "/labs/lab-06/#lab-06---interaction-and-dashboard"
-  },"21": {
+  },"23": {
     "doc": "Lab",
     "title": "Part A - RShiny",
     "content": "This is a challenging topic within R. We will try to figure out how to best implement RShiny together. It can get complicated quite quickly because RShiny requires a different style of coding than we are used to: . | “In imperative programming, you issue a specific command and it’s carried out immediately. This is the style of programming you’re used to in your analysis scripts: you command R to load your data, transform it, visualise it, and save the results to disk.” | “In declarative programming, you express higher-level goals or describe important constraints, and rely on someone else to decide how and/or when to translate that into action. This is the style of programming you use in Shiny.” | . Additionally, tidyverse in Rshiny starts to be not so helpful. RShiny seems to be best implemented with base R :( In any case we can try to work around this and use LLM to our advantage to breeze through translating the type of visualization we want into an RShiny app. Read (required): . Ch 1-5, and Chapter 12 . https://mastering-shiny.org/basic-app.htmlLinks to an external site. Review RShiny Gallery . https://shiny.posit.co/r/gallery/#feature-demosLinks to an external site. costar_census.csvDownload costar_census.csv RE519_R_L6_Shiny.html . Task . Create a working RShiny visualization of either the CoStar dataset provided or another dataset of your choice. Submission: . Upload your app.R and any required files to run the app successfully. Bonus . If you want to try exporting your apps check out https://www.shinyapps.io/Links to an external site. your first 5 apps are free. ",
     "url": "/data-analytics-visualization/labs/lab-06/#part-a---rshiny",
     
     "relUrl": "/labs/lab-06/#part-a---rshiny"
-  },"22": {
+  },"24": {
     "doc": "Lab",
     "title": "Part B -",
     "content": "Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/labs/lab-06/#part-b--",
     
     "relUrl": "/labs/lab-06/#part-b--"
-  },"23": {
+  },"25": {
     "doc": "Lab",
     "title": "Lab",
     "content": ". | Lab 06 - Interaction and Dashboard . | Part A - RShiny | Part B - | . | . Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/labs/lab-06/",
     
     "relUrl": "/labs/lab-06/"
-  },"24": {
+  },"26": {
     "doc": "Lab",
     "title": "Lab 02 - Explore Data",
     "content": " ",
     "url": "/data-analytics-visualization/labs/lab-07/#lab-02---explore-data",
     
     "relUrl": "/labs/lab-07/#lab-02---explore-data"
-  },"25": {
+  },"27": {
     "doc": "Lab",
     "title": "Part A - Model Creation",
     "content": "Create 3 specifications (different models) that connect some outcome of interest with some variables that could plausibly explain that outcome variable and arrange in a stargazer table. Be sure to use the function I have in the .Rmd to correct the standard errors for heteroskedasticity. | Your first specification should be a naive model, the most basic kind of regression that connects two variables together. | Your second should include multiple regressors (while being cautious to avoid introducing perfect/imperfect multicollinearity, i.e. variables that are highly correlated with each other) | Your third specification should include some sort of controls for fixed effects (such as at the state level, MSA level etc.) | . Select the model you think explains the relationship the best using adjusted R2, F-statistic, AIC, BIC (use what you think makes sense). Then interpret each of the regression coefficients. What does the intercept represent in your chosen model? . Write one paragraph that explains why this relationship might exist in the data. Even if you are not confident in the accuracy of the coefficient, its sign might give you some information about the relationship between these variables. ModelVisualization.RmdDownload ModelVisualization.Rmd . -—- . Play around with how you enter the variables into your model, such as taking the natural log, introducing some terms that are squares or cubes, or interact two variables. Remember that when you introduce a higher order term such as Var^2 you must also include its lower order in your specification ex: var + var^2. The same is true for variables that are interacted together. This lesson could be, and often is, an entire class, so just try and get the gist. I want to expose you to these types of statistics because they are used often by data analysts and will lay the foundation for forecasting. ",
     "url": "/data-analytics-visualization/labs/lab-07/#part-a---model-creation",
     
     "relUrl": "/labs/lab-07/#part-a---model-creation"
-  },"26": {
+  },"28": {
     "doc": "Lab",
     "title": "Part B - Descriptive Statistics and Tables",
     "content": "Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/labs/lab-07/#part-b---descriptive-statistics-and-tables",
     
     "relUrl": "/labs/lab-07/#part-b---descriptive-statistics-and-tables"
-  },"27": {
+  },"29": {
     "doc": "Lab",
     "title": "Lab",
     "content": ". | Lab 02 - Explore Data . | Part A - Model Creation | Part B - Descriptive Statistics and Tables | . | . Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/labs/lab-07/",
     
     "relUrl": "/labs/lab-07/"
-  },"28": {
+  },"30": {
     "doc": "Projects",
     "title": "Data Analytics and Visualization Projects",
     "content": "One of the main goals of this course is to prepare you to apply data analysis and visualization methods and tools to real-world problems in real estate and a broader built environment context. If you are interested in deeper knowledge about data science, this class will also give you a foundation to pursue future work. The final project is your opportunity to put these skills, both covered in the class and any other techniques, into practice. Students are encouraged to work individually or in teams of up to three people. Please sign up with your group information using the Canvas Assignment provided. Your first task is to select a project topic. Please start to think about that now! Some students may share related datasets on Ed Discussion, and I compile a list of datasets under Resources - Datasets. Also, I will be happy to brainstorm with you and suggest datasets and research questions anytime. The project could be, for example: . | Applied Data Analysis: Through exploratory data analysis and modeling, such as regression, machine learning techniques, on interesting real estate or urban datasets, to generate new insights. | Interactive Visualization: Producing interactive visualization or dashboard on multiple real estate-related datasets using R or Tableau, with the goal of generating new insights. | Methodological Exploration: A project that applies a statistical or machine learning method, which we did not cover in the course, to real estate or spatial data, and evaluates its performance. | Replication of an Academic Article: Replicate an interesting academic article in the field of real estate. You can use the same datasets with the author or not. | . Ideally, projects will blend elements of these categories. Strong projects often emerge from people who have a dataset they are passionate about or a policy problem they want to investigate. If you are already engaged in research or work where real estate data plays a role, you are welcome to adapt your project to that context. There are five deliverables, together accounting for 30% of the total grade: . | Team Formation (1% of the total grade) | Project Proposal (5% of the total grade) | Draft Work Presentation (8% of the total grade) | Final Delivery (15% of the total grade) | Peer Review (1% of the total grade) | . ",
     "url": "/data-analytics-visualization/projects/#data-analytics-and-visualization-projects",
     
     "relUrl": "/projects/#data-analytics-and-visualization-projects"
-  },"29": {
+  },"31": {
     "doc": "Projects",
     "title": "Workload Expectation",
     "content": "Each student is expected to contribute approximately 20 hours of high-quality work to the project over the quarter. This includes time spent on data preparation, coding, analysis, writing, and presentation. Active and equitable participation within each team is strongly encouraged. ",
     "url": "/data-analytics-visualization/projects/#workload-expectation",
     
     "relUrl": "/projects/#workload-expectation"
-  },"30": {
+  },"32": {
     "doc": "Projects",
     "title": "Team Formation",
     "content": "Form a team (up to three members) and register via Canvas by the deadline (Oct 8, 2025). You can also directly send an email if you cannot create a group on Canvas successfully. How to create a group on Canvas? . | In Course Navigation, click the People link. | Click the Add Group button. | Name your group, then Invite Students as your group members. | . ",
     "url": "/data-analytics-visualization/projects/#team-formation",
     
     "relUrl": "/projects/#team-formation"
-  },"31": {
+  },"33": {
     "doc": "Projects",
     "title": "Project Proposal",
     "content": "Please write a summary of your final project on the following matters: . | What are the research question(s) you want to answer? | What are the datasets you are going to use? . | Specify the temporal and spatial extent. | What are the main variables of interest? | Are you focusing on patterns within a single variable, or associations between multiple variables? | Provide the source(s) of your datasets. | . | What data analysis and/or visualization techniques are you planning to use? Be as specific as you can! | What are the expected results of your projects by the end of this quarter? | What are the potential implications of your findings for real estate practice, policy, or the broader data science community? | . Your project proposal should be submitted as a single PDF per group, no longer than 2 pages, and must list the names of all group members. The current deadline for the proposal is November 12, but I encourage you to submit it as early as possible! . ",
     "url": "/data-analytics-visualization/projects/#project-proposal",
     
     "relUrl": "/projects/#project-proposal"
-  },"32": {
+  },"34": {
     "doc": "Projects",
     "title": "Draft Work Presentation",
     "content": "In the last week, each group will prepare a 6-8 minute presentation that covers: . | State the overarching research question/motivation for your analysis | Describe the data sources you use for your final project | How you have, and plan to, clean and refine your data | Explain the data analysis and/or visualization techniques you applied | Rough results of analysis and/or visualization | Any problems or challenges you have had so far | . You do not need to prepare formal slides for the presentation. Instead, focus on clearly explaining your work so that your classmates can understand your approach and agree with your findings. The class and I will provide preliminary feedback on your work as well as how to appropriately wrangle your data sources. I expect that the feedback from myself and your classmates will be incorporated into your final project. Attendance during the day of presentations is required, as well as constructive comments and evaluations to your peers. ",
     "url": "/data-analytics-visualization/projects/#draft-work-presentation",
     
     "relUrl": "/projects/#draft-work-presentation"
-  },"33": {
+  },"35": {
     "doc": "Projects",
     "title": "Final Delivery",
     "content": "The final project may take any format (e.g., written report, website/HTML, dashboard, or poster) as long as it clearly communicates your analysis and findings. If you choose a written report, the length should be less than five pages (single-spaced, 12-point font, 1-inch margins), excluding figures, tables, code, and references. For other formats, aim for a similar level of depth and effort. Also, no matter what format your final delivery takes, you should include the following components: . | Basic Info: Names, affiliation/program, and Email address of all group members. | Research Question(s): Clearly state the research question(s), motivation, and or hypothesis you are addressing. | Data Description: Describe the dataset(s) you used, including source(s), temporal and spatial scope, and key variables. | Methods: Explain the data analysis and/or visualization techniques you applied and why they are appropriate. | Results: Present your main findings, including tables, charts, or maps as appropriate. | Discussion: Interpret your results, briefly discuss their implications, and note any limitations. | Conclusion: Summarize your insights and potential next steps. | References: Cite all data sources, articles, and tools you relied on. | Appendix (optional): Code (recommended), additional figures, or technical details. | . ",
     "url": "/data-analytics-visualization/projects/#final-delivery",
     
     "relUrl": "/projects/#final-delivery"
-  },"34": {
+  },"36": {
     "doc": "Projects",
     "title": "Peer Review",
     "content": "We will conduct two rounds of peer review: . | Draft Work Presentation Peer Review (across-group) . | During the in-class draft work presentation, each student will evaluate other groups’ projects. | 5% of the total course grade (presentation counts for 8%) will be based on this round of peer review. | . | Final Delivery Peer Review (within-group) . | After the final delivery, each student will evaluate the contributions of their own group members. | The final delivery grade for each student will be adjusted to ensure fairness in workload and contribution. | . | . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/projects/#peer-review",
     
     "relUrl": "/projects/#peer-review"
-  },"35": {
+  },"37": {
     "doc": "Projects",
     "title": "Projects",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/projects/",
     
     "relUrl": "/projects/"
-  },"36": {
+  },"38": {
     "doc": "Python",
     "title": "Python",
     "content": "Install Python, Anaconda, and Visual Studio Code. Learn Python in Y Minutes Python Data Science Handbook Python Documentation . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/python/#python",
     
     "relUrl": "/python/#python"
-  },"37": {
+  },"39": {
     "doc": "Python",
     "title": "Python",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/python/",
     
     "relUrl": "/python/"
-  },"38": {
+  },"40": {
     "doc": "Real Estate Analysis in the Information Age",
     "title": "Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling",
     "content": "By Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018) . Course Use Only! This book is provided exclusively for students enrolled in RE 519 at the University of Washington. It is intended for educational use only and may not be copied, shared, or distributed outside of this course. All rights remain with the original copyright holder. Students are expected to respect copyright law and use this material solely for their personal study in this class. Accessing those materials requires a UW NetID login. Acknowledgement and Introductions . Part 1: Data . Chapter 1: Traditional Real Estate Data . Chapter 2: Big Data . Part 2: Tools and Processes . Chapter 3: Software Tools for Real Estate Analysis . Chapter 4: The Analytical Workflow . Chapter 5: Gathering Real Estate Data . Chapter 6: Data Management . Chapter 7: Data Preparation . Part 3: Modeling and Analysis . Chapter 8: Exploratory Data Analysis . Chapter 9: Data Cleaning: Techniques to Deal with Outliers, Errors, and Missing Data (photocopy edition) . Chapter 10: Modeling Real Estate Prices . Chapter 11: Analysis of Unstructured Text (photocopy edition) . Chapter 12: Real Estate Analysis Case Study . Part 4: Legal and Future . Chapter 13: The Legalities of Big Data . Chapter 14: The Future of Big Data . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/re-in-information-age/#real-estate-analysis-in-the-information-age-techniques-for-big-data-and-statistical-modeling",
     
     "relUrl": "/re-in-information-age/#real-estate-analysis-in-the-information-age-techniques-for-big-data-and-statistical-modeling"
-  },"39": {
+  },"41": {
     "doc": "Real Estate Analysis in the Information Age",
     "title": "Real Estate Analysis in the Information Age",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/re-in-information-age/",
     
     "relUrl": "/re-in-information-age/"
-  },"40": {
+  },"42": {
     "doc": "Resources",
     "title": "Resources",
     "content": " ",
     "url": "/data-analytics-visualization/resources/#resources",
     
     "relUrl": "/resources/#resources"
-  },"41": {
+  },"43": {
     "doc": "Resources",
     "title": "Reference Text",
     "content": ". | Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling - by Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018). | Visualize This: The FlowingData Guide to Design, Visualization, and Statistics - by Nathan Yau (2024) | Data Visualization: A Practical Introduction - by Kieran Healy (2019) | Modern Data Science with R - by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton (2024) | Posit Cheatsheets for R . | RStudio IDE | rmarkdown | Data import with the tidyverse | Data transformation with dplyr | Data tidying with tidyr | Data visualization with ggplot2 | Shiny | . | . ",
     "url": "/data-analytics-visualization/resources/#reference-text",
     
     "relUrl": "/resources/#reference-text"
-  },"42": {
+  },"44": {
     "doc": "Resources",
     "title": "Tools and Softwares",
     "content": ". | Tidyverse (R) - a collection of R packages designed for data science | ggplot2 (R) - a graphics language for R | Shiny (R) - R package to create interactive web applications | Pandas (Python) - a package data for manipulation and analysis in Python | Matplotlib (Python) - free library for visualizations in Python | Vega-Altair (Python) - Jupyter-friendly Python API for Vega-Lite | Seaborn (Python) - a package for statistical data visualization, built on top of matplotlib | Tableau for Students – a free Tableau license for students | Tableau Public – a free platform to explore, create, share data visualizations, and connect with data analysts worldwide. | Adobe Color - free color palette generator | Viz Palette - picking colors for data visualizations | Visual Studio Code - a popular integrated development environment (IDE) and code editor | Anaconda - platform for data science, simplifying the development and deployment of projects | Windows Terminal - command-line shells for Windows | GitHub - a developer platform to create, store, manage, and share code | . ",
     "url": "/data-analytics-visualization/resources/#tools-and-softwares",
     
     "relUrl": "/resources/#tools-and-softwares"
-  },"43": {
+  },"45": {
     "doc": "Resources",
     "title": "Datasets",
     "content": "airbnb (1) assessment (2) attom (4) avm (2) buildings (1) census (2) commercial (1) community (2) construction (1) demographics (2) dewey platform (8) dubai (2) economic (1) energy (1) federal (10) fhfa (1) finance (2) foreclosure (1) gis (3) historical data (1) housing (19) hud (2) international (2) king county (3) listings (1) market (1) ngo (2) permits (1) planning (1) portal (11) prices (7) private (1) puget sound (1) real estate (9) redfin (1) rental (2) sales (1) seattle (1) short-term rental (1) urban (2) uw (2) washington (2) zillow (1) Please filter the tags you’d like to use and review the details of each dataset. Let me know if you notice any issues. | Assessor History - By ATTOM (UW login required) [assessment, real estate, dewey platform, attom] | Automated Valuation Model (AVM) Data - By ATTOM (UW login required) [avm, real estate, dewey platform, attom, prices] | Census Bureau - American Community Survey [federal, census, housing, demographics, economic, community] | Census Bureau - Housing Datasets [federal, census, housing] | Community Information Layout - By ATTOM (UW login required) [community, demographics, real estate, dewey platform, attom] | Data Center of Redfin [private, housing, prices, redfin, portal] | Dewey Data Platform (UW login required) [portal, uw, urban, real estate, dewey platform] | Dubai Pulse Open Data [dubai, international, real estate, portal, housing] | Dubai Real Estate Dataset [dubai, international, real estate] | Energy Star Certified Buildings and Plants [energy, buildings, federal] | FHFA House Price Index [federal, housing, prices, fhfa] | Federal Housing Datasets [federal, housing, finance, portal] | HUD (US Housing &amp; Urban Development) Open Data / GIS [federal, hud, gis, housing, portal] | HUD (US Housing &amp; Urban Development) User Datasets [federal, hud, housing, portal] | Historical Housing Prices Project - FRB Philadelphia [housing, prices, federal, historical data] | Housing Data Collection - FRB St. Louis [federal, housing, finance, prices] | Housing Data from Zillow [portal, housing, prices, zillow, avm] | Inside Airbnb Data [airbnb, short-term rental, housing] | King County Assessments Data [king county, assessment] | King County GIS Open Data [king county, gis, portal] | King County Residential Sales and Properties [king county, housing, sales] | National Housing Preservation Database (NHPD) [housing, federal, rental, ngo] | Pre-Foreclosure History - By ATTOM (UW login required) [foreclosure, real estate, dewey platform, attom] | Puget Sound Regional Council Data Portal [puget sound, planning, housing, portal] | Real Estate Listings for Commercial Properties - By REsimplifi (UW login required) [commercial, listings, real estate, dewey platform] | Seattle Open Data Portal [seattle, housing, portal] | United States Building Permits - By Builty (UW login required) [permits, construction, real estate, dewey platform] | United States Residential Rental Data - By RentHub (UW login required) [rental, housing, market, dewey platform] | Urban Institute Data Catalog [housing, urban, ngo] | Washington Center for Real Estate Research [washington, uw, housing, prices] | Washington State Geospatial Open Data Portal [washington, gis, portal] | . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/resources/#datasets",
     
     "relUrl": "/resources/#datasets"
-  },"44": {
+  },"46": {
     "doc": "Resources",
     "title": "Resources",
     "content": ". | Reference Text | Tools and Softwares | Datasets | . Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/resources/",
     
     "relUrl": "/resources/"
-  },"45": {
+  },"47": {
     "doc": "Schedule",
     "title": "Weekly Calendar",
     "content": ". | 12:00 PM | 12:30 PM | 1:00 PM | 1:30 PM | 2:00 PM | 2:30 PM | 3:00 PM | 3:30 PM | 4:00 PM | 4:30 PM | 5:00 PM | 5:30 PM | 6:00 PM | . | ",
     "url": "/data-analytics-visualization/schedule/#weekly-calendar",
     
     "relUrl": "/schedule/#weekly-calendar"
-  },"46": {
+  },"48": {
     "doc": "Schedule",
     "title": "Monday",
     "content": ". | Haoyu's Office Hour 4:30 PM - 6:00 PM Gould Hall 012C . | . | ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"47": {
+  },"49": {
     "doc": "Schedule",
     "title": "Tuesday",
     "content": ". | Lecture 1:30 PM - 4:20 PM Gould Hall 114 . | . | ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"48": {
+  },"50": {
     "doc": "Schedule",
     "title": "Wednesday",
     "content": "| ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"49": {
+  },"51": {
     "doc": "Schedule",
     "title": "Thursday",
     "content": ". | Lecture 1:30 PM - 4:20 PM Gould Hall 114 . | . | ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"50": {
+  },"52": {
     "doc": "Schedule",
     "title": "Friday",
     "content": ". | TA's Office Hour 3:30 PM - 5:00 PM Gould Hall 114 . | . | . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"51": {
+  },"53": {
     "doc": "Schedule",
     "title": "Schedule",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/schedule/",
     
     "relUrl": "/schedule/"
-  },"52": {
+  },"54": {
     "doc": "Labs",
     "title": "Lab Sessions",
     "content": "Lab 1 - Basic . Setup, R Basic, Markdown, Download via API . Lab 2 - Data Manipulation . Lab 3 - Data Manipulation . Lab 4 - Tableau . Lab 5 - Visualization using R . Lab 6 - Interactive and Dashboard . Lab 7 - Linear Regression . Lab 8 - Model Visualization . ",
     "url": "/data-analytics-visualization/labs/sessions/#lab-sessions",
     
     "relUrl": "/labs/sessions/#lab-sessions"
-  },"53": {
+  },"55": {
     "doc": "Labs",
     "title": "Optional Lab Sessions",
     "content": "Lab X1 - Introduction to Git and GitHub . Lab X2 - Webscraping . Lab X3 - Adobe Suites . Lab X4 - Web Publishing . Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/labs/sessions/#optional-lab-sessions",
     
     "relUrl": "/labs/sessions/#optional-lab-sessions"
-  },"54": {
+  },"56": {
     "doc": "Labs",
     "title": "Labs",
     "content": ". Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/labs/sessions/",
     
     "relUrl": "/labs/sessions/"
-  },"55": {
+  },"57": {
     "doc": "Syllabus",
     "title": "Syllabus",
     "content": "Haoyu Yue . he/his . yohaoyu@washington.edu . Office Hours Schedule an appointment . ",
     "url": "/data-analytics-visualization/syllabus/#syllabus",
     
     "relUrl": "/syllabus/#syllabus"
-  },"56": {
+  },"58": {
     "doc": "Syllabus",
     "title": "Overview",
     "content": "Real estate decision-making requires the assessment of interdisciplinary datasets, which include socioeconomic, financial, and environmental data. Determining evolving patterns, analyzing and visualizing them, is critical in holistically assessing an area and a real estate decision to be made. This course aims to provide you with an opportunity to improve your coding ability and demonstrate that using R is more replicable and efficient than Excel. We will work in groups to solve tricky data analytics &amp; visualization problems. Of course, we will encounter a lot of new commands and new ways of thinking about how data is organized. However, we will most importantly learn how to understand the process of data analysis and how to best inform our audience and honestly describe the underlying data. The course is developed based on materials from Dr. Feiyang Sun at UC San Diego, Siman Ning, and Christian Phillips. ",
     "url": "/data-analytics-visualization/syllabus/#overview",
     
     "relUrl": "/syllabus/#overview"
-  },"57": {
+  },"59": {
     "doc": "Syllabus",
     "title": "Learning Objectives",
     "content": "After successfully completing this course, you should be able to: . | Create, debug, debug again, then submit scripts to perform data analysis in R using RStudio | Import data in variety of formats; including interacting with APIs to access public databases | Be more aware of the real estate data landscape in the US, Washington, and the Puget Sound region | Wrangle data using the tidyverse package; manipulate, combine, and collapse datasets | Map data and understand the challenges when working with spatial data | Interpret data visualizations, document, and present your data analysis using R Markdown | Understand the basic taxonomy of a data analysis methods and conduct regression and basic machine learning models | Know essential concepts in deep learning and artificial intelligence | Understand ethical challenges in applying AI and data science to real-world contexts | . Overall, students are expected to gain proficiency in identifying the appropriate analysis and visual method based on the dataset they have and the message they would like to convey. ",
     "url": "/data-analytics-visualization/syllabus/#learning-objectives",
     
     "relUrl": "/syllabus/#learning-objectives"
-  },"58": {
+  },"60": {
     "doc": "Syllabus",
     "title": "Pre-requisites",
     "content": ". | Basic knowledge of statistics is required (e.g., R E 506, URBAN 520, STAT 221). | Basic knowledge of any programming language (e.g., CS&amp;SS 508, CSE 160) is recommended but not required. | . ",
     "url": "/data-analytics-visualization/syllabus/#pre-requisites",
     
     "relUrl": "/syllabus/#pre-requisites"
-  },"59": {
+  },"61": {
     "doc": "Syllabus",
     "title": "Readings and Class Materials",
     "content": ". | Class slides for every lecture will be posted on the course website before the lectures. | Required readings are identified for each class and should be completed as preparation before coming to class. | Optional readings are useful for the class topics, and I encourage you to read them before the class. Some resources related to coding will be listed on the lab pages. | . Reference Text . | Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling - by Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018). | Visualize This: The FlowingData Guide to Design, Visualization, and Statistics - by Nathan Yau (2024) | Data Visualization: A Practical Introduction - by Kieran Healy (2019) | Modern Data Science with R - by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton (2024) | . ",
     "url": "/data-analytics-visualization/syllabus/#readings-and-class-materials",
     
     "relUrl": "/syllabus/#readings-and-class-materials"
-  },"60": {
+  },"62": {
     "doc": "Syllabus",
     "title": "Computing",
     "content": "No previous programming experience is required, but appreciated. All required analytics applications will be in R/RStudio or Python. We will have an installation session during the first class. Bring your computer (Windows, MacBook, or Linux is acceptable) to each class. If you have any trouble with having a computer, you may check the computing resources from the college, Student Technology Loan Program, or UW libraries computer service. Students are also welcome to conduct any needed computer-based work in the Digital Commons in the basement of Gould Hall or other computer labs on campus. ",
     "url": "/data-analytics-visualization/syllabus/#computing",
     
     "relUrl": "/syllabus/#computing"
-  },"61": {
+  },"63": {
     "doc": "Syllabus",
     "title": "Course Requirements",
     "content": "| Labs | 64 % | . | Data Analytics and Visualization Projects | 30 % | . | Participation | 6 % | . | Extra Credits | 3 % | . According to the estimates for UW courses, it should take about 9 hours of work to complete a three-credit class each week. If you spend more than 5 hours beyond the classroom, please let us know, and we will adjust the study plans for you. The total scores will be curved and transformed into the UW numerical grading system for graduate courses, ranging from 4.0 to 1.7 in 0.1 increments as the final grade. Late days: You will have 6 penalty-free late days in total (max 3 late days per assignment). Any delayed submission after the first 3 days will be penalized 10% per day for that specific assignment (but will not count towards your used late days). Note: Late days CANNOT be used for the project presentation and final delivery. Labs (64%) . There will be a total of 8 labs and 8% each for each lab. Each lab will take approximately one week, and the expected finish time is around 1~2 hours after class. You only need to submit once after each lab via Canvas. Each student is expected to submit their own lab, but study groups are allowed. But you’re expected to acknowledge the names of collaborators along with a short description of the types of collaborations being done at the beginning of each lab submission. You may use generative AI tools such as Co-Pilot and ChatGPT, but please check the AI policy section. All labs will be due at 11:59 pm Pacific Time and should be submitted on Canvas or GitHub. The submission should include Rmd, HTML, and any other files required to rerun the code. Data Analytics and Visualization Projects (30%) . See the details in the Data Analytics and Visualization Projects page. Participation (6%) . There will be several surveys and in-class quizzes, which will be graded on completion. It is highly recommended that students attend the course regularly, as the sessions will be offered synchronously and will not be recorded. We will use class time to do the necessary activities. Class attendance and participation are integral parts of this course; much of the key material will be introduced and discussed in lectures. Extra Credits (up to 3%) . There will be two ways to receive extra credits: . | Dataset sharing (2%) . | From week 2 to 6, share high-quality datasets directly related to real estate and housing on Ed Discussion. | The dataset cannot be repeated with the previous datasets shared by other students. | 5 unique datasets to receive 2%, 3 unique datasets to receive 1%. | Any unique dataset will be listed on the Resources page for others to refer to. | . | Course evaluation (1%) . | We will leave some time in the last class to participate in the anonymous course evaluation. | . | . ",
     "url": "/data-analytics-visualization/syllabus/#course-requirements",
     
     "relUrl": "/syllabus/#course-requirements"
-  },"62": {
+  },"64": {
     "doc": "Syllabus",
     "title": "Communication and Community Forum",
     "content": "You can reach us via Ed Discussion, email, and in person during class and office hours. Please use the Ed Discussion as the first place to ask general questions. If you have a question about the course material or assignment, other students may have the same question. If you email me with a question like this, I will ask you to post it on the discussion board. I will review the discussion board at least once a day (weekdays). I also encourage students to answer each other’s questions on the discussion board. For emails, we try to reply to emails within 24 hours, 48 hours over a weekend, and the workday following a holiday unless otherwise noted. Simple questions will be answered by Ed Discussion or email, but students may be asked to schedule a meeting for more complex discussions. ",
     "url": "/data-analytics-visualization/syllabus/#communication-and-community-forum",
     
     "relUrl": "/syllabus/#communication-and-community-forum"
-  },"63": {
+  },"65": {
     "doc": "Syllabus",
     "title": "Course Evaluation",
     "content": "Formal course evaluation occurs at the end of the quarter, university-widely. If you are experiencing a problem with the class, please let me know as soon as possible, as I might be able to make changes if needed within the course of the class. ",
     "url": "/data-analytics-visualization/syllabus/#course-evaluation",
     
     "relUrl": "/syllabus/#course-evaluation"
-  },"64": {
+  },"66": {
     "doc": "Syllabus",
     "title": "Statistics and Data Science @ UW",
     "content": "The University of Washington is the leading institution in statistics and data science in the Pacific Northwest, in the United States, and in the world. We are lucky to be here and have the chance to enjoy the invaluable resources from the university and the Seattle region. Here are some resources if you hope to learn more about statistics and data science at UW. Be free to reach out to me if you have further thoughts or any questions. | Coursework . | CSE 583 Software Development for Data Scientists | CSSS 508 Introduction to R for Social Scientists | CSE 512 Data Visualization | CSSS 569 Visualizing Data and Models | STAT 509 Introduction to Mathematical Statistics | . | Institutes and Centers . | eScience Institute (Data Science) | Center for Studies in Demography and Ecology | Center for Statistics and the Social Sciences | Center for Social Science Computation and Research | . | . ",
     "url": "/data-analytics-visualization/syllabus/#statistics-and-data-science--uw",
     
     "relUrl": "/syllabus/#statistics-and-data-science--uw"
-  },"65": {
+  },"67": {
     "doc": "Syllabus",
     "title": "Academic Integrity",
     "content": "The University of Washington expects students to know their responsibilities and maintain the highest academic conduct standards (WAC 478-121). Students are held responsible for any violation of the University of Washington Student Code, irrespective of whether the violation was intentional or not. Students suspected of cheating or otherwise violating the misconduct code will be referred to the College disciplinary process. Behaving with integrity is part of our responsibility to our shared learning community. If you’re uncertain about whether something is academic misconduct, ask me. I am willing to discuss questions you might have. Acts of academic misconduct may include, but are not limited to: . | Cheating (working collaboratively on quizzes and exams, sharing answers, etc.). | Plagiarism (using another person’s words or ideas without proper citation). | Unauthorized collaboration (working with others on assignments without acknowledgment). | Concerns about these or other behaviors prohibited by the Student Conduct Code will be referred for investigation and adjudication. | . ",
     "url": "/data-analytics-visualization/syllabus/#academic-integrity",
     
     "relUrl": "/syllabus/#academic-integrity"
-  },"66": {
+  },"68": {
     "doc": "Syllabus",
     "title": "Use of AI",
     "content": "In this course, students are permitted to use AI-based tools (such as ChatGPT) on some assignments. The instructions for each assignment will include information about whether and how you may use AI-based tools to complete the assignment. All sources, including AI tools, must be properly cited. Detailed citation guidelines can be found at the UW Law Library, MIT Libraries, and the UMD Libraries. Using AI in ways inconsistent with the parameters above will be considered academic misconduct and subject to investigation. Please note that AI results can be biased and inaccurate. It is your responsibility to ensure that the information you use from AI is accurate. Additionally, pay attention to the privacy of your data. Many AI tools will incorporate and use any content you share, so be careful not to unintentionally share copyrighted materials, original work, or personal information. Learning how to thoughtfully and strategically use AI-based tools may help you develop your skills, refine your work, and prepare you for your future career. If you have any questions about citations or about what constitutes academic integrity in this course or at the University of Washington, please feel free to contact me to discuss your concerns. According to the academic integrity requirements, we prohibit the use of AI-based tools to directly complete assignments, as well as conducting discussions and reflections in any section during class. However, we encourage students to use generative AI tools to assist with coding, debugging, and understanding class content. You may use generative AI tools such as ChatGPT, as you would use a human collaborator. This means that you may NOT directly ask generative AI tools for answers or copy solutions. You’re required to acknowledge generative AI tools as collaborators and include a paragraph describing how you used the tool. The use of generative AI tools to substantially complete an assignment or exam (e.g., by directly copying) is prohibited and will result in honor code violations. We will be checking students’ assignments to enforce this policy. ",
     "url": "/data-analytics-visualization/syllabus/#use-of-ai",
     
     "relUrl": "/syllabus/#use-of-ai"
-  },"67": {
+  },"69": {
     "doc": "Syllabus",
     "title": "Disability Resources for Students (DRS)",
     "content": "Your experience in this class is important to me. It is the policy and practice of the University of Washington to create inclusive and accessible learning environments consistent with federal and state law. If you have already established accommodations with Disability Resources for Students (DRS), please activate your accommodations via myDRS so we can further discuss. If you have not yet established services through DRS but have a temporary health condition or permanent disability that requires accommodations (conditions include but are not limited to mental health, attention-related, learning, vision, hearing, physical, or health impacts), contact DRS directly to set up an Access Plan. DRS facilitates the interactive process that establishes reasonable accommodations. ",
     "url": "/data-analytics-visualization/syllabus/#disability-resources-for-students-drs",
     
     "relUrl": "/syllabus/#disability-resources-for-students-drs"
-  },"68": {
+  },"70": {
     "doc": "Syllabus",
     "title": "Campus Safety",
     "content": "Call SafeCampus at 206-685-7233 to anonymously discuss safety and well-being concerns for yourself or others. SafeCampus’s team of caring professionals will provide individualized support, while discussing short- and long-term solutions and connecting you with additional resources when requested. ",
     "url": "/data-analytics-visualization/syllabus/#campus-safety",
     
     "relUrl": "/syllabus/#campus-safety"
-  },"69": {
+  },"71": {
     "doc": "Syllabus",
     "title": "Religious Accommodation Policy",
     "content": "Washington state law requires that UW develop a policy for the accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at the Religious Accommodations Policy. Accommodations must be requested within the first two weeks of this course using the Religious Accommodations Request form. Back to Top Built on Just the Class developed by Kevin Lin at Allen School . ",
     "url": "/data-analytics-visualization/syllabus/#religious-accommodation-policy",
     
     "relUrl": "/syllabus/#religious-accommodation-policy"
-  },"70": {
+  },"72": {
     "doc": "Syllabus",
     "title": "Syllabus",
     "content": ". | Overview | Learning Objectives | Pre-requisites | Readings and Class Materials . | Reference Text | . | Computing | Course Requirements . | Labs (64%) | Data Analytics and Visualization Projects (30%) | Participation (6%) | Extra Credits (up to 3%) | . | Communication and Community Forum | Course Evaluation | Statistics and Data Science @ UW | Academic Integrity | Use of AI | Disability Resources for Students (DRS) | Campus Safety | Religious Accommodation Policy | . Data Analytics and Visualization . RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday &amp; Wednesday, 2:30 - 3:50pm, Mechanical Engineering Building 245 Haoyu Yue (Pre-doctoral Instructor), yohaoyu@washington.edu, Schedule Office Hours . Home Syllabus Projects Resources Canvas Ed Discussion . ",
     "url": "/data-analytics-visualization/syllabus/",
     
     "relUrl": "/syllabus/"
-  },"71": {
+  },"73": {
     "doc": "Data Analytics and Visualization",
     "title": "Data Analytics and Visualization",
     "content": "# Data Analytics and Visualization RE 519, Runstad Department of Real Estate, University of Washington, Autumn 2025 Monday & Wednesday, 2:30 - 3:50 pm, [Mechanical Engineering Building 245](https://www.washington.edu/classroom/MEB+245) | Home | [Syllabus](http://127.0.0.1:4000/data-analytics-visualization/syllabus) | [Projects](http://127.0.0.1:4000/data-analytics-visualization/projects) | [Resources](http://127.0.0.1:4000/data-analytics-visualization/resources) | Canvas | [Ed Discussion](http://127.0.0.1:4000/data-analytics-visualization/syllabus/#) | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ | ------------------------------------------------------------ | ## Overview Real estate decision-making requires the assessment of interdisciplinary datasets, which include socioeconomic, financial, and environmental data. Determining evolving patterns, analyzing and visualizing them is critical in holistically assessing an area and a real estate decision to be made. This course aims to provide you with an opportunity to improve your coding ability and demonstrate that using [R](https://www.r-project.org) is more replicable and efficient than Excel. We will work in groups to solve tricky data analytics & visualization problems. Of course, we will encounter a lot of new commands and new ways of thinking about how data is organized. However, we will most importantly learn how to understand the process of data analysis and how to best inform our audience and honestly describe the underlying data. The course is developed based on materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu/), Siman Ning, and Christian Phillips. ## Learning Objectives After successfully completing this course, you should be able to: 1. Create, debug, debug again, then submit scripts to perform data analysis in R using RStudio 2. Import data in variety of formats; including interacting with APIs to access public databases 3. Be more aware of the real estate data landscape in the US, Washington, and the Puget Sound region 4. Wrangle data using the tidyverse package; manipulate, combine, and collapse datasets 5. Map data and understand the challenges when working with spatial data 6. Interpret data visualizations, document, and present your data analysis using R Markdown 7. Understand the basic taxonomy of data analysis methods and conduct regression and basic machine learning models 8. Know essential concepts in deep learning and artificial intelligence 9. Understand ethical challenges in applying AI and data science to real-world contexts Overall, students are expected to gain proficiency in identifying the appropriate analysis and visual method based on the dataset they have and the message they would like to convey. ## Pre-requisites - Basic knowledge of statistics is required (e.g., R E 506, URBAN 520, STAT 221). - Basic knowledge of any programming language (e.g., CS&SS 508, CSE 160) is recommended but not required. ## Readings and Class Materials - **Class slides** for every lecture will be posted on the course website before the lectures. - **Required readings** are identified for each class and should be completed as preparation before coming to class. - **Optional readings** are useful for the class topics and I encourage you read them bfore the class. Some resources related to coding will be listed on the lab pages. ### Reference Text - [Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling]({{ site.baseurl }}/re-in-information-age) - by Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018). - [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](https://www.wiley.com/en-us/Visualize+This%3A+The+FlowingData+Guide+to+Design%2C+Visualization%2C+and+Statistics%2C+2nd+Edition-p-9781394214860) - by Nathan Yau (2024) - [Data Visualization: A Practical Introduction](https://press.princeton.edu/books/hardcover/9780691181615/data-visualization?srsltid=AfmBOoogKnXuOrY1HeepuYDVq4UVDMgUn_wpWWyQpNY18sIJFCrxYY9p) - by Kieran Healy (2019) - [Modern Data Science with R](https://mdsr-book.github.io/mdsr3e/) - by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton (2024) ## Computing No previous programming experience is required, but appreciated. All required analytics applications will be in R/RStudio or Python. We will have an installation session during the first class. Bring your computer (Windows, MacBook, or Linux is acceptable) to each class. If you have any trouble with having a computer, you may check the computing resources from [the college](https://be.uw.edu/spaces/computing/), [Student Technology Loan Program](https://stlp.uw.edu), or [UW libraries computer service](https://www.lib.washington.edu/services/computers/computers). Students are also welcome to conduct any needed computer-based work in the Digital Commons in the basement of Gould Hall or other computer labs on campus. ## Course Requirements | **Labs** | 64 % | **Data Analytics and Visualization Projects** | 30 % | **Participation** | 6 % | **Extra Credits** | 3 % | According to the estimates for UW courses, it should take about **9** hours of work to complete a three-credit class each week. If you spend more than 5 hours beyond the classroom, please let us know, and we will adjust the study plans for you. The total scores will be curved and transformed into the UW numerical grading system for graduate courses, ranging from 4.0 to 1.7 in 0.1 increments as the final grade. Late days: You will have 6 penalty-free late days in total (max 3 late days per assignment). Any delayed submission after the first 3 days will be penalized 10% per day for that specific assignment (but will not count towards your used late days). Note: Late days CANNOT be used for the project presentation and final delivery. ### Labs (64%) There will be a total of 8 labs and 8% each for each lab. Each lab will take approximately one week, and the expected finish time is around 1~2 hours after class. You only need to submit once after each lab via [Canvas](http://canvas.uw.edu). Each student is expected to submit their own lab, but study groups are allowed. But you're expected to acknowledge the names of collaborators along with a short description of the types of collaborations being done at the beginning of each lab submission. You may use generative AI tools such as Co-Pilot and ChatGPT, but please check the AI policy section. All labs will be due at 11:59 pm Pacific Time and should be submitted on Canvas. The submission should include Rmd, HTML, and any other files required to rerun the code. ### Data Analytics and Visualization Projects (30%) See the details in the Data Analytics and Visualization Projects page. ### Participation (6%) There will be several surveys and in-class quizzes, which will on be graded on completion. It is highly recommended that students attend the course regularly, as the sessions will be offered synchronously and will not be recorded. We will use class time to do the necessary activities. Class attendance and participation are integral parts of this course; much of the key material will be introduced and discussed in lectures. ### Extra Credits (up to 3%) There will be two ways to receive extra credits: - **Dataset sharing (2%)** - From week 2 to 6, share high-quality datasets directly related to real estate and housing on [Ed Discussion](https://edstem.org). - The dataset cannot be repeated with the previous datasets shared by other students. - 5 unique datasets to receive 2%, 3 unique datasets to receive 1%. - Any unique dataset will be listed on the Resources page for others to refer. - **Course evaluation (1%)** - We will leave some time in the last class to participate in the anonymous course evaluation. ## Communication and Community Forum You can reach us via [Ed Discussion](https://edstem.org), email, and in person during class and office hours. Please use the [Ed Discussion](https://edstem.org) as the first place to ask general questions. If you have a question about the course material or assignment, other students may have the same question. If you email me with a question like this, I will ask you to post it on the discussion board. I will review the discussion board at least once a day (weekdays). I also encourage students to answer each other’s questions on the discussion board. For emails, we try to reply to emails within 24 hours, 48 hours over a weekend, and the workday following a holiday unless otherwise noted. Simple questions will be answered by [Ed Discussion](https://edstem.org) or email, but students may be asked to schedule a meeting for more complex discussions. ## Course Evaluation Formal course evaluation occurs at the end of the quarter, university-widely. If you are experiencing a problem with the class, please let me know as soon as possible, as I might be able to make changes if needed within the course of the class. ## Statistics and Data Science @ UW The University of Washington is the leading institution in statistics and data science in the Pacific Northwest, in the United States, and in the world. We are lucky to be here and have the chance to enjoy the invaluable resources from the university and the Seattle region. Here are some resources if you hope to learn more about statistics and data science at UW. Be free to reach out to me if you have further thoughts or any questions. - **Coursework** - [CSE 583 Software Development for Data Scientists](http://uwseds.github.io ) - [CSSS 508 Introduction to R for Social Scientists](https://clanfear.github.io/CSSS508/) - [CSE 512 Data Visualization](https://courses.cs.washington.edu/courses/cse512/) - [CSSS 569 Visualizing Data and Models](https://faculty.washington.edu/cadolph/vis) - [STAT 509 Introduction to Mathematical Statistics](https://stat.uw.edu/academics/course-catalog/stat-509) - **Institutes and Centers** - [eScience Institute (Data Science)](https://escience.washington.edu) - [Center for Studies in Demography and Ecology](https://csde.washington.edu) - [Center for Statistics and the Social Sciences](https://csss.uw.edu) ## Academic Integrity The University of Washington expects students to know their responsibilities and maintain the highest academic conduct standards (WAC 478-121). Students are held responsible for any violation of the University of Washington Student Code, irrespective of whether the violation was intentional or not. Students suspected of cheating or otherwise violating the misconduct code will be referred to the College disciplinary process. Behaving with integrity is part of our responsibility to our shared learning community. If you’re uncertain about whether something is academic misconduct, ask me. I am willing to discuss questions you might have. Acts of academic misconduct may include, but are not limited to: - Cheating (working collaboratively on quizzes and exams, sharing answers, etc.). - Plagiarism (using another person’s words or ideas without proper citation). - Unauthorized collaboration (working with others on assignments without acknowledgment). - Concerns about these or other behaviors prohibited by the Student Conduct Code will be referred for investigation and adjudication. ## Use of AI In this course, students are permitted to use AI-based tools (such as ChatGPT) on some assignments. The instructions for each assignment will include information about whether and how you may use AI-based tools to complete the assignment. All sources, including AI tools, must be properly cited. Detailed citation guidelines can be found at the [UW Law Library](https://lib.law.uw.edu/bluebook101/genai), [MIT Libraries](https://libguides.mit.edu/cite-AI-tools), and the [UMD Libraries](https://lib.guides.umd.edu/c.php?g=1340355&p=9896961). Using AI in ways inconsistent with the parameters above will be considered academic misconduct and subject to investigation. Please note that AI results can be biased and inaccurate. It is your responsibility to ensure that the information you use from AI is accurate. Additionally, pay attention to the privacy of your data. Many AI tools will incorporate and use any content you share, so be careful not to unintentionally share copyrighted materials, original work, or personal information. Learning how to thoughtfully and strategically use AI-based tools may help you develop your skills, refine your work, and prepare you for your future career. If you have any questions about citations or about what constitutes academic integrity in this course or at the University of Washington, please feel free to contact me to discuss your concerns. According to the academic integrity requirements, we prohibit the use of AI-based tools to directly complete assignments, as well as conducting discussions and reflections in any section during class. However, we encourage students to use generative AI tools to assist with coding, debugging, and understanding class content. You may use generative AI tools such as ChatGPT, as you would use a human collaborator. This means that you may NOT directly ask generative AI tools for answers or copy solutions. You're required to acknowledge generative AI tools as collaborators and include a paragraph describing how you used the tool. The use of generative AI tools to substantially complete an assignment or exam (e.g., by directly copying) is prohibited and will result in honor code violations. We will be checking students' assignments to enforce this policy. ## Disability Resources for Students (DRS) Your experience in this class is important to me. It is the policy and practice of the University of Washington to create inclusive and accessible learning environments consistent with federal and state law. If you have already established accommodations with [Disability Resources for Students (DRS)](https://depts.washington.edu/uwdrs/), please activate your accommodations via myDRS so we can further discuss. If you have not yet established services through DRS but have a temporary health condition or permanent disability that requires accommodations (conditions include but are not limited to mental health, attention-related, learning, vision, hearing, physical, or health impacts), contact DRS directly to set up an Access Plan. DRS facilitates the interactive process that establishes reasonable accommodations. ## Campus Safety Call SafeCampus at 206-685-7233 to anonymously discuss safety and well-being concerns for yourself or others. SafeCampus’s team of caring professionals will provide individualized support, while discussing short- and long-term solutions and connecting you with additional resources when requested. ## Religious Accommodation Policy Washington state law requires that UW develop a policy for the accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at [Religious Accommodations Policy](https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the [Religious Accommodations Request form](https://registrar.washington.edu/students/religious-accommodations-request/). ",
