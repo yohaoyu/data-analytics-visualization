@@ -132,20 +132,21 @@ summary {
 
 .link-row a {
   display: inline-block;
-  //padding: 0.5em 1.1em;
-  border-radius: 0.5em;
-  text-decoration: underline; 
+  padding: -.5em 0em;
+  border-radius: 0.1em;
+  color: #4b2e83;
   text-decoration-color: #eeebee;
-  font-weight: 500;
-  background: none;
+  font-weight: 600;
+  background: #ffffff;
   border: none;
   box-shadow: none;
   transition: color 0.2s;
 }
 
 .link-row a:hover {
-  color: #000000;
-  background: none;
+  color: #ffffff;
+  background: #4b2e83;
+  border-radius: 0em;
 }
 
 @media (max-width: 600px) {
