@@ -132,21 +132,25 @@ summary {
 
 .link-row a {
   display: inline-block;
-  padding: -.5em 0em;
-  border-radius: 0.1em;
+  padding: 0.1em 0em 0.15em 0em;
+  border-radius: 0em;
   color: #4b2e83;
   text-decoration-color: #eeebee;
+  text-underline-offset: 0.18em;
   font-weight: 600;
   background: #ffffff;
   border: none;
   box-shadow: none;
-  transition: color 0.2s;
+  transition: all 0.2s ease;
 }
 
 .link-row a:hover {
-  color: #ffffff;
-  background: #4b2e83;
+  color: #4b2e83;
+  background: #ffffff;
   border-radius: 0em;
+  text-underline-offset: 0.25em;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
 }
 
 @media (max-width: 600px) {
@@ -321,4 +325,18 @@ dd:has(.readings) {
 
 .announcement-right {
   flex: 1;               /* 右侧占满剩余空间 */
+}
+
+
+
+// labels
+
+.label.label-purple {
+  background-color: #4b2e83; /* 背景色（紫色） */
+  color: #ffffff;           /* 文字颜色（白色） */
+}
+
+.label.label-golden {
+  background-color: #b7a57a; /* 背景色（紫色） */
+  color: #ffffff;           /* 文字颜色（白色） */
 }

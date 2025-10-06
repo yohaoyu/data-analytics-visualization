@@ -2379,9 +2379,9 @@ summary { width: 100%; }
 
 .link-row { font-weight: 500 !important; display: flex; justify-content: flex-start; text-align: left; gap: 1em; width: 100%; }
 
-.link-row a { display: inline-block; padding: -.5em 0em; border-radius: 0.1em; color: #4b2e83; text-decoration-color: #eeebee; font-weight: 600; background: #ffffff; border: none; box-shadow: none; transition: color 0.2s; }
+.link-row a { display: inline-block; padding: 0.1em 0em 0.15em 0em; border-radius: 0em; color: #4b2e83; text-decoration-color: #eeebee; text-underline-offset: 0.18em; font-weight: 600; background: #ffffff; border: none; box-shadow: none; transition: all 0.2s ease; }
 
-.link-row a:hover { color: #ffffff; background: #4b2e83; border-radius: 0em; }
+.link-row a:hover { color: #4b2e83; background: #ffffff; border-radius: 0em; text-underline-offset: 0.25em; text-decoration: underline; text-decoration-thickness: 10px; }
 
 @media (max-width: 600px) { .link-row { flex-direction: column; align-items: stretch; gap: 0.5em; } }
 .readings { display: inline-block; font-size: 0.65em; border-radius: 0.3em; padding: 0.0em 0.5em 0.0em 0em; font-weight: 700; background: #565656; color: #2166b1; margin-right: 0.3em; text-transform: uppercase; vertical-align: middle; letter-spacing: -0.01em; }
@@ -2426,3 +2426,7 @@ dd:has(.readings) { line-height: 1.1 !important; }
 .all-announcements { margin-top: 1em !important; font-size: 0.9em; }
 
 .announcement-right { flex: 1; /* 右侧占满剩余空间 */ }
+
+.label.label-purple, .staffer .label-purple.staffer-pronouns { background-color: #4b2e83; /* 背景色（紫色） */ color: #ffffff; /* 文字颜色（白色） */ }
+
+.label.label-golden, .staffer .label-golden.staffer-pronouns { background-color: #b7a57a; /* 背景色（紫色） */ color: #ffffff; /* 文字颜色（白色） */ }

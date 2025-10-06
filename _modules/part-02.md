@@ -10,7 +10,7 @@ title: Module 2 - Data Visualization
 
 Oct 13
 : **Data Visual Design**
-: **LAB 3-A**{: .label .label-green } Tidy Data and Core Logic of ggplot2
+: **LAB 3-A**{: .label .label-golden } Tidy Data and Core Logic of ggplot2
 : **LAB 2 DUE 11:59 PM**{: .label .label-purple }
 : <!-- Readings --> **Optional**{: .readings .readings-optional }[Data Viz Project by ferdio.](https://datavizproject.com){: .citation title="A wonderful resource for you to pick good visualization design." }<br>
 **Optional**{: .readings .readings-optional }[Design and Redesign in Data Visualization. Martin Wattenberg and Fernanda Viégas. 2015.](https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9){: .citation}<br>
@@ -19,13 +19,13 @@ Oct 13
 
 Oct 15
 : **Exploratory Data Analysis (EDA)**
-: **LAB 3-B**{: .label .label-green } Basic Exploratory Data Analysis in R 
+: **LAB 3-B**{: .label .label-golden } Basic Exploratory Data Analysis in R 
 : **REQUIRED**{: .readings .readings-required}[Chapter 8, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
 **Optional**{: .readings .readings-optional }[Exploratory Data Analysis. United States Environmental Protection Agency.](https://www.epa.gov/caddis/exploratory-data-analysis){: .citation}
 
 Oct 20
 : **Visualization Perception**
-: **LAB 4**{: .label .label-green } Visualization using R and ggplot2 
+: **LAB 4**{: .label .label-golden } Visualization using R and ggplot2 
 : **LAB 3 DUE 11:59 PM**{: .label .label-purple }
 
 Oct 22
@@ -38,17 +38,17 @@ Oct 27
 
 Oct 29
 : **Introduction to Tableau**
-: **LAB 5**{: .label .label-green } Tableau
+: **LAB 5**{: .label .label-golden } Tableau
 
 Nov 03
 : **Interactive Visualization**
-: **LAB 6-A**{: .label .label-green } shiny: Interative Visualization using R
+: **LAB 6-A**{: .label .label-golden } shiny: Interative Visualization using R
 : **LAB 5 DUE 11:59 PM**{: .label .label-purple }
 : **Extra credits - data sharing DUE 11:59 PM**{: .label .label-purple }
 
 Nov 05
 : **Dashboard**
-: **LAB 6-B**{: .label .label-green } Mini Dashboard using shiny or Tableau
+: **LAB 6-B**{: .label .label-golden } Mini Dashboard using shiny or Tableau
 
 
 

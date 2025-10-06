@@ -5,7 +5,7 @@ title: Module 3 - Regression
 
 Nov 10
 : **Correlation and Linear Regression**
-: **LAB 7-A**{: .label .label-green }
+: **LAB 7-A**{: .label .label-golden }
 : **LAB 6 DUE 11:59 PM**{: .label .label-purple }
 : <!-- Readings --> **REQUIRED**{: .readings .readings-required}[Chapter 10 and 12, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
 <!-- Readings --> **Optional**{: .readings .readings-optional }[Chapter 4-6, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin.](https://seeing-theory.brown.edu){: .citation} <br>
@@ -13,19 +13,19 @@ Nov 10
 
 Nov 12
 : **Logistic and Multiple Linear Regression**
-: **LAB 7-B**{: .label .label-green }[Coding](#)
+: **LAB 7-B**{: .label .label-golden }[Coding](#)
 : <!-- Readings --> **REQUIRED**{: .readings .readings-required}[Chapter 10 and 12, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}
 : **Project Proposal Due 11:59 PM**{: .label .label-purple }
     : [Project Proposal Instruction]({{ site.baseurl }}/projects/#project-proposal)
 
 Nov 17
 : **Spatiotemporal Data Analysis**
-: **LAB 8-A**{: .label .label-green }
+: **LAB 8-A**{: .label .label-golden }
 : **LAB 7 DUE 11:59 PM**{: .label .label-purple }
 
 Nov 19
 : **Introduction to Supervised and Unsupervised Learning**
-: **LAB 8-B**{: .label .label-green }
+: **LAB 8-B**{: .label .label-golden }
 
 Nov 24
 : **Guest Speaker (TBD)**
