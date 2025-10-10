@@ -273,9 +273,10 @@ load the data with: <code>data(kingco_sales)</code> and
 file in <a href="https://github.com/andykrause/kingCoData">this
 repository</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;tidyverse&#39;</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#devtools::install_github(&#39;andykrause/kingCoData&#39;) # You only need to run the installation once</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;kingCoData&#39;</span>) <span class="co"># load the data package</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(kingco_sales) <span class="co"># load the sale data</span></span></code></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&quot;devtools&quot;) # if you are using a Windows computer</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#devtools::install_github(&#39;andykrause/kingCoData&#39;) # You only need to run the installation once</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;kingCoData&#39;</span>) <span class="co"># load the data package</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(kingco_sales) <span class="co"># load the sale data</span></span></code></pre></div>
 <p>Have a look of this data through <code>View()</code> function or just
 click the dataset name in <code>Environment</code> panel, we can know
 there are 591,513 entries (records), 48 columns (features). Go ahead and
@@ -353,9 +354,9 @@ picked.</p>
 <pre><code>## # A tibble: 3 × 48
 ##   sale_id     pinx       sale_date  sale_price sale_nbr sale_warning join_status
 ##   &lt;chr&gt;       &lt;chr&gt;      &lt;date&gt;          &lt;int&gt;    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;      
-## 1 2015..32317 ..8901001… 2015-09-10     799900        2 &quot;   &quot;        new        
-## 2 2002..17243 ..6145601… 2002-05-31     259000        1 &quot;   &quot;        nochg      
-## 3 2014..1759  ..2922701… 2014-01-23     585000        2 &quot;   &quot;        nochg      
+## 1 2001..35811 ..0339200… 2001-11-07     425000        1 &quot;   &quot;        nochg      
+## 2 2005..9953  ..6003501… 2005-03-22     392000        1 &quot;   &quot;        new        
+## 3 2018..764   ..2926049… 2018-01-08     656000        2 &quot;   &quot;        new        
 ## # ℹ 41 more variables: join_year &lt;dbl&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
 ## #   area &lt;int&gt;, city &lt;chr&gt;, zoning &lt;chr&gt;, subdivision &lt;chr&gt;, present_use &lt;int&gt;,
 ## #   land_val &lt;int&gt;, imp_val &lt;int&gt;, year_built &lt;int&gt;, year_reno &lt;int&gt;,

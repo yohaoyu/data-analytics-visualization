@@ -25,6 +25,7 @@ Let's first import the datasets and necessary packages. **If you are using a Win
 
 ```{r message=FALSE}
 library('tidyverse')
+#install.packages("devtools") # if you are using a Windows computer
 #devtools::install_github('andykrause/kingCoData') # You only need to run the installation once
 library('kingCoData') # load the data package
 data(kingco_sales) # load the sale data
