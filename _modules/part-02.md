@@ -42,16 +42,20 @@ Oct 29
 : **Introduction to Tableau**
 : **LAB 5**{: .label .label-golden } Tableau
 
-Nov 03
-: **Interactive Visualization**
-: **LAB 6-A**{: .label .label-golden } shiny: Interative Visualization using R
+Nov 03 
+: **Visualize Space**
+: **LAB 6-A**{: .label .label-golden } Sptatial Data and Mapping using R
 : **LAB 5 DUE 11:59 PM**{: .label .label-purple }
 : **Extra credits - data sharing DUE 11:59 PM**{: .label .label-purple }
 
 Nov 05
-: **Dashboard**
-: **LAB 6-B**{: .label .label-golden } Mini Dashboard using shiny or Tableau
+: **Interactive Visualization**
+: **LAB 6-B**{: .label .label-golden } shiny: Interative Visualization using R
 
+Nov 10
+: **Dashboard**
+: **LAB 7-A**{: .label .label-golden } Mini Dashboard using shiny or Tableau
+: **LAB 6 DUE 11:59 PM**{: .label .label-purple }
 
 
 
