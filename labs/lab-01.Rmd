@@ -441,7 +441,7 @@ census_api_key("96f943fd5b38142362574386830d3c855e82dd28")
 
 ```{r}
 king_value <- get_acs(geography = "tract", # extract all tract-level data
-            table = "B25075", 
+            table = "B25031", 
             state = "53", # 53 means Washington State, you can use 'WA'
             county = "033", # 033 means King County, you can use 'king'
             year = 2023)
