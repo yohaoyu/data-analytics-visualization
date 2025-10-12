@@ -10,9 +10,11 @@ title: Module 2 - Data Visualization
 
 Oct 13
 : **Data Visual Design**
-: **LAB 3-A**{: .label .label-golden } Tidy Data and Core Logic of ggplot2
+: **LAB 3-A**{: .label .label-golden } Tidy and Skim Data 
+  : [Page]({{ site.baseurl }}/labs/lab-03) / [Rmd]({{ site.baseurl }}/labs/lab-03.zip)
 : **LAB 2 DUE 11:59 PM**{: .label .label-purple }
 : <!-- Readings --> **Optional**{: .readings .readings-optional }[Data Viz Project by ferdio.](https://datavizproject.com){: .citation title="A wonderful resource for you to pick good visualization design." }<br>
+ **Optional**{: .readings .readings-optional }[From Data to Viz.](https://www.data-to-viz.com){: .citation title="A wonderful resource for you to pick good visualization design." }<br>
 **Optional**{: .readings .readings-optional }[Design and Redesign in Data Visualization. Martin Wattenberg and Fernanda Viégas. 2015.](https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9){: .citation}<br>
 **Optional**{: .readings .readings-optional }[Visual and Statistical Thinking: Displays of Evidence for Making Decisions. Edward Tufte. 1997.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Visual-and-Statistical-Thinking.pdf){: .citation} <br>
 **Optional**{: .readings .readings-optional }[Preface & Chapter 1, Data Visualization. Kieran Healy. 2019.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Data-Visualization-A-Practical-Introduction.pdf){: .citation }

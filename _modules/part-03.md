@@ -3,40 +3,37 @@ title: Module 3 - Regression
 ---
 <h3 style="text-align: left; font-weight: bold;">III - Data Modeling (Subject to Change)</h3> 
 
-Nov 10
-: **Correlation and Linear Regression**
-: **LAB 7-A**{: .label .label-golden }
-: **LAB 6 DUE 11:59 PM**{: .label .label-purple }
+Nov 12
+: **Linear Regression**
+: **LAB 7-B**{: .label .label-golden } Linear Regression
+: **Project Proposal Due 11:59 PM**{: .label .label-purple }
+    : [Project Proposal Instruction]({{ site.baseurl }}/projects/#project-proposal)
 : <!-- Readings --> **REQUIRED**{: .readings .readings-required}[Chapter 10 and 12, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
 <!-- Readings --> **Optional**{: .readings .readings-optional }[Chapter 4-6, Seeing Theory - A Visual Introduction to Probability and Statistics. Daniel Kunin.](https://seeing-theory.brown.edu){: .citation} <br>
 **Optional**{: .readings .readings-optional }[Statistical Modeling: The Two Cultures. Leo Breiman. 2001.](https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full){: .citation }
 
-Nov 12
-: **Logistic and Multiple Linear Regression**
-: **LAB 7-B**{: .label .label-golden }[Coding](#)
-: <!-- Readings --> **REQUIRED**{: .readings .readings-required}[Chapter 10 and 12, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}
-: **Project Proposal Due 11:59 PM**{: .label .label-purple }
-    : [Project Proposal Instruction]({{ site.baseurl }}/projects/#project-proposal)
-
 Nov 17
-: **Spatiotemporal Data Analysis**
-: **LAB 8-A**{: .label .label-golden }
+: **Time Series Analysis**
+: **LAB 8-A**{: .label .label-golden } Time Series Analysis
 : **LAB 7 DUE 11:59 PM**{: .label .label-purple }
 
+
 Nov 19
-: **Introduction to Supervised and Unsupervised Learning**
-: **LAB 8-B**{: .label .label-golden }
+: **Supervised Learning**
+: **LAB 8-B**{: .label .label-golden } Random Forests and Support Vector Machines
 
 Nov 24
-: **Guest Speaker (TBD)**
-: **LAB 8 DUE 11:59 PM**{: .label .label-purple }
+: **Unsupervised Learning**
+: **LAB 9-A (Optional)**{: .label .label-golden } K-Means Clustering and Principal Component Analysis
+: **LAB 8 DUE 11:59 PM**{: .label .label-purple } 
 
 Nov 26
 : **Project + Coding Clinic (Optional Online Session)**
   : [Zoom]()
 
 Dec 01
-: **Artificial Intelligence and Data Science Ethnics**
+: **Neural Networks and AI Ethnics**
+: **LAB 9-B (Optional)**{: .label .label-golden } Neural Networks
 : <!-- Readings --> **REQUIRED**{: .readings .readings-required}[Chapter 13-14, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
 **Optional**{: .readings .readings-optional}[A Brief Overview of AI governance for Responsible Machine Learning Systems. Navdeep Gill et al. 2022.](https://arxiv.org/abs/2211.13130){: .citation } <br>
 **Optional**{: .readings .readings-optional }[AI for Social Good. Nature Communications. Nenad Tomašev et al. 2020.](https://doi.org/10.1038/s41467-020-15871-z){: .citation }<br>

@@ -32,7 +32,7 @@ The due day for each lab can be found on the [course wesbite](https://www.yuehao
 
 ---
 
-## Lab 03-A: Tidy Data and GitHub
+## Lab 03-A: Tidy Data
 
 ```{r message=FALSE}
 library('tidyverse')
@@ -47,7 +47,7 @@ Instead of using API or R data package as we did in Lab 1 and 2, we will use dat
 hvi <- read_csv("zillow_hvi_msa.csv")
 ```
 
-`CSV` files are just plain text. They do not store metadata such as column types, units, or formats. So. when we use `read_csv()`, it automatically guesses column types by inspecting the data. Sometimes its guess is wrong, we need to specify the types using `spec()`.
+`CSV` files are just plain text. You can use your text editor (TextEdit on Mac and Notepad on Windows) to have a look. They do not store metadata such as column types, units, or formats. So. when we use `read_csv()`, it automatically guesses column types by inspecting the data. Sometimes its guess is wrong, we need to specify the types using `spec()`.
 
 ```{r}
 hvi <- read_csv("zillow_hvi_msa.csv",
@@ -120,6 +120,18 @@ Look at our `hvi_tidy` dataset again, it contains 9,360 values representing **6*
 
 The tidy data frame explicitly tells us the definition of an observation. Every combination of `RegionName` and `Date` is a single measured observation (`HVI`). It's important to clearly define **what is an observation**. In the case of HVI, we are interested in HVI for sure! For an observation, such as `220834.8`, we need know two information: region and date.
 
+#### From Tidy Data to Wider Data
+
+```{r}
+hvi_wide <- hvi_tidy %>%
+  pivot_wider(
+    names_from = Date,   # expand `Date` to multiple rows 
+    values_from = HVI    # extract`HVI` column to those new columns
+  )
+head(hvi_wide, 3)
+```
+
+
 #### Tidy data
 
 In tidy data:
@@ -148,7 +160,6 @@ hvi_tidy_NA_remove <- hvi_tidy %>%
   filter(!is.na(HVI))
 dim(hvi_tidy_NA_remove)
 ```
-
 
 
 ### 📚 TODO: Critique of Data Visualizations

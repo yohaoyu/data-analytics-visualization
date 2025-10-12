@@ -68,7 +68,7 @@ In the last week, each group will prepare a 6-8 minute presentation that covers:
 - Rough results of analysis and/or visualization
 - Any problems or challenges you have had so far
 
-You do not need to prepare formal slides for the presentation. Instead, focus on clearly explaining your work so that your classmates can understand your approach and agree with your findings. The class and I will provide preliminary feedback on your work as well as how
+You do not need to prepare formal slides for the presentation. But please share your draft work **one day** ahead the presentation date. Instead, focus on clearly explaining your work so that your classmates can understand your approach and agree with your findings. The class and I will provide preliminary feedback on your work as well as how
 to appropriately wrangle your data sources. I expect that the feedback from myself and your
 classmates will be incorporated into your final project.
 
