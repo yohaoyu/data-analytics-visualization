@@ -10,6 +10,7 @@ title: Module 2 - Data Visualization
 
 Oct 13
 : **Data Visual Design**
+  : [Slides]({{ site.baseurl }}/slides/lecture-04.pdf)
 : **LAB 3-A**{: .label .label-golden } Tidy and Skim Data 
   : [Page]({{ site.baseurl }}/labs/lab-03) / [Rmd]({{ site.baseurl }}/labs/lab-03.zip)
 : **LAB 2 DUE 11:59 PM**{: .label .label-purple }
