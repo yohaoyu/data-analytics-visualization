@@ -65,6 +65,23 @@
 </head>
 
 ![cover_image]({{ site.baseurl }}/assets/images/cover_image.png)
+
+<img id="cover" alt="cover image" src="{{ site.baseurl }}/assets/images/cover_image.png">
+<script>
+  (function () {
+    var covers = [
+      'cover_image_1.png',
+      'cover_image_2.png',
+      'cover_image_3.png',
+      'cover_image_4.png',
+      'cover_image_5.png',
+      'cover_image.png'
+    ];
+    var pick = covers[Math.floor(Math.random() * covers.length)];
+    document.getElementById('cover').src = '{{ site.baseurl }}/assets/images/' + pick;
+  })();
+</script>
+
 ### Data Analytics and Visualization 
 {:.no_toc .fs-7 .fw-650 .lh-tight}
 
