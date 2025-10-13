@@ -112,7 +112,6 @@ head(hvi_tidy,3)
 
 ![From Wider to Longer. Source: Cheatsheet of tidyr.](assets/longer.jpg)
 
-
 Look at our `hvi_tidy` dataset again, it contains 9,360 values representing **6** variables and **9,240** observations. The variables are:
 
 - `RegionID`: a unique regional ID defined by Zillow
@@ -151,7 +150,7 @@ head(hvi_wide, 3)
 
 ### Missing Values
 
-In `pivot_longer`, there is an optional argument called `values_drop_na =`, default as `FALSE`. If setting as `TRUE`, it will remove rows with missing HVI. We set as `FALSE` but is there any `NA` (Not Available) values? 
+In `pivot_longer`, there is an optional argument called `values_drop_na =`, default as `FALSE`. If setting as `TRUE`, it will remove rows with missing HVI. We set as `FALSE` but is there any `NA` (Not Available) values?
 
 We can use `is.na()` to check and there are 3 missing value in  `HVI` column:
 
@@ -168,26 +167,17 @@ hvi_tidy_NA_remove <- hvi_tidy %>%
 dim(hvi_tidy_NA_remove)
 ```
 
+#### 📚 TODO: Handle Missing Values
 
-### 📚 TODO: Critique of Data Visualizations
+**4 points**
 
-**5 points - Please comment on [Ed Discussion](https://edstem.org/us/courses/86258/discussion/7116268) and no submission needed in the lab**
+Instead of omitting those missing values, let's try filling missing values in `hvi_tidy` using a [linear interpolation method](https://en.wikipedia.org/wiki/Linear_interpolation). You can use the `zoo` package, which provides a convenient function `na.approx()` for handling time-series data.
 
-As we learn more about data visualization, we have begun to discuss some general principles. For this section, please find an example of a visualization or infographic that impresses you- either in a good or bad way. Please attach the example image, give the link/source, and:
+[The documentation](https://www.rdocumentation.org/packages/zoo/versions/1.8-14/topics/na.approx) and [this post](https://www.spsanderson.com/steveondata/posts/2024-11-28/) may be helpful to you!
 
-1. Describe what the visualization is trying to communicate
-1. Discuss what it does and does not do well using the principles we talked about in class
-1. Comment on two visualizations posted by classmates (optional)
-
-A few probing questions to think about:
-
-1. Is the data visualization static, motion, or interactive?
-1. Is it narrative or exploratory?
-1. What kind of purpose do you think it serves? How would you order its objectives (appeal, comprehension, and retention)?
-1. Does it contain the basic elements of a graph (e.g., title, axis label, encoding)? Is anything missing or not clear to the audience?
-1. What kind of encoding does it use (e.g., position, length, slope, angle, area, color hue, etc)? How effective in terms of precision of such encoding elements?
-1. What kind of organizational principles do you observe (e.g.hierarchy, unity, balance, grouping, and spacing)? Is the principle lacking in the graph?
-1. Do you think your psychological needs have all been met by this source (e.g., autonomy, relatedness, and competence)?
+```{r}
+# TODO
+```
 
 ---
 
@@ -335,6 +325,17 @@ ggplot(data = hvi_tidy_NA_remove %>%
   theme_minimal()
 ```
 
+##### 📚 TODO: The Variety of Histogram 
+
+**2 points**
+
+Please modify the above histogram code to explore different forms of histograms, such as using `geom_dotplot()`. 
+
+```{r}
+# TODO
+```
+
+
 #### Boxplots
 
 A box and whisker plot (also referred to as boxplot) provides a compact summary of the distribution of a variable. A standard boxplot consists of:
@@ -368,6 +369,15 @@ ggplot(
   theme_minimal()
 ```
 
+##### 📚 TODO: The Variety of Boxplots 
+
+**2 points**
+
+Please add additional layer of `geom_jitter()` to the above boxplot code. This layer will display individual data points. There are two important arguments for `geom_jitter()`: `width =` and `height = `. What's the purpose of those two arguments?
+
+```{r}
+# TODO
+```
 
 #### Cumulative Distribution Functions (CDF)
 
@@ -468,19 +478,20 @@ This is not a complete list of Exploratory Data Analysis (EDA). We did not touch
 
 ### 📚 TODO: Review Diagrams
 
-**2 points**
+**1 points**
 
 Carefully review and run all code chunks. You are encouraged to modify the arguments to explore how they affect the visualizations. Reply “yes” below once you have reviewed and tested them.
 
 
 ### 📚 TODO: Explore National Mortgage Database
 
-**9 points** 
+**7 points** 
 
 Using [the National Mortgage Database (NMBD)](https://www.fhfa.gov/data/national-mortgage-database-aggregate-statistics) conduct some visualization, such as histogram, boxplot, CDF, or scatter plot. I suggest either looking at the *Outstanding Residential Mortgage Statistics for States* or *Residential Mortgage Performance Statistics for States*. Be sure to review the technical documentation to understand what the statistics represent. You should: 
 
 1. Skim the data and report basic summary statistics such as mean, median, min/max, 25th/75th percentiles, for both Washington State and the rest of the US (exclude Washington State). 
-1. The dataset you downloaded is likely in long format — where each observation (e.g., city–date pair) occupies one row. Please convert it into wide format. However, when creating visualizations in ggplot2, continue using the long-format data, since it works best with the grammar of graphics.
+1. The dataset you downloaded is likely in long format — where each observation occupies one row. Please convert it into wide format. However, when creating visualizations in ggplot2, continue using the long-format data, since it works best with the grammar of graphics.
+    - Report the number of rows and columns before and after pivoting.
 1. Create 3 ~ 4 diagrams that would make sense as well as tell an interesting story. For example, you may want to connect state-level statistics from ACS with the NMDB data (make sure you are comparing data from the same year). 
 1. Add one paragraph explaining your results and charts.
 

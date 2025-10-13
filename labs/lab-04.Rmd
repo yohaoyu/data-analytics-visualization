@@ -22,6 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!-- start of the main lab content --> 
 
+In this lab, we are focusing on produce GREAT diagram using ggplot2. We will go through the production process of three plots. Please try to understand each step, including the rational, functions, and arguments. 
 
 The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. From Lab 4, the use of any generative AI tool (ChatGPT, Copilot, etc.) is allowed. But, I still encourage you to write codes by yourself and use AI tools as a way to debug and explore new knowledge. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
@@ -54,7 +55,39 @@ You can also use other AI services, such as [Gemini from Google](https://gemini.
 
 ### Data Preparation 
 
-![Effectiveness Rankings. _The tasks shown in the gray boxes are not relevant to these types of data._ Source: Mackinlay, J. (1986). Automating the design of graphical presentations of relational information. Acm Transactions On Graphics (Tog), 5(2), 110-141.](assets/ranking.jpg)
+![Effectiveness Rankings. The tasks shown in the gray boxes are not relevant to these types of data. Source: Mackinlay, J. (1986). Automating the design of graphical presentations of relational information. Acm Transactions On Graphics (Tog), 5(2), 110-141.](assets/ranking.jpg)
+
+
+### 📚 TODO: Critique of Data Visualizations
+
+**5 points - Please comment on [Ed Discussion](https://edstem.org/us/courses/86258/discussion/7116268) and no submission needed in the lab**
+
+As we learn more about data visualization, we have begun to discuss some general principles. For this section, please find an example of a visualization or infographic that impresses you- either in a good or bad way. Please attach the example image, give the link/source, and:
+
+1. Describe what the visualization is trying to communicate
+1. Discuss what it does and does not do well using the principles we talked about in class
+1. Comment on two visualizations posted by classmates (optional)
+
+A few probing questions to think about:
+
+1. Is the data visualization static, motion, or interactive?
+1. Is it narrative or exploratory?
+1. What kind of purpose do you think it serves? How would you order its objectives (appeal, comprehension, and retention)?
+1. Does it contain the basic elements of a graph (e.g., title, axis label, encoding)? Is anything missing or not clear to the audience?
+1. What kind of encoding does it use (e.g., position, length, slope, angle, area, color hue, etc)? How effective in terms of precision of such encoding elements?
+1. What kind of organizational principles do you observe (e.g.hierarchy, unity, balance, grouping, and spacing)? Is the principle lacking in the graph?
+1. Do you think your psychological needs have all been met by this source (e.g., autonomy, relatedness, and competence)?
+
+### 📚 TODO: Creative Visualization
+
+**10 points** 
+
+
+### 📚 TODO: Deceptive Visualization
+
+**4 points** 
+
+
 
 
 ## Acknowledgement
