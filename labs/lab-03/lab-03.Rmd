@@ -342,7 +342,11 @@ A box and whisker plot (also referred to as boxplot) provides a compact summary 
 1. a box defined by the 25th and 75th percentiles
 2. a horizontal line or point on the box at the median
 3. vertical lines (whiskers) drawn from each hinge (quartile) to the extreme value. 
-4. outliers beyond the span are identified. The span (S) is calculated as: S = 1.5 x (75th percentile - 25th percentile)
+    - Q1 − S / Q3 + S
+    - the span (S) is calculated as: S = 1.5 x (75th percentile - 25th percentile)
+4. outliers: any observation outside this span (Q1 − S or Q3 + S) 
+
+![Box Plot Framework. Source:  Nathan Yau (2024). Visualize This](assets/boxplot.jpg)
 
 
 ```{r}
@@ -473,7 +477,7 @@ Carefully review and run all code chunks. You are encouraged to modify the argum
 
 **9 points** 
 
-Using [the National Mortgage Database (NMBD)](https://www.fhfa.gov/data/national-mortgage-database-aggregate-statistics) conduct some visualization, such as histgram, boxplot, CDF, or scatter plot. I suggest either looking at the *Outstanding Residential Mortgage Statistics for States* or *Residential Mortgage Performance Statistics for States*. Be sure to review the technical documentation to understand what the statistics represent. You should: 
+Using [the National Mortgage Database (NMBD)](https://www.fhfa.gov/data/national-mortgage-database-aggregate-statistics) conduct some visualization, such as histogram, boxplot, CDF, or scatter plot. I suggest either looking at the *Outstanding Residential Mortgage Statistics for States* or *Residential Mortgage Performance Statistics for States*. Be sure to review the technical documentation to understand what the statistics represent. You should: 
 
 1. Skim the data and report basic summary statistics such as mean, median, min/max, 25th/75th percentiles, for both Washington State and the rest of the US (exclude Washington State). 
 1. The dataset you downloaded is likely in long format — where each observation (e.g., city–date pair) occupies one row. Please convert it into wide format. However, when creating visualizations in ggplot2, continue using the long-format data, since it works best with the grammar of graphics.

@@ -37,7 +37,7 @@ We will work in groups to solve tricky data analytics & visualization problems. 
 --- 
 
 ## Schedules
-<a href="#recent"><i class="fa-solid fa-square-arrow-up-right" style="color: #000000;"></i> **Go to the recent section**.</a> This schedule is subject to change, and please check back regularly for updates. All readings and materials can be directly accessed via the links below, although some may require a UW NetID login. Some readings and links about R/coding are on each lab session page.
+<a href="#recent"><i class="fa-solid fa-square-arrow-up-right" style="color: #000000;"></i> **Go to the recent section**.</a> This schedule is subject to change, and please check back regularly for updates. All readings and materials can be directly accessed via the links below, although some may require a UW NetID login. Some readings and links about R/coding are on each lab session page. Please give us any anonymous suggestions about the lectures, labs, or anything using the **[anonymous suggestions box](https://freesuggestionbox.com/pub/qjyilmx)**.
 
 {% for module in site.modules %}
 {{ module }}
