@@ -18,19 +18,17 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
----
+------------------------------------------------------------------------
 
-<!-- start of the main lab content --> 
+<!-- start of the main lab content -->
 
-In lab 3, we are going to explore tidy data, start to visualize data using R, and look at GitHub. The primary dataset we are using is [Zillow Home Value Index (ZHVI)](https://www.zillow.com/research/data/), a measure of the typical home value and market changes across a given region and housing type. More information about what ZHVI is and how it’s calculated is available on [this overview page](https://www.zillow.com/research/methodology-neural-zhvi-32128/). 
+In lab 3, we are going to explore tidy data, start to visualize data using R, and look at GitHub. The primary dataset we are using is [Zillow Home Value Index (ZHVI)](https://www.zillow.com/research/data/), a measure of the typical home value and market changes across a given region and housing type. More information about what ZHVI is and how it’s calculated is available on [this overview page](https://www.zillow.com/research/methodology-neural-zhvi-32128/).
 
 The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. **For Lab 1–3, the use of any generative AI tool (ChatGPT, Copilot, etc.) is prohibited**. We will run AI detection on each submission. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
 
-> **Recommended Reading** <br>
-> [Chapter 2, 6, Modern Data Science with R. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e) <br>
-> [Tidy Data, *The Journal of Statistical Software*, Hadley Wickham, 2014.](https://vita.had.co.nz/papers/tidy-data.html)
+> **Recommended Reading** <br> [Chapter 2, 6, Modern Data Science with R. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e) <br> [Tidy Data, *The Journal of Statistical Software*, Hadley Wickham, 2014.](https://vita.had.co.nz/papers/tidy-data.html)
 
----
+------------------------------------------------------------------------
 
 ## Lab 03-A: Tidy Data
 
@@ -39,7 +37,7 @@ library('tidyverse')
 library('ggplot2') # the major package for visualization in R
 ```
 
-### Data Preparation 
+### Data Preparation
 
 Instead of using API or R data package as we did in Lab 1 and 2, we will use data on our local device. We have organized the [Zillow Home Value Index (ZHVI)](https://www.zillow.com/research/data/) for the largest 30 [Metropolitan Statistical Ares (MSA)](https://en.wikipedia.org/wiki/Metropolitan_statistical_area) and their 2024 population in csv file `zillow_hvi_msa.csv`. [Comma-separated values (CSV)](https://en.wikipedia.org/wiki/Comma-separated_values) is a text data format that uses commas to separate delimiter-separated values, and newlines to separate records.
 
@@ -60,7 +58,7 @@ hvi <- read_csv("zillow_hvi_msa.csv",
     .default   = col_double()   # for other columns
   )
 )
-head(hvi, 3)
+head(hvi, 2)
 ```
 
 We will not see the message if we specified the data types. let's have a look of the first 3 rows of this data. The data is ZHVI All Home (SFR, Condo/Co-op) Time Series, Smoothed, Seasonally Adjusted from Zillow Research. The data includes ZHVI for 30 MSA from 2000 to 2025 by month!
@@ -73,28 +71,28 @@ Currently, the `hvi` dataset has 30 rows and 312 columns. This presentation of t
 
 > Happy families are all alike; every unhappy family is unhappy in its own way — Leo Tolstoy
 
-Like families, tidy datasets are all alike but every messy dataset is messy in its own way. The principles of tidy data provide a standard way to organize data values within a dataset. A standard makes initial data cleaning easier because you don’t need to start from scratch and reinvent the wheel every time. The tidy data standard has been designed to facilitate initial exploration and analysis of the data, and to simplify the development of data analysis tools that work well together. 
+Like families, tidy datasets are all alike but every messy dataset is messy in its own way. The principles of tidy data provide a standard way to organize data values within a dataset. A standard makes initial data cleaning easier because you don’t need to start from scratch and reinvent the wheel every time. The tidy data standard has been designed to facilitate initial exploration and analysis of the data, and to simplify the development of data analysis tools that work well together.
 
 #### Data Semantics
 
-A dataset is a collection of **values**, usually either numbers or strings. Values are organised in two ways: every value belongs to a variable and an observation. 
+A dataset is a collection of **values**, usually either numbers or strings. Values are organised in two ways: every value belongs to a variable and an observation.
 
-- A **variable** contains all values that measure the same underlying attribute (like height, temperature, duration) across units. 
-- An **observation** contains all values measured on the same unit (like a person, or a day, or a race) across attributes.
+-   A **variable** contains all values that measure the same underlying attribute (like height, temperature, duration) across units.
+-   An **observation** contains all values measured on the same unit (like a person, or a day, or a race) across attributes.
 
 ```{r}
-head(hvi, 3)
+head(hvi, 2)
 ```
 
 Look at our `hvi` dataset, it contains 9,360 values representing **312** variables and **30** observations. The variables are:
 
-- `RegionID`: a unique regional ID defined by Zillow
-- `RegionalName`: the name of 30 MSA
-- `Popu2024`: the population of MSA in 2024 based on US Census Bureau
-- `StateName`: state name
-- 308 columns representing dates: Housing Value Index on that date
+-   `RegionID`: a unique regional ID defined by Zillow
+-   `RegionalName`: the name of 30 MSA
+-   `Popu2024`: the population of MSA in 2024 based on US Census Bureau
+-   `StateName`: state name
+-   308 columns representing dates: Housing Value Index on that date
 
-A tidy version of the data looks like this: 
+A tidy version of the data looks like this:
 
 ```{r}
 hvi_tidy <- hvi %>%
@@ -107,19 +105,19 @@ hvi_tidy <- hvi %>%
   mutate(
     Date = as.Date(Date, format = "%m/%d/%y")                   
   )
-head(hvi_tidy,3)
+head(hvi_tidy, 2)
 ```
 
 ![From Wider to Longer. Source: Cheatsheet of tidyr.](assets/longer.jpg)
 
 Look at our `hvi_tidy` dataset again, it contains 9,360 values representing **6** variables and **9,240** observations. The variables are:
 
-- `RegionID`: a unique regional ID defined by Zillow
-- `RegionalName`: the name of 30 MSA
-- `Popu2024`: the population of MSA in 2024 based on US Census Bureau
-- `StateName`: state name
-- `Date`: **NEW** - observation date
-- `HVI`: **NEW** - Housing Value Index from Zillow
+-   `RegionID`: a unique regional ID defined by Zillow
+-   `RegionalName`: the name of 30 MSA
+-   `Popu2024`: the population of MSA in 2024 based on US Census Bureau
+-   `StateName`: state name
+-   `Date`: **NEW** - observation date
+-   `HVI`: **NEW** - Housing Value Index from Zillow
 
 The tidy data frame explicitly tells us the definition of an observation. Every combination of `RegionName` and `Date` is a single measured observation (`HVI`). It's important to clearly define **what is an observation**. In the case of HVI, we are interested in HVI for sure! For an observation, such as `220834.8`, we need know two information: region and date.
 
@@ -127,15 +125,15 @@ The tidy data frame explicitly tells us the definition of an observation. Every 
 
 In tidy data:
 
-- Each variable is a column; each column is a variable.
-- Each observation is a row; each row is an observation.
-- Each value is a cell; each cell is a single value.
+-   Each variable is a column; each column is a variable.
+-   Each observation is a row; each row is an observation.
+-   Each value is a cell; each cell is a single value.
 
 Tidy data makes it easy for an analyst or a computer to extract needed variables because it provides a standard way of structuring a dataset. Tidy data is particularly well suited for vectorised programming languages like R, because the layout ensures that values of different variables from the same observation are always paired. Many R packages, such as `ggplot2` are designed around the tidy data principles.
 
 #### From Tidy Data to Wider Data
 
-We can use `pivot_wider()` to perform the inverse operation. 
+We can use `pivot_wider()` to perform the inverse operation.
 
 ```{r}
 hvi_wide <- hvi_tidy %>%
@@ -143,7 +141,7 @@ hvi_wide <- hvi_tidy %>%
     names_from = Date,   # expand `Date` to multiple rows 
     values_from = HVI    # extract`HVI` column to those new columns
   )
-head(hvi_wide, 3)
+head(hvi_wide, 2)
 ```
 
 ![From Longer to Wider. Source: Cheatsheet of tidyr.](assets/wider.jpg)
@@ -152,7 +150,7 @@ head(hvi_wide, 3)
 
 In `pivot_longer`, there is an optional argument called `values_drop_na =`, default as `FALSE`. If setting as `TRUE`, it will remove rows with missing HVI. We set as `FALSE` but is there any `NA` (Not Available) values?
 
-We can use `is.na()` to check and there are 3 missing value in  `HVI` column:
+We can use `is.na()` to check and there are 3 missing value in `HVI` column:
 
 ```{r}
 colSums(is.na(hvi_tidy))
@@ -179,11 +177,11 @@ Instead of omitting those missing values, let's try filling missing values in `h
 # TODO
 ```
 
----
+------------------------------------------------------------------------
 
 ## Lab 03-B: Exploratory Data Analysis in R
 
-Starting from this lab session, we are going to conduct data visualization using R and [ggplot2](https://ggplot2.tidyverse.org). You don't have to install `ggplot2` separately because it is already a part of `tidyverse`. 
+Starting from this lab session, we are going to conduct data visualization using R and [ggplot2](https://ggplot2.tidyverse.org). You don't have to install `ggplot2` separately because it is already a part of `tidyverse`.
 
 Exploratory Data Analysis (EDA) is the process of summarizing, visualizing, and checking data to uncover patterns, detect outliers, and identify unexpected features. It helps you understand the structure and quality of your dataset before applying formal statistical models or machine learning methods. The key of EDA is **not** aesthetics, design, or storytelling, but rather developing an understanding of the data itself. However, for learning purposes, we will use ggplot2 because it provides a consistent and flexible framework for visualizing data in R. In realty, you can use any tool, base R plotting, Tableau, Excel, for EDA. What matters is the insight you gain, not the tool itself. This section is partially built based on [Exploratory Data Analysis from EPA](https://www.epa.gov/caddis/exploratory-data-analysis).
 
@@ -201,10 +199,10 @@ Note: `complete_rate` is the proportion of non-missing values in that variable. 
 
 ### First use of `ggplot2`
 
-`ggplot2` is built on the Grammar of Graphics — a system that describes plots as combinations of independent components. This is a typical chunk of ggplot2. 
+`ggplot2` is built on the **G**rammar of **G**raphics — a system that describes plots as combinations of independent components. This is a typical chunk of ggplot2.
 
-```{}
-ggplot(data,   aes(x = ..., y = ...)) + 
+```         
+ggplot(data, aes(x = ..., y = ...)) + 
   geom_*() + 
   facet_*() +
   scale_*() +
@@ -212,25 +210,27 @@ ggplot(data,   aes(x = ..., y = ...)) +
   theme()
 ```
 
-Let's use the ZHVI of Seattle and Portland to complete `ggplot2` figure step by step to understand how each component contributes. We defined one objects with ZHVI of both Seattle and Portland (`hvi_pnw`). 
+Let's use the ZHVI of Seattle and Portland to complete `ggplot2` figure step by step to understand how each component contributes. We defined one objects with ZHVI of both Seattle and Portland (`hvi_pnw`).
 
 ```{r}
 hvi_pnw <- hvi_tidy_NA_remove %>% 
   filter(RegionName %in% c("Seattle, WA", "Portland, OR"))
 ```
 
-Starting from `ggplot()`, we create a plot object. We can define the `data` and and `aes` (or later). We have argument `aes()`, which defines how data fields (e.g., categorical, ordinal) **map to** visual properties (e.g., x, y, color, shape, size). 
- 
-If we assign this `ggplot()` object to `g`, we can later add anything upon this object using `+`. Otherwise, the plot will show here. `ggplot()` alone initializes a coordinate system and data mapping, so there is nothing on the diagram. 
+Starting from `ggplot()`, we create a plot object. We can define the `data` and and `aes` (or later). We have argument `aes()`, which defines how data fields (e.g., categorical, ordinal) **map to** visual properties (e.g., x, y, color, shape, size).
+
+![Simplified ggplot. Source: Luka Negoita](assets/ggplot2_simplified.png)
+
+If we assign this `ggplot()` object to `g`, we can later add anything upon this object using `+`. Otherwise, the plot will show here. `ggplot()` alone initializes a coordinate system and data mapping, so there is nothing on the diagram.
 
 ```{r}
 ggplot(hvi_pnw, aes(x = Date, y = HVI, group = RegionName)) # will show below the chunk
 g <- ggplot(hvi_pnw, aes(x = Date, y = HVI, color = RegionName)) # will not show the plots
 ```
 
-In `ggplot2`, defining `geom_*()` (geometric object) is required. What do we want in this plot? Points or lines? We can stack more than one `geom_*()` in a plot and each `geom_*()` function will return a layer. 
+In `ggplot2`, defining `geom_*()` (geometric object) is required. What do we want in this plot? Points or lines? We can stack more than one `geom_*()` in a plot and each `geom_*()` function will return a layer.
 
-Within `geom_*()` functions, we can modify the visual attributes of this layer. Note: different geometric objects have different arguments. 
+Within `geom_*()` functions, we can modify the visual attributes of this layer. Note: different geometric objects have different arguments.
 
 ```{r}
 g <- g + geom_line(aes(color = RegionName),
@@ -240,9 +240,9 @@ g <- g + geom_line(aes(color = RegionName),
 g
 ```
 
-This is a confusing thing here: we added `aes(color = RegionName)` within `geom_line()`. Why did we use `RegionName` twice, one in `ggplot()` one in `geom_line()`?  
+This is a confusing thing here: we added `aes(color = RegionName)` within `geom_line()`. Why did we use `RegionName` twice, one in `ggplot()` one in `geom_line()`?
 
-`ggplot(hvi_pnw, aes(x = Date, y = HVI, group = RegionName))` defines global mappings: defaults that all layers `geom_*()` will inherit. This line just say we have date and X and HVI as y, and data are organized into two groups based on `RegionName`. **Color** is a new aesthetic mapping that we can introduce to this layer! Also, it's good to know that if we want `ggplot2` to both _group_ and _color_ by city, we could directly define (introduce `color` to the global setting): `ggplot(hvi_pnw, aes(x = Date, y = HVI, color = RegionName)) + geom_line()`.
+`ggplot(hvi_pnw, aes(x = Date, y = HVI, group = RegionName))` defines global mappings: defaults that all layers `geom_*()` will inherit. This line just say we have date and X and HVI as y, and data are organized into two groups based on `RegionName`. **Color** is a new aesthetic mapping that we can introduce to this layer! Also, it's good to know that if we want `ggplot2` to both *group* and *color* by city, we could directly define (introduce `color` to the global setting): `ggplot(hvi_pnw, aes(x = Date, y = HVI, color = RegionName)) + geom_line()`.
 
 We can override default **scale**: how data values are converted into visual space. For example, how numeric ranges become axis values or how categories become colors.
 
@@ -252,7 +252,7 @@ g <- g + scale_y_continuous(labels = scales::comma, # format numbers with commas
 g
 ```
 
-The geometric space (the canvas we are drawing) can be modified by **coord**. For example, we set the limits for x (as well as for y) axis to only show a part of the lines. 
+The geometric space (the canvas we are drawing) can be modified by **coord**. For example, we set the limits for x (as well as for y) axis to only show a part of the lines.
 
 ```{r}
 g <- g + coord_cartesian(xlim = c(as.Date("2010-01-01"), as.Date("2020-6-30")),
@@ -260,7 +260,7 @@ g <- g + coord_cartesian(xlim = c(as.Date("2010-01-01"), as.Date("2020-6-30")),
 g
 ```
 
-We cannot distinguish between Seattle and Portland. We can use **facet** to split data into multiple subplots for easy comparison, such as a plot for Seattle and another one for Portland. 
+We cannot distinguish between Seattle and Portland. We can use **facet** to split data into multiple subplots for easy comparison, such as a plot for Seattle and another one for Portland.
 
 ```{r}
 g <- g + facet_wrap(~ RegionName)
@@ -281,7 +281,7 @@ g <- g +
 g
 ```
 
-The part **theme** controls all non-data visual elements, text, background, grid lines, margins, etc. We did not need legend so we remove it. You can also put in on the bottom, top or left. 
+The part **theme** controls all non-data visual elements, text, background, grid lines, margins, etc. We did not need legend so we remove it. You can also put in on the bottom, top or left.
 
 ```{r}
 g <- g + theme_light(base_size = 12) + # use a minimal theme and the base size as 12
@@ -311,7 +311,7 @@ An initial step in Exploratory Data Analysis (EDA) is to examine how the values 
 
 #### Histograms
 
-A histogram summarizes the distribution of the data by placing observations into intervals (also called classes or bins) and counting the number of observations in each interval. The y-axis can be number of observations, percent of total, fraction of total (or probability), or density (in which the height of the bar multiplied by the width of the interval corresponds to the relative frequency of the interval). The appearance of a histogram can depend on how the intervals are defined. 
+A histogram summarizes the distribution of the data by placing observations into intervals (also called classes or bins) and counting the number of observations in each interval. The y-axis can be number of observations, percent of total, fraction of total (or probability), or density (in which the height of the bar multiplied by the width of the interval corresponds to the relative frequency of the interval). The appearance of a histogram can depend on how the intervals are defined.
 
 ```{r}
 ggplot(data = hvi_tidy_NA_remove %>%
@@ -325,30 +325,28 @@ ggplot(data = hvi_tidy_NA_remove %>%
   theme_minimal()
 ```
 
-##### 📚 TODO: The Variety of Histogram 
+##### 📚 TODO: The Variety of Histogram
 
 **2 points**
 
-Please modify the above histogram code to explore different forms of histograms, such as using `geom_dotplot()`. 
+Please modify the above histogram code to explore different forms of histograms, such as using `geom_dotplot()`.
 
 ```{r}
 # TODO
 ```
 
-
 #### Boxplots
 
 A box and whisker plot (also referred to as boxplot) provides a compact summary of the distribution of a variable. A standard boxplot consists of:
 
-1. a box defined by the 25th and 75th percentiles
-2. a horizontal line or point on the box at the median
-3. vertical lines (whiskers) drawn from each hinge (quartile) to the extreme value. 
-    - Q1 − S / Q3 + S
-    - the span (S) is calculated as: S = 1.5 x (75th percentile - 25th percentile)
-4. outliers: any observation outside this span (Q1 − S or Q3 + S) 
+1.  a box defined by the 25th and 75th percentiles
+2.  a horizontal line or point on the box at the median
+3.  vertical lines (whiskers) drawn from each hinge (quartile) to the extreme value.
+    -   Q1 − S / Q3 + S
+    -   the span (S) is calculated as: S = 1.5 x (75th percentile - 25th percentile)
+4.  outliers: any observation outside this span (Q1 − S or Q3 + S)
 
-![Box Plot Framework. Source:  Nathan Yau (2024). Visualize This](assets/boxplot.jpg)
-
+![Box Plot Framework. Source: Nathan Yau (2024). Visualize This](assets/boxplot.jpg)
 
 ```{r}
 ggplot(
@@ -369,11 +367,11 @@ ggplot(
   theme_minimal()
 ```
 
-##### 📚 TODO: The Variety of Boxplots 
+##### 📚 TODO: The Variety of Boxplots
 
 **2 points**
 
-Please add additional layer of `geom_jitter()` to the above boxplot code. This layer will display individual data points. There are two important arguments for `geom_jitter()`: `width =` and `height = `. What's the purpose of those two arguments?
+Please add additional layer of `geom_jitter()` to the above boxplot code. This layer will display individual data points. There are two important arguments for `geom_jitter()`: `width =` and `height =`. What's the purpose of those two arguments?
 
 ```{r}
 # TODO
@@ -482,23 +480,21 @@ This is not a complete list of Exploratory Data Analysis (EDA). We did not touch
 
 Carefully review and run all code chunks. You are encouraged to modify the arguments to explore how they affect the visualizations. Reply “yes” below once you have reviewed and tested them.
 
-
 ### 📚 TODO: Explore National Mortgage Database
 
-**7 points** 
+**7 points**
 
-Using [the National Mortgage Database (NMBD)](https://www.fhfa.gov/data/national-mortgage-database-aggregate-statistics) conduct some visualization, such as histogram, boxplot, CDF, or scatter plot. I suggest either looking at the *Outstanding Residential Mortgage Statistics for States* or *Residential Mortgage Performance Statistics for States*. Be sure to review the technical documentation to understand what the statistics represent. You should: 
+Using [the National Mortgage Database (NMBD)](https://www.fhfa.gov/data/national-mortgage-database-aggregate-statistics) conduct some visualization, such as histogram, boxplot, CDF, or scatter plot. I suggest either looking at the *Outstanding Residential Mortgage Statistics for States* or *Residential Mortgage Performance Statistics for States*. Be sure to review the technical documentation to understand what the statistics represent. You should:
 
-1. Skim the data and report basic summary statistics such as mean, median, min/max, 25th/75th percentiles, for both Washington State and the rest of the US (exclude Washington State). 
-1. The dataset you downloaded is likely in long format — where each observation occupies one row. Please convert it into wide format. However, when creating visualizations in ggplot2, continue using the long-format data, since it works best with the grammar of graphics.
-    - Report the number of rows and columns before and after pivoting.
-1. Create 3 ~ 4 diagrams that would make sense as well as tell an interesting story. For example, you may want to connect state-level statistics from ACS with the NMDB data (make sure you are comparing data from the same year). 
-1. Add one paragraph explaining your results and charts.
+1.  Skim the data and report basic summary statistics such as mean, median, min/max, 25th/75th percentiles, for both Washington State and the rest of the US (exclude Washington State).
+2.  The dataset you downloaded is likely in long format — where each observation occupies one row. Please convert it into wide format. However, when creating visualizations in ggplot2, continue using the long-format data, since it works best with the grammar of graphics.
+    -   Report the number of rows and columns before and after pivoting.
+3.  Create 3 \~ 4 diagrams that would make sense as well as tell an interesting story. For example, you may want to connect state-level statistics from ACS with the NMDB data (make sure you are comparing data from the same year).
+4.  Add one paragraph explaining your results and charts.
 
 ```{r}
 # TODO
 ```
-
 
 ## Acknowledgement
 

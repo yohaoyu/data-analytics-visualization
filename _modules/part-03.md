@@ -24,8 +24,7 @@ Nov 19
 
 Nov 24
 : **Unsupervised Learning**
-: **LAB 9-A (Optional)**{: .label .label-golden } K-Means Clustering and Principal Component Analysis
-: **LAB 8 DUE 11:59 PM**{: .label .label-purple } 
+: **LAB 8-C**{: .label .label-golden } K-Means Clustering and Principal Component Analysis
 
 Nov 26
 : **Project + Coding Clinic (Optional Online Session)**
@@ -33,7 +32,7 @@ Nov 26
 
 Dec 01
 : **Neural Networks and AI Ethnics**
-: **LAB 9-B (Optional)**{: .label .label-golden } Neural Networks
+: **LAB 9 (Optional)**{: .label .label-golden } Neural Networks
 : <!-- Readings --> **REQUIRED**{: .readings .readings-required}[Chapter 13-14, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
 **Optional**{: .readings .readings-optional}[A Brief Overview of AI governance for Responsible Machine Learning Systems. Navdeep Gill et al. 2022.](https://arxiv.org/abs/2211.13130){: .citation } <br>
 **Optional**{: .readings .readings-optional }[AI for Social Good. Nature Communications. Nenad Tomašev et al. 2020.](https://doi.org/10.1038/s41467-020-15871-z){: .citation }<br>
@@ -41,3 +40,4 @@ Dec 01
 **Optional**{: .readings .readings-optional }[A Golden Decade of Deep Learning: Computing Systems & Applications. Jeffrey Dean (UW Alumni, Google). 2022.](https://direct.mit.edu/daed/article/151/2/58/110623/A-Golden-Decade-of-Deep-Learning-Computing-Systems){: .citation }<br>
 **Optional**{: .readings .readings-optional }[Artificial Intelligence: Real Estate Revolution or Evolution? JLL Inc.](https://www.jll.com/en-us/insights/artificial-intelligence-and-its-implications-for-real-estate){: .citation} <br>
 **Optional**{: .readings .readings-optional }[What is a Neural Network. 3Blue1Brown. 2017.](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi){: .citation } 
+: **LAB 8 DUE 11:59 PM**{: .label .label-purple } 
