@@ -25,5 +25,11 @@ description: Lab 1
 
 > Introduces tidy data and exploratory data analysis (EDA) with ggplot2, including data cleaning, handling missing values, and basic visualizations using the Zillow Home Value Index.
 
+#### **LAB 4 – Visualization Using R and ggplot2**
+
+[Page]({{ site.baseurl }}/labs/lab-04) / [Rmd]({{ site.baseurl }}/labs/lab-04.zip) / [Data](https://www.dropbox.com/scl/fi/oehagch9ivooesndaigq3/rental_data_wa.csv.zip?rlkey=h3b2krogfjj2mvzmjucg0sp2y&dl=0)
+
+> Focuses on data visualization design principles and implementation using ggplot2, exploring aesthetic mappings, scales, and themes for expressive, effective, and ethical graphics.
+
 
 {% include course_footer.html %}
