@@ -17,8 +17,9 @@ description: Resources.
 
 ## Reference Text
 - [Real Estate Analysis in the Information Age: Techniques for Big Data and Statistical Modeling]({{ site.baseurl }}/re-in-information-age) - by Kimberly Winson-Geideman, Andy Krause, Clifford A. Lipscomb, Nick Evangelopoulos (2018).
-- [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](https://www.wiley.com/en-us/Visualize+This%3A+The+FlowingData+Guide+to+Design%2C+Visualization%2C+and+Statistics%2C+2nd+Edition-p-9781394214860) - by Nathan Yau (2024)
-- [Data Visualization: A Practical Introduction](https://press.princeton.edu/books/hardcover/9780691181615/data-visualization?srsltid=AfmBOoogKnXuOrY1HeepuYDVq4UVDMgUn_wpWWyQpNY18sIJFCrxYY9p) - by Kieran Healy (2019)
+- [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Visualize-This.pdf) - by Nathan Yau (2024)
+- [Visualization Analysis & Design](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Data-Visualization-A-Practical-Introduction.pdf) - by Tamara Munzner(2014)
+- [Data Visualization: A Practical Introduction](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Visualization-Analysis-and-Design.pdf) - by Kieran Healy (2019)
 - [Modern Data Science with R](https://mdsr-book.github.io/mdsr3e/) - by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton (2024)
 - [Posit Cheatsheets for R](https://posit.co/resources/cheatsheets/)
     - [RStudio IDE]({{ site.baseurl }}/assets/pdfs/rstudio-ide.pdf)
@@ -30,9 +31,6 @@ description: Resources.
     - [Shiny]({{ site.baseurl }}/assets/pdfs/shiny.pdf)
 
 
-
-    
-    
 
 ## Tools and Softwares
 
