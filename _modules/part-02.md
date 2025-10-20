@@ -27,6 +27,7 @@ Oct 15
 
 Oct 20
 : **Visualization Perception**
+  : [Slides]({{ site.baseurl }}/slides/lecture-05.pdf)
 : **LAB 4**{: .label .label-golden } Visualization using R and ggplot2 
   : [Page]({{ site.baseurl }}/labs/lab-04) / [Rmd]({{ site.baseurl }}/labs/lab-04.zip) / [Data](https://www.dropbox.com/scl/fi/oehagch9ivooesndaigq3/rental_data_wa.csv.zip?rlkey=h3b2krogfjj2mvzmjucg0sp2y&dl=0)
 : **LAB 3 DUE 11:59 PM**{: .label .label-purple }
