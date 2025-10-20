@@ -5,7 +5,8 @@ title: Module 3 - Regression
 
 Nov 12
 : **Linear Regression**
-: **LAB 7-B**{: .label .label-golden } Linear Regression
+: **LAB 7-A**{: .label .label-golden } Linear Regression
+: **LAB 6 DUE 11:59 PM**{: .label .label-purple }
 : **Project Proposal Due 11:59 PM**{: .label .label-purple }
     : [Project Proposal Instruction]({{ site.baseurl }}/projects/#project-proposal)
 : <!-- Readings --> **REQUIRED**{: .readings .readings-required}[Chapter 10 and 12, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
@@ -14,17 +15,17 @@ Nov 12
 
 Nov 17
 : **Time Series Analysis**
-: **LAB 8-A**{: .label .label-golden } Time Series Analysis
-: **LAB 7 DUE 11:59 PM**{: .label .label-purple }
+: **LAB 7-B**{: .label .label-golden } Time Series Analysis
 
 
 Nov 19
 : **Supervised Learning**
-: **LAB 8-B**{: .label .label-golden } Random Forests and Support Vector Machines
+: **LAB 8-A**{: .label .label-golden } Random Forests and Support Vector Machines
+: **LAB 7 DUE 11:59 PM**{: .label .label-purple }
 
 Nov 24
 : **Unsupervised Learning**
-: **LAB 8-C**{: .label .label-golden } K-Means Clustering and Principal Component Analysis
+: **LAB 8-B**{: .label .label-golden } K-Means Clustering and Principal Component Analysis
 
 Nov 26
 : **Project + Coding Clinic (Optional Online Session)**
@@ -32,7 +33,6 @@ Nov 26
 
 Dec 01
 : **Neural Networks and AI Ethnics**
-: **LAB 9 (Optional)**{: .label .label-golden } Neural Networks
 : <!-- Readings --> **REQUIRED**{: .readings .readings-required}[Chapter 13-14, Real Estate Analysis in the Information Age. Kimberly Winson-Geideman, et al. 2018.]({{ site.baseurl }}/re-in-information-age){: .citation}  <br>
 **Optional**{: .readings .readings-optional}[A Brief Overview of AI governance for Responsible Machine Learning Systems. Navdeep Gill et al. 2022.](https://arxiv.org/abs/2211.13130){: .citation } <br>
 **Optional**{: .readings .readings-optional }[AI for Social Good. Nature Communications. Nenad Tomašev et al. 2020.](https://doi.org/10.1038/s41467-020-15871-z){: .citation }<br>

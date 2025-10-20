@@ -22,12 +22,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!-- start of the main lab content --> 
 
-In this lab, we are focusing on produce GREAT diagram using ggplot2. We will go through the production process of three plots. Please try to understand each step, including the rational, functions, and arguments. The dataset we are using is **residential real estate rental listing data**, from [RentHub](https://renthub.com) and can be accessed through [Dewey Data Platform](https://app.deweydata.io/data/renthub/rental-data-united-states-container/rental-data-united-states) (UW NetID required). 
+In this lab, we are focusing on produce nice diagram using `ggplot2`. We will go through the production process of three plots. Please try to understand each step, including the rational, functions, and arguments. The dataset we are using is **residential real estate rental listing data**, from [RentHub](https://renthub.com) and can be accessed through [Dewey Data Platform](https://app.deweydata.io/data/renthub/rental-data-united-states-container/rental-data-united-states) (UW NetID required). 
 
 The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. From Lab 4, the use of any generative AI tool (ChatGPT, Copilot, etc.) is **allowed**. But, I still encourage you to write codes by yourself and use AI tools as a way to debug and explore new knowledge. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
-
-> **Recommended Reading** <br>
-> [Chapter 2, 3, Modern Data Science with R. Baumer et al. 2024.](https://mdsr-book.github.io/mdsr3e) <br>
 
 ---
 
@@ -58,6 +55,8 @@ library(tidyverse)
 library(ggplot2)
 library(skimr)
 ```
+
+Because the dataset is large and cannot be stored in GitHub, please [download it through Dropbox](https://www.dropbox.com/scl/fi/oehagch9ivooesndaigq3/rental_data_wa.csv.zip?rlkey=h3b2krogfjj2mvzmjucg0sp2y&dl=0) and put the `rental_data_wa.csv` file within your lab 4 folder. 
 
 ```{r cache=TRUE}
 # load the rental listing data, it may take a while because its size
@@ -99,7 +98,7 @@ dim(rental)
 - FURNISHED: The term "furnished" is mentioned within the marketing description
 - LAUNDRY:	The terms "laundry" or "washer" or "washer/dryer" or "W/D" is mentioned within the marketing description
 - GARAGE:	The term "garage" is mentioned within the marketing description
-- GARAGE_COUNT:	GARAGE_COUNT
+- GARAGE_COUNT:	Number of garage
 - CLUBHOUSE:	The term "clubhouse" is mentioned within the marketing description
 </details>
 
@@ -114,9 +113,9 @@ Visualizing time is particularly valuable and interpretable in the context of re
 
 #### Thinking about the Message
 
-Between 2019 and 2024, one of the most significant global events was the COVID-19 pandemic, which profoundly affected housing and rental markets. In this analysis, we focus on apartment buildings, aiming to examine how their rental prices evolved during this period by visualizing temporal dynamics in the data.
+Between 2019 and 2024, one of the most significant global events was the COVID-19 pandemic, which profoundly affected housing and rental markets. In this analysis, we are interested in **rent resiliency** across different groups after the pandemic — that is, how quickly and to what extent rents in various apartment types and quality levels recovered following the COVID-19 shock.
 
-First, we filter the rental dataset to apartment buildings only and add three useful variables:
+First, we filter the rental dataset to apartment buildings only and add four useful variables:
 
 - `month`: the posting month of each listing, for time-series analysis
 - `bed_group`: bedroom categories, for comparing rent trends by unit size
@@ -168,7 +167,11 @@ apt_rent_by_month <- rental_apt %>%
   dplyr::summarise(mean_rent = mean(RENT_PRICE, na.rm = TRUE), .groups = "keep") 
 ```
 
-Let's produce the first plot about monthly rent trends for apartment buildings, separated by bedroom type and apartment quality. To determine the aesthetics (channels/encoding variables), we map time (month) to the x-axis, average rent (mean_rent) to the y-axis. There are two additional dimensions in the data: apartment quality (quality_group), which is represented by color, and bedroom type (bed_group), which is shown through faceting. 
+Let's produce the first plot about monthly rent trends for apartment buildings, separated by bedroom type and apartment quality. We have **four variables**: time, average rent, bedroom group, apartment quality. We need to determine the aesthetics (channels/encoding variables).
+
+Recall the *Expressiveness + Effectiveness* we discussed: positions are always the best, so we put two important variables (time, average rent) as x and y. 
+
+Apartment quality and bedroom group are ordinal categorical variables. We need to think about whether we want to preserve this order. If preserving order is not essential for our analytically purpose, we may treat them simply as nominal categories. In the current design, apartment quality (`quality_group`) is represented by color, while bedroom type (`bed_group`) is shown through faceting. 
 
 ```{r}
 ggplot(apt_rent_by_month, aes(x = month, y = mean_rent, color = quality_group)) +
@@ -466,7 +469,7 @@ ggsave("rent_change_plot.png", width = 14, height = 7, dpi = 200)
 ggsave("rent_change_plot_735.png", width = 7, height = 3.5, dpi = 200)
 ```
 
-When working with ggplot2, customizing the theme() controls visual style — but the final output size and aspect ratio are just as important. RStudio preview **IS NOT** the actual exported figure. I will recommend that you work within a single chunk and check changes in exported figure all the time. I decided to use 14 * 7 inch at the beginning so it is perfect when I export as 14 * 7 inch. But the following figure was exported as 7 * 3.5 inch: everything squeezed together. 
+When working with ggplot2, customizing the `theme()` controls visual style — but the final output size and aspect ratio are just as important. RStudio preview **IS NOT** the actual exported figure. I will recommend that you work within a single chunk and check changes in exported figure all the time. I decided to use 14 * 7 inch at the beginning so it is perfect when I export as 14 * 7 inch. But the following figure was exported as 7 * 3.5 inch: everything squeezed together. 
 
 ![The Exported Figure](rent_change_plot_735.png)
 
@@ -531,6 +534,12 @@ For instance, you might manipulate scales, reorder categories, or change visual 
 - **Grading**
   - [3 pts] misleading in a realistic and non-obvious
   - [1 pts] reflection on how the visualization misleads and what design decisions contributed to it
+
+### 📚 TODO: Tableau Installization (optional)
+
+**0 point**
+
+Next week, we are going to use Tableau, which provides free access to students. Please try to download [Tableau for Students](https://www.tableau.com/academic/students) in advance. 
 
 ## Acknowledgement
 

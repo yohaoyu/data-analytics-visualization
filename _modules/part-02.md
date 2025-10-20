@@ -42,26 +42,26 @@ Oct 22
 
 Oct 27
 : **Guest Speaker: [Drew Dolan](https://www.linkedin.com/in/drew-dolan-3a20a12/)**, Principal, Fund Manager, [DXD Capital](https://dxd.capital)
-: **LAB 4 DUE 11:59 PM**{: .label .label-purple }
 
 Oct 29
 : **Introduction to Tableau**
-: **LAB 5**{: .label .label-golden } Tableau
+: **LAB 5-A**{: .label .label-golden } Tableau
+: **LAB 4 DUE 11:59 PM**{: .label .label-purple }
 
 Nov 03 
-: **Visualize Space**
-: **LAB 6-A**{: .label .label-golden } Sptatial Data and Mapping using R
-: **LAB 5 DUE 11:59 PM**{: .label .label-purple }
+: **Analyze and Visualize Space**
+: **LAB 5-B**{: .label .label-golden } Sptatial Data and Mapping using R
 : **Extra credits - data sharing DUE 11:59 PM**{: .label .label-purple }
 
 Nov 05
 : **Interactive Visualization**
-: **LAB 6-B**{: .label .label-golden } shiny: Interative Visualization using R
+: **LAB 6-A**{: .label .label-golden } Interative Visualization using Tableau
+: **LAB 5 DUE 11:59 PM**{: .label .label-purple }
 
 Nov 10
 : **Dashboard**
-: **LAB 7-A**{: .label .label-golden } Mini Dashboard using shiny or Tableau
-: **LAB 6 DUE 11:59 PM**{: .label .label-purple }
+: **LAB 6-B**{: .label .label-golden } Dashboard using Tableau
+
 
 
 
