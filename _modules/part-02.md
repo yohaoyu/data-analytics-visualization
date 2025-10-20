@@ -30,9 +30,9 @@ Oct 20
 : **LAB 4**{: .label .label-golden } Visualization using R and ggplot2 
 : **LAB 3 DUE 11:59 PM**{: .label .label-purple }
 : **REQUIRED**{: .readings .readings-required }[Defense Against Dishonest Charts. Nathan Yau.](https://flowingdata.com/projects/dishonest-charts/){: .citation} <br>
-: **Optional**{: .readings .readings-optional }[Automating the Design of Graphical Presentations of Relational Information. Jock Mackinlay. 1986.](https://dl.acm.org/doi/10.1145/22949.22950){: .citation} <br>
-: **Optional**{: .readings .readings-optional }[Chapter 9, Visualize This. Nathan Yau. 2024.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Visualize-This.pdf){: .citation} <br>
-: **Optional**{: .readings .readings-optional }[How to Lie with Charts. Gerald Everett Jones. 2018.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/How-to-Lie-with-Charts.pdf){: .citation} <br>
+**Optional**{: .readings .readings-optional }[Automating the Design of Graphical Presentations of Relational Information. Jock Mackinlay. 1986.](https://dl.acm.org/doi/10.1145/22949.22950){: .citation} <br>
+**Optional**{: .readings .readings-optional }[Chapter 9, Visualize This. Nathan Yau. 2024.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/Visualize-This.pdf){: .citation} <br>
+**Optional**{: .readings .readings-optional }[How to Lie with Charts. Gerald Everett Jones. 2018.](https://staff.washington.edu/yohaoyu/data-analytics-visualization/How-to-Lie-with-Charts.pdf){: .citation} <br>
 
 Oct 22
 : **No Class**
