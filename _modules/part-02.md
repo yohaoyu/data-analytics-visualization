@@ -46,7 +46,7 @@ Oct 27
 Oct 29
 : **Introduction to Tableau**
 : **LAB 5-A**{: .label .label-golden } Tableau
-  : [Page]({{ site.baseurl }}/labs/lab-05) / [Packaged Tableau]({{ site.baseurl }}/labs/lab-05/lab-05-A.twbx) / [Seattle Airbnb Listing Data]({{ site.baseurl }}/labs/lab-05/airbnb_sea_listings.csv) / [King County Affordability Data]({{ site.baseurl }}/labs/lab-05/king_affordability_2022.geojson)
+  : [Page]({{ site.baseurl }}/labs/lab-05) / [Packaged Tableau]({{ site.baseurl }}/labs/lab-05/lab-05-A.twbx) / [ Airbnb Data]({{ site.baseurl }}/labs/lab-05/airbnb_sea_listings.csv) / [Affordability Data]({{ site.baseurl }}/labs/lab-05/king_affordability_2022.geojson)
 : **LAB 4 DUE 11:59 PM**{: .label .label-purple }
 : **Optional**{: .readings .readings-optional }[Learning Tableau Desktop by Tableau](https://www.tableau.com/learn/get-started/creator){: .citation} <br>
 **Optional**{: .readings .readings-optional }[Tableau Tutorial by GeeksforGeeks](https://www.geeksforgeeks.org/tableau/tableau-tutorial/){: .citation} <br>
