@@ -62,6 +62,50 @@
     }]
   }
   </script>
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+
+    Chatbot.init({
+      chatflowid: "68b8eb40-9288-4492-be48-5be00a0d9f80",
+      apiHost: "https://cloud.flowiseai.com",
+      theme: {
+        button: {
+          backgroundColor: "#4B2E83",   // UW 紫
+          right: 30,                    // 按钮离右侧距离(px)
+          bottom: 30,                   // 离底部距离(px)
+          size: "large"                 // small | medium | large
+        },
+        chatWindow: {
+          title: "Course Assistant",
+          titleColor: "#FFFFFF",
+          backgroundColor: "#F8F8FC",
+          fontSize: 14,
+          fontFamily: getComputedStyle(document.body).familyAvenir,
+          poweredByTextColor: "#999999",
+          botMessage: {
+            backgroundColor: "#fbfaff", // bot气泡背景
+            textColor: "#000000"
+          },
+          userMessage: {
+            backgroundColor: "#4B2E83", // 用户气泡背景
+            textColor: "#FFFFFF"
+          },
+          textInput: {
+            placeholder: 'Type your question (AI can make mistakes)',
+            backgroundColor: '#ffffff',
+            textColor: '#303235',
+            sendButtonColor: '#4B2E83',
+            maxChars: 100,
+            maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 100 characters.',
+          },
+          footer: {
+            textColor: "#333333",
+            backgroundColor: "#FFFFFF",
+          }
+        }
+      }
+    })
+  </script>
 </head>
 
 <img id="cover" alt="cover image" src="{{ site.baseurl }}/assets/images/cover_image.png">
