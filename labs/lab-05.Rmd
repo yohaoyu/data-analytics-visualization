@@ -1,0 +1,276 @@
+---
+title: "Lab 05-A Introduction to Tableau"
+subtitle: "RE 519 Data Analytics and Visualization | Autumn 2025"
+author: "" #remember to add to your name when you submit the lab
+date: ""
+output: 
+  cleanrmd::html_document_clean:
+    theme: almond
+    toc: true 
+    toc_depth: 3
+    css: custom.css
+    mathjax: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    md_extensions: +tex_math_dollars+tex_math_single_backslash   
+    df_print: paged 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+------------------------------------------------------------------------
+
+<!-- start of the main lab content -->
+
+In this lab, we are going to use [Tableau](https://www.tableau.com), a business intelligence and analytics platform that allows users to create interactive visualizations and dashboards to understand data. It provides free access to students. **Please try to download** [Tableau for Students](https://www.tableau.com/academic/students) in advance.
+
+The due day for each lab can be found on the [course wesbite](https://www.yuehaoyu.com/data-analytics-visualization/). The submission should include Rmd, html, and any other files required to rerun the codes. For Tableau, submit your **[Tableau packaged workbook (.tbwx)](https://help.tableau.com/current/pro/desktop/en-us/save_savework_packagedworkbooks.htm)** This will include any excel files that you attach so that when you share the file anyone with Tableau can open it!
+
+From Lab 4, the use of any generative AI tool (ChatGPT, Copilot, etc.) is **allowed**. But, I still encourage you to write codes by yourself and use AI tools as a way to debug and explore new knowledge. More information about [Academic Integrity](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#academic-integrity) and [the Use of AI](https://www.yuehaoyu.com/data-analytics-visualization/syllabus/#use-of-ai).
+
+------------------------------------------------------------------------
+
+## Lab 05-A: Introduction to Tableau
+
+In this lab, we will use Seattle Airbnb listing data published by [Inside Airbnb](https://insideairbnb.com). Inside Airbnb is a mission driven project that provides data and advocacy about Airbnb's impact on residential communities. They published a report on [Platform Failures: How Short-Term Rental Platforms like Airbnb fail to cooperate with cities and the need for strong regulations to protect housing](https://insideairbnb.com/reports/platform-failures-how-short-term-rental-platforms-like-airbnb-fail-cities-en.pdf) which may be interesting to you. 
+
+The data we will use was published on 21 June, 2025 and you can explore the data using their [visualization tool](https://insideairbnb.com/seattle/). Please check the data dictionary below. 
+
+<details>
+<summary><b>Click to view the full data dictionary</b></summary>
+- **id** *(integer)* — Airbnb’s unique identifier for the listing.  
+- **name** *(string)* — Name of the listing as shown on Airbnb.  
+- **host_id** *(integer)* — Unique identifier for the host.  
+- **host_name** *(string)* — Name of the host.  
+- **neighbourhood_group** *(text)* — The neighbourhood group as geocoded using latitude and longitude against neighborhoods as defined by open or public digital shapefiles.  
+- **neighbourhood** *(text)* - The neighbourhood as geocoded using latitude and longitude against neighborhoods as defined by open or public digital shapefiles.  
+- **latitude** *(numeric)* — Uses the World Geodetic System (WGS84) projection for latitude and longitude.  
+- **longitude** *(numeric)* — Uses the World Geodetic System (WGS84) projection for latitude and longitude.  
+- **room_type** *(string)* — The type of room (entire home/apt, private room, shared room, hotel room).  
+- **price** *(currency)* — Daily price in local currency (may use `$` sign regardless of locale).  
+- **minimum_nights** *(integer)* — Minimum number of nights required to stay for the listing (calendar rules may differ).  
+- **number_of_reviews** *(integer)* — Total number of reviews the listing has received.  
+- **last_review** *(date)* — Date of the most recent review.  
+- **calculated_host_listings_count** *(integer)* — The number of listings the host has in the current scrape, within the city/region.  
+- **availability_365** *(integer)* - Number of days the listing is available within the next 365 days. May include blocked or booked days.  
+- **number_of_reviews_ltm** *(integer)* - Number of reviews received in the last 12 months.  
+- **license** *(string)* — Business license or permit number associated with the listing.
+</details>
+
+We are going to build an interactive dashboard that visualizes key insights from our dataset. The goal is not only to display information but also to enable users to explore, filter, and compare different variables dynamically. After that, we will publish online through [Tableau Public](https://public.tableau.com/app/discover) as well as your GitHub page. Also, we will continue working on dashboard in next lab, so do not worry if some functions you want do not show in this lab. The final results will be like this:
+
+```{r, results='asis', echo=FALSE}
+cat("
+<div class='tableauPlaceholder' id='viz1761726930448' style='position: relative'>
+  <noscript>
+    <a href='#'>
+      <img alt='Seattle Airbnb Dashboard' src='https://public.tableau.com/static/images/Bo/Book1_17413376263140/SeattleAirbnbDashboard/1_rss.png' style='border:none'/>
+    </a>
+  </noscript>
+  <object class='tableauViz' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+    <param name='embed_code_version' value='3'/>
+    <param name='path' value='views/Book1_17413376263140/SeattleAirbnbDashboard?:language=en-US&:embed=true'/>
+    <param name='toolbar' value='yes'/>
+    <param name='static_image' value='https://public.tableau.com/static/images/Bo/Book1_17413376263140/SeattleAirbnbDashboard/1.png'/>
+    <param name='animate_transition' value='yes'/>
+    <param name='display_static_image' value='yes'/>
+    <param name='display_spinner' value='yes'/>
+    <param name='display_overlay' value='yes'/>
+    <param name='display_count' value='yes'/>
+    <param name='language' value='en-US'/>
+  </object>
+</div>
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1761726930448');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  if (divElement.offsetWidth > 800) {
+    vizElement.style.minWidth='820px';
+    vizElement.style.maxWidth='1000px';
+    vizElement.style.width='100%';
+    vizElement.style.minHeight='587px';
+    vizElement.style.maxHeight='887px';
+    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+  } else if (divElement.offsetWidth > 500) {
+    vizElement.style.minWidth='820px';
+    vizElement.style.maxWidth='1000px';
+    vizElement.style.width='100%';
+    vizElement.style.minHeight='587px';
+    vizElement.style.maxHeight='887px';
+    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+  } else {
+    vizElement.style.width='100%';
+    vizElement.style.height='100%';
+  }
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+")
+```
+
+### The Tableau Workspace
+
+![Workspace. Source: Tableau Desktop and Web Authoring Help](https://help.tableau.com/current/pro/desktop/en-us/Img/environ_workspace1.png)
+
+- **A.** Workbook name. A workbook contains sheets. A sheet can be a worksheet, a dashboard, or a story. For more information, see [Workbooks and Sheets](https://help.tableau.com/current/pro/desktop/en-us/environ_workbooksandsheets.htm).
+- **B.** [Cards and shelves](https://help.tableau.com/current/pro/desktop/en-us/buildmanual_shelves.htm) - Drag fields to the cards and shelves in the workspace to add data to your view.
+- **C.** [Toolbar](https://help.tableau.com/current/pro/desktop/en-us/environment_workspace.htm#ToolbarButtons) - Use the toolbar to access commands and analysis and navigation tools.
+- **D.** [View](https://help.tableau.com/current/pro/desktop/en-us/view_parts.htm) - This is the canvas in the workspace where you create a visualization (also referred to as a "viz").
+- **E.** Click this icon to go to the Start page, where you can connect to data. For more information, see [Start Page](https://help.tableau.com/current/pro/desktop/en-us/environment_startpage.htm).
+- **F.** [Side Bar](https://help.tableau.com/current/pro/desktop/en-us/environment_workspace.htm#SideBar) - In a worksheet, the side bar area contains the [Data pane](https://help.tableau.com/current/pro/desktop/en-us/datafields_understanddatawindow.htm) and the [Analytics pane](https://help.tableau.com/current/pro/desktop/en-us/environ_workspace_analytics_pane.htm).
+- **G.** Click this tab to go to the Data Source page and view your data. For more information, see the [Data Source Page](https://help.tableau.com/current/pro/desktop/en-us/environment_datasource_page.htm).
+- **H.** [Status bar](https://help.tableau.com/current/pro/desktop/en-us/environment_workspace.htm#StatusBar) - Displays information about the current view.
+- **I.** Sheet tabs - Tabs represent each sheet in your workbook. This can include worksheets, dashboards, and stories. For more information, see [Workbooks and Sheets](https://help.tableau.com/current/pro/desktop/en-us/environ_workbooksandsheets.htm).
+
+### Key Steps
+
+#### Connect to Data
+
+- In the **Connect pane**, click the file type (e.g., _Text File_).
+- In the **Open** dialog box, select your dataset (e.g., listings.csv) and click **Open**.
+- Change the data type in **data source page**.
+- (Optional) Change column labels for readability (this won’t rename your local file).
+- Concepts: Dimensions and Measures
+  - Dimensions contain qualitative values (such as names, dates, or geographical data). 
+  - Measures contain numeric, quantitative values that you can measure.
+  - You can re-categorize a dimension as a measure or vice versa.
+
+#### Global Formatting 
+
+- Adjust global font, font size, alignment, etc., under **Format** → **Workbook**.
+
+#### Maps
+
+- Drag **Latitude** → _Rows_, and **Longitude** → _Columns_.
+- Customize map background: _Map → Map Layers → Style_.
+- Add Tooltip: drag relevant fields (e.g., Name, Room Type, Price) to **Marks → Tooltip**.
+- Rename the worksheet to _Map_.
+
+#### Average Price
+
+- Drag **Price** → _Columns_ → right-click → **Measure → Average**.
+- Add **Mark Labels** to show values.
+- Hide the **X-axis** (right-click → _Show Header_ off).
+- Formatting numbers to currency in **default properties**.
+- Rename to _Average Price_.
+
+#### Number of Room by Type
+
+- Drag **Room Type** → _Rows_.
+- Drag **Name** → _Columns_ → **Count** (right-click → _Measure → Count_).
+- Hide the **X-axis** and label each bar.
+- Rename worksheet and add short descriptive text in text box.
+
+#### Licenses
+
+- Create a **Group** for license categories (e.g., _Licensed / Unlicensed / Exempt_).
+- Drag **License Categories** → _Rows_ and **Name** → _Columns_ → _Count_.
+- Drag **Room Type** → _Color_ in the Marks card.
+- Customize the **color palette**.
+- Rename worksheet and add notes.
+
+#### Top Hosts
+
+- Drag **Host Name** → _Rows_.
+- Drag **Host ID** → _Columns_ → _Count_.
+- Sort descending by count.
+- Add mark labels and rename the worksheet.
+
+#### Dashboard
+
+- Click **New Dashboard (+)**.
+- Set min and max dashboard size.
+- Drag your worksheets into the layout.
+- Use **Text Box** to add title, description, and data source citation.
+- Apply **consistent background color** and **font**.
+
+#### Interactivity
+
+- Right-click filters (e.g., _Neighbourhood Group_) → **Show Filter**.
+- Change filter type to dropdown or slider as needed.
+- Make filters **affect all worksheets** (_Apply to Worksheets → All Using This Data Source_).
+- Test interactivity — selecting a neighborhood should update all charts.
+
+#### Publish 
+
+- Save to Tableau Public
+  1. Click **File → Save to Tableau Public**
+  2. Log in with your Tableau Public account (create one if needed).
+  3. Wait for the upload to finish — Tableau will open your dashboard in the browser.
+- Embed to your webpage
+  1. On your Tableau Public page, click **Share** (top right).
+  2. Copy the **Embed Code**.
+  3. Paste it into your website’s HTML or Markdown. 
+- Save as Packaged Workbook (.twbx)
+  1. Go to **File → Export Packaged Workbook**
+  2. Name your file (e.g., Seattle_Airbnb_Dashboard.twbx).
+  3. Click **Save**.
+
+#### Hierarchy
+
+- Drag **neighbourhood group** and **neighbourhood** to _Rows_ — order matters (group first, then neighborhood).
+- Drag **Name** to _Columns_ → right-click → _Measure → Count_.
+- Sort descending if needed.
+
+#### Worksheet, Dashboard, Story
+
+- A worksheet contains a single view along with shelves, cards, legends, and the Data and Analytics panes in its sidebar. For details on the worksheet workspace, see [The Tableau Workspace](https://help.tableau.com/current/pro/desktop/en-us/environment_workspace.htm).
+- A dashboard is a collection of views from multiple worksheets. The Dashboard and Layout panes are available in its sidebar. For more details about creating dashboards, see [Dashboards](https://help.tableau.com/current/pro/desktop/en-us/dashboards.htm).
+  - What is changed in the dashboard will affect the worksheet
+- A story contains a sequence of worksheets or dashboards that work together to convey information. The Story and Layout panes are available in its side bar. For more details about creating stories, see [Stories](https://help.tableau.com/current/pro/desktop/en-us/stories.htm)
+  - What’s changed in the story will not affect the worksheet or dashboard
+
+### 📚 TODO: Tableau
+
+**14 points**
+
+Create visualizations, at least 5 worksheets, using 2022 5-year estimate data from American Community Survey (ACS). The dataset is about **housing affordability** in King County, WA. You can [download the data here](https://www.yuehaoyu.com/data-analytics-visualization/labs/lab-05/king_affordability_2022.geojson). The `geojson` ([What is it?](https://geojson.org)) data also include geospatial column (geometry).You can check the data dictionary below. 
+
+If you have a strong interest in using other datasets for this assignment, you are free to do that. 
+
+**Calculation field**. You can build your own variables using existing variables, such as defining a affordability index. [This page may be helpful to you.](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_formulas.htm) 
+
+**Arrange these sheets into a dashboard**. Make sure that any filters that you apply on your dashboard work on all (relevant) sheets. If you want, play around with creating multiple story points.
+
+Submit your **[Tableau packaged workbook (.tbwx)](https://help.tableau.com/current/pro/desktop/en-us/save_savework_packagedworkbooks.htm)** This will include any data files that you attach so that when you share the file anyone with Tableau can open it!
+
+
+#### Raw ACS Variables Dictionary
+
+|**Variable**|**ACS Code**|**Description**|
+|---|---|---|
+|med_income|B19013_001|Median household income (past 12 months)|
+|gini|B19083_001|Gini Index of Income Inequality|
+|med_rent|B25064_001|Median gross rent (monthly)|
+|med_home_value|B25077_001|Median home value (owner-occupied units)|
+|total_pop|B01003_001|Total population|
+|poverty_rate|B17001_002|Individuals below poverty line (numerator)|
+|total_poverty|B17001_001|Total population used for poverty calculation|
+|bachelors|B15003_022|Population with a bachelor’s degree|
+|graduate|B15003_023|Population with a master’s degree or higher|
+|total_edu|B15003_001|Total education population (age ≥25)|
+|white|B03002_003|White alone|
+|black|B03002_004|Black or African American alone|
+|asian|B03002_006|Asian alone|
+|hispanic|B03002_012|Hispanic or Latino (any race)|
+|total_race|B03002_001|Total population by race|
+|unemployed|B23025_005|Unemployed population (age 16+)|
+|labor_force|B23025_003|Civilian labor force (age 16+)|
+
+#### Derived Indicator Dictionary
+
+|**Derived Variable**|**Formula**|**Interpretation**|
+|---|---|---|
+|poverty_pct|poverty_rate / total_poverty|Share of population below poverty line|
+|college_pct|(bachelors + graduate) / total_edu|Share of population with ≥ bachelor’s degree|
+|white_pct|white / total_race|White population share|
+|black_pct|black / total_race|Black or African American share|
+|asian_pct|asian / total_race|Asian population share|
+|hispanic_pct|hispanic / total_race|Hispanic or Latino share|
+|unemployment_rate|unemployed / labor_force|Civilian unemployment rate|
+
+
+## Acknowledgement
+
+The materials are developed by [Haoyu Yue](www.yuehaoyu.com) based materials from [Dr. Feiyang Sun at UC San Diego](https://fsun.ucsd.edu), Siman Ning and Christian Phillips at University of Washington, [Dr. Charles Lanfear at University of Cambridge](https://clanfear.github.io).

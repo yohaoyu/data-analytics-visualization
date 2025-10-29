@@ -46,7 +46,17 @@ Oct 27
 Oct 29
 : **Introduction to Tableau**
 : **LAB 5-A**{: .label .label-golden } Tableau
+  : [Page]({{ site.baseurl }}/labs/lab-05) / [Packaged Tableau]({{ site.baseurl }}/labs/lab-05/lab-05-A.twbx) / [King County Affordability]({{ site.baseurl }}/labs/lab-05/king_affordability_2022.geojson)
 : **LAB 4 DUE 11:59 PM**{: .label .label-purple }
+: **Optional**{: .readings .readings-optional }[Learning Tableau Desktop by Tableau](https://www.tableau.com/learn/get-started/creator){: .citation} <br>
+**Optional**{: .readings .readings-optional }[Tableau Tutorial by GeeksforGeeks](https://www.geeksforgeeks.org/tableau/tableau-tutorial/){: .citation} <br>
+**Optional**{: .readings .readings-optional }[Tableau: An Introduction. Princeton University.](https://cedar.princeton.edu/sites/g/files/toruqf1076/files/media/introduction_to_tableau_training_0.pdf){: .citation} <br>
+**Optional**{: .readings .readings-optional }[Tableau Viz Gallery.](https://www.tableau.com/viz-gallery){: .citation} <br>
+**Optional**{: .readings .readings-optional }[Tableau Dashboard Showcase.](https://www.tableau.com/data-insights/dashboard-showcase){: .citation} <br>
+
+
+
+
 
 Nov 03 
 : **Analyze and Visualize Space**

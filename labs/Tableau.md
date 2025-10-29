@@ -17,7 +17,7 @@ In class, I will provide a general orientation to Tableau. Next class I will hav
 
 **Homework**
 
-Create a few sheets (vizualizations) using the Nationwide Redfin data (at the state level) attached here:
+ Nationwide Redfin data (at the state level) attached here:
 
 [state_market_tracker.tsv](https://canvas.uw.edu/courses/1692283/files/136712547?wrap=1)[Download state_market_tracker.tsv](https://canvas.uw.edu/courses/1692283/files/136712547/download?download_frd=1)
 
